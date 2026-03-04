@@ -1,0 +1,30 @@
+category_name: "queue"
+display_name: "대기/예약 레이더"
+
+sources:
+  - name: "TechCrunch"
+    type: "rss"
+    url: "https://techcrunch.com/feed/"
+  - name: "The Verge"
+    type: "rss"
+    url: "https://www.theverge.com/rss/index.xml"
+  - name: "Ars Technica"
+    type: "rss"
+    url: "https://feeds.arstechnica.com/arstechnica/index"
+
+entities:
+  - name: "WaitTime"
+    display_name: "대기 시간"
+    keywords: ["wait time", "대기 시간", "queue", "대기열", "waiting list", "대기자"]
+  - name: "Reservation"
+    display_name: "예약"
+    keywords: ["reservation", "booking", "예약", "appointment", "scheduling"]
+  - name: "NoShow"
+    display_name: "노쇼"
+    keywords: ["no-show", "no show", "노쇼", "cancellation fee", "취소 수수료"]
+  - name: "Platform"
+    display_name: "예약 플랫폼"
+    keywords: ["opentable", "resy", "네이버 예약", "카카오 예약", "tock"]
+  - name: "Healthcare"
+    display_name: "의료 예약"
+    keywords: ["hospital", "clinic", "병원", "진료", "healthcare appointment"]
