@@ -3,7 +3,7 @@ name: QueueRadar Crawler
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 0 * * *" # 매일 00:00 UTC
+    - cron: "0 */6 * * *" # 6시간마다 (00:00, 06:00, 12:00, 18:00 UTC = KST 09:00, 15:00, 21:00, 03:00)
 
 permissions:
   contents: write
