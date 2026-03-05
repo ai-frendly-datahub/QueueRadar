@@ -38,8 +38,19 @@ def _collect_single(
     limit: int,
     timeout: int,
 ) -> List[Article]:
-    if source.type.lower() != "rss":
-        raise ValueError(f"Unsupported source type '{source.type}'. Only 'rss' is supported in the template.")
+    source_type = source.type.lower()
+
+    if source_type == "api":
+        from .queue_times_collector import collect_queue_times
+
+        return collect_queue_times(
+            source, category=category, limit=limit, timeout=timeout
+        )
+
+    if source_type != "rss":
+        raise ValueError(
+            f"Unsupported source type '{source.type}'. Supported: 'rss', 'api'."
+        )
 
     response = requests.get(source.url, timeout=timeout)
     response.raise_for_status()
