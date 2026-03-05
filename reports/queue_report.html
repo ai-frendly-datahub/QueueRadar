@@ -1,0 +1,2840 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="dark" />
+    <title>대기/예약 레이더 - Report</title>
+
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretendard@1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&display=swap" />
+
+    <style>
+      :root{
+        --bg0:#05070c;
+        --bg1:#070b14;
+        --panel0:rgba(10, 16, 30, .72);
+        --panel1:rgba(14, 22, 42, .72);
+        --panel2:rgba(14, 22, 42, .92);
+        --line:rgba(150, 190, 255, .14);
+        --line2:rgba(150, 190, 255, .22);
+        --shadow:0 18px 60px rgba(0,0,0,.44);
+        --text:#e9eefb;
+        --muted:rgba(233, 238, 251, .72);
+        --faint:rgba(233, 238, 251, .52);
+        --brand:#33d6c5;
+        --brand2:#19a7c3;
+        --accent:#f6c84c;
+        --danger:#ff5b6e;
+
+        --radius:16px;
+        --radius2:22px;
+        --max:1180px;
+
+        --mono:"JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+        --sans:"Pretendard Variable","Pretendard", ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif;
+
+        --focus: 0 0 0 3px rgba(51, 214, 197, .20), 0 0 0 1px rgba(51, 214, 197, .70);
+      }
+
+      *{box-sizing:border-box}
+      html,body{height:100%}
+      body{
+        margin:0;
+        font-family:var(--sans);
+        color:var(--text);
+        background:
+          radial-gradient(1200px 700px at 18% -8%, rgba(25,167,195,.28), transparent 58%),
+          radial-gradient(1100px 600px at 92% 8%, rgba(246,200,76,.18), transparent 60%),
+          radial-gradient(900px 520px at 52% 110%, rgba(51,214,197,.18), transparent 62%),
+          linear-gradient(180deg, var(--bg0), var(--bg1) 55%, #04060a);
+        overflow-x:hidden;
+      }
+
+      a{color:inherit; text-decoration:none}
+      a:hover{text-decoration:none}
+      ::selection{background:rgba(51,214,197,.24)}
+      .skip{
+        position:absolute;
+        left:-999px;
+        top:12px;
+        padding:10px 12px;
+        border-radius:12px;
+        background:rgba(14, 22, 42, .98);
+        border:1px solid var(--line2);
+        color:var(--text);
+        z-index:9999;
+      }
+      .skip:focus{left:12px; box-shadow:var(--focus); outline:none}
+
+      .wrap{max-width:var(--max); margin:0 auto; padding:20px 16px 64px}
+      .topbar{
+        position:sticky; top:0; z-index:50;
+        backdrop-filter: blur(14px);
+        -webkit-backdrop-filter: blur(14px);
+        background: linear-gradient(180deg, rgba(5,7,12,.92), rgba(5,7,12,.55));
+        border-bottom:1px solid rgba(150,190,255,.10);
+      }
+      .topbar-inner{max-width:var(--max); margin:0 auto; padding:14px 16px; display:flex; align-items:center; justify-content:space-between; gap:14px}
+      .brand{
+        display:flex; align-items:center; gap:10px;
+        min-width:220px;
+      }
+      .mark{
+        width:34px; height:34px; border-radius:12px;
+        background:
+          radial-gradient(18px 18px at 32% 28%, rgba(255,255,255,.18), transparent 55%),
+          linear-gradient(145deg, rgba(51,214,197,.95), rgba(25,167,195,.78) 55%, rgba(246,200,76,.72));
+        box-shadow: 0 10px 30px rgba(0,0,0,.45);
+        border:1px solid rgba(255,255,255,.10);
+      }
+      .brand-title{
+        line-height:1.05;
+        font-weight:750;
+        letter-spacing:-.02em;
+      }
+      .brand-sub{
+        display:block;
+        font-family:var(--mono);
+        font-size:12px;
+        color:var(--faint);
+        margin-top:4px;
+      }
+      .nav{
+        display:flex; flex-wrap:wrap; gap:8px;
+        justify-content:flex-end;
+      }
+      .pill{
+        display:inline-flex; align-items:center; gap:8px;
+        padding:9px 12px;
+        border-radius:999px;
+        border:1px solid rgba(150,190,255,.14);
+        background:rgba(10,16,30,.45);
+        color:var(--muted);
+        font-size:13px;
+        transition: transform .18s ease, border-color .18s ease, background .18s ease, color .18s ease;
+        user-select:none;
+      }
+      .pill:hover{
+        transform: translateY(-1px);
+        border-color: rgba(51,214,197,.34);
+        background: rgba(10,16,30,.70);
+        color: rgba(233,238,251,.88);
+      }
+      .pill:focus-visible{outline:none; box-shadow:var(--focus)}
+
+      .hero{
+        padding:24px 0 12px;
+        display:grid;
+        grid-template-columns: 1.25fr .75fr;
+        gap:18px;
+        align-items:stretch;
+      }
+      .hero-card{
+        border-radius: var(--radius2);
+        background: linear-gradient(180deg, var(--panel2), rgba(14,22,42,.58));
+        border: 1px solid rgba(150,190,255,.14);
+        box-shadow: var(--shadow);
+        padding:18px 18px 16px;
+        position:relative;
+        overflow:hidden;
+      }
+      .hero-card:before{
+        content:"";
+        position:absolute;
+        inset:-2px;
+        background:
+          radial-gradient(280px 160px at 12% 18%, rgba(51,214,197,.18), transparent 60%),
+          radial-gradient(240px 140px at 82% 22%, rgba(246,200,76,.12), transparent 58%),
+          radial-gradient(300px 170px at 46% 110%, rgba(25,167,195,.14), transparent 62%);
+        filter: blur(10px);
+        opacity:.9;
+        pointer-events:none;
+      }
+      .hero-body{position:relative}
+      .kicker{
+        display:inline-flex; align-items:center; gap:10px;
+        font-family:var(--mono);
+        font-size:12px;
+        color:rgba(233,238,251,.72);
+        letter-spacing:.06em;
+        text-transform:uppercase;
+      }
+      .dot{
+        width:8px; height:8px; border-radius:999px;
+        background: var(--brand);
+        box-shadow:0 0 0 4px rgba(51,214,197,.12);
+      }
+      h1{
+        margin:10px 0 0;
+        font-weight:820;
+        letter-spacing:-.03em;
+        font-size: clamp(28px, 3.2vw, 40px);
+        line-height:1.08;
+      }
+      .lede{
+        margin:10px 0 0;
+        color: var(--muted);
+        font-size:15px;
+        line-height:1.55;
+        max-width: 72ch;
+      }
+      .meta{
+        margin:14px 0 0;
+        display:flex;
+        flex-wrap:wrap;
+        gap:10px 12px;
+        color: rgba(233,238,251,.70);
+        font-size:13px;
+      }
+      .meta span{
+        display:inline-flex; align-items:center; gap:8px;
+        padding:6px 10px;
+        border-radius:999px;
+        border:1px solid rgba(150,190,255,.12);
+        background: rgba(10,16,30,.40);
+      }
+      .mono{font-family:var(--mono)}
+      .accent{color: rgba(246,200,76,.96)}
+      .ok{color: rgba(51,214,197,.92)}
+      .bad{color: rgba(255,91,110,.92)}
+
+      .stats{
+        border-radius: var(--radius2);
+        background: linear-gradient(180deg, rgba(10,16,30,.64), rgba(10,16,30,.36));
+        border: 1px solid rgba(150,190,255,.12);
+        box-shadow: 0 12px 40px rgba(0,0,0,.34);
+        padding:16px;
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        gap:12px;
+      }
+      .stat{
+        border-radius: 14px;
+        background: rgba(14,22,42,.45);
+        border: 1px solid rgba(150,190,255,.12);
+        padding:12px 12px 10px;
+        min-height: 76px;
+      }
+      .stat .label{
+        color: rgba(233,238,251,.66);
+        font-size:12px;
+        font-family: var(--mono);
+        letter-spacing:.03em;
+      }
+      .stat .value{
+        margin-top:8px;
+        font-weight:800;
+        letter-spacing:-.02em;
+        font-size: 20px;
+        line-height:1.1;
+      }
+      .stat .hint{
+        margin-top:6px;
+        color: rgba(233,238,251,.60);
+        font-size:12px;
+        line-height:1.35;
+      }
+
+      .grid{
+        margin-top:14px;
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        gap:14px;
+      }
+      .panel{
+        border-radius: var(--radius2);
+        background: linear-gradient(180deg, var(--panel0), var(--panel1));
+        border: 1px solid rgba(150,190,255,.12);
+        box-shadow: 0 16px 55px rgba(0,0,0,.38);
+        overflow:hidden;
+      }
+      .panel-hd{
+        padding:14px 16px;
+        display:flex;
+        justify-content:space-between;
+        align-items:flex-start;
+        gap:12px;
+        border-bottom:1px solid rgba(150,190,255,.10);
+        background: rgba(10,16,30,.20);
+      }
+      .panel-title{
+        margin:0;
+        font-weight:780;
+        letter-spacing:-.02em;
+        font-size:14px;
+      }
+      .panel-sub{
+        margin:6px 0 0;
+        color: rgba(233,238,251,.64);
+        font-size:12px;
+        line-height:1.35;
+        font-family: var(--mono);
+      }
+      .panel-bd{padding:14px 16px 16px}
+      .chart-wrap{position:relative; height: 290px}
+      .chart-wrap.tall{height: 320px}
+      canvas{max-width:100%}
+
+      .notice{
+        margin-top:14px;
+        border-radius: var(--radius2);
+        border: 1px solid rgba(255,91,110,.28);
+        background: linear-gradient(180deg, rgba(255,91,110,.14), rgba(10,16,30,.56));
+        box-shadow: 0 18px 55px rgba(0,0,0,.34);
+        padding:14px 16px;
+      }
+      .notice h2{
+        margin:0;
+        font-size:14px;
+        font-weight:800;
+        letter-spacing:-.02em;
+      }
+      .notice p{
+        margin:8px 0 0;
+        color: rgba(233,238,251,.74);
+        font-size:13px;
+        line-height:1.5;
+      }
+      .notice ul{
+        margin:10px 0 0;
+        padding-left: 18px;
+        color: rgba(233,238,251,.72);
+        font-size:13px;
+        line-height:1.55;
+      }
+
+      .section{
+        margin-top:16px;
+      }
+      .section-hd{
+        display:flex; align-items:flex-end; justify-content:space-between; gap:12px;
+        margin: 20px 0 10px;
+      }
+      .section-hd h2{
+        margin:0;
+        font-size: 16px;
+        font-weight:820;
+        letter-spacing:-.02em;
+      }
+      .section-hd .right{
+        display:flex; gap:8px; flex-wrap:wrap; justify-content:flex-end;
+      }
+      .muted{color: rgba(233,238,251,.68)}
+      .small{font-size:12px}
+      .kbd{
+        font-family: var(--mono);
+        font-size: 12px;
+        color: rgba(233,238,251,.72);
+        background: rgba(10,16,30,.52);
+        border:1px solid rgba(150,190,255,.14);
+        padding:6px 10px;
+        border-radius:999px;
+      }
+
+      .articles{
+        display:grid;
+        grid-template-columns: 1fr;
+        gap:10px;
+      }
+      .card{
+        border-radius: 18px;
+        background: rgba(14,22,42,.46);
+        border: 1px solid rgba(150,190,255,.12);
+        padding: 12px 12px 11px;
+        transition: transform .18s ease, border-color .18s ease, background .18s ease;
+        display:flex;
+        gap:10px;
+        align-items:flex-start;
+      }
+      .card:hover{
+        transform: translateY(-1px);
+        border-color: rgba(51,214,197,.22);
+        background: rgba(14,22,42,.62);
+      }
+      .card:focus-within{box-shadow: var(--focus)}
+      .card .left{flex:1; min-width:0}
+      .title{
+        margin:0;
+        font-weight:780;
+        letter-spacing:-.02em;
+        font-size: 14px;
+        line-height:1.35;
+      }
+      .title a{
+        display:inline-block;
+        outline:none;
+      }
+      .title a:focus-visible{outline:none}
+      .desc{
+        margin:8px 0 0;
+        color: rgba(233,238,251,.68);
+        font-size: 13px;
+        line-height: 1.55;
+      }
+      .row{
+        margin-top:10px;
+        display:flex;
+        flex-wrap:wrap;
+        gap:8px;
+        align-items:center;
+        color: rgba(233,238,251,.64);
+        font-size: 12px;
+      }
+      .chip{
+        display:inline-flex; align-items:center;
+        gap:8px;
+        padding:6px 10px;
+        border-radius:999px;
+        border: 1px solid rgba(150,190,255,.12);
+        background: rgba(10,16,30,.38);
+        font-family: var(--mono);
+        font-size: 12px;
+      }
+      .chip strong{font-weight:800; color: rgba(233,238,251,.86)}
+      .chip.brand{
+        border-color: rgba(51,214,197,.18);
+        background: rgba(51,214,197,.10);
+      }
+      .actions{
+        display:flex;
+        align-items:center;
+        justify-content:flex-end;
+      }
+      .btn{
+        display:inline-flex;
+        align-items:center;
+        justify-content:center;
+        gap:10px;
+        padding:10px 12px;
+        border-radius: 14px;
+        border: 1px solid rgba(150,190,255,.14);
+        background: rgba(10,16,30,.46);
+        color: rgba(233,238,251,.86);
+        font-size: 13px;
+        font-weight: 700;
+        letter-spacing: -.01em;
+        transition: transform .18s ease, border-color .18s ease, background .18s ease;
+        cursor:pointer;
+        user-select:none;
+        min-width: 84px;
+      }
+      .btn:hover{
+        transform: translateY(-1px);
+        border-color: rgba(246,200,76,.30);
+        background: rgba(10,16,30,.68);
+      }
+      .btn:focus-visible{outline:none; box-shadow: var(--focus)}
+      .btn.primary{
+        border-color: rgba(51,214,197,.22);
+        background: linear-gradient(135deg, rgba(51,214,197,.22), rgba(25,167,195,.12));
+      }
+      .btn.primary:hover{border-color: rgba(51,214,197,.36)}
+      .btn[aria-disabled="true"]{opacity:.6; cursor:not-allowed}
+
+      .footer{
+        margin-top:24px;
+        padding-top:14px;
+        border-top: 1px solid rgba(150,190,255,.10);
+        display:flex;
+        flex-wrap:wrap;
+        gap:10px 14px;
+        justify-content:space-between;
+        align-items:center;
+        color: rgba(233,238,251,.62);
+        font-size: 12px;
+      }
+      .footer a{color: rgba(233,238,251,.74)}
+      .footer a:hover{color: rgba(51,214,197,.90)}
+
+      @media (max-width: 980px){
+        .hero{grid-template-columns: 1fr; }
+        .stats{grid-template-columns: 1fr 1fr}
+        .grid{grid-template-columns: 1fr}
+      }
+      @media (max-width: 560px){
+        .topbar-inner{align-items:flex-start}
+        .brand{min-width: 0}
+        .nav{justify-content:flex-start}
+        .stats{grid-template-columns: 1fr}
+        .card{flex-direction:column}
+        .actions{justify-content:flex-start}
+        .btn{width:100%}
+        .chart-wrap{height: 260px}
+        .chart-wrap.tall{height: 300px}
+      }
+      @media (prefers-reduced-motion: reduce){
+        *{scroll-behavior:auto !important}
+        .pill,.card,.btn{transition:none !important}
+        .pill:hover,.card:hover,.btn:hover{transform:none !important}
+      }
+    </style>
+  </head>
+
+  <body>
+    <a class="skip" href="#content">Skip to content</a>
+
+    <header class="topbar" role="banner">
+      <div class="topbar-inner">
+        <div class="brand" aria-label="Report identity">
+          <div class="mark" aria-hidden="true"></div>
+          <div>
+            <div class="brand-title">대기/예약 레이더</div>
+            <span class="brand-sub">editorial report - charts + feed</span>
+          </div>
+        </div>
+
+        <nav class="nav" aria-label="Jump links">
+          <a class="pill" href="#charts">Charts</a>
+          <a class="pill" href="#entities">Entities</a>
+          <a class="pill" href="#articles">Articles</a>
+          
+          <a class="pill" href="#errors" aria-label="Jump to errors (8)">Errors</a>
+          
+        </nav>
+      </div>
+    </header>
+
+    <main id="content" class="wrap" role="main">
+      <section class="hero" aria-label="Overview">
+        <div class="hero-card">
+          <div class="hero-body">
+            <div class="kicker">
+              <span class="dot" aria-hidden="true"></span>
+              <span class="mono">RADAR</span>
+              <span class="mono muted">/</span>
+              <span class="mono accent">대기/예약 레이더</span>
+            </div>
+
+            <h1>대기/예약 레이더</h1>
+            <p class="lede">
+              A fast, reusable HTML report for lightweight Radar projects: entity distribution, article velocity,
+              and source mix, alongside a clean reading list.
+            </p>
+
+            <div class="meta" aria-label="Key facts">
+              <span><span class="mono muted">articles</span><span class="mono ok">76</span></span>
+              <span><span class="mono muted">entities</span><span class="mono accent">1</span></span>
+              <span><span class="mono muted">errors</span><span class="mono bad">8</span></span>
+              <span title="Generated time"><span class="mono muted">generated</span><span class="mono">2026-03-05 03:54 UTC</span></span>
+            </div>
+          </div>
+        </div>
+
+        <aside class="stats" aria-label="Quick stats">
+          <div class="stat">
+            <div class="label">ARTICLES</div>
+            <div class="value">36</div>
+            <div class="hint">Total items in this run</div>
+          </div>
+          <div class="stat">
+            <div class="label">UNIQUE ENTITIES</div>
+            <div class="value">1</div>
+            <div class="hint">Distinct extracted names</div>
+          </div>
+          <div class="stat">
+            <div class="label">TOP ENTITY</div>
+            <div class="value">
+              
+                
+                Healthcare
+              
+            </div>
+            <div class="hint">Most frequent across articles</div>
+          </div>
+          <div class="stat">
+            <div class="label">SOURCES</div>
+            <div class="value">10</div>
+            <div class="hint">Auto-counted for charts</div>
+          </div>
+        </aside>
+      </section>
+
+      
+      <section id="errors" class="notice" role="alert" aria-label="Errors">
+        <h2>Errors detected (8)</h2>
+        <p>Some sources or steps reported errors. The report still renders with partial data.</p>
+        <ul>
+          
+          <li><span class="mono">OpenTable Press: HTTPSConnectionPool(host=&#39;www.opentable.com&#39;, port=443): Read timed out. (read timeout=15)</span></li>
+          
+          <li><span class="mono">Yelp Blog: 403 Client Error: Forbidden for url: https://blog.yelp.com/feed/</span></li>
+          
+          <li><span class="mono">Theme Park Insider: 404 Client Error: Not Found for url: https://www.themeparkinsider.com/feed/</span></li>
+          
+          <li><span class="mono">WDWMAGIC News: 404 Client Error: Not Found for url: https://www.wdwmagic.com/news/feed/</span></li>
+          
+          <li><span class="mono">Urgent Care Association: 403 Client Error: Forbidden for url: https://www.urgentcareassociation.org/feed/</span></li>
+          
+          <li><span class="mono">Resy Blog: 403 Client Error: Forbidden for url: https://blog.resy.com/feed/</span></li>
+          
+          <li><span class="mono">Disneyland News: HTTPSConnectionPool(host=&#39;disneyparks.disney.go.com&#39;, port=443): Read timed out. (read timeout=15)</span></li>
+          
+          <li><span class="mono">Medical Economics: 403 Client Error: Forbidden for url: https://www.medicaleconomics.com/feed</span></li>
+          
+        </ul>
+      </section>
+      
+
+      <section id="charts" class="section" aria-label="Charts">
+        <div class="section-hd">
+          <h2>Visuals</h2>
+          <div class="right">
+            <span class="kbd">Chart.js</span>
+            <span class="kbd">dark editorial</span>
+            <span class="kbd">responsive</span>
+          </div>
+        </div>
+
+        <div class="grid">
+          <article class="panel" aria-label="Entity distribution">
+            <header class="panel-hd">
+              <div>
+                <p class="panel-title">Entity Distribution</p>
+                <p class="panel-sub">Top entities by frequency</p>
+              </div>
+              <div class="pill" aria-hidden="true">bar</div>
+            </header>
+            <div class="panel-bd">
+              <div class="chart-wrap" role="img" aria-label="Bar chart showing entity frequency">
+                <canvas id="chartEntities"></canvas>
+              </div>
+              <noscript>
+                <p class="muted small">Charts require JavaScript. Enable JS to see entity distribution.</p>
+              </noscript>
+            </div>
+          </article>
+
+          <article class="panel" aria-label="Article timeline">
+            <header class="panel-hd">
+              <div>
+                <p class="panel-title">Article Timeline</p>
+                <p class="panel-sub">Daily volume inferred from article dates</p>
+              </div>
+              <div class="pill" aria-hidden="true">line</div>
+            </header>
+            <div class="panel-bd">
+              <div class="chart-wrap tall" role="img" aria-label="Line chart showing article volume over time">
+                <canvas id="chartTimeline"></canvas>
+              </div>
+              <noscript>
+                <p class="muted small">Charts require JavaScript. Enable JS to see the timeline.</p>
+              </noscript>
+            </div>
+          </article>
+        </div>
+
+        <div class="grid" style="margin-top:14px">
+          <article class="panel" aria-label="Source distribution">
+            <header class="panel-hd">
+              <div>
+                <p class="panel-title">Source Distribution</p>
+                <p class="panel-sub">Share of articles by source</p>
+              </div>
+              <div class="pill" aria-hidden="true">pie</div>
+            </header>
+            <div class="panel-bd">
+              <div class="chart-wrap" role="img" aria-label="Pie chart showing article share by source">
+                <canvas id="chartSources"></canvas>
+              </div>
+              <noscript>
+                <p class="muted small">Charts require JavaScript. Enable JS to see source breakdown.</p>
+              </noscript>
+            </div>
+          </article>
+
+          <article class="panel" aria-label="Notes">
+            <header class="panel-hd">
+              <div>
+                <p class="panel-title">Reading Notes</p>
+                <p class="panel-sub">Fast scan guidance</p>
+              </div>
+              <div class="pill" aria-hidden="true">tips</div>
+            </header>
+            <div class="panel-bd">
+              <p class="muted" style="margin:0; line-height:1.6; font-size:13px">
+                Use the entity chart to spot concentration, the timeline to detect bursts, and the source mix to
+                gauge coverage bias. The article list keeps metadata compact for quick triage.
+              </p>
+              <div style="margin-top:12px; display:flex; flex-wrap:wrap; gap:8px">
+                <span class="chip brand"><strong>Teal</strong> momentum</span>
+                <span class="chip"><strong>Amber</strong> signal</span>
+                <span class="chip"><strong>Mono</strong> data</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="entities" class="section" aria-label="Entity table">
+        <div class="section-hd">
+          <h2>Entities</h2>
+          <div class="right">
+            <span class="kbd">top 12 shown in chart</span>
+            <span class="kbd">full list in data</span>
+          </div>
+        </div>
+
+        <article class="panel">
+          <header class="panel-hd">
+            <div>
+              <p class="panel-title">Entity Counts</p>
+              <p class="panel-sub">Rendered as a compact list for accessibility</p>
+            </div>
+            <div class="pill" aria-hidden="true">list</div>
+          </header>
+          <div class="panel-bd">
+            
+              <div class="articles" aria-label="Entity count list">
+                
+                <div class="card" role="group" aria-label="Entity Healthcare has count 4">
+                  <div class="left">
+                    <p class="title"><span class="mono">Healthcare</span></p>
+                    <div class="row">
+                      <span class="chip brand"><strong>count</strong> 4</span>
+                    </div>
+                  </div>
+                  <div class="actions">
+                    <span class="btn" aria-disabled="true" title="Entity details not available in lightweight template">Details</span>
+                  </div>
+                </div>
+                
+              </div>
+            
+          </div>
+        </article>
+      </section>
+
+      <section id="articles" class="section" aria-label="Articles">
+        <div class="section-hd">
+          <h2>Articles</h2>
+          <div class="right">
+            <span class="kbd">cards</span>
+            <span class="kbd">source + date</span>
+            <span class="kbd">fast scan</span>
+          </div>
+        </div>
+
+        <article class="panel">
+          <header class="panel-hd">
+            <div>
+              <p class="panel-title">Reading List</p>
+              <p class="panel-sub">Click through to the original source</p>
+            </div>
+            <div class="pill" aria-hidden="true">76</div>
+          </header>
+          <div class="panel-bd">
+            
+            <div class="articles" aria-label="Article list">
+              
+              <div class="card" role="article" aria-label="Article: TerraPower gets OK to start construction of its first nuclear plant">
+                <div class="left">
+                  <p class="title">
+                    <a href="https://arstechnica.com/science/2026/03/terrapower-gets-ok-to-start-construction-of-its-first-nuclear-plant/" target="_blank" rel="noopener noreferrer">TerraPower gets OK to start construction of its first nuclear plant</a>
+                  </p>
+
+                  
+                  <p class="desc">Plant won&#39;t be done until 2030 at the earliest, and it still needs an operating license.</p>
+                  
+
+                  <div class="row" aria-label="Article metadata">
+                    <span class="chip"><strong>source</strong> Ars Technica</span>
+                    
+                    <span class="chip"><strong>date</strong> <span class="mono">2026-03-04</span></span>
+                    
+                    
+                  </div>
+                </div>
+
+                <div class="actions">
+                  <a class="btn primary" href="https://arstechnica.com/science/2026/03/terrapower-gets-ok-to-start-construction-of-its-first-nuclear-plant/" target="_blank" rel="noopener noreferrer" aria-label="Open article">Open</a>
+                </div>
+              </div>
+              
+              <div class="card" role="article" aria-label="Article: Anthropic CEO Dario Amodei calls OpenAI’s messaging around military deal ‘straight up lies,’ report says">
+                <div class="left">
+                  <p class="title">
+                    <a href="https://techcrunch.com/2026/03/04/anthropic-ceo-dario-amodei-calls-openais-messaging-around-military-deal-straight-up-lies-report-says/" target="_blank" rel="noopener noreferrer">Anthropic CEO Dario Amodei calls OpenAI’s messaging around military deal ‘straight up lies,’ report says</a>
+                  </p>
+
+                  
+                  <p class="desc">Anthropic gave up its contract with the Pentagon over AI safety disagreements -- then, OpenAI swooped in.</p>
+                  
+
+                  <div class="row" aria-label="Article metadata">
+                    <span class="chip"><strong>source</strong> TechCrunch</span>
+                    
+                    <span class="chip"><strong>date</strong> <span class="mono">2026-03-04</span></span>
+                    
+                    
+                  </div>
+                </div>
+
+                <div class="actions">
+                  <a class="btn primary" href="https://techcrunch.com/2026/03/04/anthropic-ceo-dario-amodei-calls-openais-messaging-around-military-deal-straight-up-lies-report-says/" target="_blank" rel="noopener noreferrer" aria-label="Open article">Open</a>
+                </div>
+              </div>
+              
+              <div class="card" role="article" aria-label="Article: Iran War prompts U.S. hospitals to prep for potential DDoS attacks">
+                <div class="left">
+                  <p class="title">
+                    <a href="https://www.healthcareitnews.com/news/iran-war-prompts-us-hospitals-prep-potential-ddos-attacks" target="_blank" rel="noopener noreferrer">Iran War prompts U.S. hospitals to prep for potential DDoS attacks</a>
+                  </p>
+
+                  
+                  <p class="desc">&lt;p&gt;Hospitals, health systems and other healthcare organizations nationwide face real risks in the form of retaliation for U.S. military strikes on Iran, according to the Health Information Sharing and Analysis Center, wh...</p>
+                  
+
+                  <div class="row" aria-label="Article metadata">
+                    <span class="chip"><strong>source</strong> Healthcare IT News</span>
+                    
+                    <span class="chip"><strong>date</strong> <span class="mono">2026-03-04</span></span>
+                    
+                    
+                    <span class="chip brand"><strong>entities</strong> 1</span>
+                    
+                  </div>
+                </div>
+
+                <div class="actions">
+                  <a class="btn primary" href="https://www.healthcareitnews.com/news/iran-war-prompts-us-hospitals-prep-potential-ddos-attacks" target="_blank" rel="noopener noreferrer" aria-label="Open article">Open</a>
+                </div>
+              </div>
+              
+              <div class="card" role="article" aria-label="Article: Best in KLAS 2026: Executive Insights for Strategic Healthcare Technology Investment">
+                <div class="left">
+                  <p class="title">
+                    <a href="https://www.healthcareitnews.com/resource/best-klas-2026-executive-insights-strategic-healthcare-technology-investment" target="_blank" rel="noopener noreferrer">Best in KLAS 2026: Executive Insights for Strategic Healthcare Technology Investment</a>
+                  </p>
+
+                  
+
+                  <div class="row" aria-label="Article metadata">
+                    <span class="chip"><strong>source</strong> Healthcare IT News</span>
+                    
+                    <span class="chip"><strong>date</strong> <span class="mono">2026-03-04</span></span>
+                    
+                    
+                  </div>
+                </div>
+
+                <div class="actions">
+                  <a class="btn primary" href="https://www.healthcareitnews.com/resource/best-klas-2026-executive-insights-strategic-healthcare-technology-investment" target="_blank" rel="noopener noreferrer" aria-label="Open article">Open</a>
+                </div>
+              </div>
+              
+              <div class="card" role="article" aria-label="Article: Space Command chief throws cold water on the question of UAPs in space">
+                <div class="left">
+                  <p class="title">
+                    <a href="https://arstechnica.com/space/2026/03/space-command-chief-throws-cold-water-on-the-question-of-uaps-in-space/" target="_blank" rel="noopener noreferrer">Space Command chief throws cold water on the question of UAPs in space</a>
+                  </p>
+
+                  
+                  <p class="desc">&#34;I am not aware of anything that is extraterrestrial, other than comets and things like that.&#34;</p>
+                  
+
+                  <div class="row" aria-label="Article metadata">
+                    <span class="chip"><strong>source</strong> Ars Technica</span>
+                    
+                    <span class="chip"><strong>date</strong> <span class="mono">2026-03-04</span></span>
+                    
+                    
+                  </div>
+                </div>
+
+                <div class="actions">
+                  <a class="btn primary" href="https://arstechnica.com/space/2026/03/space-command-chief-throws-cold-water-on-the-question-of-uaps-in-space/" target="_blank" rel="noopener noreferrer" aria-label="Open article">Open</a>
+                </div>
+              </div>
+              
+              <div class="card" role="article" aria-label="Article: Scale ambient AI with strategic partnerships">
+                <div class="left">
+                  <p class="title">
+                    <a href="https://www.healthcareitnews.com/resource/scale-ambient-ai-strategic-partnerships" target="_blank" rel="noopener noreferrer">Scale ambient AI with strategic partnerships</a>
+                  </p>
+
+                  
+
+                  <div class="row" aria-label="Article metadata">
+                    <span class="chip"><strong>source</strong> Healthcare IT News</span>
+                    
+                    <span class="chip"><strong>date</strong> <span class="mono">2026-03-04</span></span>
+                    
+                    
+                  </div>
+                </div>
+
+                <div class="actions">
+                  <a class="btn primary" href="https://www.healthcareitnews.com/resource/scale-ambient-ai-strategic-partnerships" target="_blank" rel="noopener noreferrer" aria-label="Open article">Open</a>
+                </div>
+              </div>
+              
+              <div class="card" role="article" aria-label="Article: Report: 5 AI Agent Trends to Watch in Healthcare &amp; Life Sciences">
+                <div class="left">
+                  <p class="title">
+                    <a href="https://www.healthcareitnews.com/resource/report-5-ai-agent-trends-watch-healthcare-life-sciences" target="_blank" rel="noopener noreferrer">Report: 5 AI Agent Trends to Watch in Healthcare &amp; Life Sciences</a>
+                  </p>
+
+                  
+
+                  <div class="row" aria-label="Article metadata">
+                    <span class="chip"><strong>source</strong> Healthcare IT News</span>
+                    
+                    <span class="chip"><strong>date</strong> <span class="mono">2026-03-04</span></span>
+                    
+                    
+                  </div>
+                </div>
+
+                <div class="actions">
+                  <a class="btn primary" href="https://www.healthcareitnews.com/resource/report-5-ai-agent-trends-watch-healthcare-life-sciences" target="_blank" rel="noopener noreferrer" aria-label="Open article">Open</a>
+                </div>
+              </div>
+              
+              <div class="card" role="article" aria-label="Article: Large genome model: Open source AI trained on trillions of bases">
+                <div class="left">
+                  <p class="title">
+                    <a href="https://arstechnica.com/science/2026/03/large-genome-model-open-source-ai-trained-on-trillions-of-bases/" target="_blank" rel="noopener noreferrer">Large genome model: Open source AI trained on trillions of bases</a>
+                  </p>
+
+                  
+                  <p class="desc">System can identify genes, regulatory sequences, splice sites, and more.</p>
+                  
+
+                  <div class="row" aria-label="Article metadata">
+                    <span class="chip"><strong>source</strong> Ars Technica</span>
+                    
+                    <span class="chip"><strong>date</strong> <span class="mono">2026-03-04</span></span>
+                    
+                    
+                  </div>
+                </div>
+
+                <div class="actions">
+                  <a class="btn primary" href="https://arstechnica.com/science/2026/03/large-genome-model-open-source-ai-trained-on-trillions-of-bases/" target="_blank" rel="noopener noreferrer" aria-label="Open article">Open</a>
+                </div>
+              </div>
+              
+              <div class="card" role="article" aria-label="Article: Apple Music to add Transparency Tags to distinguish AI music, says report">
+                <div class="left">
+                  <p class="title">
+                    <a href="https://techcrunch.com/2026/03/04/apple-music-to-add-transparency-tags-to-distinguish-ai-music-says-report/" target="_blank" rel="noopener noreferrer">Apple Music to add Transparency Tags to distinguish AI music, says report</a>
+                  </p>
+
+                  
+                  <p class="desc">The label or distributor has to opt in to tagging their music as AI, so it&#39;s unclear how effective this intervention will be.</p>
+                  
+
+                  <div class="row" aria-label="Article metadata">
+                    <span class="chip"><strong>source</strong> TechCrunch</span>
+                    
+                    <span class="chip"><strong>date</strong> <span class="mono">2026-03-04</span></span>
+                    
+                    
+                  </div>
+                </div>
+
+                <div class="actions">
+                  <a class="btn primary" href="https://techcrunch.com/2026/03/04/apple-music-to-add-transparency-tags-to-distinguish-ai-music-says-report/" target="_blank" rel="noopener noreferrer" aria-label="Open article">Open</a>
+                </div>
+              </div>
+              
+              <div class="card" role="article" aria-label="Article: Google and Epic announce settlement to end app store antitrust case">
+                <div class="left">
+                  <p class="title">
+                    <a href="https://arstechnica.com/gadgets/2026/03/google-and-epic-look-to-bury-the-hatchet-with-new-app-store-settlement/" target="_blank" rel="noopener noreferrer">Google and Epic announce settlement to end app store antitrust case</a>
+                  </p>
+
+                  
+                  <p class="desc">The era of the 30 percent app store cut has ended.</p>
+                  
+
+                  <div class="row" aria-label="Article metadata">
+                    <span class="chip"><strong>source</strong> Ars Technica</span>
+                    
+                    <span class="chip"><strong>date</strong> <span class="mono">2026-03-04</span></span>
+                    
+                    
+                  </div>
+                </div>
+
+                <div class="actions">
+                  <a class="btn primary" href="https://arstechnica.com/gadgets/2026/03/google-and-epic-look-to-bury-the-hatchet-with-new-app-store-settlement/" target="_blank" rel="noopener noreferrer" aria-label="Open article">Open</a>
+                </div>
+              </div>
+              
+              <div class="card" role="article" aria-label="Article: Lawsuit: Google Gemini sent man on violent missions, set suicide &#34;countdown&#34;">
+                <div class="left">
+                  <p class="title">
+                    <a href="https://arstechnica.com/tech-policy/2026/03/lawsuit-google-gemini-sent-man-on-violent-missions-set-suicide-countdown/" target="_blank" rel="noopener noreferrer">Lawsuit: Google Gemini sent man on violent missions, set suicide &#34;countdown&#34;</a>
+                  </p>
+
+                  
+                  <p class="desc">Gemini allegedly called man its &#34;husband,&#34; said they could be together in death.</p>
+                  
+
+                  <div class="row" aria-label="Article metadata">
+                    <span class="chip"><strong>source</strong> Ars Technica</span>
+                    
+                    <span class="chip"><strong>date</strong> <span class="mono">2026-03-04</span></span>
+                    
+                    
+                  </div>
+                </div>
+
+                <div class="actions">
+                  <a class="btn primary" href="https://arstechnica.com/tech-policy/2026/03/lawsuit-google-gemini-sent-man-on-violent-missions-set-suicide-countdown/" target="_blank" rel="noopener noreferrer" aria-label="Open article">Open</a>
+                </div>
+              </div>
+              
+              <div class="card" role="article" aria-label="Article: Google settles with Epic Games, drops its Play Store commissions to 20%">
+                <div class="left">
+                  <p class="title">
+                    <a href="https://techcrunch.com/2026/03/04/google-settles-with-epic-games-drops-its-play-store-commissions-to-20/" target="_blank" rel="noopener noreferrer">Google settles with Epic Games, drops its Play Store commissions to 20%</a>
+                  </p>
+
+                  
+                  <p class="desc">Google has dropped its commission, charging a 20% service fee and an optional 5% to use its billing services. It will also offer a new process for third-party app stores.</p>
+                  
+
+                  <div class="row" aria-label="Article metadata">
+                    <span class="chip"><strong>source</strong> TechCrunch</span>
+                    
+                    <span class="chip"><strong>date</strong> <span class="mono">2026-03-04</span></span>
+                    
+                    
+                  </div>
+                </div>
+
+                <div class="actions">
+                  <a class="btn primary" href="https://techcrunch.com/2026/03/04/google-settles-with-epic-games-drops-its-play-store-commissions-to-20/" target="_blank" rel="noopener noreferrer" aria-label="Open article">Open</a>
+                </div>
+              </div>
+              
+              <div class="card" role="article" aria-label="Article: His house burned down. He used the insurance money to build PopSockets.">
+                <div class="left">
+                  <p class="title">
+                    <a href="https://techcrunch.com/video/his-house-burned-down-he-used-the-insurance-money-to-build-popsockets/" target="_blank" rel="noopener noreferrer">His house burned down. He used the insurance money to build PopSockets.</a>
+                  </p>
+
+                  
+                  <p class="desc">Does&amp;#160;a&amp;#160;consumer hardware&amp;#160;company need to get on the&amp;#160;VC treadmill to&amp;#160;succeed?&amp;#160;Eleven years and 290 million products sold across 115 countries later,&amp;#160;PopSockets&amp;#160;has proven that&amp;#160;...</p>
+                  
+
+                  <div class="row" aria-label="Article metadata">
+                    <span class="chip"><strong>source</strong> TechCrunch</span>
+                    
+                    <span class="chip"><strong>date</strong> <span class="mono">2026-03-04</span></span>
+                    
+                    
+                  </div>
+                </div>
+
+                <div class="actions">
+                  <a class="btn primary" href="https://techcrunch.com/video/his-house-burned-down-he-used-the-insurance-money-to-build-popsockets/" target="_blank" rel="noopener noreferrer" aria-label="Open article">Open</a>
+                </div>
+              </div>
+              
+              <div class="card" role="article" aria-label="Article: After a rocky six years, Sony cancels future single-player PC game releases">
+                <div class="left">
+                  <p class="title">
+                    <a href="https://arstechnica.com/gaming/2026/03/sony-wont-bring-any-more-single-player-playstation-games-to-pc/" target="_blank" rel="noopener noreferrer">After a rocky six years, Sony cancels future single-player PC game releases</a>
+                  </p>
+
+                  
+                  <p class="desc">Titles like &lt;em&gt;Ghost of Yotei&lt;/em&gt; will remain exclusive to Sony&#39;s hardware.</p>
+                  
+
+                  <div class="row" aria-label="Article metadata">
+                    <span class="chip"><strong>source</strong> Ars Technica</span>
+                    
+                    <span class="chip"><strong>date</strong> <span class="mono">2026-03-04</span></span>
+                    
+                    
+                  </div>
+                </div>
+
+                <div class="actions">
+                  <a class="btn primary" href="https://arstechnica.com/gaming/2026/03/sony-wont-bring-any-more-single-player-playstation-games-to-pc/" target="_blank" rel="noopener noreferrer" aria-label="Open article">Open</a>
+                </div>
+              </div>
+              
+              <div class="card" role="article" aria-label="Article: US and EU police shut down LeakBase, a site accused of sharing stolen passwords and hacking tools">
+                <div class="left">
+                  <p class="title">
+                    <a href="https://techcrunch.com/2026/03/04/u-s-and-eu-police-shut-down-leakbase-a-site-accused-of-sharing-stolen-passwords-and-hacking-tools/" target="_blank" rel="noopener noreferrer">US and EU police shut down LeakBase, a site accused of sharing stolen passwords and hacking tools</a>
+                  </p>
+
+                  
+                  <p class="desc">Authorities say LeakBase was &#34;one of the world’s largest online forums for cybercriminals,&#34; and maintained an archive of hacked databases containing hundreds of millions of passwords.</p>
+                  
+
+                  <div class="row" aria-label="Article metadata">
+                    <span class="chip"><strong>source</strong> TechCrunch</span>
+                    
+                    <span class="chip"><strong>date</strong> <span class="mono">2026-03-04</span></span>
+                    
+                    
+                  </div>
+                </div>
+
+                <div class="actions">
+                  <a class="btn primary" href="https://techcrunch.com/2026/03/04/u-s-and-eu-police-shut-down-leakbase-a-site-accused-of-sharing-stolen-passwords-and-hacking-tools/" target="_blank" rel="noopener noreferrer" aria-label="Open article">Open</a>
+                </div>
+              </div>
+              
+              <div class="card" role="article" aria-label="Article: MacBook Neo, iPhone 17e, and everything else Apple announced this week">
+                <div class="left">
+                  <p class="title">
+                    <a href="https://techcrunch.com/2026/03/04/everything-apple-announced-macbook-neo-iphone-17e-ipad-air/" target="_blank" rel="noopener noreferrer">MacBook Neo, iPhone 17e, and everything else Apple announced this week</a>
+                  </p>
+
+                  
+                  <p class="desc">From a new iPhone to a budget-friendly MacBook, Apple announced a series of new products this week.</p>
+                  
+
+                  <div class="row" aria-label="Article metadata">
+                    <span class="chip"><strong>source</strong> TechCrunch</span>
+                    
+                    <span class="chip"><strong>date</strong> <span class="mono">2026-03-04</span></span>
+                    
+                    
+                  </div>
+                </div>
+
+                <div class="actions">
+                  <a class="btn primary" href="https://techcrunch.com/2026/03/04/everything-apple-announced-macbook-neo-iphone-17e-ipad-air/" target="_blank" rel="noopener noreferrer" aria-label="Open article">Open</a>
+                </div>
+              </div>
+              
+              <div class="card" role="article" aria-label="Article: Re-creating the complex cuisine of prehistoric Europeans">
+                <div class="left">
+                  <p class="title">
+                    <a href="https://arstechnica.com/science/2026/03/recreating-the-complex-cuisine-of-prehistoric-europeans/" target="_blank" rel="noopener noreferrer">Re-creating the complex cuisine of prehistoric Europeans</a>
+                  </p>
+
+                  
+                  <p class="desc">SEM analysis of pottery residues showed people combined fish with a wide variety of plants when cooking.</p>
+                  
+
+                  <div class="row" aria-label="Article metadata">
+                    <span class="chip"><strong>source</strong> Ars Technica</span>
+                    
+                    <span class="chip"><strong>date</strong> <span class="mono">2026-03-04</span></span>
+                    
+                    
+                  </div>
+                </div>
+
+                <div class="actions">
+                  <a class="btn primary" href="https://arstechnica.com/science/2026/03/recreating-the-complex-cuisine-of-prehistoric-europeans/" target="_blank" rel="noopener noreferrer" aria-label="Open article">Open</a>
+                </div>
+              </div>
+              
+              <div class="card" role="article" aria-label="Article: RCM Roadmap: What are the must-watch metrics for 2026?">
+                <div class="left">
+                  <p class="title">
+                    <a href="https://www.healthcareitnews.com/resource/rcm-roadmap-what-are-must-watch-metrics-2026" target="_blank" rel="noopener noreferrer">RCM Roadmap: What are the must-watch metrics for 2026?</a>
+                  </p>
+
+                  
+
+                  <div class="row" aria-label="Article metadata">
+                    <span class="chip"><strong>source</strong> Healthcare IT News</span>
+                    
+                    <span class="chip"><strong>date</strong> <span class="mono">2026-03-04</span></span>
+                    
+                    
+                  </div>
+                </div>
+
+                <div class="actions">
+                  <a class="btn primary" href="https://www.healthcareitnews.com/resource/rcm-roadmap-what-are-must-watch-metrics-2026" target="_blank" rel="noopener noreferrer" aria-label="Open article">Open</a>
+                </div>
+              </div>
+              
+              <div class="card" role="article" aria-label="Article: Google Search rolls out Gemini’s Canvas in AI Mode to all US users">
+                <div class="left">
+                  <p class="title">
+                    <a href="https://techcrunch.com/2026/03/04/https-techcrunch-com-2026-03-04-google-search-rolls-out-geminis-canvas-in-ai-mode-to-all-us-users/" target="_blank" rel="noopener noreferrer">Google Search rolls out Gemini’s Canvas in AI Mode to all US users</a>
+                  </p>
+
+                  
+                  <p class="desc">Canvas in AI Mode is available to U.S. users in English for creating plans, projects, apps, and more.</p>
+                  
+
+                  <div class="row" aria-label="Article metadata">
+                    <span class="chip"><strong>source</strong> TechCrunch</span>
+                    
+                    <span class="chip"><strong>date</strong> <span class="mono">2026-03-04</span></span>
+                    
+                    
+                  </div>
+                </div>
+
+                <div class="actions">
+                  <a class="btn primary" href="https://techcrunch.com/2026/03/04/https-techcrunch-com-2026-03-04-google-search-rolls-out-geminis-canvas-in-ai-mode-to-all-us-users/" target="_blank" rel="noopener noreferrer" aria-label="Open article">Open</a>
+                </div>
+              </div>
+              
+              <div class="card" role="article" aria-label="Article: The US Senate empowers NASA to fully engage in lunar space race">
+                <div class="left">
+                  <p class="title">
+                    <a href="https://arstechnica.com/space/2026/03/the-us-senate-empowers-nasa-to-fully-engage-in-lunar-space-race/" target="_blank" rel="noopener noreferrer">The US Senate empowers NASA to fully engage in lunar space race</a>
+                  </p>
+
+                  
+                  <p class="desc">&#34;Our bill authorizes critical funding for, and gives strategic direction to, the agency.&#34;</p>
+                  
+
+                  <div class="row" aria-label="Article metadata">
+                    <span class="chip"><strong>source</strong> Ars Technica</span>
+                    
+                    <span class="chip"><strong>date</strong> <span class="mono">2026-03-04</span></span>
+                    
+                    
+                  </div>
+                </div>
+
+                <div class="actions">
+                  <a class="btn primary" href="https://arstechnica.com/space/2026/03/the-us-senate-empowers-nasa-to-fully-engage-in-lunar-space-race/" target="_blank" rel="noopener noreferrer" aria-label="Open article">Open</a>
+                </div>
+              </div>
+              
+              <div class="card" role="article" aria-label="Article: MacBook Neo hands-on: Apple build quality at a substantially lower price">
+                <div class="left">
+                  <p class="title">
+                    <a href="https://arstechnica.com/gadgets/2026/03/macbook-neo-hands-on-apple-build-quality-at-a-substantially-lower-price/" target="_blank" rel="noopener noreferrer">MacBook Neo hands-on: Apple build quality at a substantially lower price</a>
+                  </p>
+
+                  
+                  <p class="desc">The Neo won&#39;t be for everyone, but Apple has managed to preserve a premium feel.</p>
+                  
+
+                  <div class="row" aria-label="Article metadata">
+                    <span class="chip"><strong>source</strong> Ars Technica</span>
+                    
+                    <span class="chip"><strong>date</strong> <span class="mono">2026-03-04</span></span>
+                    
+                    
+                  </div>
+                </div>
+
+                <div class="actions">
+                  <a class="btn primary" href="https://arstechnica.com/gadgets/2026/03/macbook-neo-hands-on-apple-build-quality-at-a-substantially-lower-price/" target="_blank" rel="noopener noreferrer" aria-label="Open article">Open</a>
+                </div>
+              </div>
+              
+              <div class="card" role="article" aria-label="Article: Decagon completes first tender offer at $4.5B valuation">
+                <div class="left">
+                  <p class="title">
+                    <a href="https://techcrunch.com/2026/03/04/decagon-completes-first-tender-offer-at-4-5b-valuation/" target="_blank" rel="noopener noreferrer">Decagon completes first tender offer at $4.5B valuation</a>
+                  </p>
+
+                  
+                  <p class="desc">The AI-powered customer support startup is the latest example of a fast-growing, young company that&#39;s providing employee liquidity.</p>
+                  
+
+                  <div class="row" aria-label="Article metadata">
+                    <span class="chip"><strong>source</strong> TechCrunch</span>
+                    
+                    <span class="chip"><strong>date</strong> <span class="mono">2026-03-04</span></span>
+                    
+                    
+                  </div>
+                </div>
+
+                <div class="actions">
+                  <a class="btn primary" href="https://techcrunch.com/2026/03/04/decagon-completes-first-tender-offer-at-4-5b-valuation/" target="_blank" rel="noopener noreferrer" aria-label="Open article">Open</a>
+                </div>
+              </div>
+              
+              <div class="card" role="article" aria-label="Article: The US military is still using Claude — but defense-tech clients are fleeing">
+                <div class="left">
+                  <p class="title">
+                    <a href="https://techcrunch.com/2026/03/04/the-us-military-is-still-using-claude-but-defense-tech-clients-are-fleeing/" target="_blank" rel="noopener noreferrer">The US military is still using Claude — but defense-tech clients are fleeing</a>
+                  </p>
+
+                  
+                  <p class="desc">As the U.S. continues its aerial attack on Iran, Anthropic models are being used for many targeting decisions.</p>
+                  
+
+                  <div class="row" aria-label="Article metadata">
+                    <span class="chip"><strong>source</strong> TechCrunch</span>
+                    
+                    <span class="chip"><strong>date</strong> <span class="mono">2026-03-04</span></span>
+                    
+                    
+                  </div>
+                </div>
+
+                <div class="actions">
+                  <a class="btn primary" href="https://techcrunch.com/2026/03/04/the-us-military-is-still-using-claude-but-defense-tech-clients-are-fleeing/" target="_blank" rel="noopener noreferrer" aria-label="Open article">Open</a>
+                </div>
+              </div>
+              
+              <div class="card" role="article" aria-label="Article: Google Pixel 10a review: The sidegrade">
+                <div class="left">
+                  <p class="title">
+                    <a href="https://arstechnica.com/gadgets/2026/03/the-sidegrade/" target="_blank" rel="noopener noreferrer">Google Pixel 10a review: The sidegrade</a>
+                  </p>
+
+                  
+                  <p class="desc">Meet the new boss, same as the old boss.</p>
+                  
+
+                  <div class="row" aria-label="Article metadata">
+                    <span class="chip"><strong>source</strong> Ars Technica</span>
+                    
+                    <span class="chip"><strong>date</strong> <span class="mono">2026-03-04</span></span>
+                    
+                    
+                  </div>
+                </div>
+
+                <div class="actions">
+                  <a class="btn primary" href="https://arstechnica.com/gadgets/2026/03/the-sidegrade/" target="_blank" rel="noopener noreferrer" aria-label="Open article">Open</a>
+                </div>
+              </div>
+              
+              <div class="card" role="article" aria-label="Article: Amid fast-moving Medicaid changes, CMS vet offers providers and states advice">
+                <div class="left">
+                  <p class="title">
+                    <a href="https://www.healthcareitnews.com/news/amid-fast-moving-medicaid-changes-cms-vet-offers-providers-and-states-advice" target="_blank" rel="noopener noreferrer">Amid fast-moving Medicaid changes, CMS vet offers providers and states advice</a>
+                  </p>
+
+                  
+                  <p class="desc">&lt;p dir=&#34;ltr&#34;&gt;Hospitals and health systems are operating in a Medicaid environment defined by pressure, complexity and responsibility. Reimbursement remains constrained, administrative requirements continue to grow, and p...</p>
+                  
+
+                  <div class="row" aria-label="Article metadata">
+                    <span class="chip"><strong>source</strong> Healthcare IT News</span>
+                    
+                    <span class="chip"><strong>date</strong> <span class="mono">2026-03-04</span></span>
+                    
+                    
+                    <span class="chip brand"><strong>entities</strong> 1</span>
+                    
+                  </div>
+                </div>
+
+                <div class="actions">
+                  <a class="btn primary" href="https://www.healthcareitnews.com/news/amid-fast-moving-medicaid-changes-cms-vet-offers-providers-and-states-advice" target="_blank" rel="noopener noreferrer" aria-label="Open article">Open</a>
+                </div>
+              </div>
+              
+              <div class="card" role="article" aria-label="Article: X taps William Shatner to give out invites to its payments service, X Money">
+                <div class="left">
+                  <p class="title">
+                    <a href="https://techcrunch.com/2026/03/04/x-taps-william-shatner-to-give-out-invites-to-its-payments-service-x-money/" target="_blank" rel="noopener noreferrer">X taps William Shatner to give out invites to its payments service, X Money</a>
+                  </p>
+
+                  
+                  <p class="desc">42 X users donated to William Shatner&#39;s charity in exchange for an early invite to X Money beta.</p>
+                  
+
+                  <div class="row" aria-label="Article metadata">
+                    <span class="chip"><strong>source</strong> TechCrunch</span>
+                    
+                    <span class="chip"><strong>date</strong> <span class="mono">2026-03-04</span></span>
+                    
+                    
+                  </div>
+                </div>
+
+                <div class="actions">
+                  <a class="btn primary" href="https://techcrunch.com/2026/03/04/x-taps-william-shatner-to-give-out-invites-to-its-payments-service-x-money/" target="_blank" rel="noopener noreferrer" aria-label="Open article">Open</a>
+                </div>
+              </div>
+              
+              <div class="card" role="article" aria-label="Article: Host a Side Event during TechCrunch Founder Summit Week in Boston">
+                <div class="left">
+                  <p class="title">
+                    <a href="https://techcrunch.com/2026/03/04/host-a-side-event-during-techcrunch-founder-summit-week-in-boston/" target="_blank" rel="noopener noreferrer">Host a Side Event during TechCrunch Founder Summit Week in Boston</a>
+                  </p>
+
+                  
+                  <p class="desc">Want to tap into the energy of 1,100+ startup founders, investors, and tech leaders descending on Boston for the Founder Summit 2026 on June 9? Host your own Side Event during “Founder Summit Week,” happening June 4-10!</p>
+                  
+
+                  <div class="row" aria-label="Article metadata">
+                    <span class="chip"><strong>source</strong> TechCrunch</span>
+                    
+                    <span class="chip"><strong>date</strong> <span class="mono">2026-03-04</span></span>
+                    
+                    
+                  </div>
+                </div>
+
+                <div class="actions">
+                  <a class="btn primary" href="https://techcrunch.com/2026/03/04/host-a-side-event-during-techcrunch-founder-summit-week-in-boston/" target="_blank" rel="noopener noreferrer" aria-label="Open article">Open</a>
+                </div>
+              </div>
+              
+              <div class="card" role="article" aria-label="Article: TikTok won’t add end-to-end encryption to direct messages, report says">
+                <div class="left">
+                  <p class="title">
+                    <a href="https://techcrunch.com/2026/03/04/tiktok-wont-add-end-to-end-encryption-to-direct-messages-report-says/" target="_blank" rel="noopener noreferrer">TikTok won’t add end-to-end encryption to direct messages, report says</a>
+                  </p>
+
+                  
+                  <p class="desc">The social media giant says that end-to-end encryption would make users less safe.</p>
+                  
+
+                  <div class="row" aria-label="Article metadata">
+                    <span class="chip"><strong>source</strong> TechCrunch</span>
+                    
+                    <span class="chip"><strong>date</strong> <span class="mono">2026-03-04</span></span>
+                    
+                    
+                  </div>
+                </div>
+
+                <div class="actions">
+                  <a class="btn primary" href="https://techcrunch.com/2026/03/04/tiktok-wont-add-end-to-end-encryption-to-direct-messages-report-says/" target="_blank" rel="noopener noreferrer" aria-label="Open article">Open</a>
+                </div>
+              </div>
+              
+              <div class="card" role="article" aria-label="Article: Father sues Google, claiming Gemini chatbot drove son into fatal delusion">
+                <div class="left">
+                  <p class="title">
+                    <a href="https://techcrunch.com/2026/03/04/father-sues-google-claiming-gemini-chatbot-drove-son-into-fatal-delusion/" target="_blank" rel="noopener noreferrer">Father sues Google, claiming Gemini chatbot drove son into fatal delusion</a>
+                  </p>
+
+                  
+                  <p class="desc">A father is suing Google and Alphabet, alleging its Gemini chatbot reinforced his son’s delusional belief it was his AI wife and coached him toward suicide and a planned airport attack.</p>
+                  
+
+                  <div class="row" aria-label="Article metadata">
+                    <span class="chip"><strong>source</strong> TechCrunch</span>
+                    
+                    <span class="chip"><strong>date</strong> <span class="mono">2026-03-04</span></span>
+                    
+                    
+                  </div>
+                </div>
+
+                <div class="actions">
+                  <a class="btn primary" href="https://techcrunch.com/2026/03/04/father-sues-google-claiming-gemini-chatbot-drove-son-into-fatal-delusion/" target="_blank" rel="noopener noreferrer" aria-label="Open article">Open</a>
+                </div>
+              </div>
+              
+              <div class="card" role="article" aria-label="Article: Meet the MacBook Neo, Apple’s colorful answer to the Chromebook, starting at $599">
+                <div class="left">
+                  <p class="title">
+                    <a href="https://techcrunch.com/2026/03/04/meet-the-macbook-neo-apples-colorful-answer-to-the-chromebook-starting-at-599/" target="_blank" rel="noopener noreferrer">Meet the MacBook Neo, Apple’s colorful answer to the Chromebook, starting at $599</a>
+                  </p>
+
+                  
+                  <p class="desc">Apple is offering the MacBook Neo at a more affordable price point by using an A18 Pro chip, which is used in the iPhone 16 Pro.</p>
+                  
+
+                  <div class="row" aria-label="Article metadata">
+                    <span class="chip"><strong>source</strong> TechCrunch</span>
+                    
+                    <span class="chip"><strong>date</strong> <span class="mono">2026-03-04</span></span>
+                    
+                    
+                  </div>
+                </div>
+
+                <div class="actions">
+                  <a class="btn primary" href="https://techcrunch.com/2026/03/04/meet-the-macbook-neo-apples-colorful-answer-to-the-chromebook-starting-at-599/" target="_blank" rel="noopener noreferrer" aria-label="Open article">Open</a>
+                </div>
+              </div>
+              
+              <div class="card" role="article" aria-label="Article: Are consumers doomed to pay more for electricity due to data center buildouts?">
+                <div class="left">
+                  <p class="title">
+                    <a href="https://arstechnica.com/ai/2026/03/are-consumers-doomed-to-pay-more-for-electricity-due-to-data-center-buildouts/" target="_blank" rel="noopener noreferrer">Are consumers doomed to pay more for electricity due to data center buildouts?</a>
+                  </p>
+
+                  
+                  <p class="desc">Data center operators to sign pledge to supply their own power instead of relying on grid.</p>
+                  
+
+                  <div class="row" aria-label="Article metadata">
+                    <span class="chip"><strong>source</strong> Ars Technica</span>
+                    
+                    <span class="chip"><strong>date</strong> <span class="mono">2026-03-04</span></span>
+                    
+                    
+                  </div>
+                </div>
+
+                <div class="actions">
+                  <a class="btn primary" href="https://arstechnica.com/ai/2026/03/are-consumers-doomed-to-pay-more-for-electricity-due-to-data-center-buildouts/" target="_blank" rel="noopener noreferrer" aria-label="Open article">Open</a>
+                </div>
+              </div>
+              
+              <div class="card" role="article" aria-label="Article: The $599 MacBook Neo is Apple&#39;s long-awaited colorful, lower-cost MacBook">
+                <div class="left">
+                  <p class="title">
+                    <a href="https://arstechnica.com/gadgets/2026/03/the-599-macbook-neo-is-apples-long-awaited-colorful-lower-cost-macbook/" target="_blank" rel="noopener noreferrer">The $599 MacBook Neo is Apple&#39;s long-awaited colorful, lower-cost MacBook</a>
+                  </p>
+
+                  
+                  <p class="desc">Cute, colorful laptop takes the place of the old $599 M1 MacBook Air.</p>
+                  
+
+                  <div class="row" aria-label="Article metadata">
+                    <span class="chip"><strong>source</strong> Ars Technica</span>
+                    
+                    <span class="chip"><strong>date</strong> <span class="mono">2026-03-04</span></span>
+                    
+                    
+                  </div>
+                </div>
+
+                <div class="actions">
+                  <a class="btn primary" href="https://arstechnica.com/gadgets/2026/03/the-599-macbook-neo-is-apples-long-awaited-colorful-lower-cost-macbook/" target="_blank" rel="noopener noreferrer" aria-label="Open article">Open</a>
+                </div>
+              </div>
+              
+              <div class="card" role="article" aria-label="Article: One startup’s pitch to provide more reliable AI answers: Crowdsource the chatbots">
+                <div class="left">
+                  <p class="title">
+                    <a href="https://techcrunch.com/2026/03/04/one-startups-pitch-to-provide-more-reliable-ai-answers-crowdsource-the-chatbots/" target="_blank" rel="noopener noreferrer">One startup’s pitch to provide more reliable AI answers: Crowdsource the chatbots</a>
+                  </p>
+
+                  
+                  <p class="desc">CollectivIQ looks to give users more accurate answers to their AI queries by showing them responses that pull information from ChatGPT, Gemini, Claude, Grok — and up to 10 other models — all at the same time.</p>
+                  
+
+                  <div class="row" aria-label="Article metadata">
+                    <span class="chip"><strong>source</strong> TechCrunch</span>
+                    
+                    <span class="chip"><strong>date</strong> <span class="mono">2026-03-04</span></span>
+                    
+                    
+                  </div>
+                </div>
+
+                <div class="actions">
+                  <a class="btn primary" href="https://techcrunch.com/2026/03/04/one-startups-pitch-to-provide-more-reliable-ai-answers-crowdsource-the-chatbots/" target="_blank" rel="noopener noreferrer" aria-label="Open article">Open</a>
+                </div>
+              </div>
+              
+              <div class="card" role="article" aria-label="Article: Dutch Bros&#39; first Los Angeles location has everything but the drive-thru">
+                <div class="left">
+                  <p class="title">
+                    <a href="https://restaurantbusinessonline.com/financing/dutch-bros-first-los-angeles-location-has-everything-drive-thru?utm_source=Dutch%20Bros%27%20first%20Los%20Angeles%20location%20has%20everything%20but%20the%20drive-thru&amp;utm_medium=rb-feed&amp;utm_campaign=RSS-Feeds" target="_blank" rel="noopener noreferrer">Dutch Bros&#39; first Los Angeles location has everything but the drive-thru</a>
+                  </p>
+
+                  
+                  <p class="desc">The beverage chain’s “walk-thru” shop near the University of Southern California campus could demonstrate its ability to work in more urban markets. That could change the chain’s growth potential.</p>
+                  
+
+                  <div class="row" aria-label="Article metadata">
+                    <span class="chip"><strong>source</strong> Restaurant Business</span>
+                    
+                    <span class="chip"><strong>date</strong> <span class="mono">2026-03-04</span></span>
+                    
+                    
+                  </div>
+                </div>
+
+                <div class="actions">
+                  <a class="btn primary" href="https://restaurantbusinessonline.com/financing/dutch-bros-first-los-angeles-location-has-everything-drive-thru?utm_source=Dutch%20Bros%27%20first%20Los%20Angeles%20location%20has%20everything%20but%20the%20drive-thru&amp;utm_medium=rb-feed&amp;utm_campaign=RSS-Feeds" target="_blank" rel="noopener noreferrer" aria-label="Open article">Open</a>
+                </div>
+              </div>
+              
+              <div class="card" role="article" aria-label="Article: How 4 restaurant chains are using AI today">
+                <div class="left">
+                  <p class="title">
+                    <a href="https://restaurantbusinessonline.com/technology/how-4-restaurant-chains-are-using-ai-today?utm_source=How%204%20restaurant%20chains%20are%20using%20AI%20today&amp;utm_medium=rb-feed&amp;utm_campaign=RSS-Feeds" target="_blank" rel="noopener noreferrer">How 4 restaurant chains are using AI today</a>
+                  </p>
+
+                  
+                  <p class="desc">AI is now part of the team at Krispy Kreme, Freddy’s, Taco John’s and Nekter, and the applications are as diverse as the brands themselves.</p>
+                  
+
+                  <div class="row" aria-label="Article metadata">
+                    <span class="chip"><strong>source</strong> Restaurant Business</span>
+                    
+                    <span class="chip"><strong>date</strong> <span class="mono">2026-03-04</span></span>
+                    
+                    
+                  </div>
+                </div>
+
+                <div class="actions">
+                  <a class="btn primary" href="https://restaurantbusinessonline.com/technology/how-4-restaurant-chains-are-using-ai-today?utm_source=How%204%20restaurant%20chains%20are%20using%20AI%20today&amp;utm_medium=rb-feed&amp;utm_campaign=RSS-Feeds" target="_blank" rel="noopener noreferrer" aria-label="Open article">Open</a>
+                </div>
+              </div>
+              
+              <div class="card" role="article" aria-label="Article: Jean-Georges Vongerichten restaurants in New York&#39;s Tin Building have shuttered">
+                <div class="left">
+                  <p class="title">
+                    <a href="https://restaurantbusinessonline.com/operations/jean-georges-vongerichten-restaurants-new-yorks-tin-building-have-shuttered?utm_source=Jean-Georges%20Vongerichten%20restaurants%20in%20New%20York%27s%20Tin%20Building%20have%20shuttered&amp;utm_medium=rb-feed&amp;utm_campaign=RSS-Feeds" target="_blank" rel="noopener noreferrer">Jean-Georges Vongerichten restaurants in New York&#39;s Tin Building have shuttered</a>
+                  </p>
+
+                  
+                  <p class="desc">The $200 million project on the Manhattan waterfront is to be converted into the Balloon Museum, ending an attempt to turn the Seaport into a dining destination.</p>
+                  
+
+                  <div class="row" aria-label="Article metadata">
+                    <span class="chip"><strong>source</strong> Restaurant Business</span>
+                    
+                    <span class="chip"><strong>date</strong> <span class="mono">2026-03-04</span></span>
+                    
+                    
+                  </div>
+                </div>
+
+                <div class="actions">
+                  <a class="btn primary" href="https://restaurantbusinessonline.com/operations/jean-georges-vongerichten-restaurants-new-yorks-tin-building-have-shuttered?utm_source=Jean-Georges%20Vongerichten%20restaurants%20in%20New%20York%27s%20Tin%20Building%20have%20shuttered&amp;utm_medium=rb-feed&amp;utm_campaign=RSS-Feeds" target="_blank" rel="noopener noreferrer" aria-label="Open article">Open</a>
+                </div>
+              </div>
+              
+              <div class="card" role="article" aria-label="Article: The secret behind the success of Dave&#39;s Hot Chicken">
+                <div class="left">
+                  <p class="title">
+                    <a href="https://restaurantbusinessonline.com/financing/secret-behind-success-daves-hot-chicken?utm_source=The%20secret%20behind%20the%20success%20of%20Dave%27s%20Hot%20Chicken&amp;utm_medium=rb-feed&amp;utm_campaign=RSS-Feeds" target="_blank" rel="noopener noreferrer">The secret behind the success of Dave&#39;s Hot Chicken</a>
+                  </p>
+
+                  
+                  <p class="desc">A Deeper Dive: Jim Bitticks, CEO of the fast-casual hot-chicken chain, joins the restaurant finance podcast to talk about his new role and why the brand has been so successful.</p>
+                  
+
+                  <div class="row" aria-label="Article metadata">
+                    <span class="chip"><strong>source</strong> Restaurant Business</span>
+                    
+                    <span class="chip"><strong>date</strong> <span class="mono">2026-03-04</span></span>
+                    
+                    
+                  </div>
+                </div>
+
+                <div class="actions">
+                  <a class="btn primary" href="https://restaurantbusinessonline.com/financing/secret-behind-success-daves-hot-chicken?utm_source=The%20secret%20behind%20the%20success%20of%20Dave%27s%20Hot%20Chicken&amp;utm_medium=rb-feed&amp;utm_campaign=RSS-Feeds" target="_blank" rel="noopener noreferrer" aria-label="Open article">Open</a>
+                </div>
+              </div>
+              
+              <div class="card" role="article" aria-label="Article: Cracker Barrel sees some progress in rebound from logo saga">
+                <div class="left">
+                  <p class="title">
+                    <a href="https://restaurantbusinessonline.com/financing/cracker-barrel-sees-some-progress-rebound-logo-saga?utm_source=Cracker%20Barrel%20sees%20some%20progress%20in%20rebound%20from%20logo%20saga&amp;utm_medium=rb-feed&amp;utm_campaign=RSS-Feeds" target="_blank" rel="noopener noreferrer">Cracker Barrel sees some progress in rebound from logo saga</a>
+                  </p>
+
+                  
+                  <p class="desc">Traffic is still down significantly at the family-dining chain, but it is beginning to improve, and customers are giving the chain higher marks on food and service.</p>
+                  
+
+                  <div class="row" aria-label="Article metadata">
+                    <span class="chip"><strong>source</strong> Restaurant Business</span>
+                    
+                    <span class="chip"><strong>date</strong> <span class="mono">2026-03-04</span></span>
+                    
+                    
+                  </div>
+                </div>
+
+                <div class="actions">
+                  <a class="btn primary" href="https://restaurantbusinessonline.com/financing/cracker-barrel-sees-some-progress-rebound-logo-saga?utm_source=Cracker%20Barrel%20sees%20some%20progress%20in%20rebound%20from%20logo%20saga&amp;utm_medium=rb-feed&amp;utm_campaign=RSS-Feeds" target="_blank" rel="noopener noreferrer" aria-label="Open article">Open</a>
+                </div>
+              </div>
+              
+              <div class="card" role="article" aria-label="Article: Starbucks plans to open a corporate office in Tennessee">
+                <div class="left">
+                  <p class="title">
+                    <a href="https://restaurantbusinessonline.com/financing/starbucks-plans-open-corporate-office-tennessee?utm_source=Starbucks%20plans%20to%20open%20a%20corporate%20office%20in%20Tennessee&amp;utm_medium=rb-feed&amp;utm_campaign=RSS-Feeds" target="_blank" rel="noopener noreferrer">Starbucks plans to open a corporate office in Tennessee</a>
+                  </p>
+
+                  
+                  <p class="desc">The coffee shop giant, which wants to expand in the Southeastern U.S., plans to open the facility later this year. It is the latest major restaurant chain to open a corporate office in the state.</p>
+                  
+
+                  <div class="row" aria-label="Article metadata">
+                    <span class="chip"><strong>source</strong> Restaurant Business</span>
+                    
+                    <span class="chip"><strong>date</strong> <span class="mono">2026-03-04</span></span>
+                    
+                    
+                  </div>
+                </div>
+
+                <div class="actions">
+                  <a class="btn primary" href="https://restaurantbusinessonline.com/financing/starbucks-plans-open-corporate-office-tennessee?utm_source=Starbucks%20plans%20to%20open%20a%20corporate%20office%20in%20Tennessee&amp;utm_medium=rb-feed&amp;utm_campaign=RSS-Feeds" target="_blank" rel="noopener noreferrer" aria-label="Open article">Open</a>
+                </div>
+              </div>
+              
+              <div class="card" role="article" aria-label="Article: Cheese is melting all over menus, giving sales a solid boost">
+                <div class="left">
+                  <p class="title">
+                    <a href="https://restaurantbusinessonline.com/food/cheese-melting-all-over-menus-giving-sales-solid-boost?utm_source=Cheese%20is%20melting%20all%20over%20menus%2C%20giving%20sales%20a%20solid%20boost&amp;utm_medium=rb-feed&amp;utm_campaign=RSS-Feeds" target="_blank" rel="noopener noreferrer">Cheese is melting all over menus, giving sales a solid boost</a>
+                  </p>
+
+                  
+                  <p class="desc">It started with Chili’s and those viral cheese pulls. Now other casual-dining chains are cashing in on the allure of ooey, gooey cheese.</p>
+                  
+
+                  <div class="row" aria-label="Article metadata">
+                    <span class="chip"><strong>source</strong> Restaurant Business</span>
+                    
+                    <span class="chip"><strong>date</strong> <span class="mono">2026-03-04</span></span>
+                    
+                    
+                  </div>
+                </div>
+
+                <div class="actions">
+                  <a class="btn primary" href="https://restaurantbusinessonline.com/food/cheese-melting-all-over-menus-giving-sales-solid-boost?utm_source=Cheese%20is%20melting%20all%20over%20menus%2C%20giving%20sales%20a%20solid%20boost&amp;utm_medium=rb-feed&amp;utm_campaign=RSS-Feeds" target="_blank" rel="noopener noreferrer" aria-label="Open article">Open</a>
+                </div>
+              </div>
+              
+              <div class="card" role="article" aria-label="Article: Jack in the Box beats Biglari, but names a new chairman anyway">
+                <div class="left">
+                  <p class="title">
+                    <a href="https://restaurantbusinessonline.com/financing/jack-box-beats-biglari-names-new-chairman-anyway?utm_source=Jack%20in%20the%20Box%20beats%20Biglari%2C%20but%20names%20a%20new%20chairman%20anyway&amp;utm_medium=rb-feed&amp;utm_campaign=RSS-Feeds" target="_blank" rel="noopener noreferrer">Jack in the Box beats Biglari, but names a new chairman anyway</a>
+                  </p>
+
+                  
+                  <p class="desc">The fast-food chain’s shareholders voted to re-elect all 10 directors, beating back a “vote no” effort on Chairman David Goebel. But it named a former Taco Bell CEO its new chairman.</p>
+                  
+
+                  <div class="row" aria-label="Article metadata">
+                    <span class="chip"><strong>source</strong> Restaurant Business</span>
+                    
+                    <span class="chip"><strong>date</strong> <span class="mono">2026-03-04</span></span>
+                    
+                    
+                  </div>
+                </div>
+
+                <div class="actions">
+                  <a class="btn primary" href="https://restaurantbusinessonline.com/financing/jack-box-beats-biglari-names-new-chairman-anyway?utm_source=Jack%20in%20the%20Box%20beats%20Biglari%2C%20but%20names%20a%20new%20chairman%20anyway&amp;utm_medium=rb-feed&amp;utm_campaign=RSS-Feeds" target="_blank" rel="noopener noreferrer" aria-label="Open article">Open</a>
+                </div>
+              </div>
+              
+              <div class="card" role="article" aria-label="Article: Who needs data centers in space when they can float offshore?">
+                <div class="left">
+                  <p class="title">
+                    <a href="https://techcrunch.com/2026/03/04/who-needs-data-centers-in-space-when-they-can-float-offshore/" target="_blank" rel="noopener noreferrer">Who needs data centers in space when they can float offshore?</a>
+                  </p>
+
+                  
+                  <p class="desc">Offshore wind developer Aikido will deploy a small data center beneath a floating offshore wind turbine later this year.</p>
+                  
+
+                  <div class="row" aria-label="Article metadata">
+                    <span class="chip"><strong>source</strong> TechCrunch</span>
+                    
+                    <span class="chip"><strong>date</strong> <span class="mono">2026-03-04</span></span>
+                    
+                    
+                  </div>
+                </div>
+
+                <div class="actions">
+                  <a class="btn primary" href="https://techcrunch.com/2026/03/04/who-needs-data-centers-in-space-when-they-can-float-offshore/" target="_blank" rel="noopener noreferrer" aria-label="Open article">Open</a>
+                </div>
+              </div>
+              
+              <div class="card" role="article" aria-label="Article: Eight Sleep raises $50M at $1.5B valuation">
+                <div class="left">
+                  <p class="title">
+                    <a href="https://techcrunch.com/2026/03/04/eight-sleep-raises-50m-at-1-5b-valuation/" target="_blank" rel="noopener noreferrer">Eight Sleep raises $50M at $1.5B valuation</a>
+                  </p>
+
+                  
+                  <p class="desc">Eight Sleep said it was free-cash-flow positive in 2025 and plans to use the new funding for new products, global expansions, and clinical validation.</p>
+                  
+
+                  <div class="row" aria-label="Article metadata">
+                    <span class="chip"><strong>source</strong> TechCrunch</span>
+                    
+                    <span class="chip"><strong>date</strong> <span class="mono">2026-03-04</span></span>
+                    
+                    
+                    <span class="chip brand"><strong>entities</strong> 1</span>
+                    
+                  </div>
+                </div>
+
+                <div class="actions">
+                  <a class="btn primary" href="https://techcrunch.com/2026/03/04/eight-sleep-raises-50m-at-1-5b-valuation/" target="_blank" rel="noopener noreferrer" aria-label="Open article">Open</a>
+                </div>
+              </div>
+              
+              <div class="card" role="article" aria-label="Article: Why AI startups are selling the same equity at two different prices">
+                <div class="left">
+                  <p class="title">
+                    <a href="https://techcrunch.com/2026/03/03/why-ai-startups-are-selling-the-same-equity-at-two-different-prices/" target="_blank" rel="noopener noreferrer">Why AI startups are selling the same equity at two different prices</a>
+                  </p>
+
+                  
+                  <p class="desc">Some AI founders are using a novel valuation mechanism to manufacture unicorn status.</p>
+                  
+
+                  <div class="row" aria-label="Article metadata">
+                    <span class="chip"><strong>source</strong> TechCrunch</span>
+                    
+                    <span class="chip"><strong>date</strong> <span class="mono">2026-03-03</span></span>
+                    
+                    
+                  </div>
+                </div>
+
+                <div class="actions">
+                  <a class="btn primary" href="https://techcrunch.com/2026/03/03/why-ai-startups-are-selling-the-same-equity-at-two-different-prices/" target="_blank" rel="noopener noreferrer" aria-label="Open article">Open</a>
+                </div>
+              </div>
+              
+              <div class="card" role="article" aria-label="Article: A suite of government hacking tools targeting iPhones is now being used by cybercriminals">
+                <div class="left">
+                  <p class="title">
+                    <a href="https://techcrunch.com/2026/03/03/a-suite-of-government-hacking-tools-targeting-iphones-is-now-being-used-by-cybercriminals/" target="_blank" rel="noopener noreferrer">A suite of government hacking tools targeting iPhones is now being used by cybercriminals</a>
+                  </p>
+
+                  
+                  <p class="desc">Security researchers say exploits used by governments to hack into iPhones have been found to be used by cybercriminals. They warned of an emerging market for &#34;secondhand&#34; exploits.</p>
+                  
+
+                  <div class="row" aria-label="Article metadata">
+                    <span class="chip"><strong>source</strong> TechCrunch</span>
+                    
+                    <span class="chip"><strong>date</strong> <span class="mono">2026-03-03</span></span>
+                    
+                    
+                  </div>
+                </div>
+
+                <div class="actions">
+                  <a class="btn primary" href="https://techcrunch.com/2026/03/03/a-suite-of-government-hacking-tools-targeting-iphones-is-now-being-used-by-cybercriminals/" target="_blank" rel="noopener noreferrer" aria-label="Open article">Open</a>
+                </div>
+              </div>
+              
+              <div class="card" role="article" aria-label="Article: Alibaba’s Qwen tech lead steps down after major AI push">
+                <div class="left">
+                  <p class="title">
+                    <a href="https://techcrunch.com/2026/03/03/alibabas-qwen-tech-lead-steps-down-after-major-ai-push/" target="_blank" rel="noopener noreferrer">Alibaba’s Qwen tech lead steps down after major AI push</a>
+                  </p>
+
+                  
+                  <p class="desc">Reactions rippled through Alibaba&#39;s Qwen team after tech lead Junyang Lin stepped down following a major model launch.</p>
+                  
+
+                  <div class="row" aria-label="Article metadata">
+                    <span class="chip"><strong>source</strong> TechCrunch</span>
+                    
+                    <span class="chip"><strong>date</strong> <span class="mono">2026-03-03</span></span>
+                    
+                    
+                  </div>
+                </div>
+
+                <div class="actions">
+                  <a class="btn primary" href="https://techcrunch.com/2026/03/03/alibabas-qwen-tech-lead-steps-down-after-major-ai-push/" target="_blank" rel="noopener noreferrer" aria-label="Open article">Open</a>
+                </div>
+              </div>
+              
+              <div class="card" role="article" aria-label="Article: No fooling: NASA targets April 1 for Artemis II launch to the Moon">
+                <div class="left">
+                  <p class="title">
+                    <a href="https://arstechnica.com/space/2026/03/no-fooling-nasa-targets-april-1-for-artemis-ii-launch-to-the-moon/" target="_blank" rel="noopener noreferrer">No fooling: NASA targets April 1 for Artemis II launch to the Moon</a>
+                  </p>
+
+                  
+                  <p class="desc">&#34;Engineers are assessing what allowed the seal to become dislodged to prevent the issue from recurring.&#34;</p>
+                  
+
+                  <div class="row" aria-label="Article metadata">
+                    <span class="chip"><strong>source</strong> Ars Technica</span>
+                    
+                    <span class="chip"><strong>date</strong> <span class="mono">2026-03-03</span></span>
+                    
+                    
+                  </div>
+                </div>
+
+                <div class="actions">
+                  <a class="btn primary" href="https://arstechnica.com/space/2026/03/no-fooling-nasa-targets-april-1-for-artemis-ii-launch-to-the-moon/" target="_blank" rel="noopener noreferrer" aria-label="Open article">Open</a>
+                </div>
+              </div>
+              
+              <div class="card" role="article" aria-label="Article: Downdetector, Speedtest sold to IT service-provider Accenture in $1.2B deal">
+                <div class="left">
+                  <p class="title">
+                    <a href="https://arstechnica.com/information-technology/2026/03/downdetector-speedtest-sold-to-it-service-provider-accenture-in-1-2b-deal/" target="_blank" rel="noopener noreferrer">Downdetector, Speedtest sold to IT service-provider Accenture in $1.2B deal</a>
+                  </p>
+
+                  
+                  <p class="desc">Accenture plans to buy Ookla, which also includes RootMetrics and Ekahau.</p>
+                  
+
+                  <div class="row" aria-label="Article metadata">
+                    <span class="chip"><strong>source</strong> Ars Technica</span>
+                    
+                    <span class="chip"><strong>date</strong> <span class="mono">2026-03-03</span></span>
+                    
+                    
+                  </div>
+                </div>
+
+                <div class="actions">
+                  <a class="btn primary" href="https://arstechnica.com/information-technology/2026/03/downdetector-speedtest-sold-to-it-service-provider-accenture-in-1-2b-deal/" target="_blank" rel="noopener noreferrer" aria-label="Open article">Open</a>
+                </div>
+              </div>
+              
+              <div class="card" role="article" aria-label="Article: FCC chair calls Paramount/WBD merger &#34;a lot cleaner&#34; than defunct Netflix deal">
+                <div class="left">
+                  <p class="title">
+                    <a href="https://arstechnica.com/tech-policy/2026/03/trump-fcc-chair-paramount-warner-bros-merger-likely-to-get-quick-approval/" target="_blank" rel="noopener noreferrer">FCC chair calls Paramount/WBD merger &#34;a lot cleaner&#34; than defunct Netflix deal</a>
+                  </p>
+
+                  
+                  <p class="desc">FCC to review foreign debt, but Carr indicates it will be a formality.</p>
+                  
+
+                  <div class="row" aria-label="Article metadata">
+                    <span class="chip"><strong>source</strong> Ars Technica</span>
+                    
+                    <span class="chip"><strong>date</strong> <span class="mono">2026-03-03</span></span>
+                    
+                    
+                  </div>
+                </div>
+
+                <div class="actions">
+                  <a class="btn primary" href="https://arstechnica.com/tech-policy/2026/03/trump-fcc-chair-paramount-warner-bros-merger-likely-to-get-quick-approval/" target="_blank" rel="noopener noreferrer" aria-label="Open article">Open</a>
+                </div>
+              </div>
+              
+              <div class="card" role="article" aria-label="Article: What we can learn from scientific analysis of Renaissance recipes">
+                <div class="left">
+                  <p class="title">
+                    <a href="https://arstechnica.com/science/2026/03/renaissance-diy-science-people-tested-tweaked-home-remedy-recipes/" target="_blank" rel="noopener noreferrer">What we can learn from scientific analysis of Renaissance recipes</a>
+                  </p>
+
+                  
+                  <p class="desc">Multispectral imaging, proteomics, historical texts yield new insights into 16th-century medical manuals.</p>
+                  
+
+                  <div class="row" aria-label="Article metadata">
+                    <span class="chip"><strong>source</strong> Ars Technica</span>
+                    
+                    <span class="chip"><strong>date</strong> <span class="mono">2026-03-03</span></span>
+                    
+                    
+                  </div>
+                </div>
+
+                <div class="actions">
+                  <a class="btn primary" href="https://arstechnica.com/science/2026/03/renaissance-diy-science-people-tested-tweaked-home-remedy-recipes/" target="_blank" rel="noopener noreferrer" aria-label="Open article">Open</a>
+                </div>
+              </div>
+              
+              <div class="card" role="article" aria-label="Article: There are plenty of great choices if you want to spend less than $15K on an EV">
+                <div class="left">
+                  <p class="title">
+                    <a href="https://arstechnica.com/cars/2026/03/there-are-plenty-of-great-choices-if-you-want-to-spend-less-than-15k-on-an-ev/" target="_blank" rel="noopener noreferrer">There are plenty of great choices if you want to spend less than $15K on an EV</a>
+                  </p>
+
+                  
+                  <p class="desc">There&#39;s a lot of good Hyundai and Kia EVs in this price bracket, plus the Bolt and i3.</p>
+                  
+
+                  <div class="row" aria-label="Article metadata">
+                    <span class="chip"><strong>source</strong> Ars Technica</span>
+                    
+                    <span class="chip"><strong>date</strong> <span class="mono">2026-03-03</span></span>
+                    
+                    
+                  </div>
+                </div>
+
+                <div class="actions">
+                  <a class="btn primary" href="https://arstechnica.com/cars/2026/03/there-are-plenty-of-great-choices-if-you-want-to-spend-less-than-15k-on-an-ev/" target="_blank" rel="noopener noreferrer" aria-label="Open article">Open</a>
+                </div>
+              </div>
+              
+              <div class="card" role="article" aria-label="Article: M5 Pro and M5 Max are surprisingly big departures from older Apple Silicon">
+                <div class="left">
+                  <p class="title">
+                    <a href="https://arstechnica.com/gadgets/2026/03/m5-pro-and-m5-max-are-surprisingly-big-departures-from-older-apple-silicon/" target="_blank" rel="noopener noreferrer">M5 Pro and M5 Max are surprisingly big departures from older Apple Silicon</a>
+                  </p>
+
+                  
+                  <p class="desc">Apple is using more chiplets and three types of CPU cores to make the M5 family.</p>
+                  
+
+                  <div class="row" aria-label="Article metadata">
+                    <span class="chip"><strong>source</strong> Ars Technica</span>
+                    
+                    <span class="chip"><strong>date</strong> <span class="mono">2026-03-03</span></span>
+                    
+                    
+                  </div>
+                </div>
+
+                <div class="actions">
+                  <a class="btn primary" href="https://arstechnica.com/gadgets/2026/03/m5-pro-and-m5-max-are-surprisingly-big-departures-from-older-apple-silicon/" target="_blank" rel="noopener noreferrer" aria-label="Open article">Open</a>
+                </div>
+              </div>
+              
+              <div class="card" role="article" aria-label="Article: New MacBook Airs come with M5, double the storage, and higher starting prices">
+                <div class="left">
+                  <p class="title">
+                    <a href="https://arstechnica.com/gadgets/2026/03/new-macbook-airs-come-with-m5-double-the-storage-and-higher-starting-prices/" target="_blank" rel="noopener noreferrer">New MacBook Airs come with M5, double the storage, and higher starting prices</a>
+                  </p>
+
+                  
+                  <p class="desc">New Airs leave more room underneath for the rumored low-cost MacBook.</p>
+                  
+
+                  <div class="row" aria-label="Article metadata">
+                    <span class="chip"><strong>source</strong> Ars Technica</span>
+                    
+                    <span class="chip"><strong>date</strong> <span class="mono">2026-03-03</span></span>
+                    
+                    
+                  </div>
+                </div>
+
+                <div class="actions">
+                  <a class="btn primary" href="https://arstechnica.com/gadgets/2026/03/new-macbook-airs-come-with-m5-double-the-storage-and-higher-starting-prices/" target="_blank" rel="noopener noreferrer" aria-label="Open article">Open</a>
+                </div>
+              </div>
+              
+              <div class="card" role="article" aria-label="Article: Apple intros M5 Pro and Max MacBook Pros and its first new monitors in years">
+                <div class="left">
+                  <p class="title">
+                    <a href="https://arstechnica.com/gadgets/2026/03/apple-intros-m5-pro-and-max-macbook-pros-and-its-first-new-monitors-in-years/" target="_blank" rel="noopener noreferrer">Apple intros M5 Pro and Max MacBook Pros and its first new monitors in years</a>
+                  </p>
+
+                  
+                  <p class="desc">New laptops come with more storage but also higher starting prices.</p>
+                  
+
+                  <div class="row" aria-label="Article metadata">
+                    <span class="chip"><strong>source</strong> Ars Technica</span>
+                    
+                    <span class="chip"><strong>date</strong> <span class="mono">2026-03-03</span></span>
+                    
+                    
+                  </div>
+                </div>
+
+                <div class="actions">
+                  <a class="btn primary" href="https://arstechnica.com/gadgets/2026/03/apple-intros-m5-pro-and-max-macbook-pros-and-its-first-new-monitors-in-years/" target="_blank" rel="noopener noreferrer" aria-label="Open article">Open</a>
+                </div>
+              </div>
+              
+              <div class="card" role="article" aria-label="Article: Sweetgreen wanted to reach 1,000 units by the end of the decade. It may take a bit longer">
+                <div class="left">
+                  <p class="title">
+                    <a href="https://restaurantbusinessonline.com/operations/sweetgreen-wanted-reach-1000-units-end-decade-it-may-take-bit-longer?utm_source=Sweetgreen%20wanted%20to%20reach%201%2C000%20units%20by%20the%20end%20of%20the%20decade.%20It%20may%20take%20a%20bit%20longer&amp;utm_medium=rb-feed&amp;utm_campaign=RSS-Feeds" target="_blank" rel="noopener noreferrer">Sweetgreen wanted to reach 1,000 units by the end of the decade. It may take a bit longer</a>
+                  </p>
+
+                  
+                  <p class="desc">The fast-casual salad chain slowed its pace of growth significantly this year. Now the company is reviewing its portfolio. Is shrinkage in Sweetgreen&#39;s future?</p>
+                  
+
+                  <div class="row" aria-label="Article metadata">
+                    <span class="chip"><strong>source</strong> Restaurant Business</span>
+                    
+                    <span class="chip"><strong>date</strong> <span class="mono">2026-03-03</span></span>
+                    
+                    
+                  </div>
+                </div>
+
+                <div class="actions">
+                  <a class="btn primary" href="https://restaurantbusinessonline.com/operations/sweetgreen-wanted-reach-1000-units-end-decade-it-may-take-bit-longer?utm_source=Sweetgreen%20wanted%20to%20reach%201%2C000%20units%20by%20the%20end%20of%20the%20decade.%20It%20may%20take%20a%20bit%20longer&amp;utm_medium=rb-feed&amp;utm_campaign=RSS-Feeds" target="_blank" rel="noopener noreferrer" aria-label="Open article">Open</a>
+                </div>
+              </div>
+              
+              <div class="card" role="article" aria-label="Article: March marketing tie-ins drive menus">
+                <div class="left">
+                  <p class="title">
+                    <a href="https://restaurantbusinessonline.com/food/march-marketing-tie-ins-drive-menus?utm_source=March%20marketing%20tie-ins%20drive%20menus&amp;utm_medium=rb-feed&amp;utm_campaign=RSS-Feeds" target="_blank" rel="noopener noreferrer">March marketing tie-ins drive menus</a>
+                  </p>
+
+                  
+                  <p class="desc">Taste Tracker: Starbucks, Chili’s, Firehouse Subs, Lazy Dog, Sonic, Buffalo Wild Wings, Domino’s, Whataburger, KFC and more headline restaurant menu news and trends.</p>
+                  
+
+                  <div class="row" aria-label="Article metadata">
+                    <span class="chip"><strong>source</strong> Restaurant Business</span>
+                    
+                    <span class="chip"><strong>date</strong> <span class="mono">2026-03-03</span></span>
+                    
+                    
+                  </div>
+                </div>
+
+                <div class="actions">
+                  <a class="btn primary" href="https://restaurantbusinessonline.com/food/march-marketing-tie-ins-drive-menus?utm_source=March%20marketing%20tie-ins%20drive%20menus&amp;utm_medium=rb-feed&amp;utm_campaign=RSS-Feeds" target="_blank" rel="noopener noreferrer" aria-label="Open article">Open</a>
+                </div>
+              </div>
+              
+              <div class="card" role="article" aria-label="Article: Pilot Travel Centers launch robust new foodservice program">
+                <div class="left">
+                  <p class="title">
+                    <a href="https://restaurantbusinessonline.com/food/pilot-travel-centers-launch-robust-new-foodservice-program?utm_source=Pilot%20Travel%20Centers%20launch%20robust%20new%20foodservice%20program&amp;utm_medium=rb-feed&amp;utm_campaign=RSS-Feeds" target="_blank" rel="noopener noreferrer">Pilot Travel Centers launch robust new foodservice program</a>
+                  </p>
+
+                  
+                  <p class="desc">In addition to expanding its prepared foods and grab-and-go offerings, the country&#39;s largest travel center operator will also keep its franchisee-run fast-food restaurants open 24/7.</p>
+                  
+
+                  <div class="row" aria-label="Article metadata">
+                    <span class="chip"><strong>source</strong> Restaurant Business</span>
+                    
+                    <span class="chip"><strong>date</strong> <span class="mono">2026-03-03</span></span>
+                    
+                    
+                  </div>
+                </div>
+
+                <div class="actions">
+                  <a class="btn primary" href="https://restaurantbusinessonline.com/food/pilot-travel-centers-launch-robust-new-foodservice-program?utm_source=Pilot%20Travel%20Centers%20launch%20robust%20new%20foodservice%20program&amp;utm_medium=rb-feed&amp;utm_campaign=RSS-Feeds" target="_blank" rel="noopener noreferrer" aria-label="Open article">Open</a>
+                </div>
+              </div>
+              
+              <div class="card" role="article" aria-label="Article: Winners and losers from a strange end to 2025">
+                <div class="left">
+                  <p class="title">
+                    <a href="https://restaurantbusinessonline.com/financing/winners-losers-strange-end-2025?utm_source=Winners%20and%20losers%20from%20a%20strange%20end%20to%202025&amp;utm_medium=rb-feed&amp;utm_campaign=RSS-Feeds" target="_blank" rel="noopener noreferrer">Winners and losers from a strange end to 2025</a>
+                  </p>
+
+                  
+                  <p class="desc">The Bottom Line: Performance varied greatly among chains that have reported their end-of-year earnings thus far, with some big winners and big losers.</p>
+                  
+
+                  <div class="row" aria-label="Article metadata">
+                    <span class="chip"><strong>source</strong> Restaurant Business</span>
+                    
+                    <span class="chip"><strong>date</strong> <span class="mono">2026-03-03</span></span>
+                    
+                    
+                  </div>
+                </div>
+
+                <div class="actions">
+                  <a class="btn primary" href="https://restaurantbusinessonline.com/financing/winners-losers-strange-end-2025?utm_source=Winners%20and%20losers%20from%20a%20strange%20end%20to%202025&amp;utm_medium=rb-feed&amp;utm_campaign=RSS-Feeds" target="_blank" rel="noopener noreferrer" aria-label="Open article">Open</a>
+                </div>
+              </div>
+              
+              <div class="card" role="article" aria-label="Article: The burger wars get some new life, thanks to social media">
+                <div class="left">
+                  <p class="title">
+                    <a href="https://restaurantbusinessonline.com/marketing/burger-wars-get-some-new-life-thanks-social-media?utm_source=The%20burger%20wars%20get%20some%20new%20life%2C%20thanks%20to%20social%20media&amp;utm_medium=rb-feed&amp;utm_campaign=RSS-Feeds" target="_blank" rel="noopener noreferrer">The burger wars get some new life, thanks to social media</a>
+                  </p>
+
+                  
+                  <p class="desc">McDonald’s CEO Chris Kempczinski was roasted online for taking a small bite of the chain’s new Big Arch Burger on video. Burger King, which just upgraded its Whopper, did not let it pass.</p>
+                  
+
+                  <div class="row" aria-label="Article metadata">
+                    <span class="chip"><strong>source</strong> Restaurant Business</span>
+                    
+                    <span class="chip"><strong>date</strong> <span class="mono">2026-03-03</span></span>
+                    
+                    
+                  </div>
+                </div>
+
+                <div class="actions">
+                  <a class="btn primary" href="https://restaurantbusinessonline.com/marketing/burger-wars-get-some-new-life-thanks-social-media?utm_source=The%20burger%20wars%20get%20some%20new%20life%2C%20thanks%20to%20social%20media&amp;utm_medium=rb-feed&amp;utm_campaign=RSS-Feeds" target="_blank" rel="noopener noreferrer" aria-label="Open article">Open</a>
+                </div>
+              </div>
+              
+              <div class="card" role="article" aria-label="Article: Olo is launching a customer-facing ordering app">
+                <div class="left">
+                  <p class="title">
+                    <a href="https://restaurantbusinessonline.com/technology/olo-launching-customer-facing-ordering-app?utm_source=Olo%20is%20launching%20a%20customer-facing%20ordering%20app%20&amp;utm_medium=rb-feed&amp;utm_campaign=RSS-Feeds" target="_blank" rel="noopener noreferrer">Olo is launching a customer-facing ordering app</a>
+                  </p>
+
+                  
+                  <p class="desc">The Olo App will feature hundreds of restaurant brands, giving customers a “remote control” for food ordering. Restaurants will pay no commissions and will get access to customer data from across the network.</p>
+                  
+
+                  <div class="row" aria-label="Article metadata">
+                    <span class="chip"><strong>source</strong> Restaurant Business</span>
+                    
+                    <span class="chip"><strong>date</strong> <span class="mono">2026-03-03</span></span>
+                    
+                    
+                  </div>
+                </div>
+
+                <div class="actions">
+                  <a class="btn primary" href="https://restaurantbusinessonline.com/technology/olo-launching-customer-facing-ordering-app?utm_source=Olo%20is%20launching%20a%20customer-facing%20ordering%20app%20&amp;utm_medium=rb-feed&amp;utm_campaign=RSS-Feeds" target="_blank" rel="noopener noreferrer" aria-label="Open article">Open</a>
+                </div>
+              </div>
+              
+              <div class="card" role="article" aria-label="Article: Keith Lee jumps from restaurant influencer to investor">
+                <div class="left">
+                  <p class="title">
+                    <a href="https://restaurantbusinessonline.com/emerging-brands/keith-lee-jumps-restaurant-influencer-investor?utm_source=Keith%20Lee%20jumps%20from%20restaurant%20influencer%20to%20investor&amp;utm_medium=rb-feed&amp;utm_campaign=RSS-Feeds" target="_blank" rel="noopener noreferrer">Keith Lee jumps from restaurant influencer to investor</a>
+                  </p>
+
+                  
+                  <p class="desc">The famed social media reviewer has made his first restaurant investment in Brooklyn Dumpling Shop in a multi-year partnership.</p>
+                  
+
+                  <div class="row" aria-label="Article metadata">
+                    <span class="chip"><strong>source</strong> Restaurant Business</span>
+                    
+                    <span class="chip"><strong>date</strong> <span class="mono">2026-03-03</span></span>
+                    
+                    
+                  </div>
+                </div>
+
+                <div class="actions">
+                  <a class="btn primary" href="https://restaurantbusinessonline.com/emerging-brands/keith-lee-jumps-restaurant-influencer-investor?utm_source=Keith%20Lee%20jumps%20from%20restaurant%20influencer%20to%20investor&amp;utm_medium=rb-feed&amp;utm_campaign=RSS-Feeds" target="_blank" rel="noopener noreferrer" aria-label="Open article">Open</a>
+                </div>
+              </div>
+              
+              <div class="card" role="article" aria-label="Article: Chef Sungchul Shim infuses Korean flavor into a Times Square steakhouse">
+                <div class="left">
+                  <p class="title">
+                    <a href="https://restaurantbusinessonline.com/food/chef-sungchul-shim-infuses-korean-flavor-times-square-steakhouse?utm_source=Chef%20Sungchul%20Shim%20infuses%20Korean%20flavor%20into%20a%20Times%20Square%20steakhouse&amp;utm_medium=rb-feed&amp;utm_campaign=RSS-Feeds" target="_blank" rel="noopener noreferrer">Chef Sungchul Shim infuses Korean flavor into a Times Square steakhouse</a>
+                  </p>
+
+                  
+                  <p class="desc">On the Menu: Gui Steakhouse has all the bells and whistles of a traditional restaurant in this genre, but it’s the Korean accents that set it apart.</p>
+                  
+
+                  <div class="row" aria-label="Article metadata">
+                    <span class="chip"><strong>source</strong> Restaurant Business</span>
+                    
+                    <span class="chip"><strong>date</strong> <span class="mono">2026-03-03</span></span>
+                    
+                    
+                  </div>
+                </div>
+
+                <div class="actions">
+                  <a class="btn primary" href="https://restaurantbusinessonline.com/food/chef-sungchul-shim-infuses-korean-flavor-times-square-steakhouse?utm_source=Chef%20Sungchul%20Shim%20infuses%20Korean%20flavor%20into%20a%20Times%20Square%20steakhouse&amp;utm_medium=rb-feed&amp;utm_campaign=RSS-Feeds" target="_blank" rel="noopener noreferrer" aria-label="Open article">Open</a>
+                </div>
+              </div>
+              
+              <div class="card" role="article" aria-label="Article: JRI Hospitality buys 43 more Freddy&#39;s restaurants">
+                <div class="left">
+                  <p class="title">
+                    <a href="https://restaurantbusinessonline.com/financing/jri-hospitality-buys-43-more-freddys-restaurants?utm_source=JRI%20Hospitality%20buys%2043%20more%20Freddy%27s%20restaurants&amp;utm_medium=rb-feed&amp;utm_campaign=RSS-Feeds" target="_blank" rel="noopener noreferrer">JRI Hospitality buys 43 more Freddy&#39;s restaurants</a>
+                  </p>
+
+                  
+                  <p class="desc">The Salina, Kansas-based operator is already the largest operator in the fast-casual burger chain’s system and will now operate more than 130 restaurants in 18 states.</p>
+                  
+
+                  <div class="row" aria-label="Article metadata">
+                    <span class="chip"><strong>source</strong> Restaurant Business</span>
+                    
+                    <span class="chip"><strong>date</strong> <span class="mono">2026-03-03</span></span>
+                    
+                    
+                    <span class="chip brand"><strong>entities</strong> 1</span>
+                    
+                  </div>
+                </div>
+
+                <div class="actions">
+                  <a class="btn primary" href="https://restaurantbusinessonline.com/financing/jri-hospitality-buys-43-more-freddys-restaurants?utm_source=JRI%20Hospitality%20buys%2043%20more%20Freddy%27s%20restaurants&amp;utm_medium=rb-feed&amp;utm_campaign=RSS-Feeds" target="_blank" rel="noopener noreferrer" aria-label="Open article">Open</a>
+                </div>
+              </div>
+              
+              <div class="card" role="article" aria-label="Article: Slutty Vegan founder Pinky Cole files for bankruptcy">
+                <div class="left">
+                  <p class="title">
+                    <a href="https://restaurantbusinessonline.com/emerging-brands/slutty-vegan-founder-pinky-cole-files-bankruptcy?utm_source=Slutty%20Vegan%20founder%20Pinky%20Cole%20files%20for%20bankruptcy&amp;utm_medium=rb-feed&amp;utm_campaign=RSS-Feeds" target="_blank" rel="noopener noreferrer">Slutty Vegan founder Pinky Cole files for bankruptcy</a>
+                  </p>
+
+                  
+                  <p class="desc">The entrepreneur behind the plant-based burger brand owes nearly $1.4 million in debt and back taxes, according to court documents.</p>
+                  
+
+                  <div class="row" aria-label="Article metadata">
+                    <span class="chip"><strong>source</strong> Restaurant Business</span>
+                    
+                    <span class="chip"><strong>date</strong> <span class="mono">2026-03-02</span></span>
+                    
+                    
+                  </div>
+                </div>
+
+                <div class="actions">
+                  <a class="btn primary" href="https://restaurantbusinessonline.com/emerging-brands/slutty-vegan-founder-pinky-cole-files-bankruptcy?utm_source=Slutty%20Vegan%20founder%20Pinky%20Cole%20files%20for%20bankruptcy&amp;utm_medium=rb-feed&amp;utm_campaign=RSS-Feeds" target="_blank" rel="noopener noreferrer" aria-label="Open article">Open</a>
+                </div>
+              </div>
+              
+              <div class="card" role="article" aria-label="Article: Patrick Doyle believes Restaurant Brands International is undervalued">
+                <div class="left">
+                  <p class="title">
+                    <a href="https://restaurantbusinessonline.com/financing/patrick-doyle-believes-restaurant-brands-international-undervalued?utm_source=Patrick%20Doyle%20believes%20Restaurant%20Brands%20International%20is%20undervalued&amp;utm_medium=rb-feed&amp;utm_campaign=RSS-Feeds" target="_blank" rel="noopener noreferrer">Patrick Doyle believes Restaurant Brands International is undervalued</a>
+                  </p>
+
+                  
+                  <p class="desc">The Bottom Line: The executive chairman of the owner of Burger King, Tim Hortons, Popeyes and Firehouse Subs made the case to investors as the company gets back to franchising.</p>
+                  
+
+                  <div class="row" aria-label="Article metadata">
+                    <span class="chip"><strong>source</strong> Restaurant Business</span>
+                    
+                    <span class="chip"><strong>date</strong> <span class="mono">2026-03-02</span></span>
+                    
+                    
+                  </div>
+                </div>
+
+                <div class="actions">
+                  <a class="btn primary" href="https://restaurantbusinessonline.com/financing/patrick-doyle-believes-restaurant-brands-international-undervalued?utm_source=Patrick%20Doyle%20believes%20Restaurant%20Brands%20International%20is%20undervalued&amp;utm_medium=rb-feed&amp;utm_campaign=RSS-Feeds" target="_blank" rel="noopener noreferrer" aria-label="Open article">Open</a>
+                </div>
+              </div>
+              
+              <div class="card" role="article" aria-label="Article: An operator couldn&#39;t find the tech he needed, so he built it with AI">
+                <div class="left">
+                  <p class="title">
+                    <a href="https://restaurantbusinessonline.com/technology/operator-couldnt-find-tech-he-needed-so-he-built-it-ai?utm_source=An%20operator%20couldn%27t%20find%20the%20tech%20he%20needed%2C%20so%20he%20built%20it%20with%20AI&amp;utm_medium=rb-feed&amp;utm_campaign=RSS-Feeds" target="_blank" rel="noopener noreferrer">An operator couldn&#39;t find the tech he needed, so he built it with AI</a>
+                  </p>
+
+                  
+                  <p class="desc">Tech Check: Pincho CEO Otto Othman is now offering his &#34;vibe-coded&#34; recipe manager to other restaurants. He believes tech suppliers should be concerned about the rise of AI coding tools.</p>
+                  
+
+                  <div class="row" aria-label="Article metadata">
+                    <span class="chip"><strong>source</strong> Restaurant Business</span>
+                    
+                    <span class="chip"><strong>date</strong> <span class="mono">2026-03-02</span></span>
+                    
+                    
+                  </div>
+                </div>
+
+                <div class="actions">
+                  <a class="btn primary" href="https://restaurantbusinessonline.com/technology/operator-couldnt-find-tech-he-needed-so-he-built-it-ai?utm_source=An%20operator%20couldn%27t%20find%20the%20tech%20he%20needed%2C%20so%20he%20built%20it%20with%20AI&amp;utm_medium=rb-feed&amp;utm_campaign=RSS-Feeds" target="_blank" rel="noopener noreferrer" aria-label="Open article">Open</a>
+                </div>
+              </div>
+              
+              <div class="card" role="article" aria-label="Article: Life happens at Norms. So, apparently, do movies">
+                <div class="left">
+                  <p class="title">
+                    <a href="https://restaurantbusinessonline.com/emerging-brands/life-happens-norms-so-apparently-do-movies?utm_source=Life%20happens%20at%20Norms.%20So%2C%20apparently%2C%20do%20movies&amp;utm_medium=rb-feed&amp;utm_campaign=RSS-Feeds" target="_blank" rel="noopener noreferrer">Life happens at Norms. So, apparently, do movies</a>
+                  </p>
+
+                  
+                  <p class="desc">In the movie &#34;Good Luck, Have Fun, Don&#39;t Die,&#34; unlikely heroes are found at the LA diner chain when the world needs saving. It&#39;s the latest movie role for the restaurant chain that is working on its own happily-ever-afte...</p>
+                  
+
+                  <div class="row" aria-label="Article metadata">
+                    <span class="chip"><strong>source</strong> Restaurant Business</span>
+                    
+                    <span class="chip"><strong>date</strong> <span class="mono">2026-03-02</span></span>
+                    
+                    
+                  </div>
+                </div>
+
+                <div class="actions">
+                  <a class="btn primary" href="https://restaurantbusinessonline.com/emerging-brands/life-happens-norms-so-apparently-do-movies?utm_source=Life%20happens%20at%20Norms.%20So%2C%20apparently%2C%20do%20movies&amp;utm_medium=rb-feed&amp;utm_campaign=RSS-Feeds" target="_blank" rel="noopener noreferrer" aria-label="Open article">Open</a>
+                </div>
+              </div>
+              
+              <div class="card" role="article" aria-label="Article: A smaller Steak n Shake finds its footing">
+                <div class="left">
+                  <p class="title">
+                    <a href="https://restaurantbusinessonline.com/financing/smaller-steak-n-shake-finds-its-footing?utm_source=A%20smaller%20Steak%20n%20Shake%20finds%20its%20footing&amp;utm_medium=rb-feed&amp;utm_campaign=RSS-Feeds" target="_blank" rel="noopener noreferrer">A smaller Steak n Shake finds its footing</a>
+                  </p>
+
+                  
+                  <p class="desc">The burger chain has transformed its business model and started marketing to the MAGA crowd with a quality message. But it closed more stores, and the chain’s franchisees are apparently struggling.</p>
+                  
+
+                  <div class="row" aria-label="Article metadata">
+                    <span class="chip"><strong>source</strong> Restaurant Business</span>
+                    
+                    <span class="chip"><strong>date</strong> <span class="mono">2026-03-02</span></span>
+                    
+                    
+                  </div>
+                </div>
+
+                <div class="actions">
+                  <a class="btn primary" href="https://restaurantbusinessonline.com/financing/smaller-steak-n-shake-finds-its-footing?utm_source=A%20smaller%20Steak%20n%20Shake%20finds%20its%20footing&amp;utm_medium=rb-feed&amp;utm_campaign=RSS-Feeds" target="_blank" rel="noopener noreferrer" aria-label="Open article">Open</a>
+                </div>
+              </div>
+              
+              <div class="card" role="article" aria-label="Article: The problem with the pizza market">
+                <div class="left">
+                  <p class="title">
+                    <a href="https://restaurantbusinessonline.com/financing/problem-pizza-market?utm_source=The%20problem%20with%20the%20pizza%20market&amp;utm_medium=rb-feed&amp;utm_campaign=RSS-Feeds" target="_blank" rel="noopener noreferrer">The problem with the pizza market</a>
+                  </p>
+
+                  
+                  <p class="desc">The Bottom Line: This week’s edition of the weekly restaurant finance newsletter examines the weakness of the fast-food pizza market, as both Papa Johns and Pizza Hut have challenges.</p>
+                  
+
+                  <div class="row" aria-label="Article metadata">
+                    <span class="chip"><strong>source</strong> Restaurant Business</span>
+                    
+                    <span class="chip"><strong>date</strong> <span class="mono">2026-03-02</span></span>
+                    
+                    
+                  </div>
+                </div>
+
+                <div class="actions">
+                  <a class="btn primary" href="https://restaurantbusinessonline.com/financing/problem-pizza-market?utm_source=The%20problem%20with%20the%20pizza%20market&amp;utm_medium=rb-feed&amp;utm_campaign=RSS-Feeds" target="_blank" rel="noopener noreferrer" aria-label="Open article">Open</a>
+                </div>
+              </div>
+              
+              <div class="card" role="article" aria-label="Article: It&#39;s time for banh mi to go national, says this Vietnamese sandwich pioneer">
+                <div class="left">
+                  <p class="title">
+                    <a href="https://restaurantbusinessonline.com/emerging-brands/its-time-banh-mi-go-national-says-vietnamese-sandwich-pioneer?utm_source=It%27s%20time%20for%20banh%20mi%20to%20go%20national%2C%20says%20this%20Vietnamese%20sandwich%20pioneer&amp;utm_medium=rb-feed&amp;utm_campaign=RSS-Feeds" target="_blank" rel="noopener noreferrer">It&#39;s time for banh mi to go national, says this Vietnamese sandwich pioneer</a>
+                  </p>
+
+                  
+                  <p class="desc">Bun Mee was founded in San Francisco in 2011 and now has five Bay Area locations. A franchisee is bringing the fast-casual brand to New York City for the first time.</p>
+                  
+
+                  <div class="row" aria-label="Article metadata">
+                    <span class="chip"><strong>source</strong> Restaurant Business</span>
+                    
+                    <span class="chip"><strong>date</strong> <span class="mono">2026-02-28</span></span>
+                    
+                    
+                  </div>
+                </div>
+
+                <div class="actions">
+                  <a class="btn primary" href="https://restaurantbusinessonline.com/emerging-brands/its-time-banh-mi-go-national-says-vietnamese-sandwich-pioneer?utm_source=It%27s%20time%20for%20banh%20mi%20to%20go%20national%2C%20says%20this%20Vietnamese%20sandwich%20pioneer&amp;utm_medium=rb-feed&amp;utm_campaign=RSS-Feeds" target="_blank" rel="noopener noreferrer" aria-label="Open article">Open</a>
+                </div>
+              </div>
+              
+              <div class="card" role="article" aria-label="Article: Struggling Sweetgreen is rethinking its menu pricing">
+                <div class="left">
+                  <p class="title">
+                    <a href="https://restaurantbusinessonline.com/operations/struggling-sweetgreen-rethinking-its-menu-pricing?utm_source=Struggling%20Sweetgreen%20is%20rethinking%20its%20menu%20pricing&amp;utm_medium=rb-feed&amp;utm_campaign=RSS-Feeds" target="_blank" rel="noopener noreferrer">Struggling Sweetgreen is rethinking its menu pricing</a>
+                  </p>
+
+                  
+                  <p class="desc">The fast-casual salad chain&#39;s same-store sales plunged 11.5% in the fourth quarter and 7.9% for the year, prompting executives to consider simplifying its cost structure.</p>
+                  
+
+                  <div class="row" aria-label="Article metadata">
+                    <span class="chip"><strong>source</strong> Restaurant Business</span>
+                    
+                    <span class="chip"><strong>date</strong> <span class="mono">2026-02-27</span></span>
+                    
+                    
+                  </div>
+                </div>
+
+                <div class="actions">
+                  <a class="btn primary" href="https://restaurantbusinessonline.com/operations/struggling-sweetgreen-rethinking-its-menu-pricing?utm_source=Struggling%20Sweetgreen%20is%20rethinking%20its%20menu%20pricing&amp;utm_medium=rb-feed&amp;utm_campaign=RSS-Feeds" target="_blank" rel="noopener noreferrer" aria-label="Open article">Open</a>
+                </div>
+              </div>
+              
+              <div class="card" role="article" aria-label="Article: Burger King&#39;s store-level profitability runs into a beef cost wall">
+                <div class="left">
+                  <p class="title">
+                    <a href="https://restaurantbusinessonline.com/financing/burger-kings-store-level-profitability-runs-beef-cost-wall?utm_source=Burger%20King%27s%20store-level%20profitability%20runs%20into%20a%20beef%20cost%20wall&amp;utm_medium=rb-feed&amp;utm_campaign=RSS-Feeds" target="_blank" rel="noopener noreferrer">Burger King&#39;s store-level profitability runs into a beef cost wall</a>
+                  </p>
+
+                  
+                  <p class="desc">The Bottom Line: The fast-food chain has been improving per-store profitability in recent years as it works to solidify its performance. But beef prices had something to say about that.</p>
+                  
+
+                  <div class="row" aria-label="Article metadata">
+                    <span class="chip"><strong>source</strong> Restaurant Business</span>
+                    
+                    <span class="chip"><strong>date</strong> <span class="mono">2026-02-27</span></span>
+                    
+                    
+                  </div>
+                </div>
+
+                <div class="actions">
+                  <a class="btn primary" href="https://restaurantbusinessonline.com/financing/burger-kings-store-level-profitability-runs-beef-cost-wall?utm_source=Burger%20King%27s%20store-level%20profitability%20runs%20into%20a%20beef%20cost%20wall&amp;utm_medium=rb-feed&amp;utm_campaign=RSS-Feeds" target="_blank" rel="noopener noreferrer" aria-label="Open article">Open</a>
+                </div>
+              </div>
+              
+              <div class="card" role="article" aria-label="Article: How Shake Shack improved profits despite soaring beef costs">
+                <div class="left">
+                  <p class="title">
+                    <a href="https://restaurantbusinessonline.com/operations/how-shake-shack-improved-profits-despite-soaring-beef-costs?utm_source=How%20Shake%20Shack%20improved%20profits%20despite%20soaring%20beef%20costs&amp;utm_medium=rb-feed&amp;utm_campaign=RSS-Feeds" target="_blank" rel="noopener noreferrer">How Shake Shack improved profits despite soaring beef costs</a>
+                  </p>
+
+                  
+                  <p class="desc">The fast-casual chain grew margins, despite a challenging macroeconomic climate in 2025. CEO Rob Lynch said the ongoing work on operations paid off and set the stage for a stronger 2026.</p>
+                  
+
+                  <div class="row" aria-label="Article metadata">
+                    <span class="chip"><strong>source</strong> Restaurant Business</span>
+                    
+                    <span class="chip"><strong>date</strong> <span class="mono">2026-02-27</span></span>
+                    
+                    
+                  </div>
+                </div>
+
+                <div class="actions">
+                  <a class="btn primary" href="https://restaurantbusinessonline.com/operations/how-shake-shack-improved-profits-despite-soaring-beef-costs?utm_source=How%20Shake%20Shack%20improved%20profits%20despite%20soaring%20beef%20costs&amp;utm_medium=rb-feed&amp;utm_campaign=RSS-Feeds" target="_blank" rel="noopener noreferrer" aria-label="Open article">Open</a>
+                </div>
+              </div>
+              
+              <div class="card" role="article" aria-label="Article: The beverage boom is transforming the soda fountain">
+                <div class="left">
+                  <p class="title">
+                    <a href="https://restaurantbusinessonline.com/beverage/beverage-boom-transforming-soda-fountain?utm_source=The%20beverage%20boom%20is%20transforming%20the%20soda%20fountain&amp;utm_medium=rb-feed&amp;utm_campaign=RSS-Feeds" target="_blank" rel="noopener noreferrer">The beverage boom is transforming the soda fountain</a>
+                  </p>
+
+                  
+                  <p class="desc">As restaurants look to meet growing demand for specialty beverages, they are tapping equipment suppliers for new products. The result is a new generation of high-tech drink machines.</p>
+                  
+
+                  <div class="row" aria-label="Article metadata">
+                    <span class="chip"><strong>source</strong> Restaurant Business</span>
+                    
+                    <span class="chip"><strong>date</strong> <span class="mono">2026-02-27</span></span>
+                    
+                    
+                  </div>
+                </div>
+
+                <div class="actions">
+                  <a class="btn primary" href="https://restaurantbusinessonline.com/beverage/beverage-boom-transforming-soda-fountain?utm_source=The%20beverage%20boom%20is%20transforming%20the%20soda%20fountain&amp;utm_medium=rb-feed&amp;utm_campaign=RSS-Feeds" target="_blank" rel="noopener noreferrer" aria-label="Open article">Open</a>
+                </div>
+              </div>
+              
+              <div class="card" role="article" aria-label="Article: At this Southern California car dealership, you can get a patty melt with your Porsche">
+                <div class="left">
+                  <p class="title">
+                    <a href="https://restaurantbusinessonline.com/operations/southern-california-car-dealership-you-can-get-patty-melt-your-porsche?utm_source=At%20this%20Southern%20California%20car%20dealership%2C%20you%20can%20get%20a%20patty%20melt%20with%20your%20Porsche&amp;utm_medium=rb-feed&amp;utm_campaign=RSS-Feeds" target="_blank" rel="noopener noreferrer">At this Southern California car dealership, you can get a patty melt with your Porsche</a>
+                  </p>
+
+                  
+                  <p class="desc">A car dealer is building a $5 million restaurant empire in its showrooms. Guests love the quirky aspect of finding a &#34;hidden gem&#34; where they least expect it.</p>
+                  
+
+                  <div class="row" aria-label="Article metadata">
+                    <span class="chip"><strong>source</strong> Restaurant Business</span>
+                    
+                    <span class="chip"><strong>date</strong> <span class="mono">2026-02-27</span></span>
+                    
+                    
+                  </div>
+                </div>
+
+                <div class="actions">
+                  <a class="btn primary" href="https://restaurantbusinessonline.com/operations/southern-california-car-dealership-you-can-get-patty-melt-your-porsche?utm_source=At%20this%20Southern%20California%20car%20dealership%2C%20you%20can%20get%20a%20patty%20melt%20with%20your%20Porsche&amp;utm_medium=rb-feed&amp;utm_campaign=RSS-Feeds" target="_blank" rel="noopener noreferrer" aria-label="Open article">Open</a>
+                </div>
+              </div>
+              
+              <div class="card" role="article" aria-label="Article: El Pollo Loco, Eggs Up Grill and more make leadership moves">
+                <div class="left">
+                  <p class="title">
+                    <a href="https://restaurantbusinessonline.com/leadership/el-pollo-loco-eggs-grill-more-make-leadership-moves?utm_source=El%20Pollo%20Loco%2C%20Eggs%20Up%20Grill%20and%20more%20make%20leadership%20moves&amp;utm_medium=rb-feed&amp;utm_campaign=RSS-Feeds" target="_blank" rel="noopener noreferrer">El Pollo Loco, Eggs Up Grill and more make leadership moves</a>
+                  </p>
+
+                  
+                  <p class="desc">Executive Summary: The latest leadership updates in the restaurant industry.</p>
+                  
+
+                  <div class="row" aria-label="Article metadata">
+                    <span class="chip"><strong>source</strong> Restaurant Business</span>
+                    
+                    <span class="chip"><strong>date</strong> <span class="mono">2026-02-27</span></span>
+                    
+                    
+                  </div>
+                </div>
+
+                <div class="actions">
+                  <a class="btn primary" href="https://restaurantbusinessonline.com/leadership/el-pollo-loco-eggs-grill-more-make-leadership-moves?utm_source=El%20Pollo%20Loco%2C%20Eggs%20Up%20Grill%20and%20more%20make%20leadership%20moves&amp;utm_medium=rb-feed&amp;utm_campaign=RSS-Feeds" target="_blank" rel="noopener noreferrer" aria-label="Open article">Open</a>
+                </div>
+              </div>
+              
+            </div>
+            
+          </div>
+        </article>
+      </section>
+
+      <footer class="footer" role="contentinfo">
+        <div>
+          <span class="mono">category</span>
+          <span class="muted">/</span>
+          <span>대기/예약 레이더</span>
+        </div>
+        <div>
+          <a href="#content" class="mono" aria-label="Back to top">back to top</a>
+        </div>
+      </footer>
+
+      <script id="articles-data" type="application/json">[{"link": "https://arstechnica.com/science/2026/03/terrapower-gets-ok-to-start-construction-of-its-first-nuclear-plant/", "matched_entities": {}, "published": "2026-03-04T13:54:40", "published_at": "2026-03-04T13:54:40", "source": "Ars Technica", "summary": "Plant won\u0027t be done until 2030 at the earliest, and it still needs an operating license.", "title": "TerraPower gets OK to start construction of its first nuclear plant"}, {"link": "https://techcrunch.com/2026/03/04/anthropic-ceo-dario-amodei-calls-openais-messaging-around-military-deal-straight-up-lies-report-says/", "matched_entities": {}, "published": "2026-03-04T13:40:05", "published_at": "2026-03-04T13:40:05", "source": "TechCrunch", "summary": "Anthropic gave up its contract with the Pentagon over AI safety disagreements -- then, OpenAI swooped in.", "title": "Anthropic CEO Dario Amodei calls OpenAI\u2019s messaging around military deal \u2018straight up lies,\u2019 report says"}, {"link": "https://www.healthcareitnews.com/news/iran-war-prompts-us-hospitals-prep-potential-ddos-attacks", "matched_entities": {"Healthcare": ["hospital"]}, "published": "2026-03-04T13:38:11", "published_at": "2026-03-04T13:38:11", "source": "Healthcare IT News", "summary": "\u003cp\u003eHospitals, health systems and other healthcare organizations nationwide face real risks in the form of retaliation for U.S. military strikes on Iran, according to the Health Information Sharing and Analysis Center, which notes that cyberattacks may come from loosely aligned hacktivist groups rather than directly from the nation state itself.\u003c/p\u003e\u003cp\u003e\"Health-ISAC is closely tracking the evolving Middle East crisis and the potential for cyber spillover affecting healthcare and public health organizations globally,\" said Errol Weiss, Health-ISAC\u0027s chief security officer.\u003c/p\u003e", "title": "Iran War prompts U.S. hospitals to prep for potential DDoS attacks"}, {"link": "https://www.healthcareitnews.com/resource/best-klas-2026-executive-insights-strategic-healthcare-technology-investment", "matched_entities": {}, "published": "2026-03-04T13:34:02", "published_at": "2026-03-04T13:34:02", "source": "Healthcare IT News", "summary": "", "title": "Best in KLAS 2026: Executive Insights for Strategic Healthcare Technology Investment"}, {"link": "https://arstechnica.com/space/2026/03/space-command-chief-throws-cold-water-on-the-question-of-uaps-in-space/", "matched_entities": {}, "published": "2026-03-04T13:32:27", "published_at": "2026-03-04T13:32:27", "source": "Ars Technica", "summary": "\"I am not aware of anything that is extraterrestrial, other than comets and things like that.\"", "title": "Space Command chief throws cold water on the question of UAPs in space"}, {"link": "https://www.healthcareitnews.com/resource/scale-ambient-ai-strategic-partnerships", "matched_entities": {}, "published": "2026-03-04T13:29:58", "published_at": "2026-03-04T13:29:58", "source": "Healthcare IT News", "summary": "", "title": "Scale ambient AI with strategic partnerships"}, {"link": "https://www.healthcareitnews.com/resource/report-5-ai-agent-trends-watch-healthcare-life-sciences", "matched_entities": {}, "published": "2026-03-04T13:22:19", "published_at": "2026-03-04T13:22:19", "source": "Healthcare IT News", "summary": "", "title": "Report: 5 AI Agent Trends to Watch in Healthcare \u0026 Life Sciences"}, {"link": "https://arstechnica.com/science/2026/03/large-genome-model-open-source-ai-trained-on-trillions-of-bases/", "matched_entities": {}, "published": "2026-03-04T13:14:54", "published_at": "2026-03-04T13:14:54", "source": "Ars Technica", "summary": "System can identify genes, regulatory sequences, splice sites, and more.", "title": "Large genome model: Open source AI trained on trillions of bases"}, {"link": "https://techcrunch.com/2026/03/04/apple-music-to-add-transparency-tags-to-distinguish-ai-music-says-report/", "matched_entities": {}, "published": "2026-03-04T12:43:58", "published_at": "2026-03-04T12:43:58", "source": "TechCrunch", "summary": "The label or distributor has to opt in to tagging their music as AI, so it\u0027s unclear how effective this intervention will be.", "title": "Apple Music to add Transparency Tags to distinguish AI music, says report"}, {"link": "https://arstechnica.com/gadgets/2026/03/google-and-epic-look-to-bury-the-hatchet-with-new-app-store-settlement/", "matched_entities": {}, "published": "2026-03-04T11:48:16", "published_at": "2026-03-04T11:48:16", "source": "Ars Technica", "summary": "The era of the 30 percent app store cut has ended.", "title": "Google and Epic announce settlement to end app store antitrust case"}, {"link": "https://arstechnica.com/tech-policy/2026/03/lawsuit-google-gemini-sent-man-on-violent-missions-set-suicide-countdown/", "matched_entities": {}, "published": "2026-03-04T11:29:14", "published_at": "2026-03-04T11:29:14", "source": "Ars Technica", "summary": "Gemini allegedly called man its \"husband,\" said they could be together in death.", "title": "Lawsuit: Google Gemini sent man on violent missions, set suicide \"countdown\""}, {"link": "https://techcrunch.com/2026/03/04/google-settles-with-epic-games-drops-its-play-store-commissions-to-20/", "matched_entities": {}, "published": "2026-03-04T11:05:12", "published_at": "2026-03-04T11:05:12", "source": "TechCrunch", "summary": "Google has dropped its commission, charging a 20% service fee and an optional 5% to use its billing services. It will also offer a new process for third-party app stores.", "title": "Google settles with Epic Games, drops its Play Store commissions to 20%"}, {"link": "https://techcrunch.com/video/his-house-burned-down-he-used-the-insurance-money-to-build-popsockets/", "matched_entities": {}, "published": "2026-03-04T10:34:26", "published_at": "2026-03-04T10:34:26", "source": "TechCrunch", "summary": "Does\u0026#160;a\u0026#160;consumer hardware\u0026#160;company need to get on the\u0026#160;VC treadmill to\u0026#160;succeed?\u0026#160;Eleven years and 290 million products sold across 115 countries later,\u0026#160;PopSockets\u0026#160;has proven that\u0026#160;the bootstrapped, low-dilution path more\u0026#160;viable\u0026#160;than the industry gives it credit for.\u0026#160;The global consumer hardware brand was built on less than $500k, no institutional capital, and a philosophy professor\u0026#8217;s determination.\u0026#160; Watch as founder and former CEO [\u0026#8230;]", "title": "His house burned down. He used the insurance money to build\u00a0PopSockets."}, {"link": "https://arstechnica.com/gaming/2026/03/sony-wont-bring-any-more-single-player-playstation-games-to-pc/", "matched_entities": {}, "published": "2026-03-04T10:17:59", "published_at": "2026-03-04T10:17:59", "source": "Ars Technica", "summary": "Titles like \u003cem\u003eGhost of Yotei\u003c/em\u003e will remain exclusive to Sony\u0027s hardware.", "title": "After a rocky six years, Sony cancels future single-player PC game releases"}, {"link": "https://techcrunch.com/2026/03/04/u-s-and-eu-police-shut-down-leakbase-a-site-accused-of-sharing-stolen-passwords-and-hacking-tools/", "matched_entities": {}, "published": "2026-03-04T10:01:55", "published_at": "2026-03-04T10:01:55", "source": "TechCrunch", "summary": "Authorities say LeakBase was \"one of the world\u2019s largest online forums for cybercriminals,\" and maintained an archive of hacked databases containing hundreds of millions of passwords.", "title": "US and EU police shut down LeakBase, a site accused of sharing stolen passwords and hacking tools"}, {"link": "https://techcrunch.com/2026/03/04/everything-apple-announced-macbook-neo-iphone-17e-ipad-air/", "matched_entities": {}, "published": "2026-03-04T10:00:43", "published_at": "2026-03-04T10:00:43", "source": "TechCrunch", "summary": "From a new iPhone to a budget-friendly MacBook, Apple announced a series of new products this week.", "title": "MacBook Neo, iPhone 17e, and everything else Apple announced this week"}, {"link": "https://arstechnica.com/science/2026/03/recreating-the-complex-cuisine-of-prehistoric-europeans/", "matched_entities": {}, "published": "2026-03-04T10:00:15", "published_at": "2026-03-04T10:00:15", "source": "Ars Technica", "summary": "SEM analysis of pottery residues showed people combined fish with a wide variety of plants when cooking.", "title": "Re-creating the complex cuisine of prehistoric Europeans"}, {"link": "https://www.healthcareitnews.com/resource/rcm-roadmap-what-are-must-watch-metrics-2026", "matched_entities": {}, "published": "2026-03-04T10:00:00", "published_at": "2026-03-04T10:00:00", "source": "Healthcare IT News", "summary": "", "title": "RCM Roadmap: What are the must-watch metrics for 2026?"}, {"link": "https://techcrunch.com/2026/03/04/https-techcrunch-com-2026-03-04-google-search-rolls-out-geminis-canvas-in-ai-mode-to-all-us-users/", "matched_entities": {}, "published": "2026-03-04T09:50:58", "published_at": "2026-03-04T09:50:58", "source": "TechCrunch", "summary": "Canvas in AI Mode is available to U.S. users in English for creating plans, projects, apps, and more.", "title": "Google Search rolls out Gemini\u2019s Canvas in AI Mode to all US users"}, {"link": "https://arstechnica.com/space/2026/03/the-us-senate-empowers-nasa-to-fully-engage-in-lunar-space-race/", "matched_entities": {}, "published": "2026-03-04T09:50:26", "published_at": "2026-03-04T09:50:26", "source": "Ars Technica", "summary": "\"Our bill authorizes critical funding for, and gives strategic direction to, the agency.\"", "title": "The US Senate empowers NASA to fully engage in lunar space race"}, {"link": "https://arstechnica.com/gadgets/2026/03/macbook-neo-hands-on-apple-build-quality-at-a-substantially-lower-price/", "matched_entities": {}, "published": "2026-03-04T09:44:43", "published_at": "2026-03-04T09:44:43", "source": "Ars Technica", "summary": "The Neo won\u0027t be for everyone, but Apple has managed to preserve a premium feel.", "title": "MacBook Neo hands-on: Apple build quality at a substantially lower price"}, {"link": "https://techcrunch.com/2026/03/04/decagon-completes-first-tender-offer-at-4-5b-valuation/", "matched_entities": {}, "published": "2026-03-04T09:32:53", "published_at": "2026-03-04T09:32:53", "source": "TechCrunch", "summary": "The AI-powered customer support startup is the latest example of a fast-growing, young company that\u0027s providing employee liquidity.", "title": "Decagon completes first tender offer at $4.5B valuation"}, {"link": "https://techcrunch.com/2026/03/04/the-us-military-is-still-using-claude-but-defense-tech-clients-are-fleeing/", "matched_entities": {}, "published": "2026-03-04T08:20:01", "published_at": "2026-03-04T08:20:01", "source": "TechCrunch", "summary": "As the U.S. continues its aerial attack on Iran, Anthropic models are being used for many targeting decisions.", "title": "The US military is still using Claude \u2014 but defense-tech clients are fleeing"}, {"link": "https://arstechnica.com/gadgets/2026/03/the-sidegrade/", "matched_entities": {}, "published": "2026-03-04T08:00:10", "published_at": "2026-03-04T08:00:10", "source": "Ars Technica", "summary": "Meet the new boss, same as the old boss.", "title": "Google Pixel 10a review: The sidegrade"}, {"link": "https://www.healthcareitnews.com/news/amid-fast-moving-medicaid-changes-cms-vet-offers-providers-and-states-advice", "matched_entities": {"Healthcare": ["hospital"]}, "published": "2026-03-04T07:59:27", "published_at": "2026-03-04T07:59:27", "source": "Healthcare IT News", "summary": "\u003cp dir=\"ltr\"\u003eHospitals and health systems are operating in a Medicaid environment defined by pressure, complexity and responsibility. Reimbursement remains constrained, administrative requirements continue to grow, and providers are caring for an increasing share of patients with complex medical and social needs.\u003c/p\u003e\u003cp dir=\"ltr\"\u003eFor many healthcare organizations, particularly safety net and rural hospitals, Medicaid is not simply one payer among many. It is core infrastructure that sustains access to care, workforce stability and the financial viability of the health system.\u003c/p\u003e", "title": "Amid fast-moving Medicaid changes, CMS vet offers providers and states advice"}, {"link": "https://techcrunch.com/2026/03/04/x-taps-william-shatner-to-give-out-invites-to-its-payments-service-x-money/", "matched_entities": {}, "published": "2026-03-04T07:34:21", "published_at": "2026-03-04T07:34:21", "source": "TechCrunch", "summary": "42 X users donated to William Shatner\u0027s charity in exchange for an early invite to X Money beta.", "title": "X taps William Shatner to give out invites to its payments service, X Money"}, {"link": "https://techcrunch.com/2026/03/04/host-a-side-event-during-techcrunch-founder-summit-week-in-boston/", "matched_entities": {}, "published": "2026-03-04T07:00:00", "published_at": "2026-03-04T07:00:00", "source": "TechCrunch", "summary": "Want to tap into the energy of 1,100+ startup founders, investors, and tech leaders descending on Boston for the Founder Summit 2026 on June 9? Host your own Side Event during \u201cFounder Summit Week,\u201d happening June 4-10!", "title": "Host a Side Event during TechCrunch Founder Summit Week in Boston"}, {"link": "https://techcrunch.com/2026/03/04/tiktok-wont-add-end-to-end-encryption-to-direct-messages-report-says/", "matched_entities": {}, "published": "2026-03-04T06:15:31", "published_at": "2026-03-04T06:15:31", "source": "TechCrunch", "summary": "The social media giant says that end-to-end encryption would make users less safe.", "title": "TikTok won\u2019t add end-to-end encryption to direct messages, report says"}, {"link": "https://techcrunch.com/2026/03/04/father-sues-google-claiming-gemini-chatbot-drove-son-into-fatal-delusion/", "matched_entities": {}, "published": "2026-03-04T05:58:36", "published_at": "2026-03-04T05:58:36", "source": "TechCrunch", "summary": "A father is suing Google and Alphabet, alleging its Gemini chatbot reinforced his son\u2019s delusional belief it was his AI wife and coached him toward suicide and a planned airport attack.", "title": "Father sues Google, claiming Gemini chatbot drove son into fatal delusion"}, {"link": "https://techcrunch.com/2026/03/04/meet-the-macbook-neo-apples-colorful-answer-to-the-chromebook-starting-at-599/", "matched_entities": {}, "published": "2026-03-04T05:57:17", "published_at": "2026-03-04T05:57:17", "source": "TechCrunch", "summary": "Apple is offering the MacBook Neo at a more affordable price point by using an A18 Pro chip, which is used in the iPhone 16 Pro.", "title": "Meet the MacBook Neo, Apple\u2019s colorful answer to the Chromebook, starting at $599"}, {"link": "https://arstechnica.com/ai/2026/03/are-consumers-doomed-to-pay-more-for-electricity-due-to-data-center-buildouts/", "matched_entities": {}, "published": "2026-03-04T05:54:24", "published_at": "2026-03-04T05:54:24", "source": "Ars Technica", "summary": "Data center operators to sign pledge to supply their own power instead of relying on grid.", "title": "Are consumers doomed to pay more for electricity due to data center buildouts?"}, {"link": "https://arstechnica.com/gadgets/2026/03/the-599-macbook-neo-is-apples-long-awaited-colorful-lower-cost-macbook/", "matched_entities": {}, "published": "2026-03-04T05:18:55", "published_at": "2026-03-04T05:18:55", "source": "Ars Technica", "summary": "Cute, colorful laptop takes the place of the old $599 M1 MacBook Air.", "title": "The $599 MacBook Neo is Apple\u0027s long-awaited colorful, lower-cost MacBook"}, {"link": "https://techcrunch.com/2026/03/04/one-startups-pitch-to-provide-more-reliable-ai-answers-crowdsource-the-chatbots/", "matched_entities": {}, "published": "2026-03-04T05:00:00", "published_at": "2026-03-04T05:00:00", "source": "TechCrunch", "summary": "CollectivIQ looks to give users more accurate answers to their AI queries by showing them responses that pull information from ChatGPT, Gemini, Claude, Grok \u2014 and up to 10 other models \u2014 all at the same time.", "title": "One startup\u2019s pitch to provide more reliable AI answers: Crowdsource the chatbots"}, {"link": "https://restaurantbusinessonline.com/financing/dutch-bros-first-los-angeles-location-has-everything-drive-thru?utm_source=Dutch%20Bros%27%20first%20Los%20Angeles%20location%20has%20everything%20but%20the%20drive-thru\u0026utm_medium=rb-feed\u0026utm_campaign=RSS-Feeds", "matched_entities": {}, "published": "2026-03-04T03:03:00", "published_at": "2026-03-04T03:03:00", "source": "Restaurant Business", "summary": "The beverage chain\u2019s \u201cwalk-thru\u201d shop near the University of Southern California campus could demonstrate its ability to work in more urban markets. That could change the chain\u2019s growth potential.", "title": "Dutch Bros\u0027 first Los Angeles location has everything but the drive-thru"}, {"link": "https://restaurantbusinessonline.com/technology/how-4-restaurant-chains-are-using-ai-today?utm_source=How%204%20restaurant%20chains%20are%20using%20AI%20today\u0026utm_medium=rb-feed\u0026utm_campaign=RSS-Feeds", "matched_entities": {}, "published": "2026-03-04T03:03:00", "published_at": "2026-03-04T03:03:00", "source": "Restaurant Business", "summary": "AI is now part of the team at Krispy Kreme, Freddy\u2019s, Taco John\u2019s and Nekter, and the applications are as diverse as the brands themselves.", "title": "How 4 restaurant chains are using AI today"}, {"link": "https://restaurantbusinessonline.com/operations/jean-georges-vongerichten-restaurants-new-yorks-tin-building-have-shuttered?utm_source=Jean-Georges%20Vongerichten%20restaurants%20in%20New%20York%27s%20Tin%20Building%20have%20shuttered\u0026utm_medium=rb-feed\u0026utm_campaign=RSS-Feeds", "matched_entities": {}, "published": "2026-03-04T03:03:00", "published_at": "2026-03-04T03:03:00", "source": "Restaurant Business", "summary": "The $200 million project on the Manhattan waterfront is to be converted into the Balloon Museum, ending an attempt to turn the Seaport into a dining destination.", "title": "Jean-Georges Vongerichten restaurants in New York\u0027s Tin Building have shuttered"}, {"link": "https://restaurantbusinessonline.com/financing/secret-behind-success-daves-hot-chicken?utm_source=The%20secret%20behind%20the%20success%20of%20Dave%27s%20Hot%20Chicken\u0026utm_medium=rb-feed\u0026utm_campaign=RSS-Feeds", "matched_entities": {}, "published": "2026-03-04T03:03:00", "published_at": "2026-03-04T03:03:00", "source": "Restaurant Business", "summary": "A Deeper Dive: Jim Bitticks, CEO of the fast-casual hot-chicken chain, joins the restaurant finance podcast to talk about his new role and why the brand has been so successful.", "title": "The secret behind the success of Dave\u0027s Hot Chicken"}, {"link": "https://restaurantbusinessonline.com/financing/cracker-barrel-sees-some-progress-rebound-logo-saga?utm_source=Cracker%20Barrel%20sees%20some%20progress%20in%20rebound%20from%20logo%20saga\u0026utm_medium=rb-feed\u0026utm_campaign=RSS-Feeds", "matched_entities": {}, "published": "2026-03-04T03:03:00", "published_at": "2026-03-04T03:03:00", "source": "Restaurant Business", "summary": "Traffic is still down significantly at the family-dining chain, but it is beginning to improve, and customers are giving the chain higher marks on food and service.", "title": "Cracker Barrel sees some progress in rebound from logo saga"}, {"link": "https://restaurantbusinessonline.com/financing/starbucks-plans-open-corporate-office-tennessee?utm_source=Starbucks%20plans%20to%20open%20a%20corporate%20office%20in%20Tennessee\u0026utm_medium=rb-feed\u0026utm_campaign=RSS-Feeds", "matched_entities": {}, "published": "2026-03-04T03:03:00", "published_at": "2026-03-04T03:03:00", "source": "Restaurant Business", "summary": "The coffee shop giant, which wants to expand in the Southeastern U.S., plans to open the facility later this year. It is the latest major restaurant chain to open a corporate office in the state.", "title": "Starbucks plans to open a corporate office in Tennessee"}, {"link": "https://restaurantbusinessonline.com/food/cheese-melting-all-over-menus-giving-sales-solid-boost?utm_source=Cheese%20is%20melting%20all%20over%20menus%2C%20giving%20sales%20a%20solid%20boost\u0026utm_medium=rb-feed\u0026utm_campaign=RSS-Feeds", "matched_entities": {}, "published": "2026-03-04T03:03:00", "published_at": "2026-03-04T03:03:00", "source": "Restaurant Business", "summary": "It started with Chili\u2019s and those viral cheese pulls. Now other casual-dining chains are cashing in on the allure of ooey, gooey cheese.", "title": "Cheese is melting all over menus, giving sales a solid boost"}, {"link": "https://restaurantbusinessonline.com/financing/jack-box-beats-biglari-names-new-chairman-anyway?utm_source=Jack%20in%20the%20Box%20beats%20Biglari%2C%20but%20names%20a%20new%20chairman%20anyway\u0026utm_medium=rb-feed\u0026utm_campaign=RSS-Feeds", "matched_entities": {}, "published": "2026-03-04T03:03:00", "published_at": "2026-03-04T03:03:00", "source": "Restaurant Business", "summary": "The fast-food chain\u2019s shareholders voted to re-elect all 10 directors, beating back a \u201cvote no\u201d effort on Chairman David Goebel. But it named a former Taco Bell CEO its new chairman.", "title": "Jack in the Box beats Biglari, but names a new chairman anyway"}, {"link": "https://techcrunch.com/2026/03/04/who-needs-data-centers-in-space-when-they-can-float-offshore/", "matched_entities": {}, "published": "2026-03-04T03:00:00", "published_at": "2026-03-04T03:00:00", "source": "TechCrunch", "summary": "Offshore wind developer Aikido will deploy a small data center beneath a floating offshore wind turbine later this year.", "title": "Who needs data centers in space when they can float offshore?"}, {"link": "https://techcrunch.com/2026/03/04/eight-sleep-raises-50m-at-1-5b-valuation/", "matched_entities": {"Healthcare": ["clinic"]}, "published": "2026-03-04T02:00:00", "published_at": "2026-03-04T02:00:00", "source": "TechCrunch", "summary": "Eight Sleep said it was free-cash-flow positive in 2025 and plans to use the new funding for new products, global expansions, and clinical validation.", "title": "Eight Sleep raises $50M at $1.5B valuation"}, {"link": "https://techcrunch.com/2026/03/03/why-ai-startups-are-selling-the-same-equity-at-two-different-prices/", "matched_entities": {}, "published": "2026-03-03T15:31:25", "published_at": "2026-03-03T15:31:25", "source": "TechCrunch", "summary": "Some AI founders are using a novel valuation mechanism to manufacture unicorn status.", "title": "Why AI startups are selling the same equity at two different prices"}, {"link": "https://techcrunch.com/2026/03/03/a-suite-of-government-hacking-tools-targeting-iphones-is-now-being-used-by-cybercriminals/", "matched_entities": {}, "published": "2026-03-03T14:27:31", "published_at": "2026-03-03T14:27:31", "source": "TechCrunch", "summary": "Security researchers say exploits used by governments to hack into iPhones have been found to be used by cybercriminals. They warned of an emerging market for \"secondhand\" exploits.", "title": "A suite of government hacking tools targeting iPhones is now being used by cybercriminals"}, {"link": "https://techcrunch.com/2026/03/03/alibabas-qwen-tech-lead-steps-down-after-major-ai-push/", "matched_entities": {}, "published": "2026-03-03T14:16:36", "published_at": "2026-03-03T14:16:36", "source": "TechCrunch", "summary": "Reactions rippled through Alibaba\u0027s Qwen team after tech lead Junyang Lin stepped down following a major model launch.", "title": "Alibaba\u2019s Qwen tech lead steps down after major AI push"}, {"link": "https://arstechnica.com/space/2026/03/no-fooling-nasa-targets-april-1-for-artemis-ii-launch-to-the-moon/", "matched_entities": {}, "published": "2026-03-03T13:54:21", "published_at": "2026-03-03T13:54:21", "source": "Ars Technica", "summary": "\"Engineers are assessing what allowed the seal to become dislodged to prevent the issue from recurring.\"", "title": "No fooling: NASA targets April 1 for Artemis II launch to the Moon"}, {"link": "https://arstechnica.com/information-technology/2026/03/downdetector-speedtest-sold-to-it-service-provider-accenture-in-1-2b-deal/", "matched_entities": {}, "published": "2026-03-03T13:20:06", "published_at": "2026-03-03T13:20:06", "source": "Ars Technica", "summary": "Accenture plans to buy Ookla, which also includes RootMetrics and Ekahau.", "title": "Downdetector, Speedtest sold to IT service-provider Accenture in $1.2B deal"}, {"link": "https://arstechnica.com/tech-policy/2026/03/trump-fcc-chair-paramount-warner-bros-merger-likely-to-get-quick-approval/", "matched_entities": {}, "published": "2026-03-03T13:05:36", "published_at": "2026-03-03T13:05:36", "source": "Ars Technica", "summary": "FCC to review foreign debt, but Carr indicates it will be a formality.", "title": "FCC chair calls Paramount/WBD merger \"a lot cleaner\" than defunct Netflix deal"}, {"link": "https://arstechnica.com/science/2026/03/renaissance-diy-science-people-tested-tweaked-home-remedy-recipes/", "matched_entities": {}, "published": "2026-03-03T11:23:23", "published_at": "2026-03-03T11:23:23", "source": "Ars Technica", "summary": "Multispectral imaging, proteomics, historical texts yield new insights into 16th-century medical manuals.", "title": "What we can learn from scientific analysis of Renaissance recipes"}, {"link": "https://arstechnica.com/cars/2026/03/there-are-plenty-of-great-choices-if-you-want-to-spend-less-than-15k-on-an-ev/", "matched_entities": {}, "published": "2026-03-03T10:58:10", "published_at": "2026-03-03T10:58:10", "source": "Ars Technica", "summary": "There\u0027s a lot of good Hyundai and Kia EVs in this price bracket, plus the Bolt and i3.", "title": "There are plenty of great choices if you want to spend less than $15K on an EV"}, {"link": "https://arstechnica.com/gadgets/2026/03/m5-pro-and-m5-max-are-surprisingly-big-departures-from-older-apple-silicon/", "matched_entities": {}, "published": "2026-03-03T09:41:29", "published_at": "2026-03-03T09:41:29", "source": "Ars Technica", "summary": "Apple is using more chiplets and three types of CPU cores to make the M5 family.", "title": "M5 Pro and M5 Max are surprisingly big departures from older Apple Silicon"}, {"link": "https://arstechnica.com/gadgets/2026/03/new-macbook-airs-come-with-m5-double-the-storage-and-higher-starting-prices/", "matched_entities": {}, "published": "2026-03-03T06:58:55", "published_at": "2026-03-03T06:58:55", "source": "Ars Technica", "summary": "New Airs leave more room underneath for the rumored low-cost MacBook.", "title": "New MacBook Airs come with M5, double the storage, and higher starting prices"}, {"link": "https://arstechnica.com/gadgets/2026/03/apple-intros-m5-pro-and-max-macbook-pros-and-its-first-new-monitors-in-years/", "matched_entities": {}, "published": "2026-03-03T06:19:43", "published_at": "2026-03-03T06:19:43", "source": "Ars Technica", "summary": "New laptops come with more storage but also higher starting prices.", "title": "Apple intros M5 Pro and Max MacBook Pros and its first new monitors in years"}, {"link": "https://restaurantbusinessonline.com/operations/sweetgreen-wanted-reach-1000-units-end-decade-it-may-take-bit-longer?utm_source=Sweetgreen%20wanted%20to%20reach%201%2C000%20units%20by%20the%20end%20of%20the%20decade.%20It%20may%20take%20a%20bit%20longer\u0026utm_medium=rb-feed\u0026utm_campaign=RSS-Feeds", "matched_entities": {}, "published": "2026-03-03T03:03:00", "published_at": "2026-03-03T03:03:00", "source": "Restaurant Business", "summary": "The fast-casual salad chain slowed its pace of growth significantly this year. Now the company is reviewing its portfolio. Is shrinkage in Sweetgreen\u0027s future?", "title": "Sweetgreen wanted to reach 1,000 units by the end of the decade. It may take a bit longer"}, {"link": "https://restaurantbusinessonline.com/food/march-marketing-tie-ins-drive-menus?utm_source=March%20marketing%20tie-ins%20drive%20menus\u0026utm_medium=rb-feed\u0026utm_campaign=RSS-Feeds", "matched_entities": {}, "published": "2026-03-03T03:03:00", "published_at": "2026-03-03T03:03:00", "source": "Restaurant Business", "summary": "Taste Tracker: Starbucks, Chili\u2019s, Firehouse Subs, Lazy Dog, Sonic, Buffalo Wild Wings, Domino\u2019s, Whataburger, KFC and more headline restaurant menu news and trends.", "title": "March marketing tie-ins drive menus"}, {"link": "https://restaurantbusinessonline.com/food/pilot-travel-centers-launch-robust-new-foodservice-program?utm_source=Pilot%20Travel%20Centers%20launch%20robust%20new%20foodservice%20program\u0026utm_medium=rb-feed\u0026utm_campaign=RSS-Feeds", "matched_entities": {}, "published": "2026-03-03T03:03:00", "published_at": "2026-03-03T03:03:00", "source": "Restaurant Business", "summary": "In addition to expanding its prepared foods and grab-and-go offerings, the country\u0027s largest travel center operator will also keep its franchisee-run fast-food restaurants open 24/7.", "title": "Pilot Travel Centers launch robust new foodservice program"}, {"link": "https://restaurantbusinessonline.com/financing/winners-losers-strange-end-2025?utm_source=Winners%20and%20losers%20from%20a%20strange%20end%20to%202025\u0026utm_medium=rb-feed\u0026utm_campaign=RSS-Feeds", "matched_entities": {}, "published": "2026-03-03T03:03:00", "published_at": "2026-03-03T03:03:00", "source": "Restaurant Business", "summary": "The Bottom Line: Performance varied greatly among chains that have reported their end-of-year earnings thus far, with some big winners and big losers.", "title": "Winners and losers from a strange end to 2025"}, {"link": "https://restaurantbusinessonline.com/marketing/burger-wars-get-some-new-life-thanks-social-media?utm_source=The%20burger%20wars%20get%20some%20new%20life%2C%20thanks%20to%20social%20media\u0026utm_medium=rb-feed\u0026utm_campaign=RSS-Feeds", "matched_entities": {}, "published": "2026-03-03T03:03:00", "published_at": "2026-03-03T03:03:00", "source": "Restaurant Business", "summary": "McDonald\u2019s CEO Chris Kempczinski was roasted online for taking a small bite of the chain\u2019s new Big Arch Burger on video. Burger King, which just upgraded its Whopper, did not let it pass.", "title": "The burger wars get some new life, thanks to social media"}, {"link": "https://restaurantbusinessonline.com/technology/olo-launching-customer-facing-ordering-app?utm_source=Olo%20is%20launching%20a%20customer-facing%20ordering%20app%20\u0026utm_medium=rb-feed\u0026utm_campaign=RSS-Feeds", "matched_entities": {}, "published": "2026-03-03T03:03:00", "published_at": "2026-03-03T03:03:00", "source": "Restaurant Business", "summary": "The Olo App will feature hundreds of restaurant brands, giving customers a \u201cremote control\u201d for food ordering. Restaurants will pay no commissions and will get access to customer data from across the network.", "title": "Olo is launching a customer-facing ordering app"}, {"link": "https://restaurantbusinessonline.com/emerging-brands/keith-lee-jumps-restaurant-influencer-investor?utm_source=Keith%20Lee%20jumps%20from%20restaurant%20influencer%20to%20investor\u0026utm_medium=rb-feed\u0026utm_campaign=RSS-Feeds", "matched_entities": {}, "published": "2026-03-03T03:03:00", "published_at": "2026-03-03T03:03:00", "source": "Restaurant Business", "summary": "The famed social media reviewer has made his first restaurant investment in Brooklyn Dumpling Shop in a multi-year partnership.", "title": "Keith Lee jumps from restaurant influencer to investor"}, {"link": "https://restaurantbusinessonline.com/food/chef-sungchul-shim-infuses-korean-flavor-times-square-steakhouse?utm_source=Chef%20Sungchul%20Shim%20infuses%20Korean%20flavor%20into%20a%20Times%20Square%20steakhouse\u0026utm_medium=rb-feed\u0026utm_campaign=RSS-Feeds", "matched_entities": {}, "published": "2026-03-03T03:03:00", "published_at": "2026-03-03T03:03:00", "source": "Restaurant Business", "summary": "On the Menu: Gui Steakhouse has all the bells and whistles of a traditional restaurant in this genre, but it\u2019s the Korean accents that set it apart.", "title": "Chef Sungchul Shim infuses Korean flavor into a Times Square steakhouse"}, {"link": "https://restaurantbusinessonline.com/financing/jri-hospitality-buys-43-more-freddys-restaurants?utm_source=JRI%20Hospitality%20buys%2043%20more%20Freddy%27s%20restaurants\u0026utm_medium=rb-feed\u0026utm_campaign=RSS-Feeds", "matched_entities": {"Healthcare": ["hospital"]}, "published": "2026-03-03T03:03:00", "published_at": "2026-03-03T03:03:00", "source": "Restaurant Business", "summary": "The Salina, Kansas-based operator is already the largest operator in the fast-casual burger chain\u2019s system and will now operate more than 130 restaurants in 18 states.", "title": "JRI Hospitality buys 43 more Freddy\u0027s restaurants"}, {"link": "https://restaurantbusinessonline.com/emerging-brands/slutty-vegan-founder-pinky-cole-files-bankruptcy?utm_source=Slutty%20Vegan%20founder%20Pinky%20Cole%20files%20for%20bankruptcy\u0026utm_medium=rb-feed\u0026utm_campaign=RSS-Feeds", "matched_entities": {}, "published": "2026-03-02T03:03:00", "published_at": "2026-03-02T03:03:00", "source": "Restaurant Business", "summary": "The entrepreneur behind the plant-based burger brand owes nearly $1.4 million in debt and back taxes, according to court documents.", "title": "Slutty Vegan founder Pinky Cole files for bankruptcy"}, {"link": "https://restaurantbusinessonline.com/financing/patrick-doyle-believes-restaurant-brands-international-undervalued?utm_source=Patrick%20Doyle%20believes%20Restaurant%20Brands%20International%20is%20undervalued\u0026utm_medium=rb-feed\u0026utm_campaign=RSS-Feeds", "matched_entities": {}, "published": "2026-03-02T03:03:00", "published_at": "2026-03-02T03:03:00", "source": "Restaurant Business", "summary": "The Bottom Line: The executive chairman of the owner of Burger King, Tim Hortons, Popeyes and Firehouse Subs made the case to investors as the company gets back to franchising.", "title": "Patrick Doyle believes Restaurant Brands International is undervalued"}, {"link": "https://restaurantbusinessonline.com/technology/operator-couldnt-find-tech-he-needed-so-he-built-it-ai?utm_source=An%20operator%20couldn%27t%20find%20the%20tech%20he%20needed%2C%20so%20he%20built%20it%20with%20AI\u0026utm_medium=rb-feed\u0026utm_campaign=RSS-Feeds", "matched_entities": {}, "published": "2026-03-02T03:03:00", "published_at": "2026-03-02T03:03:00", "source": "Restaurant Business", "summary": "Tech Check: Pincho CEO Otto Othman is now offering his \"vibe-coded\" recipe manager to other restaurants. He believes tech suppliers should be concerned about the rise of AI coding tools.", "title": "An operator couldn\u0027t find the tech he needed, so he built it with AI"}, {"link": "https://restaurantbusinessonline.com/emerging-brands/life-happens-norms-so-apparently-do-movies?utm_source=Life%20happens%20at%20Norms.%20So%2C%20apparently%2C%20do%20movies\u0026utm_medium=rb-feed\u0026utm_campaign=RSS-Feeds", "matched_entities": {}, "published": "2026-03-02T03:03:00", "published_at": "2026-03-02T03:03:00", "source": "Restaurant Business", "summary": "In the movie \"Good Luck, Have Fun, Don\u0027t Die,\" unlikely heroes are found at the LA diner chain when the world needs saving. It\u0027s the latest movie role for the restaurant chain that is working on its own happily-ever-after story.", "title": "Life happens at Norms. So, apparently, do movies"}, {"link": "https://restaurantbusinessonline.com/financing/smaller-steak-n-shake-finds-its-footing?utm_source=A%20smaller%20Steak%20n%20Shake%20finds%20its%20footing\u0026utm_medium=rb-feed\u0026utm_campaign=RSS-Feeds", "matched_entities": {}, "published": "2026-03-02T03:03:00", "published_at": "2026-03-02T03:03:00", "source": "Restaurant Business", "summary": "The burger chain has transformed its business model and started marketing to the MAGA crowd with a quality message. But it closed more stores, and the chain\u2019s franchisees are apparently struggling.", "title": "A smaller Steak n Shake finds its footing"}, {"link": "https://restaurantbusinessonline.com/financing/problem-pizza-market?utm_source=The%20problem%20with%20the%20pizza%20market\u0026utm_medium=rb-feed\u0026utm_campaign=RSS-Feeds", "matched_entities": {}, "published": "2026-03-02T03:03:00", "published_at": "2026-03-02T03:03:00", "source": "Restaurant Business", "summary": "The Bottom Line: This week\u2019s edition of the weekly restaurant finance newsletter examines the weakness of the fast-food pizza market, as both Papa Johns and Pizza Hut have challenges.", "title": "The problem with the pizza market"}, {"link": "https://restaurantbusinessonline.com/emerging-brands/its-time-banh-mi-go-national-says-vietnamese-sandwich-pioneer?utm_source=It%27s%20time%20for%20banh%20mi%20to%20go%20national%2C%20says%20this%20Vietnamese%20sandwich%20pioneer\u0026utm_medium=rb-feed\u0026utm_campaign=RSS-Feeds", "matched_entities": {}, "published": "2026-02-28T03:02:00", "published_at": "2026-02-28T03:02:00", "source": "Restaurant Business", "summary": "Bun Mee was founded in San Francisco in 2011 and now has five Bay Area locations. A franchisee is bringing the fast-casual brand to New York City for the first time.", "title": "It\u0027s time for banh mi to go national, says this Vietnamese sandwich pioneer"}, {"link": "https://restaurantbusinessonline.com/operations/struggling-sweetgreen-rethinking-its-menu-pricing?utm_source=Struggling%20Sweetgreen%20is%20rethinking%20its%20menu%20pricing\u0026utm_medium=rb-feed\u0026utm_campaign=RSS-Feeds", "matched_entities": {}, "published": "2026-02-27T03:02:00", "published_at": "2026-02-27T03:02:00", "source": "Restaurant Business", "summary": "The fast-casual salad chain\u0027s same-store sales plunged 11.5% in the fourth quarter and 7.9% for the year, prompting executives to consider simplifying its cost structure.", "title": "Struggling Sweetgreen is rethinking its menu pricing"}, {"link": "https://restaurantbusinessonline.com/financing/burger-kings-store-level-profitability-runs-beef-cost-wall?utm_source=Burger%20King%27s%20store-level%20profitability%20runs%20into%20a%20beef%20cost%20wall\u0026utm_medium=rb-feed\u0026utm_campaign=RSS-Feeds", "matched_entities": {}, "published": "2026-02-27T03:02:00", "published_at": "2026-02-27T03:02:00", "source": "Restaurant Business", "summary": "The Bottom Line: The fast-food chain has been improving per-store profitability in recent years as it works to solidify its performance. But beef prices had something to say about that.", "title": "Burger King\u0027s store-level profitability runs into a beef cost wall"}, {"link": "https://restaurantbusinessonline.com/operations/how-shake-shack-improved-profits-despite-soaring-beef-costs?utm_source=How%20Shake%20Shack%20improved%20profits%20despite%20soaring%20beef%20costs\u0026utm_medium=rb-feed\u0026utm_campaign=RSS-Feeds", "matched_entities": {}, "published": "2026-02-27T03:02:00", "published_at": "2026-02-27T03:02:00", "source": "Restaurant Business", "summary": "The fast-casual chain grew margins, despite a challenging macroeconomic climate in 2025. CEO Rob Lynch said the ongoing work on operations paid off and set the stage for a stronger 2026.", "title": "How Shake Shack improved profits despite soaring beef costs"}, {"link": "https://restaurantbusinessonline.com/beverage/beverage-boom-transforming-soda-fountain?utm_source=The%20beverage%20boom%20is%20transforming%20the%20soda%20fountain\u0026utm_medium=rb-feed\u0026utm_campaign=RSS-Feeds", "matched_entities": {}, "published": "2026-02-27T03:02:00", "published_at": "2026-02-27T03:02:00", "source": "Restaurant Business", "summary": "As restaurants look to meet growing demand for specialty beverages, they are tapping equipment suppliers for new products. The result is a new generation of high-tech drink machines.", "title": "The beverage boom is transforming the soda fountain"}, {"link": "https://restaurantbusinessonline.com/operations/southern-california-car-dealership-you-can-get-patty-melt-your-porsche?utm_source=At%20this%20Southern%20California%20car%20dealership%2C%20you%20can%20get%20a%20patty%20melt%20with%20your%20Porsche\u0026utm_medium=rb-feed\u0026utm_campaign=RSS-Feeds", "matched_entities": {}, "published": "2026-02-27T03:02:00", "published_at": "2026-02-27T03:02:00", "source": "Restaurant Business", "summary": "A car dealer is building a $5 million restaurant empire in its showrooms. Guests love the quirky aspect of finding a \"hidden gem\" where they least expect it.", "title": "At this Southern California car dealership, you can get a patty melt with your Porsche"}, {"link": "https://restaurantbusinessonline.com/leadership/el-pollo-loco-eggs-grill-more-make-leadership-moves?utm_source=El%20Pollo%20Loco%2C%20Eggs%20Up%20Grill%20and%20more%20make%20leadership%20moves\u0026utm_medium=rb-feed\u0026utm_campaign=RSS-Feeds", "matched_entities": {}, "published": "2026-02-27T03:02:00", "published_at": "2026-02-27T03:02:00", "source": "Restaurant Business", "summary": "Executive Summary: The latest leadership updates in the restaurant industry.", "title": "El Pollo Loco, Eggs Up Grill and more make leadership moves"}]</script>
+      <script id="entities-data" type="application/json">{"Healthcare": 4}</script>
+
+      <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
+      <script>
+        (function () {
+          const reducedMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+          function readJson(id, fallback) {
+            const el = document.getElementById(id);
+            if (!el) return fallback;
+            const txt = (el.textContent || "").trim();
+            if (!txt) return fallback;
+            try { return JSON.parse(txt); } catch (e) { return fallback; }
+          }
+
+          const articles = readJson("articles-data", []);
+          const entityCountsRaw = readJson("entities-data", {});
+
+          function normalizeEntityPairs(raw) {
+            if (!raw) return [];
+            if (Array.isArray(raw)) {
+              if (raw.length && Array.isArray(raw[0]) && raw[0].length >= 2) {
+                return raw.map(p => [String(p[0]), Number(p[1]) || 0]);
+              }
+              if (raw.length && typeof raw[0] === "object") {
+                return raw.map(o => [String(o.name || o.entity || ""), Number(o.count || o.value || 0) || 0]).filter(p => p[0]);
+              }
+              return [];
+            }
+            if (typeof raw === "object") {
+              return Object.entries(raw).map(([k, v]) => [String(k), Number(v) || 0]);
+            }
+            return [];
+          }
+
+          function getArticleDate(a) {
+            const v = a && (a.published_at || a.published || a.date || a.datetime || a.publishedAt || a.publishedAtISO);
+            if (!v) return null;
+
+            const s = String(v);
+            const direct = new Date(s);
+            if (!isNaN(direct.getTime())) return direct;
+
+            const m = s.match(/^(\d{4})-(\d{2})-(\d{2})/);
+            if (m) {
+              const d = new Date(Number(m[1]), Number(m[2]) - 1, Number(m[3]));
+              if (!isNaN(d.getTime())) return d;
+            }
+            return null;
+          }
+
+          function toDayKey(d) {
+            const y = d.getFullYear();
+            const m = String(d.getMonth() + 1).padStart(2, "0");
+            const day = String(d.getDate()).padStart(2, "0");
+            return y + "-" + m + "-" + day;
+          }
+
+          function buildTimeline(items) {
+            const map = new Map();
+            for (const a of items) {
+              const d = getArticleDate(a);
+              if (!d) continue;
+              const k = toDayKey(d);
+              map.set(k, (map.get(k) || 0) + 1);
+            }
+            const keys = Array.from(map.keys()).sort();
+            return { labels: keys, values: keys.map(k => map.get(k) || 0) };
+          }
+
+          function buildSources(items) {
+            const map = new Map();
+            for (const a of items) {
+              const s = (a && (a.source || a.source_name || a.publisher || a.feed || a.domain)) ? String(a.source || a.source_name || a.publisher || a.feed || a.domain) : "unknown";
+              const key = s.trim() || "unknown";
+              map.set(key, (map.get(key) || 0) + 1);
+            }
+            const pairs = Array.from(map.entries()).sort((a, b) => b[1] - a[1]);
+            const top = pairs.slice(0, 10);
+            const rest = pairs.slice(10).reduce((acc, p) => acc + p[1], 0);
+            const labels = top.map(p => p[0]);
+            const values = top.map(p => p[1]);
+            if (rest > 0) { labels.push("other"); values.push(rest); }
+            return { labels, values };
+          }
+
+          function palette(n) {
+            const base = [
+              "rgba(51,214,197,.86)",  // teal
+              "rgba(25,167,195,.78)",  // blue-teal
+              "rgba(246,200,76,.86)",  // amber
+              "rgba(120,162,255,.78)", // soft blue
+              "rgba(255,91,110,.74)",  // red
+              "rgba(160,118,255,.70)", // violet (small)
+              "rgba(95,222,132,.70)",  // green
+              "rgba(255,154,74,.70)",  // orange
+              "rgba(226,93,255,.62)",  // magenta
+              "rgba(233,238,251,.46)"  // gray
+            ];
+            const out = [];
+            for (let i = 0; i < n; i++) out.push(base[i % base.length]);
+            return out;
+          }
+
+          function chartDefaults() {
+            return {
+              color: "rgba(233,238,251,.78)",
+              borderColor: "rgba(150,190,255,.14)",
+              font: { family: '"Pretendard Variable","Pretendard",system-ui,-apple-system,Segoe UI,sans-serif', size: 12 },
+              animation: reducedMotion ? false : { duration: 650, easing: "easeOutQuart" }
+            };
+          }
+
+          if (!window.Chart) return;
+
+          Chart.defaults.maintainAspectRatio = false;
+          Chart.defaults.responsive = true;
+          Chart.defaults.plugins.legend.labels.boxWidth = 10;
+          Chart.defaults.plugins.legend.labels.boxHeight = 10;
+          Chart.defaults.plugins.legend.labels.usePointStyle = true;
+
+          const defaults = chartDefaults();
+          Chart.defaults.color = defaults.color;
+          Chart.defaults.borderColor = defaults.borderColor;
+          Chart.defaults.font = defaults.font;
+          Chart.defaults.animation = defaults.animation;
+
+          const entityPairs = normalizeEntityPairs(entityCountsRaw)
+            .filter(p => p[0] && Number.isFinite(p[1]))
+            .sort((a, b) => b[1] - a[1])
+            .slice(0, 12);
+
+          const timeline = buildTimeline(articles);
+          const sources = buildSources(articles);
+
+          const entityCanvas = document.getElementById("chartEntities");
+          if (entityCanvas && entityPairs.length) {
+            const labels = entityPairs.map(p => p[0]);
+            const values = entityPairs.map(p => p[1]);
+            new Chart(entityCanvas.getContext("2d"), {
+              type: "bar",
+              data: {
+                labels,
+                datasets: [{
+                  label: "count",
+                  data: values,
+                  backgroundColor: "rgba(51,214,197,.26)",
+                  borderColor: "rgba(51,214,197,.72)",
+                  borderWidth: 1.2,
+                  borderRadius: 10,
+                  maxBarThickness: 44
+                }]
+              },
+              options: {
+                plugins: {
+                  legend: { display: false },
+                  tooltip: {
+                    backgroundColor: "rgba(10,16,30,.92)",
+                    borderColor: "rgba(150,190,255,.20)",
+                    borderWidth: 1,
+                    titleColor: "rgba(233,238,251,.92)",
+                    bodyColor: "rgba(233,238,251,.84)"
+                  }
+                },
+                scales: {
+                  x: {
+                    grid: { display: false },
+                    ticks: { color: "rgba(233,238,251,.68)" }
+                  },
+                  y: {
+                    beginAtZero: true,
+                    grid: { color: "rgba(150,190,255,.10)" },
+                    ticks: { color: "rgba(233,238,251,.64)" }
+                  }
+                }
+              }
+            });
+          }
+
+          const timelineCanvas = document.getElementById("chartTimeline");
+          if (timelineCanvas && timeline.labels.length) {
+            new Chart(timelineCanvas.getContext("2d"), {
+              type: "line",
+              data: {
+                labels: timeline.labels,
+                datasets: [{
+                  label: "articles/day",
+                  data: timeline.values,
+                  tension: 0.28,
+                  fill: true,
+                  borderColor: "rgba(246,200,76,.84)",
+                  backgroundColor: "rgba(246,200,76,.12)",
+                  pointRadius: 2.8,
+                  pointHoverRadius: 4.2,
+                  pointBackgroundColor: "rgba(246,200,76,.84)",
+                  pointBorderColor: "rgba(10,16,30,.92)",
+                  pointBorderWidth: 1.2
+                }]
+              },
+              options: {
+                plugins: {
+                  legend: { display: false },
+                  tooltip: {
+                    backgroundColor: "rgba(10,16,30,.92)",
+                    borderColor: "rgba(150,190,255,.20)",
+                    borderWidth: 1
+                  }
+                },
+                scales: {
+                  x: {
+                    grid: { display: false },
+                    ticks: {
+                      color: "rgba(233,238,251,.68)",
+                      maxRotation: 0,
+                      autoSkip: true,
+                      maxTicksLimit: 9
+                    }
+                  },
+                  y: {
+                    beginAtZero: true,
+                    grid: { color: "rgba(150,190,255,.10)" },
+                    ticks: { color: "rgba(233,238,251,.64)" }
+                  }
+                }
+              }
+            });
+          }
+
+          const sourcesCanvas = document.getElementById("chartSources");
+          if (sourcesCanvas && sources.labels.length) {
+            const colors = palette(sources.labels.length);
+            new Chart(sourcesCanvas.getContext("2d"), {
+              type: "doughnut",
+              data: {
+                labels: sources.labels,
+                datasets: [{
+                  label: "articles",
+                  data: sources.values,
+                  backgroundColor: colors.map(c => c.replace(")", ", .24)").replace("rgba", "rgba")),
+                  borderColor: colors.map(c => c.replace(")", ", .80)").replace("rgba", "rgba")),
+                  borderWidth: 1.1,
+                  hoverOffset: 6
+                }]
+              },
+              options: {
+                cutout: "62%",
+                plugins: {
+                  legend: {
+                    position: "bottom",
+                    labels: { color: "rgba(233,238,251,.72)", padding: 14 }
+                  },
+                  tooltip: {
+                    backgroundColor: "rgba(10,16,30,.92)",
+                    borderColor: "rgba(150,190,255,.20)",
+                    borderWidth: 1
+                  }
+                }
+              }
+            });
+          }
+        })();
+      </script>
+    </main>
+  </body>
+</html>
