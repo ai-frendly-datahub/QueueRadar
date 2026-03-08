@@ -1,5 +1,8 @@
 # QueueRadar - 대기열 정보 레이더
 
+**🌐 Live Report**: https://ai-frendly-datahub.github.io/QueueRadar/
+
+
 공공 시설(병원, 관공서, 은행 등)의 실시간 대기열 정보를 수집하고 대기 시간 트렌드를 분석합니다.
 
 ## 프로젝트 목표
