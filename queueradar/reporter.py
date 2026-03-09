@@ -39,7 +39,10 @@ def generate_report(
             'published': article.published.isoformat() if article.published else None,
             'published_at': article.published.isoformat() if article.published else None,
             'summary': article.summary,
-            'matched_entities': article.matched_entities or {}
+            'matched_entities': article.matched_entities or {},
+            'collected_at': article.collected_at.isoformat()
+            if article.collected_at
+            else None,
         }
         articles_json.append(article_data)
 
@@ -695,6 +698,22 @@ _REPORT_TEMPLATE = """<!doctype html>
             <div class="panel-bd">
               <div class="chart-wrap" role="img" aria-label="Pie chart showing article share by source">
                 <canvas id="chartSources"></canvas>
+      <div class="grid" style="margin-top:12px">
+        <div class="card">
+          <div class="muted">Data Freshness (collection lag)</div>
+          <div class="chart-wrap"><canvas id="chartFreshness"></canvas></div>
+        </div>
+        <div class="card">
+          <div class="muted">Entity Extraction Rate</div>
+          <div class="chart-wrap"><canvas id="chartEntityRate"></canvas></div>
+        </div>
+      </div>
+      <div class="grid" style="margin-top:12px">
+        <div class="card">
+          <div class="muted">Source Health</div>
+          <div class="chart-wrap"><canvas id="chartSourceHealth"></canvas></div>
+        </div>
+      </div>
               </div>
               <noscript>
                 <p class="muted small">Charts require JavaScript. Enable JS to see source breakdown.</p>
@@ -881,7 +900,7 @@ _REPORT_TEMPLATE = """<!doctype html>
             const direct = new Date(s);
             if (!isNaN(direct.getTime())) return direct;
 
-            const m = s.match(/^(\d{4})-(\d{2})-(\d{2})/);
+            const m = s.match(/^(\\d{4})-(\\d{2})-(\\d{2})/);
             if (m) {
               const d = new Date(Number(m[1]), Number(m[2]) - 1, Number(m[3]));
               if (!isNaN(d.getTime())) return d;
@@ -1098,6 +1117,162 @@ _REPORT_TEMPLATE = """<!doctype html>
               }
             });
           }
+
+      // Chart 1: Data Freshness (collection lag in hours)
+      function buildFreshness(items) {
+        const lagBuckets = { "0-1h": 0, "1-6h": 0, "6-24h": 0, "1-3d": 0, "3-7d": 0, "7d+": 0 };
+        const now = new Date();
+        for (const a of items) {
+          const pubStr = a && (a.published_at || a.published);
+          const collStr = a && a.collected_at;
+          if (!pubStr || !collStr) continue;
+          const pubDate = new Date(String(pubStr));
+          const collDate = new Date(String(collStr));
+          if (isNaN(pubDate.getTime()) || isNaN(collDate.getTime())) continue;
+          const lagMs = collDate.getTime() - pubDate.getTime();
+          const lagHours = lagMs / (1000 * 60 * 60);
+          if (lagHours < 1) lagBuckets["0-1h"]++;
+          else if (lagHours < 6) lagBuckets["1-6h"]++;
+          else if (lagHours < 24) lagBuckets["6-24h"]++;
+          else if (lagHours < 72) lagBuckets["1-3d"]++;
+          else if (lagHours < 168) lagBuckets["3-7d"]++;
+          else lagBuckets["7d+"]++;
+        }
+        return { labels: Object.keys(lagBuckets), values: Object.values(lagBuckets) };
+      }
+
+      const freshnessData = buildFreshness(articles);
+      const freshnessCanvas = document.getElementById("chartFreshness");
+      if (freshnessCanvas && freshnessData.labels.length) {
+        new Chart(freshnessCanvas.getContext("2d"), {
+          type: "bar",
+          data: {
+            labels: freshnessData.labels,
+            datasets: [{
+              label: "articles",
+              data: freshnessData.values,
+              backgroundColor: "rgba(120,162,255,.35)",
+              borderColor: "rgba(120,162,255,.72)",
+              borderWidth: 1.2,
+              borderRadius: 10,
+              maxBarThickness: 44
+            }]
+          },
+          options: {
+            plugins: {
+              legend: { display: false },
+              tooltip: {
+                backgroundColor: "rgba(10,16,30,.92)",
+                borderColor: "rgba(150,190,255,.20)",
+                borderWidth: 1,
+                titleColor: "rgba(233,238,251,.92)",
+                bodyColor: "rgba(233,238,251,.84)"
+              }
+            },
+            scales: {
+              x: {
+                grid: { display: false },
+                ticks: { color: "rgba(233,238,251,.68)" }
+              },
+              y: {
+                beginAtZero: true,
+                grid: { color: "rgba(150,190,255,.10)" },
+                ticks: { color: "rgba(233,238,251,.64)" }
+              }
+            }
+          }
+        });
+      }
+
+      // Chart 2: Entity Extraction Rate (doughnut with center text)
+      function buildEntityRate(items) {
+        let withEntities = 0, withoutEntities = 0;
+        for (const a of items) {
+          const ents = a && a.matched_entities;
+          if (ents && Object.keys(ents).length > 0) withEntities++;
+          else withoutEntities++;
+        }
+        return { with: withEntities, without: withoutEntities };
+      }
+
+      const entityRateData = buildEntityRate(articles);
+      const entityRateCanvas = document.getElementById("chartEntityRate");
+      if (entityRateCanvas) {
+        const total = entityRateData.with + entityRateData.without;
+        const pct = total > 0 ? Math.round((entityRateData.with / total) * 100) : 0;
+        const plugin = {
+          id: "textCenter",
+          beforeDatasetsDraw(c) {
+            const { width, height } = c.chartArea;
+            const x = c.chartArea.left + width / 2;
+            const y = c.chartArea.top + height / 2;
+            c.ctx.save();
+            c.ctx.font = "bold 24px sans-serif";
+            c.ctx.fillStyle = "rgba(15,23,42,.8)";
+            c.ctx.textAlign = "center";
+            c.ctx.textBaseline = "middle";
+            c.ctx.fillText(pct + "%", x, y);
+            c.ctx.restore();
+          }
+        };
+        new Chart(entityRateCanvas.getContext("2d"), {
+          type: "doughnut",
+          data: {
+            labels: ["With entities", "Without entities"],
+            datasets: [{
+              data: [entityRateData.with, entityRateData.without],
+              backgroundColor: ["rgba(95,222,132,.35)", "rgba(255,91,110,.35)"],
+              borderColor: ["rgba(95,222,132,.80)", "rgba(255,91,110,.80)"],
+              borderWidth: 1.2
+            }]
+          },
+          options: {
+            cutout: "62%",
+            plugins: {
+              legend: { position: "bottom" },
+              tooltip: { enabled: true }
+            }
+          },
+          plugins: [plugin]
+        });
+      }
+
+      // Chart 3: Source Health (horizontal bar, sorted descending)
+      function buildSourceHealth(items) {
+        const map = new Map();
+        for (const a of items) {
+          const s = (a && a.source) ? String(a.source) : "unknown";
+          const key = s.trim() || "unknown";
+          map.set(key, (map.get(key) || 0) + 1);
+        }
+        const pairs = Array.from(map.entries()).sort((a, b) => b[1] - a[1]);
+        return { labels: pairs.map(p => p[0]), values: pairs.map(p => p[1]) };
+      }
+
+      const sourceHealthData = buildSourceHealth(articles);
+      const sourceHealthCanvas = document.getElementById("chartSourceHealth");
+      if (sourceHealthCanvas && sourceHealthData.labels.length) {
+        const colors = palette(sourceHealthData.labels.length);
+        new Chart(sourceHealthCanvas.getContext("2d"), {
+          type: "bar",
+          data: {
+            labels: sourceHealthData.labels,
+            datasets: [{
+              label: "articles",
+              data: sourceHealthData.values,
+              backgroundColor: colors.map(c => c.replace(")", ", .35)").replace("rgba", "rgba")),
+              borderColor: colors.map(c => c.replace(")", ", .80)").replace("rgba", "rgba")),
+              borderWidth: 1.2,
+              borderRadius: 8
+            }]
+          },
+          options: {
+            indexAxis: "y",
+            plugins: { legend: { display: false } },
+            scales: { x: { beginAtZero: true } }
+          }
+        });
+      }
         })();
       </script>
     </main>
