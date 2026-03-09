@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import re
 from datetime import datetime, timezone
-from typing import Any, List
+from typing import Optional, Any, List
 
 import requests
 
@@ -72,7 +72,7 @@ def _ride_to_article(
     land_name: str,
     park_url: str,
     category: str,
-) -> Article | None:
+) -> Optional[Article]:
     """Convert a single ride wait-time entry into an Article."""
     name: str = ride.get("name", "")
     if not name:
@@ -117,7 +117,7 @@ def _ride_to_article(
     )
 
 
-def _parse_iso_datetime(dt_str: str) -> datetime | None:
+def _parse_iso_datetime(dt_str: str) -> Optional[datetime]:
     """Parse ISO 8601 datetime string to timezone-aware datetime."""
     if not dt_str:
         return None
@@ -131,7 +131,7 @@ def _parse_iso_datetime(dt_str: str) -> datetime | None:
         return None
 
 
-def _extract_park_id(url: str) -> str | None:
+def _extract_park_id(url: str) -> Optional[str]:
     """Extract park ID from a Queue-Times URL like /parks/6/queue_times.json."""
     match = re.search(r"/parks/(\d+)/", url)
     return match.group(1) if match else None
