@@ -1,8 +1,8 @@
 from __future__ import annotations
 
 import re
-from datetime import datetime, timezone
-from typing import Optional, Any, List
+from datetime import UTC, datetime
+from typing import Any
 
 import requests
 
@@ -15,7 +15,7 @@ def collect_queue_times(
     category: str,
     limit: int = 50,
     timeout: int = 15,
-) -> List[Article]:
+) -> list[Article]:
     """Fetch ride wait times from Queue-Times API for a specific park.
 
     Each ride in the park becomes one Article with structured wait-time data.
@@ -28,12 +28,10 @@ def collect_queue_times(
     park_name = source.name
     park_id = _extract_park_id(source.url)
     park_url = (
-        f"https://queue-times.com/en-US/parks/{park_id}/queue_times"
-        if park_id
-        else source.url
+        f"https://queue-times.com/en-US/parks/{park_id}/queue_times" if park_id else source.url
     )
 
-    articles: List[Article] = []
+    articles: list[Article] = []
 
     lands: list[dict[str, Any]] = data.get("lands", [])
     for land in lands:
@@ -72,7 +70,7 @@ def _ride_to_article(
     land_name: str,
     park_url: str,
     category: str,
-) -> Optional[Article]:
+) -> Article | None:
     """Convert a single ride wait-time entry into an Article."""
     name: str = ride.get("name", "")
     if not name:
@@ -117,7 +115,7 @@ def _ride_to_article(
     )
 
 
-def _parse_iso_datetime(dt_str: str) -> Optional[datetime]:
+def _parse_iso_datetime(dt_str: str) -> datetime | None:
     """Parse ISO 8601 datetime string to timezone-aware datetime."""
     if not dt_str:
         return None
@@ -125,13 +123,13 @@ def _parse_iso_datetime(dt_str: str) -> Optional[datetime]:
         cleaned = dt_str.replace("Z", "+00:00")
         dt = datetime.fromisoformat(cleaned)
         if dt.tzinfo is None:
-            dt = dt.replace(tzinfo=timezone.utc)
+            dt = dt.replace(tzinfo=UTC)
         return dt
     except (ValueError, TypeError):
         return None
 
 
-def _extract_park_id(url: str) -> Optional[str]:
+def _extract_park_id(url: str) -> str | None:
     """Extract park ID from a Queue-Times URL like /parks/6/queue_times.json."""
     match = re.search(r"/parks/(\d+)/", url)
     return match.group(1) if match else None
