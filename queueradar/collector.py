@@ -68,7 +68,7 @@ def _create_session() -> requests.Session:
     retry_strategy = Retry(
         total=3,
         backoff_factor=1,
-        status_forcelist=[429, 500, 502, 503, 504],
+        status_forcelist=[408, 429, 500, 502, 503, 504, 522, 524],
         allowed_methods=frozenset(["GET"]),
         raise_on_status=False,
     )
@@ -219,7 +219,7 @@ def _collect_single(
             )
 
         return items
-    except Exception as exc:
+    except (ValueError, KeyError, IndexError, AttributeError) as exc:
         raise ParseError(f"Failed to parse feed from {source.name}: {exc}") from exc
 
 
