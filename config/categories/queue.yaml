@@ -47,9 +47,9 @@ sources:
   - name: "WDWMAGIC News"
     type: "rss"
     url: "https://www.wdwmagic.com/news/feed/"
-  - name: "Disneyland News"
+  - name: "Attractions Magazine"
     type: "rss"
-    url: "https://disneyparks.disney.go.com/blog/feed/"
+    url: "https://attractionsmagazine.com/feed/"
 
 entities:
   - name: "WaitTime"
