@@ -49,7 +49,7 @@ def _seed_article(
             """,
             [
                 article_id,
-                "queue",
+                "coffee",
                 "Test Source",
                 title,
                 link,
@@ -64,52 +64,52 @@ def _seed_article(
 
 
 def test_handle_search(tmp_path: Path) -> None:
-    from queueradar.mcp_server.tools import handle_search
+    from mcp_server.tools import handle_search
 
     db_path = tmp_path / "radar.duckdb"
     search_db_path = tmp_path / "search.db"
     _init_articles_table(db_path)
 
-    now = datetime.now(tz=UTC)
+    now = datetime.now(UTC)
     recent_link = "https://example.com/recent"
     old_link = "https://example.com/old"
 
     _seed_article(
         db_path=db_path,
         article_id=1,
-        title="Recent reservation demand",
+        title="Recent coffee demand",
         link=recent_link,
         collected_at=now - timedelta(days=2),
     )
     _seed_article(
         db_path=db_path,
         article_id=2,
-        title="Old reservation demand",
+        title="Old coffee demand",
         link=old_link,
         collected_at=now - timedelta(days=20),
     )
 
     with SearchIndex(search_db_path) as idx:
-        idx.upsert(recent_link, "Recent reservation demand", "Demand is rising")
-        idx.upsert(old_link, "Old reservation demand", "Demand was low")
+        idx.upsert(recent_link, "Recent coffee demand", "Demand is rising")
+        idx.upsert(old_link, "Old coffee demand", "Demand was low")
 
     output = handle_search(
         search_db_path=search_db_path,
         db_path=db_path,
-        query="last 7 days reservation",
+        query="last 7 days coffee",
         limit=10,
     )
 
-    assert "Recent reservation demand" in output
-    assert "Old reservation demand" not in output
+    assert "Recent coffee demand" in output
+    assert "Old coffee demand" not in output
 
 
 def test_handle_recent_updates(tmp_path: Path) -> None:
-    from queueradar.mcp_server.tools import handle_recent_updates
+    from mcp_server.tools import handle_recent_updates
 
     db_path = tmp_path / "radar.duckdb"
     _init_articles_table(db_path)
-    now = datetime.now(tz=UTC)
+    now = datetime.now(UTC)
 
     _seed_article(
         db_path=db_path,
@@ -133,7 +133,7 @@ def test_handle_recent_updates(tmp_path: Path) -> None:
 
 
 def test_handle_sql_select(tmp_path: Path) -> None:
-    from queueradar.mcp_server.tools import handle_sql
+    from mcp_server.tools import handle_sql
 
     db_path = tmp_path / "radar.duckdb"
     _init_articles_table(db_path)
@@ -145,7 +145,7 @@ def test_handle_sql_select(tmp_path: Path) -> None:
 
 
 def test_handle_sql_blocked(tmp_path: Path) -> None:
-    from queueradar.mcp_server.tools import handle_sql
+    from mcp_server.tools import handle_sql
 
     db_path = tmp_path / "radar.duckdb"
     _init_articles_table(db_path)
@@ -156,11 +156,11 @@ def test_handle_sql_blocked(tmp_path: Path) -> None:
 
 
 def test_handle_top_trends(tmp_path: Path) -> None:
-    from queueradar.mcp_server.tools import handle_top_trends
+    from mcp_server.tools import handle_top_trends
 
     db_path = tmp_path / "radar.duckdb"
     _init_articles_table(db_path)
-    now = datetime.now(tz=UTC)
+    now = datetime.now(UTC)
 
     _seed_article(
         db_path=db_path,
@@ -187,54 +187,9 @@ def test_handle_top_trends(tmp_path: Path) -> None:
     assert "1" in output
 
 
-def test_handle_queue_status_returns_only_queue_like_titles(tmp_path: Path) -> None:
-    from queueradar.mcp_server.tools import handle_queue_status
+def test_handle_price_watch_stub() -> None:
+    from mcp_server.tools import handle_price_watch
 
-    db_path = tmp_path / "radar.duckdb"
-    _init_articles_table(db_path)
-    now = datetime.now(tz=UTC)
+    output = handle_price_watch(threshold=10.0)
 
-    _seed_article(
-        db_path=db_path,
-        article_id=1,
-        title="Hospital wait time optimization platform",
-        link="https://example.com/q1",
-        collected_at=now - timedelta(hours=2),
-        entities={"WaitTime": ["wait time"], "Healthcare": ["hospital"]},
-    )
-    _seed_article(
-        db_path=db_path,
-        article_id=2,
-        title="General tech earnings update",
-        link="https://example.com/q2",
-        collected_at=now - timedelta(hours=1),
-        entities={"Platform": ["opentable"]},
-    )
-
-    output = handle_queue_status(db_path=db_path, days=7, limit=10)
-
-    assert "Queue status (1 item(s) in last 7 days):" in output
-    assert "Hospital wait time optimization platform" in output
-    assert "[WaitTime, Healthcare]" in output
-    assert "General tech earnings update" not in output
-
-
-def test_handle_queue_status_no_matches(tmp_path: Path) -> None:
-    from queueradar.mcp_server.tools import handle_queue_status
-
-    db_path = tmp_path / "radar.duckdb"
-    _init_articles_table(db_path)
-    now = datetime.now(tz=UTC)
-
-    _seed_article(
-        db_path=db_path,
-        article_id=1,
-        title="Cloud platform reliability improvements",
-        link="https://example.com/none",
-        collected_at=now - timedelta(hours=1),
-        entities={"Platform": ["cloud"]},
-    )
-
-    output = handle_queue_status(db_path=db_path, days=7, limit=5)
-
-    assert output == "No queue or reservation alerts found."
+    assert "Not available in template project" in output
