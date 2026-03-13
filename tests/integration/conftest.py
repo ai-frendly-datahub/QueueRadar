@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from datetime import datetime, timezone
+from datetime import UTC, datetime
 from pathlib import Path
 
 import pytest
@@ -21,7 +21,7 @@ def tmp_storage(tmp_path: Path) -> RadarStorage:
 @pytest.fixture
 def sample_articles() -> list[Article]:
     """Create sample articles with realistic queue time data."""
-    now = datetime.now(timezone.utc)
+    now = datetime.now(UTC)
     return [
         Article(
             title="병원 응급실 대기시간 현황",
