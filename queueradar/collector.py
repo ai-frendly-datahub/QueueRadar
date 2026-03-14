@@ -13,6 +13,7 @@ from urllib.parse import urlparse
 
 import feedparser
 import requests
+import structlog
 from pybreaker import CircuitBreakerError
 from requests.adapters import HTTPAdapter
 from tenacity import (
@@ -23,14 +24,17 @@ from tenacity import (
 )
 from urllib3.util.retry import Retry
 
-from .exceptions import NetworkError, ParseError, SourceError
+from . import exceptions
 from .models import Article, Source
+from .queue_times_collector import collect_queue_times
 from .resilience import get_circuit_breaker_manager
 
 
 _DEFAULT_HEADERS: dict[str, str] = {
     "User-Agent": "Mozilla/5.0 (compatible; RadarTemplateBot/1.0; +https://github.com/zzragida/ai-frendly-datahub)",
 }
+
+logger = structlog.get_logger(__name__)
 
 
 class RateLimiter:
@@ -144,9 +148,9 @@ def collect_sources(
             return result, []
         except CircuitBreakerError:
             return [], [f"{source.name}: Circuit breaker open (source unavailable)"]
-        except SourceError as exc:
+        except exceptions.SourceError as exc:
             return [], [str(exc)]
-        except (NetworkError, ParseError) as exc:
+        except (exceptions.NetworkError, exceptions.ParseError) as exc:
             return [], [f"{source.name}: {exc}"]
         except Exception as exc:
             return [], [f"{source.name}: Unexpected error - {type(exc).__name__}: {exc}"]
@@ -181,15 +185,26 @@ def _collect_single(
     timeout: int,
     session: requests.Session | None = None,
 ) -> list[Article]:
-    if source.type.lower() != "rss":
-        raise SourceError(source.name, f"Unsupported source type '{source.type}'")
+    source_type = source.type.lower()
+
+    if source_type == "api":
+        return collect_queue_times(
+            source,
+            category=category,
+            limit=limit,
+            timeout=timeout,
+            session=session,
+        )
+
+    if source_type != "rss":
+        raise exceptions.SourceError(source.name, f"Unsupported source type '{source.type}'")
 
     try:
         response = _fetch_url_with_retry(source.url, timeout, session=session)
     except (requests.exceptions.Timeout, requests.exceptions.ConnectionError) as exc:
-        raise NetworkError(f"Network error fetching {source.name}: {exc}") from exc
+        raise exceptions.NetworkError(f"Network error fetching {source.name}: {exc}") from exc
     except requests.exceptions.RequestException as exc:
-        raise SourceError(source.name, f"Request failed: {exc}", exc) from exc
+        raise exceptions.SourceError(source.name, f"Request failed: {exc}", exc) from exc
 
     try:
         feed = feedparser.parse(response.content)
@@ -226,13 +241,15 @@ def _collect_single(
             valid_items.append(item)
 
         if len(valid_items) < len(items):
-            print(
-                f"Warning: Filtered {len(items) - len(valid_items)} invalid items from {source.name}"
+            logger.warning(
+                "filtered_invalid_items",
+                source=source.name,
+                filtered_count=len(items) - len(valid_items),
             )
 
         return valid_items
     except Exception as exc:
-        raise ParseError(f"Failed to parse feed from {source.name}: {exc}") from exc
+        raise exceptions.ParseError(f"Failed to parse feed from {source.name}: {exc}") from exc
 
 
 def _extract_datetime(entry: Mapping[str, Any]) -> datetime | None:

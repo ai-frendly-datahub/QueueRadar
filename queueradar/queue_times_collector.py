@@ -6,7 +6,7 @@ from typing import Any
 
 import requests
 
-from .exceptions import ParseError, SourceError
+from . import exceptions
 from .models import Article, Source
 
 
@@ -16,30 +16,35 @@ def collect_queue_times(
     category: str,
     limit: int = 50,
     timeout: int = 15,
+    session: requests.Session | None = None,
 ) -> list[Article]:
     """Fetch ride wait times from Queue-Times API for a specific park.
 
     Each ride in the park becomes one Article with structured wait-time data.
     API docs: https://queue-times.com/en-US/pages/api
     """
+    client = session or requests
+
     try:
-        response = requests.get(source.url, timeout=timeout)
+        response = client.get(source.url, timeout=timeout)
         response.raise_for_status()
     except requests.exceptions.Timeout as e:
-        raise SourceError(source.name, f"Request timeout: {e}") from e
+        raise exceptions.SourceError(source.name, f"Request timeout: {e}") from e
     except requests.exceptions.ConnectionError as e:
-        raise SourceError(source.name, f"Connection error: {e}") from e
+        raise exceptions.SourceError(source.name, f"Connection error: {e}") from e
     except requests.exceptions.HTTPError as e:
-        raise SourceError(source.name, f"HTTP error: {e}") from e
+        raise exceptions.SourceError(source.name, f"HTTP error: {e}") from e
 
     try:
         data: dict[str, Any] = response.json()
     except ValueError as e:
-        raise ParseError(f"Invalid JSON response from {source.name}: {e}") from e
+        raise exceptions.ParseError(f"Invalid JSON response from {source.name}: {e}") from e
 
     # JSON 스키마 검증: 필수 필드 확인
     if not isinstance(data, dict):
-        raise ParseError(f"Expected dict response from {source.name}, got {type(data).__name__}")
+        raise exceptions.ParseError(
+            f"Expected dict response from {source.name}, got {type(data).__name__}"
+        )
 
     park_name = source.name
     park_id = _extract_park_id(source.url)
