@@ -186,3 +186,4 @@ reports/*.html
 docs/reports/*.html
 !docs/reports/.gitkeep
 data/daily/
+data/api_cache/
