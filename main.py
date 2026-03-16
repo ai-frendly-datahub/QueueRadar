@@ -11,7 +11,7 @@ from queueradar.common.validators import validate_article
 from queueradar.config_loader import load_category_config, load_settings
 from queueradar.date_storage import apply_date_storage_policy
 from queueradar.raw_logger import RawLogger
-from queueradar.reporter import generate_report
+from queueradar.reporter import generate_index_html, generate_report
 from queueradar.search_index import SearchIndex
 from queueradar.storage import RadarStorage
 
@@ -146,6 +146,8 @@ def run(
         stats=stats,
         errors=errors,
     )
+    # Generate index.html
+    generate_index_html(settings.report_dir)
     date_storage = apply_date_storage_policy(
         database_path=settings.database_path,
         raw_data_dir=settings.raw_data_dir,
