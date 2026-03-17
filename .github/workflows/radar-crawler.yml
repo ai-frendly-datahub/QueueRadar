@@ -47,20 +47,6 @@ jobs:
           pip install "radar-core @ git+https://github.com/ai-frendly-datahub/radar-core.git@main"
           pip install -r requirements.txt
 
-      - name: Reset stale crawl_health (one-time fix for updated source URLs)
-        run: |
-          python -c "
-          import duckdb, os
-          db = 'data/radar_data.duckdb'
-          if os.path.exists(db):
-              con = duckdb.connect(db)
-              try:
-                  con.execute(\"UPDATE crawl_health SET failure_count=0, disabled=false, last_error=NULL WHERE source_name IN ('Theme Park Insider','WDWMAGIC News') AND disabled=true\")
-                  print('Reset crawl_health for Theme Park Insider + WDWMAGIC News')
-              except: pass
-              con.close()
-          " || true
-
       - name: Run Radar
         run: |
           python main.py --category "${{ env.RADAR_CATEGORY }}" --recent-days 7 --keep-days 90 --keep-raw-days 180 --keep-report-days 90 --per-source-limit 50 --snapshot-db --generate-report
