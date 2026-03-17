@@ -41,15 +41,29 @@ sources:
     url: "https://queue-times.com/parks/32/queue_times.json"
 
   # === RSS (Secondary - Theme park news) ===
+  # Theme Park Insider (updated URL via FeedBurner)
   - name: "Theme Park Insider"
     type: "rss"
-    url: "https://www.themeparkinsider.com/feed/"
+    url: "https://feeds.feedburner.com/ThemeParkInsider"
+
+  # WDWMAGIC (updated URL)
   - name: "WDWMAGIC News"
     type: "rss"
-    url: "https://www.wdwmagic.com/news/feed/"
+    url: "https://www.wdwmagic.com/news/rss.xml"
+
   - name: "Attractions Magazine"
     type: "rss"
     url: "https://attractionsmagazine.com/feed/"
+
+  # Inside the Magic - 디즈니/테마파크 뉴스
+  - name: "Inside the Magic"
+    type: "rss"
+    url: "https://insidethemagic.net/feed"
+
+  # Blooloop - 테마파크/어트랙션 업계 뉴스
+  - name: "Blooloop"
+    type: "rss"
+    url: "https://blooloop.com/feed"
 
 entities:
   - name: "WaitTime"
