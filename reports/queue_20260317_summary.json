@@ -11,7 +11,7 @@
     },
     {
       "name": "WaitTime",
-      "count": 908
+      "count": 907
     },
     {
       "name": "Status",
@@ -23,19 +23,19 @@
     },
     {
       "name": "Attraction",
-      "count": 218
+      "count": 217
     }
   ],
   "sources": {
-    "Universal Studios Hollywood": 24,
     "Busch Gardens Tampa": 24,
     "Universal Studios Orlando": 29,
-    "Islands of Adventure": 24,
+    "Universal Studios Hollywood": 24,
+    "Islands of Adventure": 23,
     "Disney California Adventure": 30,
     "SeaWorld Orlando": 17,
-    "Disneyland": 13,
     "Disney Hollywood Studios": 19,
-    "Animal Kingdom": 20
+    "Animal Kingdom": 20,
+    "Disneyland": 14
   },
-  "generated_at": "2026-03-17T09:38:23.273653+09:00"
+  "generated_at": "2026-03-17T09:58:36.941254+09:00"
 }
