@@ -7,11 +7,11 @@
   "top_entities": [
     {
       "name": "RealTimeData",
-      "count": 1201
+      "count": 1200
     },
     {
       "name": "WaitTime",
-      "count": 831
+      "count": 827
     },
     {
       "name": "Status",
@@ -19,22 +19,22 @@
     },
     {
       "name": "Location",
-      "count": 328
+      "count": 340
     },
     {
       "name": "Attraction",
-      "count": 212
+      "count": 211
     }
   ],
   "sources": {
-    "Islands of Adventure": 21,
+    "Busch Gardens Tampa": 24,
+    "Universal Studios Hollywood": 24,
     "Universal Studios Orlando": 26,
-    "Disney California Adventure": 31,
+    "Islands of Adventure": 21,
     "SeaWorld Orlando": 17,
     "Disneyland": 50,
-    "Animal Kingdom": 20,
-    "Disney Hollywood Studios": 22,
-    "Disney Magic Kingdom": 13
+    "Disney California Adventure": 31,
+    "Animal Kingdom": 7
   },
-  "generated_at": "2026-03-24T15:11:53.061098+09:00"
+  "generated_at": "2026-03-24T15:24:48.819050+09:00"
 }
