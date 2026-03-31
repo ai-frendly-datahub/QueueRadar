@@ -65,6 +65,61 @@ sources:
     type: "rss"
     url: "https://blooloop.com/feed"
 
+  # === Reddit 테마파크 커뮤니티 ===
+  - name: "r/WaltDisneyWorld"
+    type: "rss"
+    url: "https://www.reddit.com/r/WaltDisneyWorld/.rss"
+
+  - name: "r/Disneyland"
+    type: "rss"
+    url: "https://www.reddit.com/r/Disneyland/.rss"
+
+  - name: "r/UniversalOrlando"
+    type: "rss"
+    url: "https://www.reddit.com/r/UniversalOrlando/.rss"
+
+  - name: "r/rollercoasters"
+    type: "rss"
+    url: "https://www.reddit.com/r/rollercoasters/.rss"
+
+  - name: "r/ThemeParkCrazy"
+    type: "rss"
+    url: "https://www.reddit.com/r/ThemeParkCrazy/.rss"
+
+  - name: "r/Sixflags"
+    type: "rss"
+    url: "https://www.reddit.com/r/sixflags/.rss"
+
+  - name: "r/korea"
+    type: "rss"
+    url: "https://www.reddit.com/r/korea/.rss"
+
+  # === 테마파크 YouTube ===
+  - name: "Defunctland"
+    type: "rss"
+    url: "https://www.youtube.com/feeds/videos.xml?channel_id=UCVo63lbKHjC04KqYhwSZ_Pg"
+
+  - name: "Theme Park Crazy"
+    type: "rss"
+    url: "https://www.youtube.com/feeds/videos.xml?channel_id=UCYdNtGaJkrtn04tmsmRrWlw"
+
+  - name: "Coaster Studios"
+    type: "rss"
+    url: "https://www.youtube.com/feeds/videos.xml?channel_id=UCuKwMVIj5H7pGrCb6qOb21g"
+
+  # === 국제 테마파크 뉴스 ===
+  - name: "Theme Park Tribune"
+    type: "rss"
+    url: "https://www.themeparktribune.com/feed/"
+
+  - name: "Coaster Nation"
+    type: "rss"
+    url: "https://www.coasternation.com/feed/"
+
+  - name: "Park World Magazine"
+    type: "rss"
+    url: "https://www.parkworld-online.com/feed/"
+
 entities:
   - name: "WaitTime"
     display_name: "대기 시간"
