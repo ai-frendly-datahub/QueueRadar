@@ -1,0 +1,40 @@
+{
+  "date": "2026-04-03",
+  "category": "queue",
+  "article_count": 200,
+  "source_count": 8,
+  "matched_count": 200,
+  "top_entities": [
+    {
+      "name": "RealTimeData",
+      "count": 1201
+    },
+    {
+      "name": "WaitTime",
+      "count": 938
+    },
+    {
+      "name": "Status",
+      "count": 400
+    },
+    {
+      "name": "Location",
+      "count": 301
+    },
+    {
+      "name": "Attraction",
+      "count": 208
+    }
+  ],
+  "sources": {
+    "SeaWorld Orlando": 17,
+    "Disney California Adventure": 31,
+    "Disneyland": 26,
+    "Animal Kingdom": 20,
+    "Disney Hollywood Studios": 22,
+    "Disney Magic Kingdom": 39,
+    "Six Flags Magic Mountain": 40,
+    "Busch Gardens Tampa": 5
+  },
+  "generated_at": "2026-04-03T10:06:25.978613+09:00"
+}
