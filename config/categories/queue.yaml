@@ -1,288 +1,492 @@
-category_name: "queue"
-display_name: "대기/예약 레이더"
-
+category_name: queue
+display_name: 대기/예약 레이더
 sources:
-  # === Queue-Times API (Primary - Real-time theme park wait times) ===
-  - name: "Disney Magic Kingdom"
-    type: "api"
-    url: "https://queue-times.com/parks/6/queue_times.json"
-  - name: "Epcot"
-    type: "api"
-    url: "https://queue-times.com/parks/5/queue_times.json"
-  - name: "Disney Hollywood Studios"
-    type: "api"
-    url: "https://queue-times.com/parks/7/queue_times.json"
-  - name: "Animal Kingdom"
-    type: "api"
-    url: "https://queue-times.com/parks/8/queue_times.json"
-  - name: "Disneyland"
-    type: "api"
-    url: "https://queue-times.com/parks/16/queue_times.json"
-  - name: "Disney California Adventure"
-    type: "api"
-    url: "https://queue-times.com/parks/17/queue_times.json"
-  - name: "Universal Studios Orlando"
-    type: "api"
-    url: "https://queue-times.com/parks/65/queue_times.json"
-  - name: "Islands of Adventure"
-    type: "api"
-    url: "https://queue-times.com/parks/64/queue_times.json"
-  - name: "Universal Studios Hollywood"
-    type: "api"
-    url: "https://queue-times.com/parks/66/queue_times.json"
-  - name: "Busch Gardens Tampa"
-    type: "api"
-    url: "https://queue-times.com/parks/24/queue_times.json"
-  - name: "SeaWorld Orlando"
-    type: "api"
-    url: "https://queue-times.com/parks/21/queue_times.json"
-  - name: "Six Flags Magic Mountain"
-    type: "api"
-    url: "https://queue-times.com/parks/32/queue_times.json"
+- name: Disney Magic Kingdom
+  type: api
+  url: https://queue-times.com/parks/6/queue_times.json
+- name: Epcot
+  type: api
+  url: https://queue-times.com/parks/5/queue_times.json
+- name: Disney Hollywood Studios
+  type: api
+  url: https://queue-times.com/parks/7/queue_times.json
+- name: Animal Kingdom
+  type: api
+  url: https://queue-times.com/parks/8/queue_times.json
+- name: Disneyland
+  type: api
+  url: https://queue-times.com/parks/16/queue_times.json
+- name: Disney California Adventure
+  type: api
+  url: https://queue-times.com/parks/17/queue_times.json
+- name: Universal Studios Orlando
+  type: api
+  url: https://queue-times.com/parks/65/queue_times.json
+- name: Islands of Adventure
+  type: api
+  url: https://queue-times.com/parks/64/queue_times.json
+- name: Universal Studios Hollywood
+  type: api
+  url: https://queue-times.com/parks/66/queue_times.json
+- name: Busch Gardens Tampa
+  type: api
+  url: https://queue-times.com/parks/24/queue_times.json
+- name: SeaWorld Orlando
+  type: api
+  url: https://queue-times.com/parks/21/queue_times.json
+- name: Six Flags Magic Mountain
+  type: api
+  url: https://queue-times.com/parks/32/queue_times.json
+- name: Theme Park Insider
+  type: rss
+  url: https://feeds.feedburner.com/ThemeParkInsider
+- name: WDWMAGIC News
+  type: rss
+  url: https://www.wdwmagic.com/news/rss.xml
+- name: Attractions Magazine
+  type: rss
+  url: https://attractionsmagazine.com/feed/
+- name: Inside the Magic
+  type: rss
+  url: https://insidethemagic.net/feed
+- name: Blooloop
+  type: rss
+  url: https://blooloop.com/feed
+- name: r/WaltDisneyWorld
+  type: reddit
+  url: https://www.reddit.com/r/WaltDisneyWorld/
+- name: r/Disneyland
+  type: reddit
+  url: https://www.reddit.com/r/Disneyland/
+- name: r/UniversalOrlando
+  type: reddit
+  url: https://www.reddit.com/r/UniversalOrlando/
+- name: r/rollercoasters
+  type: reddit
+  url: https://www.reddit.com/r/rollercoasters/
+- name: r/ThemeParkCrazy
+  type: reddit
+  url: https://www.reddit.com/r/ThemeParkCrazy/
+- name: r/Sixflags
+  type: reddit
+  url: https://www.reddit.com/r/sixflags/
+- name: r/korea
+  type: reddit
+  url: https://www.reddit.com/r/korea/
+- name: Defunctland
+  type: rss
+  url: https://www.youtube.com/feeds/videos.xml?channel_id=UCVo63lbKHjC04KqYhwSZ_Pg
+- name: Theme Park Crazy
+  type: rss
+  url: https://www.youtube.com/feeds/videos.xml?channel_id=UCYdNtGaJkrtn04tmsmRrWlw
+- name: Coaster Studios
+  type: rss
+  url: https://www.youtube.com/feeds/videos.xml?channel_id=UCuKwMVIj5H7pGrCb6qOb21g
+- name: Theme Park Tribune
+  type: rss
+  url: https://www.themeparktribune.com/feed/
+- name: Coaster Nation
+  type: rss
+  url: https://www.coasternation.com/feed/
+- name: Park World Magazine
+  type: rss
+  url: https://www.parkworld-online.com/feed/
 
-  # === RSS (Secondary - Theme park news) ===
-  # Theme Park Insider (updated URL via FeedBurner)
-  - name: "Theme Park Insider"
-    type: "rss"
-    url: "https://feeds.feedburner.com/ThemeParkInsider"
+# === 한국 테마파크 소스 ===
+- name: 에버랜드 공식
+  type: javascript
+  url: https://www.everland.com/web/everland/favorite/announcement/notice.html
+  language: ko
+  country: KR
+  trust_tier: T1_official
+  collection_tier: C2_js
+  content_type: news
+  config:
+    wait_for: ".notice_list"
 
-  # WDWMAGIC (updated URL)
-  - name: "WDWMAGIC News"
-    type: "rss"
-    url: "https://www.wdwmagic.com/news/rss.xml"
+- name: 롯데월드 공식
+  type: javascript
+  url: https://adventure.lotteworld.com/kor/info/notice.do
+  language: ko
+  country: KR
+  trust_tier: T1_official
+  collection_tier: C2_js
+  content_type: news
+  config:
+    wait_for: ".notice_list"
 
-  - name: "Attractions Magazine"
-    type: "rss"
-    url: "https://attractionsmagazine.com/feed/"
+- name: 서울랜드 공식
+  type: javascript
+  url: https://www.seoulland.co.kr/customer/notice.asp
+  language: ko
+  country: KR
+  trust_tier: T1_official
+  collection_tier: C2_js
+  content_type: news
+  config:
+    wait_for: ".board_list"
 
-  # Inside the Magic - 디즈니/테마파크 뉴스
-  - name: "Inside the Magic"
-    type: "rss"
-    url: "https://insidethemagic.net/feed"
+- name: 레고랜드 코리아
+  type: javascript
+  url: https://www.legoland.kr/en/about-us/news/
+  language: ko
+  country: KR
+  trust_tier: T1_official
+  collection_tier: C2_js
+  content_type: news
+  config:
+    wait_for: ".news_list"
 
-  # Blooloop - 테마파크/어트랙션 업계 뉴스
-  - name: "Blooloop"
-    type: "rss"
-    url: "https://blooloop.com/feed"
+- name: 캐리비안베이
+  type: javascript
+  url: https://www.everland.com/web/caribbean_bay/favorite/announcement/notice.html
+  language: ko
+  country: KR
+  trust_tier: T1_official
+  collection_tier: C2_js
+  content_type: news
+  config:
+    wait_for: ".notice_list"
 
-  # === Reddit 테마파크 커뮤니티 ===
-  - name: "r/WaltDisneyWorld"
-    type: "rss"
-    url: "https://www.reddit.com/r/WaltDisneyWorld/.rss"
+- name: 네이버 에버랜드 블로그
+  type: rss
+  url: https://rss.blog.naver.com/everland_blog.xml
+  language: ko
+  country: KR
+  trust_tier: T1_official
+  collection_tier: C1_rss
+  content_type: news
 
-  - name: "r/Disneyland"
-    type: "rss"
-    url: "https://www.reddit.com/r/Disneyland/.rss"
+- name: 네이버 롯데월드 블로그
+  type: rss
+  url: https://rss.blog.naver.com/lotteworld_official.xml
+  language: ko
+  country: KR
+  trust_tier: T1_official
+  collection_tier: C1_rss
+  content_type: news
 
-  - name: "r/UniversalOrlando"
-    type: "rss"
-    url: "https://www.reddit.com/r/UniversalOrlando/.rss"
+- name: 연합뉴스 레저
+  type: rss
+  url: https://www.yna.co.kr/rss/life.xml
+  language: ko
+  country: KR
+  trust_tier: T2_institutional
+  collection_tier: C1_rss
+  content_type: news
 
-  - name: "r/rollercoasters"
-    type: "rss"
-    url: "https://www.reddit.com/r/rollercoasters/.rss"
-
-  - name: "r/ThemeParkCrazy"
-    type: "rss"
-    url: "https://www.reddit.com/r/ThemeParkCrazy/.rss"
-
-  - name: "r/Sixflags"
-    type: "rss"
-    url: "https://www.reddit.com/r/sixflags/.rss"
-
-  - name: "r/korea"
-    type: "rss"
-    url: "https://www.reddit.com/r/korea/.rss"
-
-  # === 테마파크 YouTube ===
-  - name: "Defunctland"
-    type: "rss"
-    url: "https://www.youtube.com/feeds/videos.xml?channel_id=UCVo63lbKHjC04KqYhwSZ_Pg"
-
-  - name: "Theme Park Crazy"
-    type: "rss"
-    url: "https://www.youtube.com/feeds/videos.xml?channel_id=UCYdNtGaJkrtn04tmsmRrWlw"
-
-  - name: "Coaster Studios"
-    type: "rss"
-    url: "https://www.youtube.com/feeds/videos.xml?channel_id=UCuKwMVIj5H7pGrCb6qOb21g"
-
-  # === 국제 테마파크 뉴스 ===
-  - name: "Theme Park Tribune"
-    type: "rss"
-    url: "https://www.themeparktribune.com/feed/"
-
-  - name: "Coaster Nation"
-    type: "rss"
-    url: "https://www.coasternation.com/feed/"
-
-  - name: "Park World Magazine"
-    type: "rss"
-    url: "https://www.parkworld-online.com/feed/"
+- name: Reddit r/KoreaTravel
+  type: rss
+  url: https://www.reddit.com/r/KoreaTravel/.rss
+  language: en
+  country: KR
+  trust_tier: T3_community
+  collection_tier: C1_rss
+  content_type: discussion
 
 entities:
-  - name: "WaitTime"
-    display_name: "대기 시간"
-    keywords:
-      - "wait time"
-      - "wait"
-      - "waiting"
-      - "queue"
-      - "line"
-      - "delay"
-      - "대기시간"
-      - "대기 시간"
-      - "대기열"
-      - "대기"
-      - "minutes wait"
-      - "no wait"
-      - "current wait"
-      - "average wait"
-      - "peak wait"
-      - "posted wait"
-      - "actual wait"
-      - "standby"
-      - "express"
-      - "fast pass"
-      - "fastpass"
-      - "lightning lane"
-      - "virtual queue"
-      - "가상대기"
-      - "예약"
-      - "줄서기"
-
-  - name: "Attraction"
-    display_name: "놀이기구/명소"
-    keywords:
-      - "attraction"
-      - "ride"
-      - "roller coaster"
-      - "coaster"
-      - "놀이기구"
-      - "어트랙션"
-      - "show"
-      - "experience"
-      - "dark ride"
-      - "water ride"
-      - "drop tower"
-      - "spinning"
-      - "simulator"
-      - "4D"
-      - "VR"
-      - "parade"
-      - "fireworks"
-      - "character meet"
-      - "캐릭터"
-      - "퍼레이드"
-      - "불꽃놀이"
-
-  - name: "Status"
-    display_name: "운영 상태"
-    keywords:
-      - "open"
-      - "closed"
-      - "status"
-      - "운영"
-      - "운영중"
-      - "중단"
-      - "operating"
-      - "temporarily closed"
-      - "refurbishment"
-      - "maintenance"
-      - "weather delay"
-      - "capacity"
-      - "정비중"
-      - "임시휴업"
-
-  - name: "Location"
-    display_name: "위치/공원"
-    keywords:
-      # 디즈니
-      - "disney"
-      - "디즈니"
-      - "magic kingdom"
-      - "epcot"
-      - "hollywood studios"
-      - "animal kingdom"
-      - "disneyland"
-      - "california adventure"
-      - "tokyo disney"
-      - "도쿄디즈니"
-      - "shanghai disney"
-      - "상하이디즈니"
-      - "hong kong disney"
-      - "paris disney"
-      # 유니버셜
-      - "universal"
-      - "유니버셜"
-      - "islands of adventure"
-      - "epic universe"
-      - "volcano bay"
-      - "universal japan"
-      - "USJ"
-      # 기타 글로벌
-      - "six flags"
-      - "seaworld"
-      - "busch gardens"
-      - "cedar point"
-      - "legoland"
-      - "레고랜드"
-      - "europa park"
-      # 한국
-      - "에버랜드"
-      - "everland"
-      - "롯데월드"
-      - "lotte world"
-      - "서울랜드"
-      - "캐리비안베이"
-      # 일반
-      - "theme park"
-      - "park"
-      - "놀이공원"
-      - "테마파크"
-      - "amusement park"
-      - "water park"
-      - "워터파크"
-
-  - name: "RealTimeData"
-    display_name: "실시간 데이터"
-    keywords:
-      - "real-time"
-      - "live"
-      - "current"
-      - "last updated"
-      - "minutes"
-      - "실시간"
-      - "현재"
-      - "queue data"
-      - "queue-times"
-      - "update"
-      - "refresh"
-      - "monitoring"
-      - "tracking"
-      - "forecast"
-      - "prediction"
-      - "crowd level"
-      - "혼잡도"
-      - "방문자수"
-
-  - name: "VisitorTips"
-    display_name: "방문 팁"
-    keywords:
-      - "crowd calendar"
-      - "best time"
-      - "avoid"
-      - "tip"
-      - "strategy"
-      - "touring plan"
-      - "rope drop"
-      - "early entry"
-      - "extended hours"
-      - "annual pass"
-      - "연간이용권"
-      - "자유이용권"
-      - "할인"
-      - "예약"
-      - "reservation"
-      - "mobile order"
-      - "app"
+- name: WaitTime
+  display_name: 대기 시간
+  keywords:
+  - wait time
+  - wait
+  - waiting
+  - queue
+  - line
+  - delay
+  - 대기시간
+  - 대기 시간
+  - 대기열
+  - 대기
+  - minutes wait
+  - no wait
+  - current wait
+  - average wait
+  - peak wait
+  - posted wait
+  - actual wait
+  - standby
+  - express
+  - fast pass
+  - fastpass
+  - lightning lane
+  - virtual queue
+  - 가상대기
+  - 예약
+  - 줄서기
+- name: Attraction
+  display_name: 놀이기구/명소
+  keywords:
+  - attraction
+  - ride
+  - roller coaster
+  - coaster
+  - 놀이기구
+  - 어트랙션
+  - show
+  - experience
+  - dark ride
+  - water ride
+  - drop tower
+  - spinning
+  - simulator
+  - 4D
+  - VR
+  - parade
+  - fireworks
+  - character meet
+  - 캐릭터
+  - 퍼레이드
+  - 불꽃놀이
+- name: Status
+  display_name: 운영 상태
+  keywords:
+  - open
+  - closed
+  - status
+  - 운영
+  - 운영중
+  - 중단
+  - operating
+  - temporarily closed
+  - refurbishment
+  - maintenance
+  - weather delay
+  - capacity
+  - 정비중
+  - 임시휴업
+- name: Location
+  display_name: 위치/공원
+  keywords:
+  - disney
+  - 디즈니
+  - magic kingdom
+  - epcot
+  - hollywood studios
+  - animal kingdom
+  - disneyland
+  - california adventure
+  - tokyo disney
+  - 도쿄디즈니
+  - shanghai disney
+  - 상하이디즈니
+  - hong kong disney
+  - paris disney
+  - universal
+  - 유니버셜
+  - islands of adventure
+  - epic universe
+  - volcano bay
+  - universal japan
+  - USJ
+  - six flags
+  - seaworld
+  - busch gardens
+  - cedar point
+  - legoland
+  - 레고랜드
+  - europa park
+  - 에버랜드
+  - everland
+  - 롯데월드
+  - lotte world
+  - 서울랜드
+  - 캐리비안베이
+  - theme park
+  - park
+  - 놀이공원
+  - 테마파크
+  - amusement park
+  - water park
+  - 워터파크
+- name: RealTimeData
+  display_name: 실시간 데이터
+  keywords:
+  - real-time
+  - live
+  - current
+  - last updated
+  - minutes
+  - 실시간
+  - 현재
+  - queue data
+  - queue-times
+  - update
+  - refresh
+  - monitoring
+  - tracking
+  - forecast
+  - prediction
+  - crowd level
+  - 혼잡도
+  - 방문자수
+- name: VisitorTips
+  display_name: 방문 팁
+  keywords:
+  - crowd calendar
+  - best time
+  - avoid
+  - tip
+  - strategy
+  - touring plan
+  - rope drop
+  - early entry
+  - extended hours
+  - annual pass
+  - 연간이용권
+  - 자유이용권
+  - 할인
+  - 예약
+  - reservation
+  - mobile order
+  - app
+- name: QueueGeneral
+  display_name: 대기/예약 일반
+  keywords:
+  - queue
+  - wait
+  - waiting
+  - line
+  - ride
+  - park
+  - theme
+  - attraction
+  - disney
+  - universal
+  - coaster
+  - trip
+  - visit
+  - story
+  - stories
+  - article
+  - news
+  - today
+  - year
+  - years
+  - best
+  - most
+  - top
+  - latest
+  - first
+  - here
+  - this
+  - my
+  - just
+  - share
+  - post
+  - help
+  - advice
+  - question
+  - anyone
+  - looking
+  - the
+  - a
+  - an
+  - is
+  - are
+  - have
+  - has
+  - will
+  - can
+  - more
+  - also
+  - new
+  - like
+  - love
+  - good
+  - bad
+  - great
+  - better
+  - worst
+  - what
+  - how
+  - why
+  - when
+  - where
+  - who
+  - which
+  - do
+  - did
+  - does
+  - done
+  - been
+  - being
+  - was
+  - were
+  - out
+  - up
+  - down
+  - over
+  - under
+  - about
+  - through
+  - update
+  - edit
+  - deleted
+  - removed
+  - submitted
+  - posted
+  - reddit
+  - subreddit
+  - comment
+  - comments
+  - reply
+  - thread
+  - 기자
+  - 뉴스
+  - 오늘
+  - 올해
+  - 이번
+  - 지난
+  - 최근
+  - 발표
+  - 관련
+  - 조사
+  - 결과
+  - 내용
+  - 정보
+  - 확인
+  - 안내
+  - 공지
+  - 소식
+  - 자료
+  - 문의
+  - 답변
+  - one
+  - two
+  - many
+  - some
+  - all
+  - few
+  - each
+  - every
+  - any
+  - other
+  - now
+  - week
+  - month
+  - day
+  - time
+  - recently
+  - soon
+  - get
+  - got
+  - make
+  - made
+  - take
+  - come
+  - go
+  - see
+  - know
+  - think
+  - find
+  - give
+  - say
+  - said
+  - use
+  - try
+  - want
+  - need
+  - look
+  - work
+  - start
