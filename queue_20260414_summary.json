@@ -11,19 +11,19 @@
     },
     {
       "name": "QueueGeneral",
-      "count": 993
+      "count": 945
     },
     {
       "name": "WaitTime",
-      "count": 900
+      "count": 824
     },
     {
       "name": "Status",
-      "count": 400
+      "count": 401
     },
     {
       "name": "Location",
-      "count": 254
+      "count": 220
     },
     {
       "name": "Attraction",
@@ -31,14 +31,14 @@
     }
   ],
   "sources": {
+    "Six Flags Magic Mountain": 40,
     "Busch Gardens Tampa": 24,
     "Universal Studios Hollywood": 24,
+    "Universal Studios Orlando": 26,
     "Islands of Adventure": 22,
-    "Universal Studios Orlando": 27,
     "SeaWorld Orlando": 17,
-    "Disneyland": 50,
-    "Disney California Adventure": 31,
-    "Disney Hollywood Studios": 5
+    "Disneyland": 37,
+    "Disney California Adventure": 10
   },
-  "generated_at": "2026-04-14T10:13:25.874860+09:00"
+  "generated_at": "2026-04-14T20:55:16.218881+09:00"
 }
