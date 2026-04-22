@@ -1,0 +1,43 @@
+{
+  "date": "2026-04-22",
+  "category": "queue",
+  "article_count": 200,
+  "source_count": 7,
+  "matched_count": 200,
+  "top_entities": [
+    {
+      "name": "RealTimeData",
+      "count": 1201
+    },
+    {
+      "name": "QueueGeneral",
+      "count": 941
+    },
+    {
+      "name": "WaitTime",
+      "count": 889
+    },
+    {
+      "name": "Status",
+      "count": 400
+    },
+    {
+      "name": "Location",
+      "count": 268
+    },
+    {
+      "name": "Attraction",
+      "count": 205
+    }
+  ],
+  "sources": {
+    "SeaWorld Orlando": 17,
+    "Disneyland": 34,
+    "Animal Kingdom": 20,
+    "Disney Magic Kingdom": 39,
+    "Disney Hollywood Studios": 21,
+    "Epcot": 33,
+    "Six Flags Magic Mountain": 36
+  },
+  "generated_at": "2026-04-22T10:11:24.707155+09:00"
+}
