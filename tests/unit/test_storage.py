@@ -21,6 +21,7 @@ class _Article(Protocol):
     category: str
     matched_entities: dict[str, list[str]]
     collected_at: datetime | None
+    ontology: dict[str, object]
 
 
 class _ArticleCtor(Protocol):
@@ -35,6 +36,7 @@ class _ArticleCtor(Protocol):
         category: str,
         matched_entities: dict[str, list[str]] = ...,
         collected_at: datetime | None = ...,
+        ontology: dict[str, object] = ...,
     ) -> _Article: ...
 
 
@@ -67,6 +69,7 @@ def _make_article(
     source: str = "Example RSS",
     category: str = "tech",
     matched_entities: dict[str, list[str]] | None = None,
+    ontology: dict[str, object] | None = None,
 ) -> _Article:
     return Article(
         title=title,
@@ -76,6 +79,7 @@ def _make_article(
         source=source,
         category=category,
         matched_entities=matched_entities or {},
+        ontology=ontology or {},
     )
 
 
@@ -318,3 +322,28 @@ def test_storage_close_then_reuse_raises_error(tmp_duckdb: Path) -> None:
                 )
             ]
         )
+
+
+def test_recent_articles_rehydrates_ontology(tmp_storage: object) -> None:
+    storage = cast(_RadarStorage, tmp_storage)
+    article = _make_article(
+        title="Ontology",
+        link="https://example.com/ontology",
+        summary="ontology summary",
+        published=datetime.now(UTC),
+        ontology={
+            "repo": "QueueRadar",
+            "event_model_id": "queue.wait_time_update",
+            "source_role_id": "primary_feed",
+        },
+    )
+
+    storage.upsert_articles([article])
+    results = storage.recent_articles(category="tech", days=30)
+
+    assert len(results) == 1
+    assert results[0].ontology == {
+        "repo": "QueueRadar",
+        "event_model_id": "queue.wait_time_update",
+        "source_role_id": "primary_feed",
+    }

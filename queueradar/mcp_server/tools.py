@@ -176,6 +176,11 @@ def handle_top_trends(*, db_path: Path, days: int = 7, limit: int = 10) -> str:
     return "\n".join(lines)
 
 
+def handle_price_watch(*, threshold: float = 0.0) -> str:
+    _ = threshold
+    return "Not available in template project"
+
+
 def handle_queue_status(*, db_path: Path, days: int = 7, limit: int = 10) -> str:
     """Show queue/reservation related article trends."""
     cutoff = datetime.now(tz=UTC) - timedelta(days=days)

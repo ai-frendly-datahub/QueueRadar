@@ -1,0 +1,52 @@
+{
+  "date": "2026-04-14",
+  "category": "queue",
+  "article_count": 17,
+  "source_count": 16,
+  "matched_count": 17,
+  "top_entities": [
+    {
+      "name": "QueueGeneral",
+      "count": 202
+    },
+    {
+      "name": "RealTimeData",
+      "count": 74
+    },
+    {
+      "name": "WaitTime",
+      "count": 51
+    },
+    {
+      "name": "Location",
+      "count": 26
+    },
+    {
+      "name": "Status",
+      "count": 25
+    },
+    {
+      "name": "Attraction",
+      "count": 19
+    }
+  ],
+  "sources": {
+    "Universal Studios Orlando": 1,
+    "Disney California Adventure": 1,
+    "SeaWorld Orlando": 1,
+    "Disneyland": 1,
+    "Animal Kingdom": 1,
+    "Disney Hollywood Studios": 1,
+    "Epcot": 1,
+    "Disney Magic Kingdom": 1,
+    "Six Flags Magic Mountain": 1,
+    "Busch Gardens Tampa": 1,
+    "Universal Studios Hollywood": 1,
+    "Islands of Adventure": 1,
+    "Inside the Magic": 1,
+    "Blooloop": 2,
+    "Attractions Magazine": 1,
+    "Theme Park Insider": 1
+  },
+  "generated_at": "2026-04-14T20:27:12.124079+09:00"
+}

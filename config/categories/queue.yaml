@@ -1,153 +1,308 @@
 category_name: queue
 display_name: 대기/예약 레이더
+data_quality:
+  priority: P2
+  primary_motion: conversion
+  weakest_dimension: traceability
+  quality_outputs:
+    freshness_report: reports/queue_quality.json
+    dated_freshness_report_pattern: reports/queue_YYYYMMDD_quality.json
+    tracked_event_models:
+    - wait_time_snapshot
+    - reservation_slot
+    - ticket_price
+    - weather_context
+  event_models:
+    wait_time_snapshot:
+      date_fields:
+      - observed_at
+      - collected_at
+      required_fields:
+      - facility_id
+      - attraction_id
+      - wait_minutes
+      - source_url
+    reservation_slot:
+      date_fields:
+      - slot_time
+      - observed_at
+      - collected_at
+      required_fields:
+      - facility_id
+      - service_id
+      - availability_status
+    ticket_price:
+      date_fields:
+      - observed_at
+      - effective_date
+      - collected_at
+      required_fields:
+      - facility_id
+      - ticket_type
+      - price
+      - currency
+    weather_context:
+      date_fields:
+      - forecast_time
+      - collected_at
+      required_fields:
+      - facility_id
+      - weather_metric
+      - metric_value
+  canonical_keys:
+    queue_target:
+    - facility_id
+    - attraction_id
+    - service_id
+    - timezone
+    observation:
+    - queue_target_id
+    - observed_at
+    - source
+  freshness_sla:
+    wait_time_snapshot_hours: 1
+    reservation_slot_hours: 6
+    ticket_price_days: 3
+    weather_context_hours: 6
+    notes: wait_time_snapshot_hours는 queue-times.com 등 실시간 대기시간 source의 sensor validity
+      window이지 collector cron cadence가 아니다. 수집기가 최소 시간 단위로 실행되지 않으면 source-side에는
+      문제가 없어도 observed_at 기준 stale gap이 다시 열리며, 이는 운영 한계이지 source-side regression이
+      아니다.
+  quality_gates:
+  - 관측 시각과 이벤트 시각을 별도 필드로 유지한다
+  - 대기시간 단위와 timezone을 명시한다
+  - 예측용 외부 변수는 실제 대기시간과 분리 저장한다
+  - 대기시간 outlier와 stale reading을 리포트에 포함한다
+source_backlog:
+  operational_candidates:
+  - id: queue_times_history
+    name: Queue Times historical snapshots
+    signal_type: wait_time_snapshot
+    activation_gate: snapshot cadence, park/ride id mapping, timezone, and stale reading
+      policy
+  - id: park_reservation_slots
+    name: Park reservation slot pages
+    signal_type: reservation_slot
+    activation_gate: ToS review, slot availability semantics, and facility canonicalization
+  - id: park_ticket_pricing_pages
+    name: Park ticket pricing pages
+    signal_type: ticket_price
+    activation_gate: parser stability, ticket type canonicalization, currency/tax
+      policy, and effective date
+  - id: weather_forecast_api
+    name: Weather forecast API
+    signal_type: weather_context
+    activation_gate: API key, facility geocoding, forecast horizon, and timezone handling
 sources:
 - name: Disney Magic Kingdom
   type: api
   url: https://queue-times.com/parks/6/queue_times.json
+  config:
+    event_model: wait_time_snapshot
 - name: Epcot
   type: api
   url: https://queue-times.com/parks/5/queue_times.json
+  config:
+    event_model: wait_time_snapshot
 - name: Disney Hollywood Studios
   type: api
   url: https://queue-times.com/parks/7/queue_times.json
+  config:
+    event_model: wait_time_snapshot
 - name: Animal Kingdom
   type: api
   url: https://queue-times.com/parks/8/queue_times.json
+  config:
+    event_model: wait_time_snapshot
 - name: Disneyland
   type: api
   url: https://queue-times.com/parks/16/queue_times.json
+  config:
+    event_model: wait_time_snapshot
 - name: Disney California Adventure
   type: api
   url: https://queue-times.com/parks/17/queue_times.json
+  config:
+    event_model: wait_time_snapshot
 - name: Universal Studios Orlando
   type: api
   url: https://queue-times.com/parks/65/queue_times.json
+  config:
+    event_model: wait_time_snapshot
 - name: Islands of Adventure
   type: api
   url: https://queue-times.com/parks/64/queue_times.json
+  config:
+    event_model: wait_time_snapshot
 - name: Universal Studios Hollywood
   type: api
   url: https://queue-times.com/parks/66/queue_times.json
+  config:
+    event_model: wait_time_snapshot
 - name: Busch Gardens Tampa
   type: api
   url: https://queue-times.com/parks/24/queue_times.json
+  config:
+    event_model: wait_time_snapshot
 - name: SeaWorld Orlando
   type: api
   url: https://queue-times.com/parks/21/queue_times.json
+  config:
+    event_model: wait_time_snapshot
 - name: Six Flags Magic Mountain
   type: api
   url: https://queue-times.com/parks/32/queue_times.json
+  config:
+    event_model: wait_time_snapshot
 - name: Theme Park Insider
   type: rss
   url: https://feeds.feedburner.com/ThemeParkInsider
+  config:
+    event_model: editorial_coverage
 - name: WDWMAGIC News
   type: rss
   url: https://www.wdwmagic.com/news/rss.xml
+  config:
+    event_model: editorial_coverage
 - name: Attractions Magazine
   type: rss
   url: https://attractionsmagazine.com/feed/
+  config:
+    event_model: editorial_coverage
 - name: Inside the Magic
   type: rss
   url: https://insidethemagic.net/feed
+  config:
+    event_model: editorial_coverage
 - name: Blooloop
   type: rss
   url: https://blooloop.com/feed
+  config:
+    event_model: editorial_coverage
 - name: r/WaltDisneyWorld
   type: reddit
   url: https://www.reddit.com/r/WaltDisneyWorld/
+  enabled: false
 - name: r/Disneyland
   type: reddit
   url: https://www.reddit.com/r/Disneyland/
+  enabled: false
 - name: r/UniversalOrlando
   type: reddit
   url: https://www.reddit.com/r/UniversalOrlando/
+  enabled: false
 - name: r/rollercoasters
   type: reddit
   url: https://www.reddit.com/r/rollercoasters/
+  enabled: false
 - name: r/ThemeParkCrazy
   type: reddit
   url: https://www.reddit.com/r/ThemeParkCrazy/
+  enabled: false
 - name: r/Sixflags
   type: reddit
   url: https://www.reddit.com/r/sixflags/
+  enabled: false
 - name: r/korea
   type: reddit
   url: https://www.reddit.com/r/korea/
+  enabled: false
 - name: Defunctland
   type: rss
   url: https://www.youtube.com/feeds/videos.xml?channel_id=UCVo63lbKHjC04KqYhwSZ_Pg
+  enabled: false
+  notes: 'DISABLED 2026-04-23: YouTube RSS channel feed returns 404 from the runner;
+    documentary context source is not required for active queue wait-time tracking.'
+  config:
+    disabled_reason: youtube_channel_feed_404
+    required_before_enable:
+    - valid_channel_feed_or_replacement
+    - queue_relevance_smoke
 - name: Theme Park Crazy
   type: rss
   url: https://www.youtube.com/feeds/videos.xml?channel_id=UCYdNtGaJkrtn04tmsmRrWlw
+  enabled: false
+  notes: 'DISABLED 2026-04-23: YouTube RSS channel feed returns 404 from the runner;
+    documentary context source is not required for active queue wait-time tracking.'
+  config:
+    disabled_reason: youtube_channel_feed_404
+    required_before_enable:
+    - valid_channel_feed_or_replacement
+    - queue_relevance_smoke
 - name: Coaster Studios
   type: rss
   url: https://www.youtube.com/feeds/videos.xml?channel_id=UCuKwMVIj5H7pGrCb6qOb21g
+  enabled: false
 - name: Theme Park Tribune
   type: rss
   url: https://www.themeparktribune.com/feed/
+  config:
+    event_model: editorial_coverage
 - name: Coaster Nation
   type: rss
   url: https://www.coasternation.com/feed/
+  config:
+    event_model: editorial_coverage
 - name: Park World Magazine
   type: rss
   url: https://www.parkworld-online.com/feed/
-
-# === 한국 테마파크 소스 ===
+  config:
+    event_model: editorial_coverage
 - name: 에버랜드 공식
   type: javascript
   url: https://www.everland.com/web/everland/favorite/announcement/notice.html
+  enabled: false
   language: ko
   country: KR
   trust_tier: T1_official
   collection_tier: C2_js
   content_type: news
   config:
-    wait_for: ".notice_list"
-
+    wait_for: .notice_list
 - name: 롯데월드 공식
   type: javascript
   url: https://adventure.lotteworld.com/kor/info/notice.do
+  enabled: false
   language: ko
   country: KR
   trust_tier: T1_official
   collection_tier: C2_js
   content_type: news
   config:
-    wait_for: ".notice_list"
-
+    wait_for: .notice_list
 - name: 서울랜드 공식
   type: javascript
   url: https://www.seoulland.co.kr/customer/notice.asp
+  enabled: false
   language: ko
   country: KR
   trust_tier: T1_official
   collection_tier: C2_js
   content_type: news
   config:
-    wait_for: ".board_list"
-
+    wait_for: .board_list
 - name: 레고랜드 코리아
   type: javascript
   url: https://www.legoland.kr/en/about-us/news/
+  enabled: false
   language: ko
   country: KR
   trust_tier: T1_official
   collection_tier: C2_js
   content_type: news
   config:
-    wait_for: ".news_list"
-
+    wait_for: .news_list
 - name: 캐리비안베이
   type: javascript
   url: https://www.everland.com/web/caribbean_bay/favorite/announcement/notice.html
+  enabled: false
   language: ko
   country: KR
   trust_tier: T1_official
   collection_tier: C2_js
   content_type: news
   config:
-    wait_for: ".notice_list"
-
+    wait_for: .notice_list
 - name: 네이버 에버랜드 블로그
   type: rss
   url: https://rss.blog.naver.com/everland_blog.xml
@@ -156,7 +311,8 @@ sources:
   trust_tier: T1_official
   collection_tier: C1_rss
   content_type: news
-
+  config:
+    event_model: editorial_coverage
 - name: 네이버 롯데월드 블로그
   type: rss
   url: https://rss.blog.naver.com/lotteworld_official.xml
@@ -165,16 +321,17 @@ sources:
   trust_tier: T1_official
   collection_tier: C1_rss
   content_type: news
-
+  config:
+    event_model: editorial_coverage
 - name: 연합뉴스 레저
   type: rss
   url: https://www.yna.co.kr/rss/life.xml
+  enabled: false
   language: ko
   country: KR
   trust_tier: T2_institutional
   collection_tier: C1_rss
   content_type: news
-
 - name: Reddit r/KoreaTravel
   type: rss
   url: https://www.reddit.com/r/KoreaTravel/.rss
@@ -183,7 +340,8 @@ sources:
   trust_tier: T3_community
   collection_tier: C1_rss
   content_type: discussion
-
+  config:
+    event_model: editorial_coverage
 entities:
 - name: WaitTime
   display_name: 대기 시간

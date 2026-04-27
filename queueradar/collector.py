@@ -190,8 +190,10 @@ def collect_sources(
     errors: list[str] = []
     manager = get_circuit_breaker_manager()
     workers = _resolve_max_workers(max_workers)
+    enabled_sources = [source for source in sources if source.enabled]
     source_hosts: dict[str, str] = {
-        source.name: (urlparse(source.url).netloc.lower() or source.name) for source in sources
+        source.name: (urlparse(source.url).netloc.lower() or source.name)
+        for source in enabled_sources
     }
     rate_limiters: dict[str, RateLimiter] = {
         host: RateLimiter(min_interval=min_interval_per_host) for host in set(source_hosts.values())
@@ -205,7 +207,7 @@ def collect_sources(
 
     def _collect_for_source(source: Source) -> tuple[list[Article], list[str]]:
         if health_store.is_disabled(source.name):
-            return [], [f"{source.name}: Source disabled (crawl health threshold reached)"]
+            return [], []
 
         host = source_hosts[source.name]
         rate_limiters[host].acquire()
@@ -232,14 +234,14 @@ def collect_sources(
 
     try:
         if workers == 1:
-            for source in sources:
+            for source in enabled_sources:
                 source_articles, source_errors = _collect_for_source(source)
                 articles.extend(source_articles)
                 errors.extend(source_errors)
         else:
             with ThreadPoolExecutor(max_workers=workers) as executor:
                 future_map: list[Future[tuple[list[Article], list[str]]]] = [
-                    executor.submit(_collect_for_source, source) for source in sources
+                    executor.submit(_collect_for_source, source) for source in enabled_sources
                 ]
 
                 for future in future_map:
@@ -294,6 +296,7 @@ def _collect_single(
 
         for entry in feed.entries[:limit]:
             published = _extract_datetime(entry)
+            title_text = html.unescape(_entry_text(entry, "title").strip()) or "(no title)"
             summary = _entry_text(entry, "summary") or _entry_text(entry, "description")
             if not summary:
                 _content = entry.get("content", [])
@@ -303,35 +306,41 @@ def _collect_single(
                         value = first_item.get("value")
                         if isinstance(value, str):
                             summary = value
+            link = _resolve_entry_link(entry, fallback_url=source.url)
+            summary_text = html.unescape(summary.strip()) if summary.strip() else title_text
 
             items.append(
                 Article(
-                    title=html.unescape(_entry_text(entry, "title").strip()) or "(no title)",
-                    link=_entry_text(entry, "link").strip(),
-                    summary=html.unescape(summary.strip()),
+                    title=title_text,
+                    link=link,
+                    summary=summary_text,
                     published=published,
                     source=source.name,
                     category=category,
                 )
             )
-
-        # 데이터 검증: 필수 필드 빈값 체크
-        valid_items: list[Article] = []
-        for item in items:
-            if not item.link or item.link == "":
-                continue
-            valid_items.append(item)
-
-        if len(valid_items) < len(items):
-            logger.warning(
-                "filtered_invalid_items",
-                source=source.name,
-                filtered_count=len(items) - len(valid_items),
-            )
-
-        return valid_items
+        return items
     except Exception as exc:
         raise exceptions.ParseError(f"Failed to parse feed from {source.name}: {exc}") from exc
+
+
+def _resolve_entry_link(entry: Mapping[str, Any], fallback_url: str) -> str:
+    primary_link = _entry_text(entry, "link").strip()
+    if _is_valid_http_url(primary_link):
+        return primary_link
+
+    entry_id = _entry_text(entry, "id").strip()
+    if _is_valid_http_url(entry_id):
+        return entry_id
+
+    return fallback_url
+
+
+def _is_valid_http_url(value: str) -> bool:
+    if not value:
+        return False
+    parsed = urlparse(value)
+    return parsed.scheme in {"http", "https"} and bool(parsed.netloc)
 
 
 def _extract_datetime(entry: Mapping[str, Any]) -> datetime | None:

@@ -1,0 +1,51 @@
+{
+  "date": "2026-04-13",
+  "category": "queue",
+  "article_count": 15,
+  "source_count": 15,
+  "matched_count": 15,
+  "top_entities": [
+    {
+      "name": "QueueGeneral",
+      "count": 111
+    },
+    {
+      "name": "RealTimeData",
+      "count": 72
+    },
+    {
+      "name": "WaitTime",
+      "count": 50
+    },
+    {
+      "name": "Status",
+      "count": 25
+    },
+    {
+      "name": "Location",
+      "count": 24
+    },
+    {
+      "name": "Attraction",
+      "count": 15
+    }
+  ],
+  "sources": {
+    "Six Flags Magic Mountain": 1,
+    "Busch Gardens Tampa": 1,
+    "Universal Studios Hollywood": 1,
+    "Universal Studios Orlando": 1,
+    "Islands of Adventure": 1,
+    "Disney California Adventure": 1,
+    "SeaWorld Orlando": 1,
+    "Disneyland": 1,
+    "Animal Kingdom": 1,
+    "Disney Hollywood Studios": 1,
+    "Disney Magic Kingdom": 1,
+    "Epcot": 1,
+    "Attractions Magazine": 1,
+    "Inside the Magic": 1,
+    "Theme Park Insider": 1
+  },
+  "generated_at": "2026-04-13T17:15:40.578254+09:00"
+}

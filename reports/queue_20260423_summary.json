@@ -1,0 +1,78 @@
+{
+  "date": "2026-04-23",
+  "category": "queue",
+  "article_count": 200,
+  "source_count": 8,
+  "matched_count": 200,
+  "top_entities": [
+    {
+      "name": "RealTimeData",
+      "count": 1200
+    },
+    {
+      "name": "QueueGeneral",
+      "count": 950
+    },
+    {
+      "name": "WaitTime",
+      "count": 854
+    },
+    {
+      "name": "Status",
+      "count": 401
+    },
+    {
+      "name": "Attraction",
+      "count": 215
+    },
+    {
+      "name": "Location",
+      "count": 211
+    }
+  ],
+  "sources": {
+    "Six Flags Magic Mountain": 40,
+    "Busch Gardens Tampa": 24,
+    "Universal Studios Hollywood": 28,
+    "Universal Studios Orlando": 29,
+    "Islands of Adventure": 25,
+    "SeaWorld Orlando": 17,
+    "Disneyland": 36,
+    "Disney California Adventure": 1
+  },
+  "generated_at": "2026-04-23T23:11:06.067854+09:00",
+  "quality_summary": {
+    "total_sources": 39,
+    "enabled_sources": 23,
+    "tracked_sources": 12,
+    "fresh_sources": 12,
+    "stale_sources": 0,
+    "missing_sources": 0,
+    "missing_event_sources": 0,
+    "unknown_event_date_sources": 0,
+    "not_tracked_sources": 11,
+    "skipped_disabled_sources": 16,
+    "collection_error_count": 0,
+    "wait_time_snapshot_events": 364,
+    "reservation_slot_events": 0,
+    "ticket_price_events": 0,
+    "weather_context_events": 0,
+    "queue_signal_event_count": 364,
+    "wait_time_observation_count": 364,
+    "open_attraction_count": 160,
+    "closed_attraction_count": 204,
+    "zero_wait_count": 271,
+    "high_wait_review_count": 5,
+    "target_canonical_key_present_count": 364,
+    "attraction_canonical_key_present_count": 364,
+    "reservation_canonical_key_present_count": 0,
+    "ticket_canonical_key_present_count": 0,
+    "weather_context_present_count": 0,
+    "missing_canonical_key_count": 0,
+    "event_required_field_gap_count": 0,
+    "tracked_source_gap_count": 0,
+    "missing_event_model_count": 3,
+    "source_backlog_candidate_count": 4,
+    "daily_review_item_count": 12
+  }
+}
