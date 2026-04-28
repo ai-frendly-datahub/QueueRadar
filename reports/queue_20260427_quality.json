@@ -1,6 +1,6 @@
 {
   "category": "queue",
-  "generated_at": "2026-04-28T00:41:17.353882+00:00",
+  "generated_at": "2026-04-27T23:45:20.874254+00:00",
   "scope_note": "대기/예약 레이더 quality report is generated from repo-local category data_quality metadata and recent stored articles. Operational backlog sources remain separate until dedicated source-level fields are collected.",
   "summary": {
     "total_sources": 39,
@@ -55,7 +55,7 @@
       "article_count": 39,
       "event_count": 39,
       "latest_event_at": "2026-04-25T14:30:23+00:00",
-      "age_days": 2.42,
+      "age_days": 2.39,
       "latest_title": "Cinderella Castle - No wait (Disney Magic Kingdom)",
       "latest_url": "https://queue-times.com/en-US/parks/6/queue_times#ride-13763",
       "latest_required_field_proxy": {
@@ -86,7 +86,7 @@
       "article_count": 33,
       "event_count": 33,
       "latest_event_at": "2026-04-25T14:30:23+00:00",
-      "age_days": 2.42,
+      "age_days": 2.39,
       "latest_title": "Remy's Ratatouille Adventure - 65 minutes wait (Epcot)",
       "latest_url": "https://queue-times.com/en-US/parks/5/queue_times#ride-10914",
       "latest_required_field_proxy": {
@@ -117,7 +117,7 @@
       "article_count": 24,
       "event_count": 24,
       "latest_event_at": "2026-04-25T14:25:31+00:00",
-      "age_days": 2.43,
+      "age_days": 2.39,
       "latest_title": "The Little Mermaid – A Musical Adventure – New! - No wait (Disney Hollywood Studios)",
       "latest_url": "https://queue-times.com/en-US/parks/7/queue_times#ride-14859",
       "latest_required_field_proxy": {
@@ -148,7 +148,7 @@
       "article_count": 20,
       "event_count": 20,
       "latest_event_at": "2026-04-25T14:30:32+00:00",
-      "age_days": 2.42,
+      "age_days": 2.39,
       "latest_title": "Avatar Flight of Passage - 90 minutes wait (Animal Kingdom)",
       "latest_url": "https://queue-times.com/en-US/parks/8/queue_times#ride-4439",
       "latest_required_field_proxy": {
@@ -179,7 +179,7 @@
       "article_count": 50,
       "event_count": 50,
       "latest_event_at": "2026-04-25T14:25:31+00:00",
-      "age_days": 2.43,
+      "age_days": 2.39,
       "latest_title": "Haunted Mansion - Closed (Disneyland)",
       "latest_url": "https://queue-times.com/en-US/parks/16/queue_times#ride-13958",
       "latest_required_field_proxy": {
@@ -210,7 +210,7 @@
       "article_count": 31,
       "event_count": 31,
       "latest_event_at": "2026-04-25T14:30:44+00:00",
-      "age_days": 2.42,
+      "age_days": 2.39,
       "latest_title": "Jumpin' Jellyfish - Closed (Disney California Adventure)",
       "latest_url": "https://queue-times.com/en-US/parks/17/queue_times#ride-300",
       "latest_required_field_proxy": {
@@ -241,7 +241,7 @@
       "article_count": 31,
       "event_count": 31,
       "latest_event_at": "2026-04-25T14:26:24+00:00",
-      "age_days": 2.43,
+      "age_days": 2.39,
       "latest_title": "Fast & Furious - Supercharged™ Single Rider - No wait (Universal Studios Orlando)",
       "latest_url": "https://queue-times.com/en-US/parks/65/queue_times#ride-14866",
       "latest_required_field_proxy": {
@@ -272,7 +272,7 @@
       "article_count": 27,
       "event_count": 27,
       "latest_event_at": "2026-04-25T14:26:19+00:00",
-      "age_days": 2.43,
+      "age_days": 2.39,
       "latest_title": "Caro-Seuss-el™ - 10 minutes wait (Islands of Adventure)",
       "latest_url": "https://queue-times.com/en-US/parks/64/queue_times#ride-5986",
       "latest_required_field_proxy": {
@@ -303,7 +303,7 @@
       "article_count": 28,
       "event_count": 28,
       "latest_event_at": "2026-04-25T14:26:35+00:00",
-      "age_days": 2.43,
+      "age_days": 2.39,
       "latest_title": "Fallout - Closed (Universal Studios Hollywood)",
       "latest_url": "https://queue-times.com/en-US/parks/66/queue_times#ride-14956",
       "latest_required_field_proxy": {
@@ -334,7 +334,7 @@
       "article_count": 24,
       "event_count": 24,
       "latest_event_at": "2026-04-25T14:26:37+00:00",
-      "age_days": 2.43,
+      "age_days": 2.39,
       "latest_title": "Iron Gwazi - 5 minutes wait (Busch Gardens Tampa)",
       "latest_url": "https://queue-times.com/en-US/parks/24/queue_times#ride-10516",
       "latest_required_field_proxy": {
@@ -365,7 +365,7 @@
       "article_count": 17,
       "event_count": 17,
       "latest_event_at": "2026-04-25T14:25:34+00:00",
-      "age_days": 2.43,
+      "age_days": 2.39,
       "latest_title": "Penguin Trek - No wait (SeaWorld Orlando)",
       "latest_url": "https://queue-times.com/en-US/parks/21/queue_times#ride-14941",
       "latest_required_field_proxy": {
@@ -396,7 +396,7 @@
       "article_count": 40,
       "event_count": 40,
       "latest_event_at": "2026-04-25T14:29:34+00:00",
-      "age_days": 2.42,
+      "age_days": 2.39,
       "latest_title": "Tatsu - Closed (Six Flags Magic Mountain)",
       "latest_url": "https://queue-times.com/en-US/parks/32/queue_times#ride-2872",
       "latest_required_field_proxy": {
@@ -26968,84 +26968,84 @@
       "reason": "source_stale",
       "source": "Disney Magic Kingdom",
       "event_model": "wait_time_snapshot",
-      "age_days": 2.42,
+      "age_days": 2.39,
       "latest_title": "Cinderella Castle - No wait (Disney Magic Kingdom)"
     },
     {
       "reason": "source_stale",
       "source": "Epcot",
       "event_model": "wait_time_snapshot",
-      "age_days": 2.42,
+      "age_days": 2.39,
       "latest_title": "Remy's Ratatouille Adventure - 65 minutes wait (Epcot)"
     },
     {
       "reason": "source_stale",
       "source": "Disney Hollywood Studios",
       "event_model": "wait_time_snapshot",
-      "age_days": 2.43,
+      "age_days": 2.39,
       "latest_title": "The Little Mermaid – A Musical Adventure – New! - No wait (Disney Hollywood Studios)"
     },
     {
       "reason": "source_stale",
       "source": "Animal Kingdom",
       "event_model": "wait_time_snapshot",
-      "age_days": 2.42,
+      "age_days": 2.39,
       "latest_title": "Avatar Flight of Passage - 90 minutes wait (Animal Kingdom)"
     },
     {
       "reason": "source_stale",
       "source": "Disneyland",
       "event_model": "wait_time_snapshot",
-      "age_days": 2.43,
+      "age_days": 2.39,
       "latest_title": "Haunted Mansion - Closed (Disneyland)"
     },
     {
       "reason": "source_stale",
       "source": "Disney California Adventure",
       "event_model": "wait_time_snapshot",
-      "age_days": 2.42,
+      "age_days": 2.39,
       "latest_title": "Jumpin' Jellyfish - Closed (Disney California Adventure)"
     },
     {
       "reason": "source_stale",
       "source": "Universal Studios Orlando",
       "event_model": "wait_time_snapshot",
-      "age_days": 2.43,
+      "age_days": 2.39,
       "latest_title": "Fast & Furious - Supercharged™ Single Rider - No wait (Universal Studios Orlando)"
     },
     {
       "reason": "source_stale",
       "source": "Islands of Adventure",
       "event_model": "wait_time_snapshot",
-      "age_days": 2.43,
+      "age_days": 2.39,
       "latest_title": "Caro-Seuss-el™ - 10 minutes wait (Islands of Adventure)"
     },
     {
       "reason": "source_stale",
       "source": "Universal Studios Hollywood",
       "event_model": "wait_time_snapshot",
-      "age_days": 2.43,
+      "age_days": 2.39,
       "latest_title": "Fallout - Closed (Universal Studios Hollywood)"
     },
     {
       "reason": "source_stale",
       "source": "Busch Gardens Tampa",
       "event_model": "wait_time_snapshot",
-      "age_days": 2.43,
+      "age_days": 2.39,
       "latest_title": "Iron Gwazi - 5 minutes wait (Busch Gardens Tampa)"
     },
     {
       "reason": "source_stale",
       "source": "SeaWorld Orlando",
       "event_model": "wait_time_snapshot",
-      "age_days": 2.43,
+      "age_days": 2.39,
       "latest_title": "Penguin Trek - No wait (SeaWorld Orlando)"
     },
     {
       "reason": "source_stale",
       "source": "Six Flags Magic Mountain",
       "event_model": "wait_time_snapshot",
-      "age_days": 2.42,
+      "age_days": 2.39,
       "latest_title": "Tatsu - Closed (Six Flags Magic Mountain)"
     },
     {
