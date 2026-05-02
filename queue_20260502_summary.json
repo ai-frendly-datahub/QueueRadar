@@ -1,0 +1,44 @@
+{
+  "date": "2026-05-02",
+  "category": "queue",
+  "article_count": 200,
+  "source_count": 8,
+  "matched_count": 200,
+  "top_entities": [
+    {
+      "name": "RealTimeData",
+      "count": 1201
+    },
+    {
+      "name": "QueueGeneral",
+      "count": 977
+    },
+    {
+      "name": "WaitTime",
+      "count": 932
+    },
+    {
+      "name": "Status",
+      "count": 401
+    },
+    {
+      "name": "Location",
+      "count": 301
+    },
+    {
+      "name": "Attraction",
+      "count": 205
+    }
+  ],
+  "sources": {
+    "Disney California Adventure": 31,
+    "Animal Kingdom": 20,
+    "SeaWorld Orlando": 17,
+    "Disneyland": 17,
+    "Disney Hollywood Studios": 21,
+    "Disney Magic Kingdom": 39,
+    "Epcot": 33,
+    "Six Flags Magic Mountain": 22
+  },
+  "generated_at": "2026-05-02T10:21:36.242979+09:00"
+}
