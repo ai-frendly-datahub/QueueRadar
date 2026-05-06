@@ -1,0 +1,43 @@
+{
+  "date": "2026-05-06",
+  "category": "queue",
+  "article_count": 200,
+  "source_count": 7,
+  "matched_count": 200,
+  "top_entities": [
+    {
+      "name": "RealTimeData",
+      "count": 1201
+    },
+    {
+      "name": "QueueGeneral",
+      "count": 990
+    },
+    {
+      "name": "WaitTime",
+      "count": 920
+    },
+    {
+      "name": "Status",
+      "count": 401
+    },
+    {
+      "name": "Location",
+      "count": 305
+    },
+    {
+      "name": "Attraction",
+      "count": 205
+    }
+  ],
+  "sources": {
+    "SeaWorld Orlando": 17,
+    "Disney California Adventure": 31,
+    "Disneyland": 45,
+    "Animal Kingdom": 20,
+    "Disney Magic Kingdom": 39,
+    "Disney Hollywood Studios": 21,
+    "Epcot": 27
+  },
+  "generated_at": "2026-05-06T10:21:37.257252+09:00"
+}
