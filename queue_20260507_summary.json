@@ -1,0 +1,44 @@
+{
+  "date": "2026-05-07",
+  "category": "queue",
+  "article_count": 200,
+  "source_count": 8,
+  "matched_count": 200,
+  "top_entities": [
+    {
+      "name": "RealTimeData",
+      "count": 1200
+    },
+    {
+      "name": "QueueGeneral",
+      "count": 1001
+    },
+    {
+      "name": "WaitTime",
+      "count": 912
+    },
+    {
+      "name": "Status",
+      "count": 401
+    },
+    {
+      "name": "Location",
+      "count": 281
+    },
+    {
+      "name": "Attraction",
+      "count": 209
+    }
+  ],
+  "sources": {
+    "Universal Studios Hollywood": 28,
+    "Islands of Adventure": 23,
+    "SeaWorld Orlando": 17,
+    "Disney California Adventure": 31,
+    "Disneyland": 50,
+    "Animal Kingdom": 20,
+    "Disney Hollywood Studios": 12,
+    "Disney Magic Kingdom": 19
+  },
+  "generated_at": "2026-05-07T10:27:13.254679+09:00"
+}
