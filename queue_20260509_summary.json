@@ -1,0 +1,44 @@
+{
+  "date": "2026-05-09",
+  "category": "queue",
+  "article_count": 200,
+  "source_count": 8,
+  "matched_count": 200,
+  "top_entities": [
+    {
+      "name": "RealTimeData",
+      "count": 1200
+    },
+    {
+      "name": "QueueGeneral",
+      "count": 988
+    },
+    {
+      "name": "WaitTime",
+      "count": 908
+    },
+    {
+      "name": "Status",
+      "count": 401
+    },
+    {
+      "name": "Location",
+      "count": 248
+    },
+    {
+      "name": "Attraction",
+      "count": 210
+    }
+  ],
+  "sources": {
+    "Busch Gardens Tampa": 24,
+    "Universal Studios Hollywood": 28,
+    "Universal Studios Orlando": 29,
+    "Islands of Adventure": 7,
+    "SeaWorld Orlando": 17,
+    "Disney California Adventure": 31,
+    "Disneyland": 50,
+    "Animal Kingdom": 14
+  },
+  "generated_at": "2026-05-09T10:27:24.299585+09:00"
+}
