@@ -1,0 +1,226 @@
+{
+  "date": "2026-05-07",
+  "category": "queue",
+  "article_count": 17,
+  "source_count": 17,
+  "matched_count": 17,
+  "top_entities": [
+    {
+      "name": "QueueGeneral",
+      "count": 193
+    },
+    {
+      "name": "RealTimeData",
+      "count": 75
+    },
+    {
+      "name": "WaitTime",
+      "count": 55
+    },
+    {
+      "name": "Location",
+      "count": 31
+    },
+    {
+      "name": "Status",
+      "count": 27
+    },
+    {
+      "name": "Attraction",
+      "count": 19
+    }
+  ],
+  "sources": {
+    "Disney California Adventure": 1,
+    "Disneyland": 1,
+    "SeaWorld Orlando": 1,
+    "Animal Kingdom": 1,
+    "Disney Hollywood Studios": 1,
+    "Disney Magic Kingdom": 1,
+    "Epcot": 1,
+    "Six Flags Magic Mountain": 1,
+    "Busch Gardens Tampa": 1,
+    "Universal Studios Hollywood": 1,
+    "Universal Studios Orlando": 1,
+    "Islands of Adventure": 1,
+    "Inside the Magic": 1,
+    "Attractions Magazine": 1,
+    "WDWMAGIC News": 1,
+    "Blooloop": 1,
+    "Theme Park Insider": 1
+  },
+  "generated_at": "2026-05-07T10:02:33.053940+09:00",
+  "articles": [
+    {
+      "event_model_payload": {
+        "source_url": "https://queue-times.com/en-US/parks/17/queue_times#ride-329"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_url": "https://queue-times.com/en-US/parks/16/queue_times#ride-12428"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_url": "https://queue-times.com/en-US/parks/21/queue_times#ride-5954"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_url": "https://queue-times.com/en-US/parks/8/queue_times#ride-657"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_url": "https://queue-times.com/en-US/parks/7/queue_times#ride-12430"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_url": "https://queue-times.com/en-US/parks/6/queue_times#ride-1184"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_url": "https://queue-times.com/en-US/parks/5/queue_times#ride-13773"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_url": "https://queue-times.com/en-US/parks/32/queue_times#ride-2888"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_url": "https://queue-times.com/en-US/parks/24/queue_times#ride-1510"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_url": "https://queue-times.com/en-US/parks/66/queue_times#ride-6046"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_url": "https://queue-times.com/en-US/parks/65/queue_times#ride-13605"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_url": "https://queue-times.com/en-US/parks/64/queue_times#ride-6008"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Inside the Magic",
+        "headline": "Disney Springs Loses 10-Year Storefront as New Tenant Emerges in Permit Filing",
+        "source_url": "https://insidethemagic.net/2026/05/disney-springs-loses-10-year-storefront-as-new-tenant-emerges-in-permit-filing-bwb1/",
+        "published_at": "2026-05-06T11:30:04+00:00",
+        "summary": "<p>Disney Springs is losing another longtime storefront, and the replacement could say a lot about where the shopping and dining district is headed next. Over the last few years, Disney Springs has continued evolving, with new restaurants, retail brands, and entertainment offerings constantly rotating in and out. Some changes have been massive, while others have […]</p>\n<p>The post <a href=\"https://insidethemagic.net/2026/05/disney-springs-loses-10-year-storefront-as-new-tenant-emerges-in-permit-filing-bwb1/\" rel=\"noopener\" target=\"_self\">Disney Springs Loses 10-Year Storefront as New Tenant Emerges in Permit Filing</a> appeared first on <a href=\"https://insidethemagic.net\" rel=\"noopener\" target=\"_self\">Inside the Magic</a>.</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Attractions Magazine",
+        "headline": "Disney’s new Muppets coaster nears opening – our fresh photos ahead of launch",
+        "source_url": "https://attractionsmagazine.com/disneys-new-muppets-coaster-nears-opening-photos/",
+        "published_at": "2026-05-06T10:34:30+00:00",
+        "summary": "<p>Disney’s upcoming Muppets coaster at Disney’s Hollywood Studios is nearing completion, and new photos reveal updated exterior artwork, a colorful redesigned guitar, and hidden references for longtime fans ahead of the attraction’s opening later this month.</p>\n<p>The post <a href=\"https://attractionsmagazine.com/disneys-new-muppets-coaster-nears-opening-photos/\">Disney’s new Muppets coaster nears opening – our fresh photos ahead of launch</a> appeared first on <a href=\"https://attractionsmagazine.com\">Attractions Magazine</a>.</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "WDWMAGIC News",
+        "headline": "ANIMATION Sign Installed Beneath Sorcerer Hat at Magic of Disney Animation in Hollywood Studios",
+        "source_url": "http://www.wdwmagic.com/attractions/the-magic-of-disney-animation/news/06may2026-animation-sign-installed-beneath-sorcerer-hat-at-magic-of-disney-animation-in-hollywood-studios.htm",
+        "published_at": "2026-05-06T06:43:24+00:00",
+        "summary": "<div style=\"text-align: left;\"><a href=\"http://www.wdwmagic.com/attractions/the-magic-of-disney-animation/news/06may2026-animation-sign-installed-beneath-sorcerer-hat-at-magic-of-disney-animation-in-hollywood-studios.htm\"><img border=\"1\" hspace=\"4\" src=\"https://d3bo0mk5kk7egf.cloudfront.net/imgstore/ElementGalleryItems/attractions/Fullsize/The-Magic-of-Disney-Animation_Full_65160.jpg;width=300;height=250;mode=crop;quality=60;encoder=freeimage;progressive=true\" vspace=\"4\" /></a></div>Large-format \"ANIMATION\" lettering has been installed beneath the Sorcerer Hat at Magic of Disney Animation in Hollywood Studios, bringing the building's exterior signage close to completion ahead of…<p><a href=\"http://www.wdwmagic.com/attractions/the-magic-of-disney-animation/news/06may2026-animation-sign-installed-beneath-sorcerer-hat-at-magic-of-disney-animation-in-hollywood-studios.htm\">Read full article</a></p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Blooloop",
+        "headline": "The world's top immersive experiences",
+        "source_url": "https://blooloop.com/technology/in-depth/top-immersive-experiences/",
+        "published_at": "2026-05-06T05:03:45+00:00",
+        "summary": "<img src=\"https://blooloop.com/media-library/eatrenalin-jellyfish.jpg?id=61095506&width=1200&height=800&coordinates=0%2C0%2C0%2C1\" /><br /><br /><p>Immersive experiences continue to debut around the world at a rapid rate. Within the attractions industry, immersive is a wide-ranging sector, and offerings include immersive <strong><a href=\"/immersive/opinion/immersive-wellness/\">wellness</a></strong> and water parks, themed dining, brand experiences, and technology-driven venues.</p><p><a href=\"/technology/in-depth/immersive-art-experiences/\"><strong>Immersive art experiences</strong></a> from groups like Meow Wolf, Culturespaces and teamLab are part of another sub-section within the wider movement.</p><p class=\"shortcode-media shortcode-media-rebelmouse-image\"><img alt=\"airbnb beetlejuice house top immersive experiences\" class=\"rm-shortcode\" id=\"daeaf\" src=\"https://blooloop.com/media-library/airbnb-beetlejuice-house-top-immersive-experiences.jpg?id=56477971&width=980\" /></p><p>Read on to find out more about our top picks of immersive experiences, ranging from <strong><a href=\"/immersive/in-depth/immersive-fort-tokyo/\">Immersive Fort Tokyo</a></strong> in Japan to <strong><a href=\"https://www.thesphere.com/\" rel=\"nofollow noopener\" target=\"_blank\">Sphere</a></strong> in Las Vegas, in alphabetical order.</p><h3>ABBA Voyage (London, UK)</h3><br /><img alt=\"\" class=\"rm-shortcode\" id=\"68e5b\" src=\"https://blooloop.com/media-library/image.jpg?id=56472517&width=980\" /><p><span>ABBA Voyage is a <a href=\"/technology/in-depth/abba-voyage/\"><strong>spectacular show</strong></a> in London’s Queen Elizabeth Olympic Park where Agnetha, Björn, Benny and Anni-Frid sing and dance as digital versions of themselves.</span></p><p><span>Through <a href=\"/technology/in-depth/technology-trends-2025/\"><strong>cutting-edge technology</strong></a>, immersive lighting, and ABBA’s iconic songs, the band performs on stage in a whole new way.</span></p><p><span>The band members’ digital avatars, or holograms, were created by Industrial Light & Magic (ILM), the visual effects company founded by Star Wars creator <strong>George Lucas</strong>. The band performed in motion capture suits, with cameras scanning their body movements and facial expressions.</span></p><p><span>In an interview with blooloop, <strong><a href=\"https://abbavoyage.com/\" rel=\"nofollow noopener nofollow noopener nofollow noopener nofollow noopener nofollow noopener nofollow noopener nofollow noopener\" target=\"_blank\">ABBA Voyage</a></strong> producer <strong>Ludvig Andersson</strong> described the attraction as a “magic ABBA space church”.</span></p><p><span>“It’s ABBA’s best possible concert in the 21st century,” <strong>Svana Gisla</strong>, another producer for ABBA Voyage, told blooloop.</span></p><h3>Airbnb experiences (various locations)</h3><br /><img alt=\"\" class=\"rm-shortcode\" id=\"97a94\" src=\"https://blooloop.com/media-library/image.jpg?id=56474033&width=980\" /><p><span>Airbnb may have officially expanded into the </span><a href=\"/brands-ip/news/airbnb-experiences-services/\"><strong>experiences business</strong></a><span>, but the holiday property rental company has been offering unique overnight (and sometimes day-only) stays for some time now. In recent years, Airbnb has listed Shrek’s “mud-laden” swamp, Barbie’s Malibu Dreamhouse, the <em>Beetlejuice Beetlejuice</em> ghost house, and the house from Disney and Pixar’s 2009 film <em>Up</em>.</span></p><p><span>Museum experiences with <a href=\"https://www.airbnb.co.uk/experiences\" rel=\"nofollow noopener nofollow noopener nofollow noopener nofollow noopener nofollow noopener nofollow noopener nofollow noopener\" target=\"_blank\"><strong>Airbnb</strong></a> have included a night in the Ferrari Museum in Maranello, Italy, and a stay in the Musée d’Orsay’s iconic clock room. Its immersive experience inspired by <em>Gladiator II</em> at the Colosseum in Rome went ahead despite criticism from Italian officials.</span></p><p><span>As part of its new Airbnb Originals series, the company has introduced experiences such as an anime attraction with <strong>Megan Thee Stallion</strong>, and “a taste of <strong>Sabrina Carpenter</strong> ”.</span></p><h3>Aquascope (Vienne, France)</h3><br /><img alt=\"\" class=\"rm-shortcode\" id=\"44ee7\" src=\"https://blooloop.com/media-library/image.jpg?id=56476791&width=980\" /><p><span>A distinctive immersive experience found at <a href=\"/theme-park/in-depth/futuroscope/\"><strong>Futuroscope</strong></a> in France is Aquascope, a water park with immersive zones powered by digital technologies. These include projection mapping and lighting, spatialised sound, interactive elements, and choreographed water effects.</span></p><p><span><a href=\"https://momentfactory.com/about\" rel=\"nofollow noopener nofollow noopener nofollow noopener nofollow noopener nofollow noopener nofollow noopener nofollow noopener\" target=\"_blank\"><strong>Moment Factory</strong></a>, <a href=\"https://www.universal-rocks.com/\" rel=\"nofollow noopener nofollow noopener nofollow noopener nofollow noopener nofollow noopener nofollow noopener nofollow noopener\" target=\"_blank\"><strong>Universal Rocks</strong></a> and <a href=\"https://www.modulo-pi.com/\" rel=\"nofollow noopener nofollow noopener nofollow noopener nofollow noopener nofollow noopener nofollow noopener nofollow noopener\" target=\"_blank\"><strong>Modulo Pi</strong></a> worked on Aquascope. “Water is an exceptional ally in creating immersive environments, offering limitless possibilities that we are only beginning to explore,” said <strong>Lyes Belhocine</strong>, general manager and producer, theme parks at Moment Factory.</span></p><p><span>“Its unique qualities, blended with advanced technology, create an ideal setting for light and sound exploration. </span></p><p><span>\"We are curious to see where this combination will take us in the future.\"</span></p><h3>Bluey’s World (Brisbane, Australia)</h3><br /><img alt=\"\" class=\"rm-shortcode\" id=\"83483\" src=\"https://blooloop.com/media-library/image.jpg?id=56478573&width=980\" /><p><span>Kids want to be immersed in their <a href=\"/theme-park/in-depth/attractions-trends-2025/\"><strong>favourite brands</strong></a> as much as adults, and attractions like Bluey’s World are capitalising on this demand. Located in Brisbane, Australia, Bluey’s World features innovative set designs, interactive games like ‘Keepy Uppy’ and ‘Magic Xylophone’, themed F&B, and Alfie’s Gift Shop for exclusive merchandise.</span></p><p><span>At <a href=\"https://ticketek.blueysworld.com.au/\" rel=\"nofollow noopener nofollow noopener nofollow noopener nofollow noopener nofollow noopener nofollow noopener nofollow noopener\" target=\"_blank\"><strong>Bluey’s World</strong></a>, guests can explore the Heeler family’s living room, kitchen and backyard, as well as Bluey and Bingo’s bedroom and playroom.</span></p><p><span>“This experience is one-of-a-kind, offering fans a unique way to engage with <em>Bluey</em> in an imaginative, hands-on environment. We hope it will inspire children and parents alike to enjoy moments of play and creativity, just like the Heelers,” said </span><b>Kate O’Connor</b><span>, director of brands and licensing at BBC Studios ANZ.</span></p><h3>Camp (various locations US)</h3><br /><img alt=\"\" class=\"rm-shortcode\" id=\"bf56b\" src=\"https://blooloop.com/media-library/image.jpg?id=56476015&width=980\" /><p><span>Camp is a <a href=\"/brands-ip/in-depth/camp/\"><strong>family experience company</strong></a> with experiential toy stores across the US. These can be found in cities such as New York, Chicago, Dallas, Los Angeles, Boston and Houston. Camp’s unique concept combines play with products in its stores and online. Its locations serve as toy stores, party venues and immersive theatre spaces. All of them include a signature Magic Door.</span></p><p><span>Many of <a href=\"https://camp.com/\" rel=\"nofollow noopener nofollow noopener nofollow noopener nofollow noopener nofollow noopener nofollow noopener nofollow noopener\" target=\"_blank\"><strong>Camp</strong></a> ’s experiences are themed to brands, with the company partnering with entertainment giants like Disney and Universal. Camp has launched experiences inspired by </span><i><span>The Little Mermaid</span></i><span>, </span><i><span>Encanto</span></i><span>, and </span><i><span>Trolls</span></i><span>, as well as </span><i><span>Bluey</span></i><span>.</span></p><p><span>In the Little Mermaid attraction, for example, guests could visit King Triton’s Palace, explore Ursula’s dark lair, see Ariel’s grotto, watch a magic show, and play in an abandoned shipwreck. After the experience, they could shop for exclusive merchandise.</span></p><p><span><a href=\"/retailtainment/news/camp-universal-trolls-band-together-immersive-experience/\"><strong>Trolls x Camp</strong></a> included a tunnel filled with Trolls hair, play experiences in Bergen Town, the Trolls Tree and Vacay Island’s pool noodle jungle gym, photo opportunities with Poppy and Branch, a driving video game, and a visit to Mr Dinkles’ Sparkle Spa.</span></p><h3>The Crystal Maze Live Experience (London and Manchester, UK)</h3><br /><img alt=\"crystal maze live experience\" class=\"rm-shortcode\" id=\"0e269\" src=\"https://blooloop.com/media-library/crystal-maze-live-experience.jpg?id=61221973&width=980\" /><p>The critically acclaimed <a href=\"https://the-crystal-maze.com/\" rel=\"nofollow noopener nofollow noopener nofollow noopener nofollow noopener nofollow noopener nofollow noopener nofollow noopener\" target=\"_blank\"><strong>Crystal Maze Live Experience</strong></a> opened in London in 2016 and was followed by a second location in Manchester. A nostalgic reimagining of 90s hit TV game show <em>The Crystal Maze</em>, the experience challenges guests to a series of games to win crystals and get time in the Crystal Dome.\n</p><p>The Crystal Maze Live Experience is the brainchild of Little Lion Entertainment, the<strong><a href=\"https://littlelionentertainment.com/\" rel=\"noreferrer noopener nofollow nofollow noopener nofollow noopener nofollow noopener nofollow noopener nofollow noopener nofollow noopener nofollow noopener\" target=\"_blank\"> immersive attractions company</a></strong> behind Tomb Raider: The Live Experience, Chaos Karts, and a Pac-Man experience in partnership with Bandai Namco.</p><h3>Dopeameme (Area15, Las Vegas, US)</h3><br /><img alt=\"\" class=\"rm-shortcode\" id=\"5fc31\" src=\"https://blooloop.com/media-library/image.jpg?id=56478951&width=980\" /><p><span>Dopeameme is our first Area15 entry on this list of the world’s top immersive experiences. The Domeameme Institute for Pleasure research is from designer toy brand Superplastic and is located in the experiential entertainment complex in Las Vegas. D.I.P.R. is the brand’s first-ever physical space. It offers a story-driven experience, with more than a dozen interactive experiences designed to trigger an actual <a href=\"/immersive/news/superplastic-area15-dopeameme-institute-pleasure-research/\"><strong>dopamine rush</strong></a>.</span></p><p><span><a href=\"https://area15.com/experiences/dopeameme/\" rel=\"nofollow noopener nofollow noopener nofollow noopener nofollow noopener nofollow noopener nofollow noopener nofollow noopener\" target=\"_blank\"><strong>Dopeameme</strong></a> uses RFID technology in a unique way: to track participants’ engagement so that the happier they are throughout the experience, the more they receive from the game itself.</span></p><p><span>“Turning Superplastic’s IP character universe into an unforgettable, IRL experience, D.I.P.R. cleverly blends warped humor, physical participation and immersive entertainment in ways we’ve never done before,” said Superplastic CEO <strong>Jennifer van Dijk</strong>.</span></p><h3>Electric Playhouse (Las Vegas and New Mexico, US)</h3><br /><img alt=\"electric playhouse\" class=\"rm-shortcode\" id=\"965ae\" src=\"https://blooloop.com/media-library/electric-playhouse.jpg?id=61220454&width=980\" /><p><span><a href=\"/technology/in-depth/electric-playhouse/\"><strong>Electric Playhouse</strong></a> offers cutting-edge, projection-based experiences that combine art, technology and play. Launched in Albuquerque, New Mexico, and now with a second venue in Las Vegas, Nevada, Electric Playhouse transforms traditional spaces into dynamic, sensor-driven environments, offering immersive games, dining, and events without the need for headsets or controllers.</span></p><p><span>CEO and co-founder <strong>Brandon Garrett</strong> told blooloop: “We wanted to create an <a href=\"https://www.electricplayhouse.com/\" rel=\"nofollow noopener nofollow noopener nofollow noopener nofollow noopener nofollow noopener nofollow noopener nofollow noopener\" target=\"_blank\"><strong>experience</strong></a> that blends digital engagement with real-world social connection and movement. Instead of isolating behind a screen, our spaces bring people together, encouraging physical play, collaboration, and shared experiences.”</span></p><p><span>The Teatime in Wonderland F&B experience is inspired by Lewis Caroll’s 1865 novel <em>Alice’s Adventures in Wonderland</em>. An immersive high tea, it includes motion-activated imagery and sound, interactive storytelling, and food prepared by celebrity pastry chef <strong>Keris Kuwana</strong>.</span></p><p><span>“Seeing Tea Time sell out consistently, especially in Vegas, has inspired us to develop new dinner stories and expand into more large-scale, story-driven, <a href=\"/theme-park/opinion/gamified-attractions/\"><strong>gamified experiences</strong></a>,” said Garrett.</span></p><h3>Fork ‘n Film (various locations US and London)</h3><br /><img alt=\"fork n film\" class=\"rm-shortcode\" id=\"a2c39\" src=\"https://blooloop.com/media-library/fork-n-film.jpg?id=61221633&width=980\" /><p><span><a href=\"https://www.forknfilm.com/\" rel=\"nofollow noopener nofollow noopener nofollow noopener nofollow noopener nofollow noopener nofollow noopener nofollow noopener\" target=\"_blank\"><strong>Fork ‘n Film</strong></a> has locations across the US, plus one in London. The newest venue came to Area15 in early 2025, offering an immersive cinema and dining experience where dishes from films are served as they appear on screen. Nostalgia is on the menu at Area15 with films such as <em>Mean Girls</em>, <em>Holes</em>, <em>Beauty and the Beast</em>, <em>Mulan</em> and <em>Alice in Wonderland</em>.</span></p><p><span>Other films showing at </span><a href=\"/immersive/news/fork-n-film-area15-immersive-movie-dining-experience/\"><strong>Area15</strong></a><span> are <em>Ratatouille</em>, <em>Lady and the Tramp</em>, <em>The Princess and the Frog</em>, <em>Cloudy with a Chance of Meatballs</em>, and <em>Monsters, Inc.</em> In addition to food and drink, Fork ‘n Film uses state-of-the-art visuals and surround sound to provide a fully immersive atmosphere, engaging guests’ senses beyond sight and sound.</span></p><h3>Eatrenalin (Germany)</h3><br /><img alt=\"Ocean Room at Eatrenalin Europa Park\" class=\"rm-shortcode\" id=\"a7c40\" src=\"https://blooloop.com/media-library/ocean-room-at-eatrenalin-europa-park.jpg?id=56466995&width=980\" /><p>Located within Germany's Europa-Park, <a href=\"https://blooloop.com/theme-park/opinion/eatrenalin-review/\"><strong>Eatrenalin</strong></a>, a media-based, multi-sensory restaurant, seats guests on dark ride vehicles for an 8-course fine-dining meal.</p><p>A world-first in luxury experiential fine dining, Eatrenalin was created by <a href=\"https://blooloop.com/theme-park/in-depth/thomas-mack-europa-park/\"><strong>Thomas Mack</strong></a>, managing director of the park, and gastronomy expert <strong>Oliver Altherr</strong>, CEO of Marché International.</p><p>Guests begin in a futuristic bar, enjoying canapés before being called into the immersive experience. After a dramatic reveal, they’re seated at individual table-and-chair vehicles, where they’re served their meal while gliding seamlessly from one themed room to another.</p><p>\"Normally, if people do not like rides and shows, they would not go to an amusement park. But we have changed people's minds with a <strong><a href=\"https://www.eatrenalin.de/en/\" rel=\"nofollow noopener\" target=\"_blank\">Michelin-star restaurant</a></strong>, our hotels, and everything else at Europa-Park Resort,\" Mack told blooloop. </p><h3>John Wick Experience (Area15, Las Vegas, US)</h3><br /><img alt=\"john wick experience\" class=\"rm-shortcode\" id=\"ea069\" src=\"https://blooloop.com/media-library/john-wick-experience.jpg?id=61220317&width=980\" /><p><span>Another immersive experience found at Area15 in Las Vegas is a new <a href=\"https://johnwickexperience.com/\" rel=\"nofollow noopener nofollow noopener nofollow noopener nofollow noopener nofollow noopener nofollow noopener nofollow noopener\" target=\"_blank\"><strong><em>John Wick</em> -themed attraction</strong></a> offering interactive missions in themed environments. Based on the John Wick film franchise starring <strong>Keanu Reeves</strong>, the John Wick Experience features cinematic rooms, live interactions and interactive gameplay. It’s set in the John Wick Continental Las Vegas hotel and includes two themed bars and a retail outlet.</span></p><p><span>“In the films, <strong>Chad Stahelski</strong> has created a complex, alternate reality with exquisite design, deep mythological influence and meticulous action,” said </span><strong><a href=\"/theme-park/influencer/jenefer-brown/\">Jenefer Brown</a></strong><span>, executive vice president and head of global products and experiences at Lionsgate.</span></p><p><span>“The most important part of creating this experience was honoring that and making sure that our guests truly feel like they are part of the world of the films.”</span></p><h3>Monopoly Lifesized (London, UK)</h3><br /><img alt=\"\" class=\"rm-shortcode\" id=\"821bb\" src=\"https://blooloop.com/media-library/image.jpg?id=56463956&width=980\" /><p><span><a href=\"/brands-ip/in-depth/monopoly-lifesized/\"><strong>Monopoly Lifesized</strong></a> in London is an immersive, interactive team version of the family board game created in partnership with Hasbro. Players can move around a life-size board and take part in challenges to buy properties, earn money, pass go, and go to jail. After successfully launching in <a href=\"https://www.monopolylifesized.com/\" rel=\"nofollow noopener nofollow noopener nofollow noopener nofollow noopener nofollow noopener nofollow noopener nofollow noopener\" target=\"_blank\"><strong>London</strong></a>, Monopoly Lifesized went to Riyadh, Saudi Arabia. The attraction is also making its way across the US on a multi-year tour.</span></p><p><span><strong>David Hutchinson</strong>, CEO of the Path Entertainment Group, a London-based production company, spoke to blooloop about the global expansion of Monopoly Lifesized. “It is really about building an international network of franchise partners… Monopoly is in pretty much every single country, in countless languages and iterations,” he said.</span></p><h3>Phantom Peak (London, UK)</h3><br /><img alt=\"phantom peak\" class=\"rm-shortcode\" id=\"d7a0b\" src=\"https://blooloop.com/media-library/phantom-peak.jpg?id=61221632&width=980\" /><p><span>London-based immersive experience <a href=\"https://www.phantompeak.com/\" rel=\"nofollow noopener nofollow noopener nofollow noopener nofollow noopener nofollow noopener nofollow noopener nofollow noopener\" target=\"_blank\"><strong>Phantom Peak</strong></a> is described as part immersive theatre, part escape room, and part real-life TV series. It’s set in a Wild West-themed town, with visitors able to explore the mysterious site, take part in nearly 100 games and challenges, and interact with the residents. Highlights include a boat ride, and saloons and dining facilities.</span></p><p><span>Phantom Peak is also <a href=\"/theme-park/news/phantom-peak-immersive-experience-us-expansion/\"><strong>heading to the US</strong></a>, with five new locations planned in the first phase. Co-founder of Phantom Peak, <strong>Glen Hughes</strong>, said: “Obviously the US is a large market and each city presents unique opportunities and drivers. We’re looking for a combination of demographics, appealing locations, and resources that will help us launch and sustain success for years to come.”</span></p><h3>Sphere (Las Vegas, US)</h3><br /><img alt=\"\" class=\"rm-shortcode\" id=\"157d7\" src=\"https://blooloop.com/media-library/image.jpg?id=56468987&width=980\" /><p><span>Las Vegas is swiftly becoming a city for immersive experiences <em>and</em> casinos, and is home to the world’s first <a href=\"https://www.thesphere.com/\" rel=\"nofollow noopener nofollow noopener nofollow noopener nofollow noopener nofollow noopener nofollow noopener nofollow noopener\" target=\"_blank\"><strong>Sphere</strong></a>, a $2.3 billion attraction. Launched in September 2023, Sphere is the largest spherical structure in the world. Its exterior features 580,000 square feet of LED lighting.</span></p><p><span>Inside, Sphere serves as a unique entertainment destination with immersive experiences, performances and competitions. These are enhanced using state-of-the-art technologies including the world’s highest resolution LED screen, the world’s most advanced concert audio system, and atmospheric elements such as wind and scent.</span></p><p><span>A <a href=\"/immersive/news/sphere-abu-dhabi/\"><strong>second Sphere venue</strong></a> is planned for Abu Dhabi.</span></p><h3>Therme resorts (Germany and Romania)</h3><br /><img alt=\"therme bucharest immersive experiences\" class=\"rm-shortcode\" id=\"7320f\" src=\"https://blooloop.com/media-library/therme-bucharest-immersive-experiences.jpg?id=61220058&width=980\" /><p><span>A unique water park and resort entry on our list of the top immersive experiences is Therme Group’s <a href=\"/water-parks/news/therme-group-manchester-europe-wellness-resort-investments/\"><strong>wellness resorts</strong></a>. The Vienna-based company is building new destinations in locations including Manchester, Dubai and the US. Like its current sites in Erding, Germany and Bucharest, the new Therme resorts will provide thermal bathing, spa treatments, mineral pools, saunas and wet rooms, lush greenery, immersive art, and thrilling waterslides.</span></p><p><span>A new experience at Germany’s Therme Euskirchen wellness complex merges nature and technology. Developed by <a href=\"https://www.thermegroup.com/\" rel=\"nofollow noopener nofollow noopener nofollow noopener nofollow noopener nofollow noopener nofollow noopener nofollow noopener\" target=\"_blank\"><strong>Therme Group</strong></a> and its partner Thermengruppe Josef Wund, the multi-sensory production is located in the new ‘Immersive Sky’ experience room. Guests enjoy a unique “forest bathing experience” through sound, scent, water, movement and imagery as they discover the story of the Lupuna tree, found in various parts of the Amazon rainforest.</span></p><h3>Netflix House (Philadelphia and Texas, US)</h3><br /><img alt=\"netflix house philadelphia\" class=\"rm-shortcode\" id=\"9dea4\" src=\"https://blooloop.com/media-library/netflix-house-philadelphia.jpg?id=62179793&width=980\" /><p>Last but not least on our round-up of immersive experiences is <a href=\"https://www.netflix.com/house\" rel=\"noopener noreferrer nofollow noopener nofollow noopener nofollow noopener nofollow noopener nofollow noopener nofollow noopener nofollow noopener\" target=\"_blank\"><strong>Netflix House</strong></a>. Opened in 2025, the attraction boasts two 100,000-square-foot venues at the King of Prussia Mall in <a href=\"https://blooloop.com/netflix-house-philadelphia-open/\"><strong>Philadelphia</strong></a><strong> </strong>and at Galleria Dallas in <a href=\"https://blooloop.com/netflix-house-dallas-open/\"><strong>Texas</strong></a>.</p><p>Netflix's new permanent locations turn passive binge-watching into an interactive exploration of some of the world’s most beloved intellectual properties.</p><p>Highlights at Netflix House include immersive experiences inspired by popular titles such as <em><em>Bridgerton</em></em>, <em><em>Queer Eye</em></em>, and <em><em>KPop Demon Hunters</em></em>, alongside standout features like the iconic <em><em>Squid Game</em></em> staircase and a recreation of the Byers’ living room from <em><em>Stranger Things</em></em>.</p><p>\"We’re always looking for new and innovative ways to bring our fans closer to the stories they love,\" said <a href=\"https://blooloop.com/neflix-house/\"><strong>Greg Lombardo</strong></a>, vice president of experiences at Netflix.</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Theme Park Insider",
+        "headline": "Disney shows strong financial results, despite oil prices",
+        "source_url": "https://www.themeparkinsider.com/flume/202605/12432/",
+        "published_at": "2026-05-06T03:59:00+00:00",
+        "summary": "By Robert Niles: Disney this morning reported record revenue and operating income for its theme park segment in the most recent fiscal quarter.<p>In his first investors call since taking over as Disney CEO, Josh D'Amaro hailed the performance of his former segment. <p>\"At Disney Experiences, we continue to demonstrate strength in the core business and make progress against our growth initiatives, with strong revenue growth of 7% and segment operating income growth of 5% in the quarter, revenue and segment operating income were ahead of our prior expectations and represent second quarter records,\" D'Amaro said. \"Over the past few quarters, the team has successfully navigated known attendance headwinds. We are now starting to lap these headwinds and expect attendance trends at our domestic parks to improve in Q3 when compared to the results were reported for Q2.\"<p>Disney Experiences reported revenue of $9.487 billion for the three-month period ending March 28, 2026. Operating income was $2.615 billion. Theme park admissions worldwide hit $3.092 billion for the quarter, up 6% from the prior year. <p>\"Global guests - which aggregates domestic and international parks attendance along with passenger cruise days � grew 2% compared to the prior-year quarter. Attendance at our domestic parks declined 1% when compared to the prior-year quarter, reflecting, in part, continued softness in international visitation.\"<p>Nevertheless, Disney reported that per capita spending at its domestic parks was up 5% in the quarter, driven by growth in admissions, food and beverage, and merchandise.<p>Disney also addressed plans for its new theme park in Abu Dhabi, a location that has felt substantial disruption in tourism and daily life following America's attack on Iran earlier this year. <p>\"The strategic logic of our Abu Dhabi plans is unchanged,\" Disney's investors report letter said. \"Major new theme parks are necessarily longterm in nature given the lead time of these projects, and this investment approach has consistently benefited our business.\"<p>CFO Hugh Johnston addresses questions about the war's resulting sharp increase in gas and fuel prices and its affect on Disney. <p>\"We haven't seen any change in consumer behavior from elevated gas prices thus far, and aren't currently seeing a material impact on the remainder of the fiscal year. Based on forward bookings, Disney World bookings are pacing up strongly, and even with our 40% increase in cruise capacity booked occupancy remains in line with the prior year. However, we're mindful of the macro uncertainty consumers are facing, and we're not immune to the impacts, including how a significant further rise in fuel prices from current levels could eventually lead to changes in consumer behavior. If that possibility were to occur each business has levers in place to make adjustments in order to help offset those kinds of macro pressures.\""
+      }
+    }
+  ],
+  "ontology": {
+    "repo": "QueueRadar",
+    "category": "queue",
+    "ontology_version": "0.1.0",
+    "event_model_ids": [
+      "queue.editorial_coverage",
+      "queue.wait_time_snapshot"
+    ],
+    "event_model_mappings": {
+      "wait_time_snapshot": "queue.wait_time_snapshot",
+      "editorial_coverage": "queue.editorial_coverage"
+    },
+    "entity_type_hints": [
+      "attraction.queue_target",
+      "evidence.url"
+    ],
+    "source_role_ids": [
+      "community_signal",
+      "context_only",
+      "operational_evidence"
+    ],
+    "source_role_mappings": {
+      "Disney Magic Kingdom": "operational_evidence",
+      "Universal Studios Orlando": "operational_evidence",
+      "Theme Park Insider": "context_only",
+      "Reddit r/KoreaTravel": "community_signal"
+    },
+    "evidence_policy_ids": [
+      "traceable_url_required",
+      "cross_reference_required"
+    ]
+  },
+  "quality_summary": {
+    "total_sources": 39,
+    "enabled_sources": 23,
+    "tracked_sources": 12,
+    "fresh_sources": 12,
+    "stale_sources": 0,
+    "missing_sources": 0,
+    "missing_event_sources": 0,
+    "unknown_event_date_sources": 0,
+    "not_tracked_sources": 11,
+    "skipped_disabled_sources": 16,
+    "collection_error_count": 0,
+    "wait_time_snapshot_events": 12,
+    "reservation_slot_events": 0,
+    "ticket_price_events": 0,
+    "weather_context_events": 0,
+    "queue_signal_event_count": 12,
+    "wait_time_observation_count": 12,
+    "open_attraction_count": 6,
+    "closed_attraction_count": 6,
+    "zero_wait_count": 9,
+    "high_wait_review_count": 1,
+    "target_canonical_key_present_count": 12,
+    "attraction_canonical_key_present_count": 12,
+    "reservation_canonical_key_present_count": 0,
+    "ticket_canonical_key_present_count": 0,
+    "weather_context_present_count": 0,
+    "missing_canonical_key_count": 0,
+    "event_required_field_gap_count": 0,
+    "tracked_source_gap_count": 0,
+    "missing_event_model_count": 3,
+    "source_backlog_candidate_count": 4,
+    "daily_review_item_count": 8
+  }
+}

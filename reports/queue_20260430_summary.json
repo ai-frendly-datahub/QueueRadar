@@ -1,0 +1,236 @@
+{
+  "date": "2026-04-30",
+  "category": "queue",
+  "article_count": 18,
+  "source_count": 18,
+  "matched_count": 18,
+  "top_entities": [
+    {
+      "name": "QueueGeneral",
+      "count": 144
+    },
+    {
+      "name": "RealTimeData",
+      "count": 73
+    },
+    {
+      "name": "WaitTime",
+      "count": 52
+    },
+    {
+      "name": "Location",
+      "count": 34
+    },
+    {
+      "name": "Status",
+      "count": 28
+    },
+    {
+      "name": "Attraction",
+      "count": 23
+    }
+  ],
+  "sources": {
+    "Busch Gardens Tampa": 1,
+    "Universal Studios Hollywood": 1,
+    "Islands of Adventure": 1,
+    "Universal Studios Orlando": 1,
+    "Disney California Adventure": 1,
+    "SeaWorld Orlando": 1,
+    "Disneyland": 1,
+    "Animal Kingdom": 1,
+    "Disney Hollywood Studios": 1,
+    "Disney Magic Kingdom": 1,
+    "Epcot": 1,
+    "Six Flags Magic Mountain": 1,
+    "네이버 롯데월드 블로그": 1,
+    "Attractions Magazine": 1,
+    "Inside the Magic": 1,
+    "Theme Park Insider": 1,
+    "WDWMAGIC News": 1,
+    "Blooloop": 1
+  },
+  "generated_at": "2026-04-30T10:49:36.158919+09:00",
+  "articles": [
+    {
+      "event_model_payload": {
+        "source_url": "https://queue-times.com/en-US/parks/24/queue_times#ride-1510"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_url": "https://queue-times.com/en-US/parks/66/queue_times#ride-6046"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_url": "https://queue-times.com/en-US/parks/64/queue_times#ride-6008"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_url": "https://queue-times.com/en-US/parks/65/queue_times#ride-13605"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_url": "https://queue-times.com/en-US/parks/17/queue_times#ride-329"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_url": "https://queue-times.com/en-US/parks/21/queue_times#ride-5954"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_url": "https://queue-times.com/en-US/parks/16/queue_times#ride-12428"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_url": "https://queue-times.com/en-US/parks/8/queue_times#ride-657"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_url": "https://queue-times.com/en-US/parks/7/queue_times#ride-12430"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_url": "https://queue-times.com/en-US/parks/6/queue_times#ride-1184"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_url": "https://queue-times.com/en-US/parks/5/queue_times#ride-13773"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_url": "https://queue-times.com/en-US/parks/32/queue_times#ride-2888"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "네이버 롯데월드 블로그",
+        "headline": "[첫인사] 롯데월드 블로그 OPEN(feat. 오픈 기념 이벤트)",
+        "source_url": "https://blog.naver.com/lotteworld_official/224269153056?fromRss=true&trackingCode=rss",
+        "published_at": "2026-04-29T16:00:25+00:00",
+        "summary": "잇님들 안녕하세요! 롯데월드입니다 ⁽⁽꜀(.ω. ꜆)꜄⁾⁾ 롯데월드가 드디어 블로그를 시작하게 되었어요~!!!!! 꺄앍~ 다들 소리질러어어ㅓㅓ@@ 블로그로 여러분께 드리는 첫인사라 조금 떨리네요 앞으로 이 공간에선 롯데월드를 더 재미있게 즐길 수 있는 꿀팁부터 요즘 핫한 어트랙션 귀여운 굿즈, 맛있는 간식까지!! 소소하지만 알찬 이야기들을 차곡차곡 담아보려고 해요♥️ 롯데월드가 궁금할 때 가볍게 들려서 구경하고 가는 친근한 공간이 되었으면 좋겠습니다~! 우리 앞으로 자주 만나요 (찡긋) 근데 여러분...! 블로그를 새로 오픈했는데 그냥 지나가면 좀 섭섭하잖아요(?) 그래서 준비했습니다!!! 오픈 이벤트....... <img src=\"https://blogthumb.pstatic.net/MjAyNjA0MjlfMTgw/MDAxNzc3NDQxMzcxODMy.AzbQVRkGD8MQFeECi4EjWcT4IYhJ0S7InRaQIbF_zScg.nlm_vTlTKJbdcyXSYbZ5fIZTErfIdbSvN28gGUuN1G8g.PNG/image.png?type=s3\" />"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Attractions Magazine",
+        "headline": "Autumn at Oz festival returning in 2026 with immersive Wizard of Oz theme park experience",
+        "source_url": "https://attractionsmagazine.com/wizard-oz-theme-park-2026-autumn-festival/",
+        "published_at": "2026-04-29T14:46:00+00:00",
+        "summary": "<p>Autumn at Oz Festival will return to Beech Mountain, N.C. in fall 2026 on the site of a once-defunct \"Wizard of Oz\" theme park, Land of Oz.</p>\n<p>The post <a href=\"https://attractionsmagazine.com/wizard-oz-theme-park-2026-autumn-festival/\">Autumn at Oz festival returning in 2026 with immersive Wizard of Oz theme park experience</a> appeared first on <a href=\"https://attractionsmagazine.com\">Attractions Magazine</a>.</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Inside the Magic",
+        "headline": "Disney World Reveals Replacement for Big Thunder Mountain Railroad Ride Area",
+        "source_url": "https://insidethemagic.net/2026/04/big-thunder-mountain-railroad-new-finale-revealed-magic-kingdom-jc1/",
+        "published_at": "2026-04-29T13:24:45+00:00",
+        "summary": "<p>On Wednesday, Walt Disney Imagineers gave a sneak peek of the updated finale scene for Big Thunder Mountain Railroad at Magic Kingdom Park. The Frontierland roller coaster has been closed for an extended refurbishment since January 2025 and will reopen on May 3, 2026. Big Thunder Mountain Railroad Overhaul Big Thunder Mountain Railroad closed at […]</p>\n<p>The post <a href=\"https://insidethemagic.net/2026/04/big-thunder-mountain-railroad-new-finale-revealed-magic-kingdom-jc1/\" rel=\"noopener\" target=\"_self\">Disney World Reveals Replacement for Big Thunder Mountain Railroad Ride Area</a> appeared first on <a href=\"https://insidethemagic.net\" rel=\"noopener\" target=\"_self\">Inside the Magic</a>.</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Theme Park Insider",
+        "headline": "Attendance thaws at Hong Kong Disneyland after 'Frozen' highs",
+        "source_url": "https://www.themeparkinsider.com/flume/202604/12421/",
+        "published_at": "2026-04-29T07:29:00+00:00",
+        "summary": "By Robert Niles: Attendance dipped at Hong Kong Disneyland last year, but strong guest spending allowed the park to pay off its outstanding loans.<p>Hong Kong Disneyland is jointly owned by the government of the Hong Kong Special Administrative Region and The Walt Disney Company, so it reports its financial performance separately from Disney. (If you are interested in Disney's latest financial report, that is coming next Wednesday.) The Hong Kong park reported continued profitability in its 2025 fiscal year, which ended September 27, 2025.<p>The park reported attendance of 7.5 million visitors for the 12-month period ending on that date, with was down from the record 7.7 million that Hong Kong Disneyland welcomed between October 1, 2023 and September 28, 2024. That was the year in which the park opened its popular <a href=\"https://www.themeparkinsider.com/flume/202311/9894/\">World of Frozen expansion</a>, which debuted in November 2023. <p>Hong Kong Disneyland reported that per capita guest spending rose 2% over the prior year, setting a record for the resort. Overall revenue hit HK$8.69 billion (US$1.1 billion), with a net profit of HK$536 million (US$68.4 million). Those numbers are down from the record profit of HK$838 million and revenue of HK$8.8 billion in the prior fiscal year.<p>In keeping with theme park industry tradition, Hong Kong Disneyland noted \"the extreme weather conditions in Hong Kong in 2025,\" which affected travel in the region.<p>Nevertheless, Hong Kong Disneyland noted in its press released that it \"had fully repaid the outstanding balance of term loans from its shareholders and is now free of loan for the first time in its history, underscoring the resort�s solid financial position.\"<p>The park is building a theater for a new Pixar show that will open next year near its Toy Story Land, and work has started on a new Marvel-themed indoor drop ride attraction for its Tomorrowland.<p>\"Supported by a growing base of Disney fans across key markets and a strong pipeline of new and innovative offerings, HKDL is optimistic about its long-term prospects and confident in its important role as an international travel destination for Hong Kong and the Greater Bay Area,\" Hong Kong Disneyland Resort Managing Director Tim Sypko said.<p>For our visitors guide to the park, including a link to discounted tickets, please visit our  <a href=\"https://www.themeparkinsider.com/reviews/hong-kong-disneyland/\">What to do at Hong Kong Disneyland</a> page.<p>Finally, for my weekly update of Disney and theme park news, please sign up for <a href=\"https://themeparkinsider.substack.com/subscribe\" style=\"font-weight: bold;\">Theme Park Insider's weekend newsletter</a>."
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "WDWMAGIC News",
+        "headline": "Likely Closure Dates Set for Magic Kingdom's Big Al's and Westward Ho",
+        "source_url": "http://www.wdwmagic.com/shopping/big-als/news/29apr2026-likely-closure-dates-set-for-magic-kingdom-s-big-al-s-and-westward-ho.htm",
+        "published_at": "2026-04-29T06:24:51+00:00",
+        "summary": "<div style=\"text-align: left;\"><a href=\"http://www.wdwmagic.com/shopping/big-als/news/29apr2026-likely-closure-dates-set-for-magic-kingdom-s-big-al-s-and-westward-ho.htm\"><img border=\"1\" hspace=\"4\" src=\"https://d3bo0mk5kk7egf.cloudfront.net/imgstore/ElementGalleryItems/shopping/Fullsize/Big-Als_Full_64011.jpg;width=300;height=250;mode=crop;quality=60;encoder=freeimage;progressive=true\" vspace=\"4\" /></a></div><p><a href=\"http://www.wdwmagic.com/shopping/big-als/news/29apr2026-likely-closure-dates-set-for-magic-kingdom-s-big-al-s-and-westward-ho.htm\">Read full article</a></p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Blooloop",
+        "headline": "Halloween to hit Disney World earlier than ever this year",
+        "source_url": "https://blooloop.com/halloween-disney-world-earlier-2026/",
+        "published_at": "2026-04-29T03:07:14+00:00",
+        "summary": "<img src=\"https://blooloop.com/media-library/mickeys-not-so-scary-halloween-party.jpg?id=66652073&width=1245&height=700&coordinates=0%2C0%2C0%2C0\" /><br /><br /><p>Walt Disney World has announced that Mickey’s Not-So-Scary Halloween Party will return to <a href=\"https://www.disneyworld.co.uk/destinations/magic-kingdom/\" rel=\"noopener noreferrer nofollow noopener nofollow noopener nofollow noopener nofollow noopener\" target=\"_blank\"><strong>Magic Kingdom</strong></a> on 7 August, meaning <a href=\"https://blooloop.com/halloween-theme-parks-powering-profit/\"><strong>Halloween</strong></a> is coming to the park earlier than ever this year.</p><p>The <a href=\"https://blooloop.com/theme-park/in-depth/disneyland-paris-natacha-rafalski/\"><strong>Disney park</strong></a> will transform into the centre for all things spooky and fun for nearly three months, with Halloween decorations debuting in early August and <a href=\"https://www.disneyworld.co.uk/events-tours/magic-kingdom/mickeys-not-so-scary-halloween-party/?CMP=ILC-DPFY25Q2wo0508250053G\" rel=\"noopener noreferrer nofollow noopener nofollow noopener nofollow noopener nofollow noopener\" target=\"_blank\"><strong>Mickey’s Not-So-Scary Halloween Party</strong></a> running from 7 August to 31 October</p><p>The separate ticketed event runs on selected weekend or weekday nights, with offerings including exclusive entertainment, Halloween-themed food and drink, photo opportunities, exclusive merchandise, and character greetings.</p><p class=\"shortcode-media shortcode-media-rebelmouse-image\"> <img alt=\"Mickey\\u2019s Not-So-Scary Halloween Party \" class=\"rm-shortcode\" id=\"7929b\" src=\"https://blooloop.com/media-library/mickey-u2019s-not-so-scary-halloween-party.jpg?id=66652081&width=980\" /> </p><p>Guests can look forward to the ultimate family Halloween celebration, complete with trick-or-treat stations throughout the park, with Halloween costumes encouraged but not required. </p><p>New this year, Stitch hosts an ever-changing dance party at the Rockettower Plaza Stage in Tomorrowland, joined by Lilo and Angel.</p><p>Also on offer are exclusive character greetings, including Sally and Jack Skellington at select stops. Mickey and Minnie appear together in Halloween costumes, as well as Pooh in a bumblebee outfit.</p><p class=\"shortcode-media shortcode-media-rebelmouse-image\"> <img alt=\"Hocus Pocus Villain Spelltacular\" class=\"rm-shortcode\" id=\"6d00f\" src=\"https://blooloop.com/media-library/hocus-pocus-villain-spelltacular.jpg?id=66652083&width=980\" /> </p><p>'Mickey's Boo-to-You Halloween Parade' will take place at 8.15pm on party nights, as Mickey and Minnie lead a parade of waltzing ghosts, Disney Princesses and treacherous villains. </p><p>In the 'Hocus Pocus Villain Spelltacular', the Sanderson Sisters return for a hilariously spooky stage show, as Winifred, Sarah, and Mary attempt to cast a spell with help from some of Disney’s most notorious Villains.</p><p>'Disney’s Not-So-Spooky Spectacular' is a nighttime fireworks and projection show in which Jack Skellington transforms Cinderella Castle into a haunted house, where spiderwebs, skeletons, and Grim Grinning Ghosts await.</p><h3>New Stitch dance party announced for Tomorrowland </h3><p>Alongside this, guests can look forward to new Mickey’s Not-So-Scary Halloween Party merchandise, food, and more. Select rides will also feature spooky overlays, with details to be announced. </p><p>Tickets go on sale on 12 May, with early access from 5 May for select <a href=\"https://blooloop.com/shanghai-disney-resort-fourth-hotel/\"><strong>Disney resort hotel</strong></a> guests, with prices varying by date. </p><p>This reflects a broader trend of <a href=\"https://blooloop.com/theme-park/news/halloween-arrives-early-us-theme-parks/\"><strong>expanding Halloween experiences</strong>,</a> as operators like Disney, Six Flags, and Universal capitalise on the<strong> </strong>spooky season’s growing popularity to boost sales.</p><p><em>Images courtesy of Disney</em><br /></p>"
+      }
+    }
+  ],
+  "ontology": {
+    "repo": "QueueRadar",
+    "category": "queue",
+    "ontology_version": "0.1.0",
+    "event_model_ids": [
+      "queue.editorial_coverage",
+      "queue.wait_time_snapshot"
+    ],
+    "event_model_mappings": {
+      "wait_time_snapshot": "queue.wait_time_snapshot",
+      "editorial_coverage": "queue.editorial_coverage"
+    },
+    "entity_type_hints": [
+      "attraction.queue_target",
+      "evidence.url"
+    ],
+    "source_role_ids": [
+      "community_signal",
+      "context_only",
+      "operational_evidence"
+    ],
+    "source_role_mappings": {
+      "Disney Magic Kingdom": "operational_evidence",
+      "Universal Studios Orlando": "operational_evidence",
+      "Theme Park Insider": "context_only",
+      "Reddit r/KoreaTravel": "community_signal"
+    },
+    "evidence_policy_ids": [
+      "traceable_url_required",
+      "cross_reference_required"
+    ]
+  },
+  "quality_summary": {
+    "total_sources": 39,
+    "enabled_sources": 23,
+    "tracked_sources": 12,
+    "fresh_sources": 12,
+    "stale_sources": 0,
+    "missing_sources": 0,
+    "missing_event_sources": 0,
+    "unknown_event_date_sources": 0,
+    "not_tracked_sources": 11,
+    "skipped_disabled_sources": 16,
+    "collection_error_count": 0,
+    "wait_time_snapshot_events": 12,
+    "reservation_slot_events": 0,
+    "ticket_price_events": 0,
+    "weather_context_events": 0,
+    "queue_signal_event_count": 12,
+    "wait_time_observation_count": 12,
+    "open_attraction_count": 4,
+    "closed_attraction_count": 8,
+    "zero_wait_count": 12,
+    "high_wait_review_count": 0,
+    "target_canonical_key_present_count": 12,
+    "attraction_canonical_key_present_count": 12,
+    "reservation_canonical_key_present_count": 0,
+    "ticket_canonical_key_present_count": 0,
+    "weather_context_present_count": 0,
+    "missing_canonical_key_count": 0,
+    "event_required_field_gap_count": 0,
+    "tracked_source_gap_count": 0,
+    "missing_event_model_count": 3,
+    "source_backlog_candidate_count": 4,
+    "daily_review_item_count": 7
+  }
+}

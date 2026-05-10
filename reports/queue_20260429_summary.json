@@ -1,0 +1,230 @@
+{
+  "date": "2026-04-29",
+  "category": "queue",
+  "article_count": 17,
+  "source_count": 17,
+  "matched_count": 17,
+  "top_entities": [
+    {
+      "name": "QueueGeneral",
+      "count": 161
+    },
+    {
+      "name": "RealTimeData",
+      "count": 73
+    },
+    {
+      "name": "WaitTime",
+      "count": 52
+    },
+    {
+      "name": "Status",
+      "count": 27
+    },
+    {
+      "name": "Location",
+      "count": 25
+    },
+    {
+      "name": "Attraction",
+      "count": 17
+    },
+    {
+      "name": "VisitorTips",
+      "count": 1
+    }
+  ],
+  "sources": {
+    "Busch Gardens Tampa": 1,
+    "Universal Studios Hollywood": 1,
+    "Universal Studios Orlando": 1,
+    "Islands of Adventure": 1,
+    "Disney California Adventure": 1,
+    "SeaWorld Orlando": 1,
+    "Disneyland": 1,
+    "Animal Kingdom": 1,
+    "Disney Hollywood Studios": 1,
+    "Disney Magic Kingdom": 1,
+    "Epcot": 1,
+    "Six Flags Magic Mountain": 1,
+    "Inside the Magic": 1,
+    "WDWMAGIC News": 1,
+    "Attractions Magazine": 1,
+    "Blooloop": 1,
+    "Park World Magazine": 1
+  },
+  "generated_at": "2026-04-29T00:04:42.947967+09:00",
+  "articles": [
+    {
+      "event_model_payload": {
+        "source_url": "https://queue-times.com/en-US/parks/24/queue_times#ride-1510"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_url": "https://queue-times.com/en-US/parks/66/queue_times#ride-6046"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_url": "https://queue-times.com/en-US/parks/65/queue_times#ride-13605"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_url": "https://queue-times.com/en-US/parks/64/queue_times#ride-6008"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_url": "https://queue-times.com/en-US/parks/17/queue_times#ride-329"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_url": "https://queue-times.com/en-US/parks/21/queue_times#ride-5954"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_url": "https://queue-times.com/en-US/parks/16/queue_times#ride-12428"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_url": "https://queue-times.com/en-US/parks/8/queue_times#ride-657"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_url": "https://queue-times.com/en-US/parks/7/queue_times#ride-12430"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_url": "https://queue-times.com/en-US/parks/6/queue_times#ride-1184"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_url": "https://queue-times.com/en-US/parks/5/queue_times#ride-13773"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_url": "https://queue-times.com/en-US/parks/32/queue_times#ride-2888"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Inside the Magic",
+        "headline": "Disney Overhauls Villain Characters in Orlando Starting August 2026",
+        "source_url": "https://insidethemagic.net/2026/04/disney-overhauls-villain-characters-in-orlando-starting-august-2026-ad1/",
+        "published_at": "2026-04-28T05:48:32+00:00",
+        "summary": "<p>Mickey’s Not-So-Scary Halloween Party has been one of the crown jewels of the Walt Disney World event calendar for years. On select nights from late summer through Halloween, Magic Kingdom transforms after dark into something genuinely different from its daytime self. The castle changes. The parades run. The Sanderson Sisters take the stage. Trick-or-treat stations […]</p>\n<p>The post <a href=\"https://insidethemagic.net/2026/04/disney-overhauls-villain-characters-in-orlando-starting-august-2026-ad1/\" rel=\"noopener\" target=\"_self\">Disney Overhauls Villain Characters in Orlando Starting August 2026</a> appeared first on <a href=\"https://insidethemagic.net\" rel=\"noopener\" target=\"_self\">Inside the Magic</a>.</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "WDWMAGIC News",
+        "headline": "EPCOT International Food and Wine Festival 2026 Dates Announced",
+        "source_url": "http://www.wdwmagic.com/events/international-food-and-wine-festival/news/28apr2026-epcot-international-food-and-wine-festival-2026-dates-announced.htm",
+        "published_at": "2026-04-28T05:32:51+00:00",
+        "summary": "<div style=\"text-align: left;\"><a href=\"http://www.wdwmagic.com/events/international-food-and-wine-festival/news/28apr2026-epcot-international-food-and-wine-festival-2026-dates-announced.htm\"><img border=\"1\" hspace=\"4\" src=\"https://d3bo0mk5kk7egf.cloudfront.net/imgstore/ElementGalleryItems/events/Fullsize/International-Food-and-Wine-Festival_Full_61923.jpg;width=300;height=250;mode=crop;quality=60;encoder=freeimage;progressive=true\" vspace=\"4\" /></a></div><p><a href=\"http://www.wdwmagic.com/events/international-food-and-wine-festival/news/28apr2026-epcot-international-food-and-wine-festival-2026-dates-announced.htm\">Read full article</a></p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Attractions Magazine",
+        "headline": "Mickey’s Not-So-Scary Halloween Party 2026 dates are the earliest ever",
+        "source_url": "https://attractionsmagazine.com/mickeys-not-so-scary-halloween-party-2026/",
+        "published_at": "2026-04-28T04:39:28+00:00",
+        "summary": "<p>Mickey's Not-So-Scary Halloween Party returns for 2026 at Magic Kingdom with fireworks, Disney Villains at trick-or-treat trails.</p>\n<p>The post <a href=\"https://attractionsmagazine.com/mickeys-not-so-scary-halloween-party-2026/\">Mickey’s Not-So-Scary Halloween Party 2026 dates are the earliest ever</a> appeared first on <a href=\"https://attractionsmagazine.com\">Attractions Magazine</a>.</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Blooloop",
+        "headline": "Navigating the North Star with Museum EXP",
+        "source_url": "https://blooloop.com/museum-exp-museum-design-strategy/",
+        "published_at": "2026-04-28T02:03:33+00:00",
+        "summary": "<img src=\"https://blooloop.com/media-library/woman-and-child-interact-with-a-black-hole-exhibit-at-a-museum.jpg?id=66431935&width=1200&height=400&coordinates=0%2C333%2C0%2C334\" /><br /><br /><h3></h3><br /><p>For today's museums, the demand for exceptional, immersive, and meaningful visitor experiences is greater than ever, yet organisational resources to carry out these ambitious projects are often dwindling. </p><p>This is where Museum EXP, a firm specialising in planning, strategy, and project management, fills a crucial niche.</p><p>Acting as an extension of the internal team for institutions ranging from children’s museums to major science centres, Museum EXP combines practical realism with high-level creative strategy and execution.</p><p>To understand <a href=\"https://museumexp.com/\" rel=\"nofollow noopener nofollow noopener nofollow noopener nofollow noopener nofollow noopener\" target=\"_blank\"><strong>the company’s</strong></a> philosophy, methodology, and sector impact, we speak with CEO and principal <strong><a href=\"https://blooloop.com/museum/influencer/cynthia-brown/\">Cynthia Brown</a></strong> and principal <strong>Sarah Lima.</strong> </p><p>They highlight how their approach directly addresses museum professionals' challenges and priorities, emphasising the importance of defining a clear 'North Star' in exhibition development and aligning expectations of how the project unfolds.</p><h3>​Bringing in-house expertise</h3><br /><img alt=\"Cynthia Brown Headshot\" class=\"rm-shortcode\" id=\"97030\" src=\"https://blooloop.com/media-library/cynthia-brown-headshot.jpg?id=56478027&width=980\" /><p>Museum EXP was founded in 2019, based on observations by Brown and her co-founder, <strong>John Shaw</strong>. As seasoned industry veterans, they observed a worrying decline in technical skills across the sector.</p><p>“We were longtime museum collaborators,” says Brown. “We both worked at collaborating organisations over the years, and we became each other’s sounding boards and friends. We came together in 2019 because we were seeing gaps in the overall <strong><a href=\"https://blooloop.com/museum/in-depth/most-visited-museums/\">museum industry</a></strong>. </p><p>\"A lot of in-house development, design, and project execution departments within museums were evaporating or being outsourced, and we feel strongly that in-house expertise is really important to the sustainability and ecosystem of museums.\"</p><p>The firm was founded specifically to bridge that divide, ensuring that, even as permanent staff numbers fluctuated, the quality of the visitor experience remained high, with the organisation receiving the most value from its project budget.</p><h3></h3><br /><img alt=\"Cynthia Brown and John Show against background of a soybean field with \"BEAN THERE, DONE THAT\" text overhead.\" class=\"rm-shortcode\" id=\"0f1b3\" src=\"https://blooloop.com/media-library/cynthia-brown-and-john-show-against-background-of-a-soybean-field-with-bean-there-done-that-text-overhead.png?id=66429655&width=980\" /><p>\"When we founded Museum EXP, it was specifically to fill that gap. We’re a project-management-based firm with strong experience in exhibition development and execution, and project management takes many different forms in the museum world.</p><p>\"We think about the full cycle of exhibition development and what’s needed not only for museums to get an exhibit the public loves, but also one that in-house staff really loves too.\"</p><h3>​Working side-by-side with museum teams</h3><br /><img alt=\"Headshot Sarah Lima Museum EXP\" class=\"rm-shortcode\" id=\"d0d7e\" src=\"https://blooloop.com/media-library/headshot-sarah-lima-museum-exp.jpg?id=66429516&width=980\" /><p>One of the main challenges <strong><a href=\"https://blooloop.com/museum/in-depth/most-visited-museums-europe/\">museums</a></strong> face today is not a shortage of ideas, but a lack of clarity on how to implement them while managing competing priorities. </p><p>Addressing this tension is where Lima sees the firm’s role as distinct from traditional consultants. Museum EXP is not just project managers; they are process guides, she explains:</p><p>\"We’re effectively navigational experts. We think a lot about navigation and creating a North Star for the teams we work with. Some museums have large-scale projects as part of their DNA and do them repeatedly, but many have a chance to do this maybe once in their lifetime.</p><p>“It can feel like a lot of pressure; exciting, but fraught with anxiety.\"</p><p>This pressure frequently impacts staff members who weren't specifically hired for large-scale capital projects. Brown describes a common situation in the non-profit sector: the \"volun-told\" project leader.</p><p>\"Often people are volun-told that they’re now owning the success of a massive project,\" Brown says. \"They look at their resources and say, 'We absolutely won’t be able to make this happen.' Sometimes they’re just starting fundraising or a capital campaign.\"</p><h3></h3><br /><img alt=\"John Shaw of Museum EXP discussing a digital architectural drawing on a monitor.\" class=\"rm-shortcode\" id=\"fdbcd\" src=\"https://blooloop.com/media-library/john-shaw-of-museum-exp-discussing-a-digital-architectural-drawing-on-a-monitor.jpg?id=66430077&width=980\" /><p>In these high-stakes moments, the Museum EXP strategy is to pause and evaluate before jumping into design.</p><p>\"One thing we emphasise is that you don’t have to have all the answers right away. It’s about identifying the resources you have, the resources you need, and what is needed to get to that first milestone,\" says Brown.</p><p>\"There are many people—internal staff, community members, and outside contractors—who can help move things forward. First and foremost, it’s understanding what you’re really trying to do and what resources you can leverage.\"</p><p>Lima adds that this alignment is crucial for morale as much as it is for logistics.</p><p>\"Creating a shared sense of purpose gives people a reason to understand what they’re all here to do. We help teams see where their instincts and lived experience will really serve them, and where there are unknowns to consider.</p><p>“We’re a trusted party who helps projects be as ambitious as they want to be, pushing beyond internal comfort levels in service of something excellent.\"</p><h3>​Putting together the right teams</h3><br /><p>The firm’s operational model is designed to be adaptable. Instead of enforcing a strict external structure, it integrates smoothly into the existing hierarchy. As stated in its mission, Museum EXP acts as \"an extension of your museum’s exhibits department.\"</p><p>This is achieved by assembling bespoke teams for each project that amplify the strengths of each institution's existing staff. </p><p>Working with a network of accomplished museum professionals, the firm curates a team of designers, fabricators, collections managers, scientists, curators, historians, and technical specialists to ensure an elite team is assembled for each exhibition project. </p><p>Working on behalf of a museum team can take many forms, from managing complex project teams for major renovations or new buildings, such as the North Carolina Museum of History or the Hilton Family Holocaust Education Center, to reimagining galleries, as in <strong><a href=\"https://blooloop.com/museum/in-depth/frost-science/\">Frost Science</a></strong> or the Golisano Children’s Museum of Naples.</p><h3></h3><br /><img alt=\"Group of people in hard hats break ground at a construction event for John and Carol Walter Nature Experience\" class=\"rm-shortcode\" id=\"a29a5\" src=\"https://blooloop.com/media-library/group-of-people-in-hard-hats-break-ground-at-a-construction-event-for-john-and-carol-walter-nature-experience.jpg?id=66430184&width=980\" /><p>Brown says that they view the client relationship as a partnership rather than a transaction:</p><p>\"We don’t see projects as a relay race with handoffs. It’s a continuum. Sometimes it’s straight project management, sometimes creative is layered in. Sometimes clients say, 'You know our standards—take it and run with it.'</p><p>“We’re a firm built on trust, and we bring solutions we believe will help each project and organisation in the long-term.\"</p><p>Lima says the company’s internal culture is one of \"proudly geeky generalists,\" a trait that allows the team to adapt to the specific needs of a science centre one week and a history museum the next.</p><p>\"If we can fill a gap efficiently as an extension of a client’s team, that’s great. But we’re also connectors. We think carefully about whether we’re the right fit or whether another party is better. Bringing the right people together is one of the most vibrant parts of our job.\"</p><p>This flexibility is evident in Museum EXP’s varied portfolio, featuring art and history exhibitions, children’s museums, and science museums.</p><h3>​Making sure the goals are defined</h3><br /><p>Before a single interactive is designed or a wall is painted, Museum EXP insists on a rigorous discovery phase.</p><p>\"We like to get stuck in the academics and defining goals before moving to the fun, creative stuff,\" Brown says. </p><p>\"What are we really trying to do? Are all stakeholders articulating the project goals in the same way? How are we looking at resources, and can we see them as opportunities rather than constraints?\"</p><p>This discipline stems from the founders' extensive experience in <strong><a href=\"https://blooloop.com/museum/in-depth/british-museum-touring-exhibitions-next-gen/\">travelling exhibitions</a></strong>, a sector that often operates under strict timelines and even tighter budgets.</p><h3></h3><br /><img alt=\"Museum EXP team smiling on stage with a sponsor board in the background.\" class=\"rm-shortcode\" id=\"a2181\" src=\"https://blooloop.com/media-library/museum-exp-team-smiling-on-stage-with-a-sponsor-board-in-the-background.jpg?id=66431777&width=980\" /><p>\"Budgets and schedules are fixed, so you move quickly and nimbly. We define the sandbox, use constraints as design opportunities, and get a clear picture of what we’re trying to do and how to move forward efficiently,\" says Brown.</p><p>Once the \"sandbox\" is defined, the team can unleash their creativity within those boundaries.</p><p>\"Once educational and experiential goals are defined, the avenues for execution are infinite. We love the brain-flexing challenges: complex interactives, seemingly opposing stakeholders, translating high-level science for fourth graders.\"</p><h3>​Creative vs. operations</h3><br /><p>A recurring issue in museum design is the divide between creative vision and operational reality. Designers envision complex mechanisms; operations teams focus on maintenance. </p><p>Because Museum EXP’s principals have worked in museums, they have a strong understanding of what the floor staff actually needs to be successful.</p><p>\"We know what it’s like when an exhibit is down on a Saturday afternoon or when a school group descends,\" says Brown. \"We think about the full cycle, things like visitor flow, facilitation, caregiver interaction, maintenance needs, and the overall museum ecosystem. </p><p>\"That boots-on-the-ground experience gives us a practical approach to execution.\"</p><h3></h3><br /><img alt=\"Two children engage with colorful glass panels in a science exhibit at LIGO Exploration Center\" class=\"rm-shortcode\" id=\"3a250\" src=\"https://blooloop.com/media-library/two-children-engage-with-colorful-glass-panels-in-a-science-exhibit-at-ligo-exploration-center.jpg?id=66430679&width=980\" /><p>This pragmatic mindset does not suppress creativity; instead, it channels it. Lima contends that constraints are actually essential for excellence:</p><p>\"Those constraints are where project managers live. They focus purpose. We want excellent outcomes, but we ground ambition in real data and achievable parameters. It takes work, but it’s what gets us out of bed.</p><p>\"Evaluation is a beautiful, dispassionate tool,\" she adds. \"If we agree on what excellence looks like, we can continually ask: Are we still heading there? It keeps people with very different roles moving in the same direction, both inspirationally and practically.\"</p><p>Brown emphasises that they do not simply guess what works: \"Evaluation and data are at the core of what we do. We look to the broader museum community and existing studies and embed that learning into projects.\"</p><h3>​Beyond opening day</h3><br /><img alt=\"Sarah Lima and John Shaw observing dinosaur fossils at a high-tech exhibit, Frost Science\" class=\"rm-shortcode\" id=\"28eed\" src=\"https://blooloop.com/media-library/sarah-lima-and-john-shaw-observing-dinosaur-fossils-at-a-high-tech-exhibit-frost-science.jpg?id=66430892&width=980\" /><p>For many design firms, the project concludes once the ribbon is cut. However, Museum EXP adopts a broader perspective. Brown characterises the process not as a handover, but as a continuum:</p><p>\"We want to know how the experience is working so we can learn from it. We support post-opening evaluation, grant reporting, and help leverage the spotlight for what comes next.”</p><p>This commitment to the project's long-term success includes the professional development of the staff they collaborate with. </p><h3></h3><br /><img alt=\"Four people discuss a fossil in a laboratory with extractor arms.\" class=\"rm-shortcode\" id=\"bb6ef\" src=\"https://blooloop.com/media-library/four-people-discuss-a-fossil-in-a-laboratory-with-extractor-arms.jpg?id=66431072&width=980\" /><p>Lima emphasises a strong desire to enhance capacity within the industry.</p><p>\"For some people, these projects are career-defining. We want them to be part of a network of people who’ve managed work at this scale. We believe in thought leadership and sharing knowledge freely.</p><p>“We want people to share what worked, what didn’t, and how to do better next time.”</p><h3>​Museum EXP and the future of the guest experience</h3><br /><p>Looking ahead, Brown and Lima see a museum sector that must adapt to meet increasing visitor expectations. They advocate for seeking inspiration beyond the museum sphere.</p><p>\"Museums need to look to peer organisations and adjacent industries,\" says Brown. \"Visitor expectations are rising, and the number one reason people visit museums is to have meaningful time with family and friends.</p><p>“We need to keep that vision front and centre while 'hiding the veggies' of science and history.\"</p><p>This idea of \"hiding the veggies\"—making <strong><a href=\"https://blooloop.com/rethinking-edutainment/\">educational content</a></strong> so engaging that it is consumed voluntarily and joyfully—is central to their strategy. Lima adds that the physical environment and the quality of welcome are just as important as the content itself:</p><p>\"Looking to best practices across industries to create welcoming, accessible, safe social spaces with well-trained staff is critical to the survival of our industry.”</p><h3>​A true partner</h3><br /><p>Ultimately, Museum EXP positions itself as a true partner. Whether developing a master plan for a new museum or a specific gallery renovation, the company aims to empower the institution.</p><p>\"We also acknowledge that for public-facing organisations, these responsibilities are often layered on top of already full-time jobs,\" says Brown. </p><p>\"We act as creative process leaders, tapping into individual superpowers and letting expertise shine, while bringing everyone along without exhausting capacity.\"</p><h3></h3><br /><img alt=\"Indoor exhibit with colorful Magna-Tiles structures and children exploring the display.\" class=\"rm-shortcode\" id=\"c9442\" src=\"https://blooloop.com/media-library/indoor-exhibit-with-colorful-magna-tiles-structures-and-children-exploring-the-display.png?id=66431558&width=980\" /><p>By combining rigorous project management with a genuine passion for the museum's mission, the team helps clients navigate the complex journey from concept to realisation.</p><p>As Lima summarises, their work is about providing the clarity that allows great ideas to flourish.</p><p>\"Whether we’re filling a niche or helping leaders focus on a big-picture vision, that clarity becomes the beacon people follow.\"</p><p>For museums managing limited budgets and lofty goals in the post-<strong><a href=\"https://blooloop.com/theme-park/in-depth/attractions-industry-covid-19-recovery-2/\">pandemic</a></strong> era, that beacon is more valuable than ever.</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Park World Magazine",
+        "headline": "Efteling theme park reports strong results for 2025",
+        "source_url": "https://parkworld-online.com/efteling-theme-park-reports-strong-results-for-2025/",
+        "published_at": "2026-04-27T20:00:38+00:00",
+        "summary": "<p>Dutch theme park, Efteling, has announced strong results for 2025. Last year, the park enjoyed 5.78 million visits by 4.98m individual guests; it has also reported an operating income of €347m and a net profit of €27.2m. Efteling is attributing its strong performance in 2025 to the continued appeal of the Danse Macabre dark ride, […]</p>\n<p>The post <a href=\"https://parkworld-online.com/efteling-theme-park-reports-strong-results-for-2025/\" rel=\"nofollow\">Efteling theme park reports strong results for 2025</a> appeared first on <a href=\"https://parkworld-online.com\" rel=\"nofollow\">Park World Online</a>.</p>"
+      }
+    }
+  ],
+  "ontology": {
+    "repo": "QueueRadar",
+    "category": "queue",
+    "ontology_version": "0.1.0",
+    "event_model_ids": [
+      "queue.editorial_coverage",
+      "queue.wait_time_snapshot"
+    ],
+    "event_model_mappings": {
+      "wait_time_snapshot": "queue.wait_time_snapshot",
+      "editorial_coverage": "queue.editorial_coverage"
+    },
+    "entity_type_hints": [
+      "attraction.queue_target",
+      "evidence.url"
+    ],
+    "source_role_ids": [
+      "community_signal",
+      "context_only",
+      "operational_evidence"
+    ],
+    "source_role_mappings": {
+      "Disney Magic Kingdom": "operational_evidence",
+      "Universal Studios Orlando": "operational_evidence",
+      "Theme Park Insider": "context_only",
+      "Reddit r/KoreaTravel": "community_signal"
+    },
+    "evidence_policy_ids": [
+      "traceable_url_required",
+      "cross_reference_required"
+    ]
+  },
+  "quality_summary": {
+    "total_sources": 39,
+    "enabled_sources": 23,
+    "tracked_sources": 12,
+    "fresh_sources": 12,
+    "stale_sources": 0,
+    "missing_sources": 0,
+    "missing_event_sources": 0,
+    "unknown_event_date_sources": 0,
+    "not_tracked_sources": 11,
+    "skipped_disabled_sources": 16,
+    "collection_error_count": 0,
+    "wait_time_snapshot_events": 12,
+    "reservation_slot_events": 0,
+    "ticket_price_events": 0,
+    "weather_context_events": 0,
+    "queue_signal_event_count": 12,
+    "wait_time_observation_count": 12,
+    "open_attraction_count": 4,
+    "closed_attraction_count": 8,
+    "zero_wait_count": 11,
+    "high_wait_review_count": 0,
+    "target_canonical_key_present_count": 12,
+    "attraction_canonical_key_present_count": 12,
+    "reservation_canonical_key_present_count": 0,
+    "ticket_canonical_key_present_count": 0,
+    "weather_context_present_count": 0,
+    "missing_canonical_key_count": 0,
+    "event_required_field_gap_count": 0,
+    "tracked_source_gap_count": 0,
+    "missing_event_model_count": 3,
+    "source_backlog_candidate_count": 4,
+    "daily_review_item_count": 7
+  }
+}
