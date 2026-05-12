@@ -1,44 +1,51 @@
 {
   "date": "2026-04-13",
   "category": "queue",
-  "article_count": 200,
-  "source_count": 8,
-  "matched_count": 200,
+  "article_count": 15,
+  "source_count": 15,
+  "matched_count": 15,
   "top_entities": [
     {
-      "name": "RealTimeData",
-      "count": 1200
+      "name": "QueueGeneral",
+      "count": 111
     },
     {
-      "name": "QueueGeneral",
-      "count": 985
+      "name": "RealTimeData",
+      "count": 72
     },
     {
       "name": "WaitTime",
-      "count": 903
+      "count": 50
     },
     {
       "name": "Status",
-      "count": 401
+      "count": 25
     },
     {
       "name": "Location",
-      "count": 250
+      "count": 24
     },
     {
       "name": "Attraction",
-      "count": 212
+      "count": 15
     }
   ],
   "sources": {
-    "Busch Gardens Tampa": 24,
-    "Universal Studios Hollywood": 24,
-    "Universal Studios Orlando": 27,
-    "Islands of Adventure": 22,
-    "Disney California Adventure": 31,
-    "Disneyland": 50,
-    "SeaWorld Orlando": 17,
-    "Animal Kingdom": 5
+    "Six Flags Magic Mountain": 1,
+    "Busch Gardens Tampa": 1,
+    "Universal Studios Hollywood": 1,
+    "Universal Studios Orlando": 1,
+    "Islands of Adventure": 1,
+    "Disney California Adventure": 1,
+    "SeaWorld Orlando": 1,
+    "Disneyland": 1,
+    "Animal Kingdom": 1,
+    "Disney Hollywood Studios": 1,
+    "Disney Magic Kingdom": 1,
+    "Epcot": 1,
+    "Attractions Magazine": 1,
+    "Inside the Magic": 1,
+    "Theme Park Insider": 1
   },
-  "generated_at": "2026-04-13T10:14:27.804542+09:00"
+  "generated_at": "2026-04-13T17:15:40.578254+09:00"
 }

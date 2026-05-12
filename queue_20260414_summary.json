@@ -1,44 +1,52 @@
 {
   "date": "2026-04-14",
   "category": "queue",
-  "article_count": 200,
-  "source_count": 8,
-  "matched_count": 200,
+  "article_count": 17,
+  "source_count": 16,
+  "matched_count": 17,
   "top_entities": [
     {
-      "name": "RealTimeData",
-      "count": 1200
+      "name": "QueueGeneral",
+      "count": 202
     },
     {
-      "name": "QueueGeneral",
-      "count": 989
+      "name": "RealTimeData",
+      "count": 74
     },
     {
       "name": "WaitTime",
-      "count": 833
-    },
-    {
-      "name": "Status",
-      "count": 401
+      "count": 51
     },
     {
       "name": "Location",
-      "count": 253
+      "count": 26
+    },
+    {
+      "name": "Status",
+      "count": 25
     },
     {
       "name": "Attraction",
-      "count": 212
+      "count": 19
     }
   ],
   "sources": {
-    "Busch Gardens Tampa": 24,
-    "Universal Studios Hollywood": 24,
-    "Universal Studios Orlando": 26,
-    "Islands of Adventure": 24,
-    "Disney California Adventure": 31,
-    "Disneyland": 50,
-    "SeaWorld Orlando": 17,
-    "Disney Hollywood Studios": 4
+    "Universal Studios Orlando": 1,
+    "Disney California Adventure": 1,
+    "SeaWorld Orlando": 1,
+    "Disneyland": 1,
+    "Animal Kingdom": 1,
+    "Disney Hollywood Studios": 1,
+    "Epcot": 1,
+    "Disney Magic Kingdom": 1,
+    "Six Flags Magic Mountain": 1,
+    "Busch Gardens Tampa": 1,
+    "Universal Studios Hollywood": 1,
+    "Islands of Adventure": 1,
+    "Inside the Magic": 1,
+    "Blooloop": 2,
+    "Attractions Magazine": 1,
+    "Theme Park Insider": 1
   },
-  "generated_at": "2026-04-14T21:19:37.710565+09:00"
+  "generated_at": "2026-04-14T20:27:12.124079+09:00"
 }
