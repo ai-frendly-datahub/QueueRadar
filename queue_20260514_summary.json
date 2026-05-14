@@ -7,47 +7,47 @@
   "top_entities": [
     {
       "name": "QueueGeneral",
-      "count": 1658
+      "count": 1767
     },
     {
       "name": "RealTimeData",
-      "count": 829
+      "count": 782
     },
     {
       "name": "WaitTime",
-      "count": 625
+      "count": 591
     },
     {
       "name": "Status",
-      "count": 289
+      "count": 275
     },
     {
       "name": "Location",
-      "count": 246
+      "count": 226
     },
     {
       "name": "Attraction",
-      "count": 192
+      "count": 186
     },
     {
       "name": "VisitorTips",
-      "count": 6
+      "count": 7
     }
   ],
   "sources": {
-    "Universal Studios Hollywood": 29,
     "Busch Gardens Tampa": 25,
-    "Universal Studios Orlando": 30,
+    "Universal Studios Hollywood": 29,
     "Islands of Adventure": 26,
-    "SeaWorld Orlando": 1,
+    "Disney California Adventure": 12,
     "Disneyland": 1,
-    "Disney California Adventure": 20,
+    "SeaWorld Orlando": 1,
     "Animal Kingdom": 1,
     "Disney Hollywood Studios": 1,
     "Disney Magic Kingdom": 1,
     "Epcot": 1,
     "Six Flags Magic Mountain": 1,
-    "Reddit r/KoreaTravel": 19,
+    "Universal Studios Orlando": 30,
+    "Reddit r/KoreaTravel": 27,
     "네이버 롯데월드 블로그": 1,
     "WDWMAGIC News": 8,
     "Inside the Magic": 11,
@@ -56,7 +56,7 @@
     "Attractions Magazine": 5,
     "Blooloop": 17
   },
-  "generated_at": "2026-05-14T11:29:14.020350+09:00",
+  "generated_at": "2026-05-14T16:47:18.210068+09:00",
   "quality_summary": {
     "total_sources": 39,
     "enabled_sources": 23,
@@ -75,10 +75,10 @@
     "weather_context_events": 0,
     "queue_signal_event_count": 358,
     "wait_time_observation_count": 358,
-    "open_attraction_count": 134,
-    "closed_attraction_count": 224,
-    "zero_wait_count": 290,
-    "high_wait_review_count": 6,
+    "open_attraction_count": 73,
+    "closed_attraction_count": 285,
+    "zero_wait_count": 341,
+    "high_wait_review_count": 0,
     "target_canonical_key_present_count": 358,
     "attraction_canonical_key_present_count": 358,
     "reservation_canonical_key_present_count": 0,
@@ -89,6 +89,6 @@
     "tracked_source_gap_count": 0,
     "missing_event_model_count": 3,
     "source_backlog_candidate_count": 4,
-    "daily_review_item_count": 13
+    "daily_review_item_count": 7
   }
 }
