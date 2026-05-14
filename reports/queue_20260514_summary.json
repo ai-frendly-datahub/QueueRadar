@@ -2,61 +2,62 @@
   "date": "2026-05-14",
   "category": "queue",
   "article_count": 200,
-  "source_count": 20,
+  "source_count": 21,
   "matched_count": 199,
   "top_entities": [
     {
       "name": "QueueGeneral",
-      "count": 1767
+      "count": 1965
     },
     {
       "name": "RealTimeData",
-      "count": 782
+      "count": 712
     },
     {
       "name": "WaitTime",
-      "count": 591
+      "count": 537
     },
     {
       "name": "Status",
-      "count": 275
+      "count": 258
     },
     {
       "name": "Location",
-      "count": 226
+      "count": 217
     },
     {
       "name": "Attraction",
-      "count": 186
+      "count": 192
     },
     {
       "name": "VisitorTips",
-      "count": 7
+      "count": 11
     }
   ],
   "sources": {
     "Busch Gardens Tampa": 25,
     "Universal Studios Hollywood": 29,
-    "Islands of Adventure": 26,
-    "Disney California Adventure": 12,
+    "Universal Studios Orlando": 30,
+    "Islands of Adventure": 25,
+    "Disney California Adventure": 1,
     "Disneyland": 1,
     "SeaWorld Orlando": 1,
     "Animal Kingdom": 1,
     "Disney Hollywood Studios": 1,
-    "Disney Magic Kingdom": 1,
     "Epcot": 1,
+    "Disney Magic Kingdom": 1,
     "Six Flags Magic Mountain": 1,
-    "Universal Studios Orlando": 30,
-    "Reddit r/KoreaTravel": 27,
+    "Blooloop": 24,
+    "Inside the Magic": 12,
+    "Reddit r/KoreaTravel": 30,
+    "Park World Magazine": 1,
     "네이버 롯데월드 블로그": 1,
     "WDWMAGIC News": 8,
-    "Inside the Magic": 11,
     "Theme Park Tribune": 1,
     "Theme Park Insider": 1,
-    "Attractions Magazine": 5,
-    "Blooloop": 17
+    "Attractions Magazine": 5
   },
-  "generated_at": "2026-05-14T16:47:18.210068+09:00",
+  "generated_at": "2026-05-14T20:12:51.523233+09:00",
   "quality_summary": {
     "total_sources": 39,
     "enabled_sources": 23,
@@ -75,9 +76,9 @@
     "weather_context_events": 0,
     "queue_signal_event_count": 358,
     "wait_time_observation_count": 358,
-    "open_attraction_count": 73,
-    "closed_attraction_count": 285,
-    "zero_wait_count": 341,
+    "open_attraction_count": 56,
+    "closed_attraction_count": 302,
+    "zero_wait_count": 355,
     "high_wait_review_count": 0,
     "target_canonical_key_present_count": 358,
     "attraction_canonical_key_present_count": 358,
