@@ -1,0 +1,94 @@
+{
+  "date": "2026-05-14",
+  "category": "queue",
+  "article_count": 200,
+  "source_count": 20,
+  "matched_count": 199,
+  "top_entities": [
+    {
+      "name": "QueueGeneral",
+      "count": 1658
+    },
+    {
+      "name": "RealTimeData",
+      "count": 829
+    },
+    {
+      "name": "WaitTime",
+      "count": 625
+    },
+    {
+      "name": "Status",
+      "count": 289
+    },
+    {
+      "name": "Location",
+      "count": 246
+    },
+    {
+      "name": "Attraction",
+      "count": 192
+    },
+    {
+      "name": "VisitorTips",
+      "count": 6
+    }
+  ],
+  "sources": {
+    "Universal Studios Hollywood": 29,
+    "Busch Gardens Tampa": 25,
+    "Universal Studios Orlando": 30,
+    "Islands of Adventure": 26,
+    "SeaWorld Orlando": 1,
+    "Disneyland": 1,
+    "Disney California Adventure": 20,
+    "Animal Kingdom": 1,
+    "Disney Hollywood Studios": 1,
+    "Disney Magic Kingdom": 1,
+    "Epcot": 1,
+    "Six Flags Magic Mountain": 1,
+    "Reddit r/KoreaTravel": 19,
+    "네이버 롯데월드 블로그": 1,
+    "WDWMAGIC News": 8,
+    "Inside the Magic": 11,
+    "Theme Park Tribune": 1,
+    "Theme Park Insider": 1,
+    "Attractions Magazine": 5,
+    "Blooloop": 17
+  },
+  "generated_at": "2026-05-14T11:29:14.020350+09:00",
+  "quality_summary": {
+    "total_sources": 39,
+    "enabled_sources": 23,
+    "tracked_sources": 12,
+    "fresh_sources": 12,
+    "stale_sources": 0,
+    "missing_sources": 0,
+    "missing_event_sources": 0,
+    "unknown_event_date_sources": 0,
+    "not_tracked_sources": 11,
+    "skipped_disabled_sources": 16,
+    "collection_error_count": 0,
+    "wait_time_snapshot_events": 358,
+    "reservation_slot_events": 0,
+    "ticket_price_events": 0,
+    "weather_context_events": 0,
+    "queue_signal_event_count": 358,
+    "wait_time_observation_count": 358,
+    "open_attraction_count": 134,
+    "closed_attraction_count": 224,
+    "zero_wait_count": 290,
+    "high_wait_review_count": 6,
+    "target_canonical_key_present_count": 358,
+    "attraction_canonical_key_present_count": 358,
+    "reservation_canonical_key_present_count": 0,
+    "ticket_canonical_key_present_count": 0,
+    "weather_context_present_count": 0,
+    "missing_canonical_key_count": 0,
+    "event_required_field_gap_count": 0,
+    "tracked_source_gap_count": 0,
+    "missing_event_model_count": 3,
+    "source_backlog_candidate_count": 4,
+    "daily_review_item_count": 13
+  }
+}
