@@ -22,7 +22,7 @@ QueueRadar/
 │   └── mcp_server/               # MCP 서버 (server.py + tools.py)
 ├── config/
 │   ├── config.yaml               # database_path, report_dir, raw_data_dir, search_db_path
-│   └── categories/{domain}.yaml  # 소스 + 엔티티 정의
+│   └── categories/queue.yaml  # 소스 + 엔티티 정의
 ├── data/                         # DuckDB, search_index.db, raw/ JSONL
 ├── reports/                      # 생성된 HTML 리포트
 ├── tests/unit/                   # pytest 단위 테스트
@@ -34,14 +34,16 @@ QueueRadar/
 
 | Entity | Examples |
 |--------|----------|
-| 주요 엔티티 1 | 예시 1, 예시 2, 예시 3 |
-| 주요 엔티티 2 | 예시 4, 예시 5, 예시 6 |
-| 주요 엔티티 3 | 예시 7, 예시 8, 예시 9 |
+| WaitTime | wait time, queue, line, 대기 |
+| Attraction | ride, roller coaster, 놀이기구 |
+| Status | open, closed, 운영 상태 |
+| Location | Disney, Universal, park, 공원 |
 
 ## DEVIATIONS FROM TEMPLATE
 
-- 표준 템플릿 대비 특화 기능 1
-- 표준 템플릿 대비 특화 기능 2
+- Queue Times API 기반 실시간 대기시간 snapshot을 핵심 source로 취급한다.
+- `observed_at`, `collected_at`, timezone, stale reading을 분리해 품질 리포트에 남긴다.
+- 예약 슬롯, 티켓 가격, 날씨 context는 대기시간과 별도 이벤트 모델로 유지한다.
 
 ## COMMANDS
 
