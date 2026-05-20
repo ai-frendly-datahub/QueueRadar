@@ -254,25 +254,15 @@ sources:
 - name: Defunctland
   type: rss
   url: https://www.youtube.com/feeds/videos.xml?channel_id=UCVo63lbKHjC04KqYhwSZ_Pg
-  enabled: false
-  notes: 'DISABLED 2026-04-23: YouTube RSS channel feed returns 404 from the runner;
-    documentary context source is not required for active queue wait-time tracking.'
-  config:
-    disabled_reason: youtube_channel_feed_404
-    required_before_enable:
-    - valid_channel_feed_or_replacement
-    - queue_relevance_smoke
+  enabled: true
+  notes: 'REACTIVATED 2026-05-20: URL probe returned HTTP 200 with text/xml; YouTube
+    channel RSS feed is reachable again. Previously DISABLED 2026-04-23 for runner-side 404.'
 - name: Theme Park Crazy
   type: rss
   url: https://www.youtube.com/feeds/videos.xml?channel_id=UCYdNtGaJkrtn04tmsmRrWlw
-  enabled: false
-  notes: 'DISABLED 2026-04-23: YouTube RSS channel feed returns 404 from the runner;
-    documentary context source is not required for active queue wait-time tracking.'
-  config:
-    disabled_reason: youtube_channel_feed_404
-    required_before_enable:
-    - valid_channel_feed_or_replacement
-    - queue_relevance_smoke
+  enabled: true
+  notes: 'REACTIVATED 2026-05-20: URL probe returned HTTP 200 with text/xml; YouTube
+    channel RSS feed is reachable again. Previously DISABLED 2026-04-23 for runner-side 404.'
 - name: Coaster Studios
   type: rss
   url: https://www.youtube.com/feeds/videos.xml?channel_id=UCuKwMVIj5H7pGrCb6qOb21g
