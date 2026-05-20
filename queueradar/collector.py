@@ -4,7 +4,7 @@ import html
 import os
 import threading
 import time
-from collections.abc import Mapping
+from collections.abc import Iterable, Mapping
 from concurrent.futures import Future, ThreadPoolExecutor
 from datetime import UTC, datetime
 from email.utils import parsedate_to_datetime
@@ -222,7 +222,7 @@ def collect_sources(
                 timeout=timeout,
                 session=session,
             )
-            return result, []
+            return filter_articles_by_source_scope(result, [source]), []
         except CircuitBreakerError:
             return [], [f"{source.name}: Circuit breaker open (source unavailable)"]
         except exceptions.SourceError as exc:
@@ -254,6 +254,95 @@ def collect_sources(
         _clear_collection_controls()
 
     return articles, errors
+
+
+def filter_articles_by_source_scope(
+    articles: Iterable[Article],
+    sources: Iterable[Source],
+    *,
+    phase: str = "collection",
+) -> list[Article]:
+    """Drop broad-feed articles that do not match source-level scope metadata."""
+    sources_by_name = {source.name: source for source in sources}
+    return [
+        article
+        for article in articles
+        if _article_matches_source_scope(
+            article,
+            sources_by_name.get(article.source),
+            phase=phase,
+        )
+    ]
+
+
+def _article_matches_source_scope(
+    article: Article,
+    source: Source | None,
+    *,
+    phase: str,
+) -> bool:
+    if source is None:
+        return True
+
+    scope_filter = _scope_filter_config(source)
+    if not scope_filter:
+        return True
+
+    apply_key = "apply_to_report" if phase == "report" else "apply_to_collection"
+    if not _config_bool(scope_filter.get(apply_key), default=True):
+        return True
+
+    mode = str(scope_filter.get("mode") or "").strip()
+    if mode != "include_any_keyword":
+        return True
+
+    keywords = _config_string_list(
+        scope_filter.get("include_keywords")
+        or scope_filter.get("keywords")
+        or scope_filter.get("include_any")
+    )
+    if not keywords:
+        return True
+
+    fields = _config_string_list(scope_filter.get("fields")) or ["title", "summary"]
+    haystack_parts = []
+    for field in fields:
+        if field == "title":
+            haystack_parts.append(article.title)
+        elif field == "summary":
+            haystack_parts.append(article.summary)
+        elif field == "link":
+            haystack_parts.append(article.link)
+    haystack = "\n".join(haystack_parts).casefold()
+    return any(keyword.casefold() in haystack for keyword in keywords)
+
+
+def _scope_filter_config(source: Source) -> Mapping[str, object]:
+    config = source.config if isinstance(source.config, Mapping) else {}
+    value = config.get("scope_filter")
+    return value if isinstance(value, Mapping) else {}
+
+
+def _config_string_list(value: object) -> list[str]:
+    if isinstance(value, str):
+        values: Iterable[object] = [value]
+    elif isinstance(value, list | tuple | set):
+        values = value
+    else:
+        values = []
+    return [str(item).strip() for item in values if str(item).strip()]
+
+
+def _config_bool(value: object, *, default: bool) -> bool:
+    if isinstance(value, bool):
+        return value
+    if isinstance(value, str):
+        normalized = value.strip().lower()
+        if normalized in {"true", "1", "yes", "y"}:
+            return True
+        if normalized in {"false", "0", "no", "n"}:
+            return False
+    return default
 
 
 def _collect_single(

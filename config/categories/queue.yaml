@@ -179,6 +179,50 @@ sources:
   url: https://blooloop.com/feed
   config:
     event_model: editorial_coverage
+    scope_filter:
+      mode: include_any_keyword
+      fields:
+      - title
+      apply_to_collection: true
+      apply_to_report: true
+      reason: "Blooloop mixes theme-park, museum, zoo, exhibition, and general attractions-industry coverage; keep only title-level queue/theme-park signals."
+      include_keywords:
+      - theme park
+      - amusement park
+      - water park
+      - roller coaster
+      - coaster
+      - ride
+      - rides
+      - attraction
+      - attractions
+      - queue
+      - wait
+      - reservation
+      - ticket
+      - ticketing
+      - Disney
+      - Disneyland
+      - Disney World
+      - Universal
+      - SeaWorld
+      - Six Flags
+      - Busch Gardens
+      - Cedar Point
+      - Legoland
+      - Alton Towers
+      - PortAventura
+      - Paultons Park
+      - Liseberg
+      - Bellewaerde
+      - Aquarabia
+      - ProSlide
+      - Vekoma
+      - Parque Acuático
+      - Parque Acuatico
+      - Endless Surf
+      - Wild Swing
+      - Bluey
 - name: r/WaltDisneyWorld
   type: reddit
   url: https://www.reddit.com/r/WaltDisneyWorld/

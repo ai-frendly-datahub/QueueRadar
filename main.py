@@ -7,7 +7,7 @@ from pathlib import Path
 from typing import cast
 
 from queueradar.analyzer import apply_entity_rules
-from queueradar.collector import collect_sources
+from queueradar.collector import collect_sources, filter_articles_by_source_scope
 from queueradar.common.validators import validate_article
 from queueradar.config_loader import (
     load_category_config,
@@ -208,11 +208,20 @@ def run(
         for article in validated_articles:
             search_idx.upsert(article.link, article.title, article.summary)
 
-    recent_articles = storage.recent_articles(category_cfg.category_name, days=recent_days)
+    recent_articles = filter_articles_by_source_scope(
+        storage.recent_articles(category_cfg.category_name, days=recent_days),
+        effective_sources,
+        phase="report",
+    )
     stored_quality_articles = storage.recent_articles(
         category_cfg.category_name,
         days=max(recent_days, 14),
         limit=max(500, per_source_limit * max(len(effective_sources), 1) * 2),
+    )
+    stored_quality_articles = filter_articles_by_source_scope(
+        stored_quality_articles,
+        effective_sources,
+        phase="report",
     )
     storage.close()
     quality_articles = validated_articles if validated_articles else stored_quality_articles
