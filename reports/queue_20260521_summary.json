@@ -1,0 +1,241 @@
+{
+  "date": "2026-05-21",
+  "category": "queue",
+  "article_count": 181,
+  "source_count": 21,
+  "matched_count": 181,
+  "top_entities": [
+    {
+      "name": "QueueGeneral",
+      "count": 2747
+    },
+    {
+      "name": "Location",
+      "count": 260
+    },
+    {
+      "name": "Attraction",
+      "count": 125
+    },
+    {
+      "name": "RealTimeData",
+      "count": 107
+    },
+    {
+      "name": "WaitTime",
+      "count": 87
+    },
+    {
+      "name": "Status",
+      "count": 56
+    },
+    {
+      "name": "VisitorTips",
+      "count": 18
+    }
+  ],
+  "sources": {
+    "Busch Gardens Tampa": 1,
+    "Universal Studios Hollywood": 1,
+    "Universal Studios Orlando": 1,
+    "Islands of Adventure": 1,
+    "Disney California Adventure": 1,
+    "SeaWorld Orlando": 1,
+    "Animal Kingdom": 1,
+    "Disney Hollywood Studios": 1,
+    "Disneyland": 1,
+    "Disney Magic Kingdom": 1,
+    "Epcot": 1,
+    "Six Flags Magic Mountain": 1,
+    "Attractions Magazine": 20,
+    "Blooloop": 20,
+    "Inside the Magic": 31,
+    "WDWMAGIC News": 28,
+    "Reddit r/KoreaTravel": 56,
+    "Park World Magazine": 4,
+    "Theme Park Insider": 8,
+    "네이버 롯데월드 블로그": 1,
+    "Theme Park Tribune": 1
+  },
+  "generated_at": "2026-05-21T21:13:28.610751+09:00",
+  "articles": [
+    {
+      "event_model_payload": {
+        "source_name": "Reddit r/KoreaTravel",
+        "headline": "Never been to Korea. Are we gonna have an issue with discrimination?",
+        "source_url": "https://www.reddit.com/r/koreatravel/comments/1thtwt0/never_been_to_korea_are_we_gonna_have_an_issue/",
+        "published_at": "2026-05-19T08:28:31+00:00",
+        "summary": "<!-- SC_OFF --><div class=\"md\"><p>I realize the Internet and social media tend to exaggerate things, but I’ve seen this mentioned enough times that I thought I’d ask.</p> <p>I’m Filipino-American and my girlfriend is Japanese-American. By that I mean we’re 100% our respective ethnicity and not half white. It’s sad I have to make this distinction due to what it implies about skin color.</p> <p>It’s frustrating to have to worry about this, especially since Koreans think all Filipinos are poor, yet my TC is over $700,000/yr since I’m an L6 IC in tech.</p> <p>We’re staying at the Four Seasons in Seoul, so I doubt there would be any issue there, but is it fairly common to face discrimination, especially for me, while being out and about (restaurants/cafes)? This is a special occasion for my girlfriend, so I’d like some guidance on what to avoid. We don’t do nightlife, and I heard that’s where a lot of the issues are, but is there anything else to avoid? We’re experienced travelers but this will be the first time in Korea.</p> <p>Any experienced Korea travelers have any input based on their travels?</p> </div><!-- SC_ON -->   submitted by   <a href=\"https://www.reddit.com/user/flytyo19\"> /u/flytyo19 </a> <br /> <span><a href=\"https://www.reddit.com/r/koreatravel/comments/1thtwt0/never_been_to_korea_are_we_gonna_have_an_issue/\">[link]</a></span>   <span><a href=\"https://www.reddit.com/r/koreatravel/comments/1thtwt0/never_been_to_korea_are_we_gonna_have_an_issue/\">[comments]</a></span>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Inside the Magic",
+        "headline": "New Entry Changes Now in Effect at Disney’s Orlando Parks",
+        "source_url": "https://insidethemagic.net/2026/05/new-entry-changes-now-in-effect-at-disneys-orlando-parks-ad1/",
+        "published_at": "2026-05-19T07:53:58+00:00",
+        "summary": "<p>Disney quietly pushed an update to the My Disney Experience app that fixes something that should have been fixed a while ago. Walt Disney World guests, including Annual Passholders, can now book park pass reservations directly inside the My Disney Experience app without being redirected to the Disney World website. The redirect is gone. The […]</p>\n<p>The post <a href=\"https://insidethemagic.net/2026/05/new-entry-changes-now-in-effect-at-disneys-orlando-parks-ad1/\" rel=\"noopener\" target=\"_self\">New Entry Changes Now in Effect at Disney’s Orlando Parks</a> appeared first on <a href=\"https://insidethemagic.net\" rel=\"noopener\" target=\"_self\">Inside the Magic</a>.</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Blooloop",
+        "headline": "Disney World gets new president as company announces leadership changes",
+        "source_url": "https://blooloop.com/disney-world-new-president/",
+        "published_at": "2026-05-19T00:48:31+00:00",
+        "summary": "<img src=\"https://blooloop.com/media-library/joe-schott-disney.jpg?id=66751360&width=1245&height=700&coordinates=0%2C118%2C0%2C118\" /><br /><br /><p>Disney Experiences has named <strong>Joe Schott</strong> as the new president of Walt Disney World, and announced more leadership changes.</p><p><strong><a href=\"https://blooloop.com/theme-park/influencer/natacha-rafalski/\">Natacha Rafalski</a></strong>, currently présidente of Disneyland Paris, has been named the new president of Disney Signature Experiences. Taking over as president of Disneyland Paris is <strong>Christophe Murphy</strong>.</p><p>\"Disney Experiences is in the midst of unprecedented expansion with more new projects underway across our global portfolio than at any other moment in our history,\" said <strong>Thomas Mazloum</strong>, chairman of Disney Experiences. </p><p class=\"shortcode-media shortcode-media-rebelmouse-image\"> <img alt=\"disney leadership appointments\" class=\"rm-shortcode\" id=\"26efe\" src=\"https://blooloop.com/media-library/disney-leadership-appointments.png?id=66751361&width=980\" /> <small class=\"image-media media-caption\">Joe Schott, Natacha Rafalski and Christophe Murphy</small></p><p>\"These appointments reflect the depth of leadership talent driving Disney Experiences,\" he added. </p><p>At Disney World, Schott is succeeding <strong><a href=\"https://blooloop.com/theme-park/influencer/jeff-vahle/\">Jeff Vahle</a></strong>, who is <strong><a href=\"https://blooloop.com/walt-disney-world-president-retiring/\">retiring</a></strong> this summer after a 36-year career with Disney. </p><p>Schott, who began his Disney career as a Jungle Cruise skipper at Disney World, currently serves as president of Disney Signature Experiences, where he oversaw the launch of two new Disney cruise ships.</p><p class=\"shortcode-media shortcode-media-rebelmouse-image\"> <img alt=\"zootopia shanghai disney resort\" class=\"rm-shortcode\" id=\"2fa55\" src=\"https://blooloop.com/media-library/zootopia-shanghai-disney-resort.jpg?id=57043857&width=980\" /> <small class=\"image-media media-caption\">Zootopia, Shanghai Disneyland</small> </p><p>Before that, he was president and general manager of Shanghai Disney Resort, leading the destination through a major expansion phase, including the opening of its <strong><a href=\"https://blooloop.com/theme-park/in-depth/shanghai-disneyland-zootopia-joe-schott/\"><em>Zootopia</em>-themed land</a></strong>.</p><p>Rafalski, a 30-year Disney veteran, is replacing Schott as president of Disney Experiences after spearheading the €2 billion expansion of Disneyland Paris, which includes the new <strong><a href=\"https://blooloop.com/world-of-frozen-opens-at-disneyland-paris-reimagined-second-park/\">World of Frozen</a></strong>.</p><p>With more than 35 years at the Walt Disney Company, Murphy will take over as <strong><a href=\"https://blooloop.com/theme-park/in-depth/disneyland-paris-natacha-rafalski/\">Disneyland Paris</a></strong>' president after serving as the resort's senior vice president since 2023.</p><p class=\"shortcode-media shortcode-media-rebelmouse-image\"> <img alt=\"Disney Magic Kingdom\" class=\"rm-shortcode\" id=\"f4417\" src=\"https://blooloop.com/media-library/disney-magic-kingdom.jpg?id=57021343&width=980\" /> <small class=\"image-media media-caption\">Magic Kingdom</small> </p><p><span></span>\"Joe, Natacha, and Christophe have a deep appreciation of the guest experience, possess extensive financial and operational expertise, and a proven ability to deliver at scale,\" Mazloum said.</p><p>\"I have complete confidence in each of them to build on the remarkable momentum underway across these businesses and to write the next chapter of <strong><a href=\"https://disneyexperiences.com/\" rel=\"nofollow noopener\" target=\"_blank\">Disney</a></strong>’s story.\"</p><p>Schott, Rafalski and Murphy will assume their new roles by the end of July.</p><p><em>Images courtesy of Disney</em></p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Blooloop",
+        "headline": "ART Engineering brings new Wild Swing XL to Liseberg & Bellewaerde",
+        "source_url": "https://blooloop.com/art-engineering-wild-swing-xl/",
+        "published_at": "2026-05-19T00:12:49+00:00",
+        "summary": "<img src=\"https://blooloop.com/media-library/amusement-park-ride-stormvag-at-sweden-s-liseberg-shaped-like-a-swinging-crane-set-against-a-sunset-sky.jpg?id=66751310&width=1245&height=700&coordinates=0%2C55%2C0%2C55\" /><br /><br /><p>ART Engineering, an <strong><a href=\"https://artengineering.de/en/\" rel=\"noopener noreferrer nofollow noopener nofollow noopener nofollow noopener\" target=\"_blank\">amusement ride manufacturer</a></strong> that develops roller coasters, dark rides, carousels, water rides and more, has expanded its successful Wild Swing range, launched in 2022, with the addition of the new Wild Swing XL.</p><p>This new ride can already be found at two parks in Europe: Stormvåg at Sweden's Liseberg and Seesaw Swing at Bellewaerde in Belgium.</p><p>The Wild Swing was first delivered to Austria's Fantasiana theme park in 2022, followed by Potts Park in Germany. Since its launch, ART Engineering has commissioned over 20 standard units across European and American theme parks. Now, with the Wild Swing XL, the company offers a higher-capacity version.</p><p><em>See also:</em> <strong><a href=\"https://blooloop.com/theme-park/in-depth/wild-swing-art-engineering/\">Wild Swing: thrills for the whole family</a></strong></p><h2>Seesaw Swing and Stormvåg</h2><p>The Wild Swing XL is a direct evolution of the tried-and-tested concept. </p><p>At 14.5 metres, the XL variant is 2.5 metres taller than the standard version. Despite the increased dimensions, the ride remains accessible to a wide audience: the minimum passenger height is 95 cm, a moderate 5 cm increase over the base version (90 cm).</p><p>A notable feature of the XL version is its higher throughput capacity, capable of serving about 750 people per hour, compared to the standard version's design for around 500 people per hour.</p><p class=\"shortcode-media shortcode-media-rebelmouse-image\"> <img alt=\"Amusement park ride, Seesaw Swing at Bellewaerde, swings high, with people onboard, surrounded by trees.\" class=\"rm-shortcode\" id=\"7483f\" src=\"https://blooloop.com/media-library/amusement-park-ride-seesaw-swing-at-bellewaerde-swings-high-with-people-onboard-surrounded-by-trees.jpg?id=66751315&width=980\" /> <small class=\"image-media media-caption\">Seesaw Swing, Bellewaerde</small></p><p>Although the height has gone up, the ride isn't meant to deliver maximum intensity. Thanks to its geometric proportions, the swinging elements last longer, creating a smoother experience. Like the smaller version, the Wild Swing XL also does not feature inversions.</p><p>ART Engineering still uses a fully electric drive system with motors and has eliminated all hydraulic parts. The ride features foam-padded individual seats, each equipped with its own monitored safety bar.</p><p>The two new rides have been incorporated into their respective park settings, with each project featuring detailed, site-specific theming.</p><p><strong><a href=\"https://blooloop.com/theme-park/news/liseberg-new-family-ride-stormvag/\">Stormvåg</a></strong> (Storm Wave) serves as a natural link between the children’s area, Kaninlandet, and Liseberg’s more intense thrill rides. Intended as a family-friendly attraction appealing to both young and older guests, it offers an exciting experience that lets the entire family ride together.</p><p>The ride's theming is inspired by the city harbour and Sweden’s west coast.</p><p><span></span>Meanwhile, at Bellewaerde, Seesaw Swing is part of the new Canada-themed area, where it lifts riders 14.5 meters into the air over the park's lake.</p><p>ART Engineering has also <strong><a href=\"https://blooloop.com/paultons-park-viking-land-images/\">supplied Vild Swing</a></strong>, one of the new rides that visitors can enjoy at Paultons Park's new Vikings-themed land, Valgard.</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Reddit r/KoreaTravel",
+        "headline": "BTS BUSAN GUDEOK YOUTH CENTER STAY!!!",
+        "source_url": "https://www.reddit.com/r/koreatravel/comments/1thfv1j/bts_busan_gudeok_youth_center_stay/",
+        "published_at": "2026-05-18T22:48:43+00:00",
+        "summary": "<!-- SC_OFF --><div class=\"md\"><p>hi guys!!! im so desperate but </p> <ol> <li><p>⭐️ is anyone willing to ADD my sister & i (2 ppl) to the Gudeok Youth Training Center BTS BUSAN ACCOMMODATION for (2 nights 3 days) PLS ARMY IM BEGGING 😭😭😭💜 atp im willing to take any center, any day!!! </p></li> <li><p>⭐️ there’s also a 1 night 2 days package available for the Gudeok center i would need 2 MORE PPL down to be able to book it🥺 it’s only $27 btw 😭</p></li> </ol> <p>i’m alr going to be in Busan & i have yet to find an affordable accommodation so pls reach outtt!!! IM</p> <p>BEGGINGGGGG </p> </div><!-- SC_ON -->   submitted by   <a href=\"https://www.reddit.com/user/mingiglazer\"> /u/mingiglazer </a> <br /> <span><a href=\"https://www.reddit.com/r/koreatravel/comments/1thfv1j/bts_busan_gudeok_youth_center_stay/\">[link]</a></span>   <span><a href=\"https://www.reddit.com/r/koreatravel/comments/1thfv1j/bts_busan_gudeok_youth_center_stay/\">[comments]</a></span>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Reddit r/KoreaTravel",
+        "headline": "Planning a trip to Korea? Tell me what you’re unsure about",
+        "source_url": "https://www.reddit.com/r/koreatravel/comments/1thfhds/planning_a_trip_to_korea_tell_me_what_youre/",
+        "published_at": "2026-05-18T22:27:06+00:00",
+        "summary": "<!-- SC_OFF --><div class=\"md\"><p>Hi everyone!</p> <p>If you’re planning a trip to Korea and feel unsure about anything, feel free to ask here.</p> <p>It could be about things like:</p> <ul> <li>Which area to stay in</li> <li>Whether your itinerary is too packed</li> <li>Seoul vs Busan vs Jeju</li> <li>Transportation and KTX</li> <li>Naver Map / KakaoMap</li> <li>Food, cafes, shopping, nature, temples, beaches</li> <li>Weather and what to pack</li> <li>Budget and daily costs</li> <li>Family trips, solo trips, or first-time visits</li> </ul> <p>I live in Korea, so I can try to share a local point of view and help make your plan feel more realistic.</p> <p>I may not know everything, but I’ll do my best to suggest places, routes, or tips that actually make sense for your trip.</p> </div><!-- SC_ON -->   submitted by   <a href=\"https://www.reddit.com/user/FitAll_99\"> /u/FitAll_99 </a> <br /> <span><a href=\"https://www.reddit.com/r/koreatravel/comments/1thfhds/planning_a_trip_to_korea_tell_me_what_youre/\">[link]</a></span>   <span><a href=\"https://www.reddit.com/r/koreatravel/comments/1thfhds/planning_a_trip_to_korea_tell_me_what_youre/\">[comments]</a></span>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Reddit r/KoreaTravel",
+        "headline": "Jeju Air name change?",
+        "source_url": "https://www.reddit.com/r/koreatravel/comments/1th6zdf/jeju_air_name_change/",
+        "published_at": "2026-05-18T15:43:19+00:00",
+        "summary": "<!-- SC_OFF --><div class=\"md\"><p>I excluded my middle name when booking the ticket as I was confused by the no spaces allowed when filling in first and last name.</p> <p>As this is an international flight that takes off in a week or so, I have already emailed Jeju Air - but they claim neither they nor counter staff will be able to change the name on the boarding pass to reflect that of my passport and hence I will not be able to board.</p> <p>Anybody encountered a similar problem before? How was it resolved? Lowk panicking thanks.</p> </div><!-- SC_ON -->   submitted by   <a href=\"https://www.reddit.com/user/Dangerous-Paint5573\"> /u/Dangerous-Paint5573 </a> <br /> <span><a href=\"https://www.reddit.com/r/koreatravel/comments/1th6zdf/jeju_air_name_change/\">[link]</a></span>   <span><a href=\"https://www.reddit.com/r/koreatravel/comments/1th6zdf/jeju_air_name_change/\">[comments]</a></span>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Reddit r/KoreaTravel",
+        "headline": "KTX Korail troubles",
+        "source_url": "https://www.reddit.com/r/koreatravel/comments/1tgs5a5/ktx_korail_troubles/",
+        "published_at": "2026-05-18T07:39:29+00:00",
+        "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/koreatravel/comments/1tgs5a5/ktx_korail_troubles/\"> <img alt=\"KTX Korail troubles\" src=\"https://preview.redd.it/9u8md1b8cx1h1.jpeg?width=640&crop=smart&auto=webp&s=6a9acd897161dbd0c2d93a26803e2821f95c235c\" title=\"KTX Korail troubles\" /> </a> </td><td> <!-- SC_OFF --><div class=\"md\"><p>Trying to book tickets on Korail from Seoul to Busan for June 19th but I can’t seem to get the site to work. </p> <p>1) I’m not able to select any times I want<br /> 2) If I do select a time, I keep getting this error message. </p> <p>Is it too soon to book since it is May 18th over here in US? What time do tickets get released? I will keep trying though. Thanks.</p> </div><!-- SC_ON -->   submitted by   <a href=\"https://www.reddit.com/user/Curio_cabinet_999\"> /u/Curio_cabinet_999 </a> <br /> <span><a href=\"https://i.redd.it/9u8md1b8cx1h1.jpeg\">[link]</a></span>   <span><a href=\"https://www.reddit.com/r/koreatravel/comments/1tgs5a5/ktx_korail_troubles/\">[comments]</a></span> </td></tr></table>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Reddit r/KoreaTravel",
+        "headline": "Is 8.5hrs Layover Enough to Experience Cimer Spa?",
+        "source_url": "https://www.reddit.com/r/koreatravel/comments/1tgply6/is_85hrs_layover_enough_to_experience_cimer_spa/",
+        "published_at": "2026-05-18T06:13:20+00:00",
+        "summary": "<!-- SC_OFF --><div class=\"md\"><p>I’ll be arriving at Incheon airport by 6:05AM. Thinking of grabbing a little snack at a convenience store in the airport and chill until 8:30AM when I will try to get through customs to go out to Cimer Spa (10-15minutes away from the airport). It says that Cimer Spa opens at 10AM, so I’ll try to arrive there shortly before it open. Planning to stay there until 12PM then head back to the airport to catch our 2:40pm flight. Is this feasible? I know it’s a little rushed but I saw videos of Cimer Spa and I’m sold😅🤣</p> <p>My backup plan is to spent some time in Spa On Air or Spa At Home inside the airport.</p> </div><!-- SC_ON -->   submitted by   <a href=\"https://www.reddit.com/user/Hillarykpop\"> /u/Hillarykpop </a> <br /> <span><a href=\"https://www.reddit.com/r/koreatravel/comments/1tgply6/is_85hrs_layover_enough_to_experience_cimer_spa/\">[link]</a></span>   <span><a href=\"https://www.reddit.com/r/koreatravel/comments/1tgply6/is_85hrs_layover_enough_to_experience_cimer_spa/\">[comments]</a></span>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Reddit r/KoreaTravel",
+        "headline": "Tips for hiking Bukhansan, Baekundae(북한산)",
+        "source_url": "https://www.reddit.com/r/koreatravel/comments/1tgnw1s/tips_for_hiking_bukhansan_baekundae북한산/",
+        "published_at": "2026-05-18T05:12:30+00:00",
+        "summary": "<!-- SC_OFF --><div class=\"md\"><p>Hi guys!</p> <p>The past month I hiked Bukhansan twice, both from the same route and I'm here to share some tips as well as do's and don'ts for those who are interested in hiking this mountain.</p> <p>Quick info:</p> <p>Bukhansan has many peaks, but the most famous and the highest peak in Seoul is Baekundae (백운대) which is 835m tall. The duration can depend on where you start and how good your fitness level is, but the average is around 4-5 hours both ways. You can even start from one side and end on the other.</p> <p>For both of my hikes, I used the Bukhansan National Park Visitor Center route (west side of the mountain where the bukhansanseong fortress is) which is the most advanced route and it takes roughly 8km both ways with a lot of rocks. There are signs throughout the hike that indicate where the peak is, though I don't remember if it was in English since I'm Korean. I only went on weekdays, which I recommend, and there were quite a lot of tourists (50% Korean, 50% tourists). The first 2-3km are quite doable but slightly boring since you don't see any scenery, just a lot of rocks. However, the last km can feel quite intense but worth since the view is amazing.</p> <p>The last 50 or 100 meters is the hardest. Some people might find it scary and hard since the rocks are very steep and the only way to go up is through holding onto the poles and ropes. It's best to take your time and go slowly if it feels hard and scary, you should not feel pressured as it can be dangerous. Once you reach the top, it can be very windy so watch out for your hat.</p> <p>Tips / do's and dont's:</p> <p>- Bring plenty of food and water</p> <p>- No toilet after the start</p> <p>- Bring a hat and put sunscreen (sun can be super strong)</p> <p>- Rest throughout the hike</p> <p>- Respect the locals and the nature, like don't throw trash anywhere, don't be loud, NEVER take your shirt off (I saw a tourist hiking with his shirt off, it's not illegal but you can do that in your own country, please respect that, the locals hate it and will trash talk)</p> <p>- If you feel lost, follow the locals or ask (they are really nice)</p> <p>- If you are scared, don't look down</p> <p>- Descend before 4pm</p> <p>- A stick can help, you can buy it somewhere near the entrance.</p> <p>Lmk for questions!</p> </div><!-- SC_ON -->   submitted by   <a href=\"https://www.reddit.com/user/RoofOk5826\"> /u/RoofOk5826 </a> <br /> <span><a href=\"https://www.reddit.com/r/koreatravel/comments/1tgnw1s/tips_for_hiking_bukhansan_baekundae북한산/\">[link]</a></span>   <span><a href=\"https://www.reddit.com/r/koreatravel/comments/1tgnw1s/tips_for_hiking_bukhansan_baekundae북한산/\">[comments]</a></span>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Reddit r/KoreaTravel",
+        "headline": "Visiting for honeymoon",
+        "source_url": "https://www.reddit.com/r/koreatravel/comments/1tgnv6v/visiting_for_honeymoon/",
+        "published_at": "2026-05-18T05:11:42+00:00",
+        "summary": "<!-- SC_OFF --><div class=\"md\"><p>So in two months am heading to your lovely country for two weeks, my question is whats the prefer transaction, is it all cash do you have apple pay what do you recommend<br /> Thank you</p> </div><!-- SC_ON -->   submitted by   <a href=\"https://www.reddit.com/user/GreenHat505\"> /u/GreenHat505 </a> <br /> <span><a href=\"https://www.reddit.com/r/koreatravel/comments/1tgnv6v/visiting_for_honeymoon/\">[link]</a></span>   <span><a href=\"https://www.reddit.com/r/koreatravel/comments/1tgnv6v/visiting_for_honeymoon/\">[comments]</a></span>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Reddit r/KoreaTravel",
+        "headline": "Planning a trip to Seoul - is Shilla Duty Free worth the trip to Jangchung-dong? What do you usually do around there?",
+        "source_url": "https://www.reddit.com/r/koreatravel/comments/1tglsiy/planning_a_trip_to_seoul_is_shilla_duty_free/",
+        "published_at": "2026-05-18T03:55:16+00:00",
+        "summary": "<!-- SC_OFF --><div class=\"md\"><p>Hi! I'm planning a trip to Seoul and considering visiting Shilla Duty Free, but I've heard it's a bit far from Myeong-dong compared to Lotte or Shinsegae. </p> <p>For those who've been there:</p> <p>Is it worth making the trip to Jangchung-dong just for duty free shopping?</p> <p>What do you usually buy at duty free stores in Korea? (cosmetics, luxury goods, etc.)</p> <p>Is there anything fun to do around Shilla Duty Free / Jangchung-dong area?</p> <p>What kind of experiences are you looking for beyond just shopping when you visit duty free?</p> <p>Would you visit a duty free store if it had something unique inside like a clinic, restaurant, or experience space?</p> <p>Any advice appreciated!🙏🏻🤍✨</p> </div><!-- SC_ON -->   submitted by   <a href=\"https://www.reddit.com/user/Evening_Side2480\"> /u/Evening_Side2480 </a> <br /> <span><a href=\"https://www.reddit.com/r/koreatravel/comments/1tglsiy/planning_a_trip_to_seoul_is_shilla_duty_free/\">[link]</a></span>   <span><a href=\"https://www.reddit.com/r/koreatravel/comments/1tglsiy/planning_a_trip_to_seoul_is_shilla_duty_free/\">[comments]</a></span>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Blooloop",
+        "headline": "Leisure Expert Group hails launch of Valgard at Paultons Park",
+        "source_url": "https://blooloop.com/leisure-expert-group-valgard-opens/",
+        "published_at": "2026-05-18T02:52:05+00:00",
+        "summary": "<img src=\"https://blooloop.com/media-library/aerial-view-of-a-theme-park-with-roller-coasters-and-colorful-buildings.jpg?id=66748131&width=1245&height=700&coordinates=0%2C0%2C0%2C0\" /><br /><br /><p>Leisure Expert Group, a <strong><a href=\"https://leisureexpertgroup.com/\" rel=\"noopener sponsored nofollow noopener nofollow noopener nofollow noopener nofollow noopener nofollow noopener nofollow noopener nofollow noopener\" target=\"_blank\">leading experience design company</a></strong>, and Paultons Park, UK are celebrating the official opening of the new Viking-themed zone, Valgard, which launched on 16 May.</p><p>This represents a significant landmark in the almost 10-year collaboration between the two organisations, which has included projects such as Tornado Springs and <strong><a href=\"https://blooloop.com/ghostly-manor/\">Ghostly Manor</a></strong>.</p><p class=\"shortcode-media shortcode-media-rebelmouse-image\"> <img alt=\"\" class=\"rm-shortcode\" id=\"ce671\" src=\"https://blooloop.com/media-library/the-u00a0drakon-euro-fighter-coaster.jpg?id=66748154&width=980\" /> <small class=\"image-media media-caption\">The Drakon Euro-Fighter coaster</small></p><p>\"The opening of <strong><a href=\"https://blooloop.com/paultons-park-viking-land-images/\">Valgard</a></strong> is a milestone that reflects what long-term collaboration can achieve,\" says a spokesperson from Leisure Expert Group.</p><p>\"Together with Paultons Park, we have worked to shape a vision for growth and strengthen the overall guest experience. </p><p>\"This new area is not just an expansion, it’s a great example of how strategic master planning, creative design, and partnership come together to create lasting value for both the park and its visitors.\"</p><p>Leisure Expert Group has been closely involved in shaping the Viking-themed land, from the initial blue-sky phase through to <strong><a href=\"https://blooloop.com/paultons-park-first-look-valgard/\">detailed design</a></strong>, supporting Paultons Park's phased approach to increase capacity and elevate the visitor experience. </p><p><span></span>The masterplan includes room for further expansion, which Paultons Park is expected to announce in the near future.</p><p class=\"shortcode-media shortcode-media-rebelmouse-image\"> <img alt=\"Aerial view of a Viking-themed amusement park with roller coasters and Nordic buildings.\" class=\"rm-shortcode\" id=\"c4bec\" src=\"https://blooloop.com/media-library/aerial-view-of-a-viking-themed-amusement-park-with-roller-coasters-and-nordic-buildings.jpg?id=66747930&width=980\" /> <small class=\"image-media media-caption\">Valgard at Paultons Park</small> </p><p>The first phase of Valgard has already significantly expanded the park, and features Paultons Park’s first roller coaster with inversions, Drakon, which offers a new experience for both families and thrill-seekers, accompanied by the Raven bobsled coaster, which has been entirely re-themed for the Viking land. </p><p><em>See also: </em><strong><a href=\"https://blooloop.com/best-new-roller-coasters-2026/\">The 26 best new roller coasters for 2026</a></strong></p><p>Visitors can also enjoy the UK’s first ‘Vild Swing’, an extensive Nordic-themed restaurant, and a themed playground for the youngest guests. </p><h2>Strategic expansion</h2><p>Leisure Expert Group collaborates closely with theme park owners to think beyond individual projects and support their long-term strategic growth.</p><p>By looking beyond programming and masterplanning, its team of concepters, architects and technical experts can address the full project scope, from early concept and strategy through to detailed design.</p><p>At every stage, Leisure Expert Group carefully considers how best to serve the visitor profile and create the right balance across experiences, attractions, theming, food and beverage, and playgrounds.</p><p>\"Growing a theme park is not just about adding attractions or theming; it’s about shaping a cohesive vision that guests can truly feel throughout the park,\" says the company. </p><p>\"We help unlock new opportunities for environments and attractions, always with a strong focus on growth and guest experience.\"</p><p class=\"shortcode-media shortcode-media-rebelmouse-image\"> <img alt=\"Viking-themed amusement park with roller coaster and rustic buildings.\" class=\"rm-shortcode\" id=\"45efa\" src=\"https://blooloop.com/media-library/viking-themed-amusement-park-with-roller-coaster-and-rustic-buildings.jpg?id=66748153&width=980\" /> <small class=\"image-media media-caption\">Valgard at Paultons Park</small></p><p><strong><strong><a href=\"https://blooloop.com/innovation-immersive-attractions-session-2026/\">Lawrence Mancey</a></strong>,</strong> marketing and technology director at Paultons Park, says: “Our long-standing partnership with Leisure Expert Group has been instrumental in shaping the world-class guest experience that defines Paultons Park. </p><p>\"As we look towards the future, our phased masterplan is about more than just adding individual rides or attractions; it’s about the creation of immersive worlds and experiences that resonate with families for generations.</p><p>\"By combining our long-term vision for sustainable growth with the Leisure Expert Group's design expertise, we are ensuring that every new development maintains the high standard of quality and detail our guests have come to expect. </p><p>\"We are excited to continue this collaborative journey, evolving our park offerings while staying true to our identity as the <strong><a href=\"https://blooloop.com/theme-park/in-depth/top-theme-parks-uk/\">UK’s favourite family theme park</a></strong>.”<span></span></p><p>As the second phase of development approaches, the opening of Valgard marks the next chapter in the long-term partnership between Leisure Expert Group and Paultons Park, focused on creating meaningful, narrative-driven experiences for families.</p><p>Last year, Leisure Expert Group celebrated the opening of <em><strong><a href=\"https://blooloop.com/museum/news/leisure-expert-group-barbie-the-dream-experience/\">Barbie: The Dream Experience</a></strong></em> at WONDR Experience in Amsterdam.</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Blooloop",
+        "headline": "Connect&GO shares four ways attractions can prepare for a record season",
+        "source_url": "https://blooloop.com/connectgo-key-operational-strategies/",
+        "published_at": "2026-05-18T02:48:09+00:00",
+        "summary": "<img src=\"https://blooloop.com/media-library/two-people-enjoying-a-theme-park-with-roller-coasters-in-the-background.jpg?id=66748060&width=1245&height=700&coordinates=0%2C0%2C0%2C0\" /><br /><br /><p>Connect&GO, a leading global provider of <strong><a href=\"https://connectngo.com/\" rel=\"noopener sponsored nofollow noopener nofollow noopener nofollow noopener nofollow noopener\" target=\"_blank\">integrated technology and RFID solutions</a></strong> for the attractions industry, has shared insights on how attractions can effectively set up for a record season.</p><p>In the weeks before opening, operators are making key decisions around pricing, visitor experience, and operational workflows.</p><p>And with rising costs of fuel, food, and everyday expenses, guests are more deliberate about discretionary spending. The most successful parks will be those that make it easy to say yes.</p><p>Connect&GO has identified four approaches being adopted by the best-prepared parks.</p><h2>1. Dynamic pricing</h2><p><strong><a href=\"https://blooloop.com/theme-park/news/connectgo-dynamic-pricing/\">Dynamic pricing</a></strong> has become standard practice in the airline and hotel industries. Attractions are now adopting <strong><a href=\"https://blooloop.com/technology-trends-attractions-2026/\">AI-driven</a></strong> pricing models and are seeing a 10 to 21% increase in revenue on peak days, while leveraging higher yields during slower periods.</p><p>\"The concept is straightforward,\" says the company.</p><p>\"Rather than setting a flat admission price, operators establish a floor and ceiling (say, $30 on the low end, $40 at peak) and let an algorithm adjust pricing automatically based on factors like forecasted attendance, historical patterns, weather, booking timing, and how far in advance guests are purchasing.</p><p>\"The best implementations update prices up to four times a day and forecast demand up to 14 days out, so the system is always working with the most current picture of what's coming.\"</p><p class=\"shortcode-media shortcode-media-rebelmouse-image\"> <img alt=\"Family in swimsuits and sunglasses enjoying a water park with colorful slides behind them.\" class=\"rm-shortcode\" id=\"70f0a\" src=\"https://blooloop.com/media-library/family-in-swimsuits-and-sunglasses-enjoying-a-water-park-with-colorful-slides-behind-them.jpg?id=66748098&width=980\" /> <small class=\"image-media media-caption\">Dynamic pricing can reward guests for booking early while supporting operators</small></p><p>A key advantage is the versatility. In contrast to early systems that applied dynamic pricing across the board, operators can specify which products, dates, and periods are subject to dynamic pricing.</p><p>For example, <strong><a href=\"https://blooloop.com/theme-park/in-depth/worlds-best-theme-parks/\">a park</a></strong> might choose to fix weekend pricing, while allowing weekday prices to float. A special event might benefit from capacity-based tiered pricing, with early-bird rates and prices that increase as availability decreases. Both approaches can run concurrently across different products.</p><p>This approach results in rewards for guests who book early, with walk-up demand priced at market rate. For operators, it delivers real-time visibility into pricing and attendance forecasts, with the option to override any AI recommendation at any time.</p><p>Connect&GO recommends that operators look for a system that enables floor and ceiling rules to be set per product and per time period, automatically updates, surfaces a clear manual override when required, and includes a dedicated report to track performance and forecast accuracy over time.</p><h2>2. Reduced cart abandonment</h2><p>\"Cart abandonment is one of the most frustrating problems in e-commerce, and attractions aren't immune,\" says Connect&GO.</p><p>\"Research consistently shows that checkout friction, entering card numbers, expiration dates, and CVV codes on a small screen, is one of the top reasons mobile users abandon a purchase.</p><p>\"Given that the majority of e-commerce traffic now happens on mobile devices, this is a problem worth taking seriously.\"</p><p>And this can be overcome by offering payment options that meet visitors where they are.</p><p>Wallet-based payments like Apple Pay and Google Pay allow purchases to be completed in one or two taps using biometric authentication, without needing to manually enter card details. The visitor simply adds tickets to their cart, taps their preferred wallet, and confirms with Face ID or a fingerprint.</p><p>According to sector benchmarks from sources such as IAAPA and Shopify, mobile conversion rates have improved by 15-25% for parks that have utilised these options.</p><p class=\"shortcode-media shortcode-media-rebelmouse-image\"> <img alt=\"Shopping cart interface for theme park tickets with Klarna payment options.\" class=\"rm-shortcode\" id=\"54a2a\" src=\"https://blooloop.com/media-library/shopping-cart-interface-for-theme-park-tickets-with-klarna-payment-options.jpg?id=66748076&width=980\" /> <small class=\"image-media media-caption\">Instalment options can help increase average order value</small></p><p>Furthermore, buy now, pay later removes the price-sensitivity barrier for higher-value transactions such as family season passes and group admissions, with industry data indicating a 10 to 30% increase in average order value for transactions where instalment options are available.</p><p>These instalment options mean that a $200 season pass is paid in four payments over six weeks. The park receives the full amount upfront, while the payment provider manages all collection, risk, and refund complexities. As the payment provider absorbs the risk, there is no change to how the park reports or reconciles revenue.</p><p>Operators should look for wallet payment support (Apple Pay and Google Pay) built directly into the e-commerce checkout, and an instalment option for higher-value transactions. Ideally, the instalment option should allow a minimum order threshold to be set so it only appears when relevant.</p><h2>3. Season pass management</h2><p>Season passes drive loyalty, but also create one of the most persistent operational problems in the sector: the visitor who arrives on opening day without a photo on file.</p><p>The downstream effects are highly evident. Team members direct pass holders away from the main queue to a secondary desk. Photos are taken under pressure, and visitors who arrive excited become frustrated. On busy days, this creates congestion and places unnecessary strain on front-line staff.</p><p>\"The solution is to move photo collection to the point of purchase, not the point of entry,\" says the company.</p><p>\"When photo upload is a required step in the online checkout flow, guests arrive with a verified image already attached to their account. Staff at the gate have instant visual confirmation. The line keeps moving.\"</p><p>This is easier to set up than many operators expect.</p><p class=\"shortcode-media shortcode-media-rebelmouse-image\"> <img alt=\"Season pass verification card with photo match confirmed for theme park entry.\" class=\"rm-shortcode\" id=\"a8766\" src=\"https://blooloop.com/media-library/season-pass-verification-card-with-photo-match-confirmed-for-theme-park-entry.jpg?id=66748084&width=980\" /> <small class=\"image-media media-caption\">Season pass holders arrive with a verified photo already in the system</small></p><p>On most modern platforms, no development work is required as a required image field can be enabled on the visitor account during checkout. The guest is then prompted to upload a photo before completing their purchase, and that image travels with the season pass through the access control system.</p><p>Secondary benefits include reduced pass sharing, which sector estimates suggest can recover up to 5% of season pass revenue. And because the upload is triggered anew with each new-season purchase, the system stays up to date as appearances change over time.</p><p>Operators should look for an e-commerce checkout that supports the required image upload at the account or ticket level, with the photo surfaced automatically at access control. The ability to require a new photo upload each season rather than reusing a previous year's image is a meaningful fraud-prevention detail, says Connect&GO.</p><h2>4. Self-serve RFID wristband top-ups</h2><p>For attractions that use RFID wristbands for cashless spending, the reload queue is a persistent source of friction.</p><p>When visitors want to add funds, they usually need to find a staffed booth and wait in line to complete a transaction.</p><h3></h3><br /><img alt=\"Family using interactive kiosk at sunny outdoor location.\" class=\"rm-shortcode\" id=\"9ffac\" src=\"https://blooloop.com/media-library/family-using-interactive-kiosk-at-sunny-outdoor-location.jpg?id=66748063&width=980\" /><p>\"The irony is that a guest who wants to spend more money is the one being asked to wait,\" says Connect&GO.</p><p>\"Self-serve kiosks address this directly. A guest taps their wristband, selects a reload amount, pays by card or tap, and is done in under 30 seconds. The same kiosk handles the initial admission purchase and wristband association at arrival, and gives guests a way to check their remaining balance without involving staff at all.</p><p>\"The result is fewer transactions routed through staffed booths during the hours when pressure is highest.\"</p><p>Visitors who can reload quickly spend more. When the friction between wanting to buy a snack or an upsell and being able to pay for it is removed, the decision window shortens, ensuring uninterrupted spending throughout the visit.</p><p>Connect&GO suggests that operators look for a kiosk solution with tap-to-pay support and a built-in receipt printer that handles the entire flow, from initial admission purchase to wristband association, cashless reload, and balance check, without requiring staff support.</p><p>The company recommends planning early to factor in hardware lead times.</p><h3>Removing the gap between intent and action</h3><br /><img alt=\"Couple smiling and enjoying cotton candy at a brightly lit carousel.\" class=\"rm-shortcode\" id=\"67237\" src=\"https://blooloop.com/media-library/couple-smiling-and-enjoying-cotton-candy-at-a-brightly-lit-carousel.jpg?id=66748070&width=980\" /><p>All of these approaches seek to remove the gap between intent and action. A visitor who wishes to buy tickets should be able to do so in seconds, while a season pass holder should walk straight in. A family wanting to top up a wristband should spend 30 seconds at a kiosk, rather than 10 minutes in a queue.</p><p>\"The parks positioned to have a record season aren't necessarily the ones with the biggest marketing budgets,\" says the company.</p><p>\"They're the ones that made it operationally easy for guests to spend money, and made sure the people who love their parks the most had the smoothest possible experience.\"</p><p>Last year, Connect&GO and ACME Ticketing were <strong><a href=\"https://blooloop.com/connectgo-peek/\">acquired by Peek</a></strong>, an operating system for experiences, cementing Peek's position as a market leader in the $330bn experiences industry.</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Blooloop",
+        "headline": "New Six Flags Over Texas coaster breaks six world records",
+        "source_url": "https://www.axios.com/local/dallas/sponsored/new-six-flags-over-texas-coaster-breaks-six-world-records",
+        "published_at": "2026-05-18T02:40:32+00:00",
+        "summary": "New Six Flags Over Texas coaster breaks six world records"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Reddit r/KoreaTravel",
+        "headline": "Korea Lotus lantern festival",
+        "source_url": "https://www.reddit.com/r/koreatravel/comments/1tfq7t8/korea_lotus_lantern_festival/",
+        "published_at": "2026-05-17T04:54:33+00:00",
+        "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/koreatravel/comments/1tfq7t8/korea_lotus_lantern_festival/\"> <img alt=\"Korea Lotus lantern festival\" src=\"https://preview.redd.it/y25rkczvdp1h1.jpg?width=140&height=140&crop=1:1,smart&auto=webp&s=1623083f02bc43fe500135cccb71435f60b56a36\" title=\"Korea Lotus lantern festival\" /> </a> </td><td>   submitted by   <a href=\"https://www.reddit.com/user/ReasonNo8365\"> /u/ReasonNo8365 </a> <br /> <span><a href=\"https://www.reddit.com/gallery/1tfq7t8\">[link]</a></span>   <span><a href=\"https://www.reddit.com/r/koreatravel/comments/1tfq7t8/korea_lotus_lantern_festival/\">[comments]</a></span> </td></tr></table>"
+      }
+    }
+  ],
+  "quality_summary": {
+    "total_sources": 39,
+    "enabled_sources": 25,
+    "tracked_sources": 12,
+    "fresh_sources": 12,
+    "stale_sources": 0,
+    "missing_sources": 0,
+    "missing_event_sources": 0,
+    "unknown_event_date_sources": 0,
+    "not_tracked_sources": 13,
+    "skipped_disabled_sources": 14,
+    "collection_error_count": 0,
+    "wait_time_snapshot_events": 359,
+    "reservation_slot_events": 0,
+    "ticket_price_events": 0,
+    "weather_context_events": 0,
+    "queue_signal_event_count": 359,
+    "wait_time_observation_count": 359,
+    "open_attraction_count": 85,
+    "closed_attraction_count": 274,
+    "zero_wait_count": 331,
+    "high_wait_review_count": 2,
+    "target_canonical_key_present_count": 359,
+    "attraction_canonical_key_present_count": 359,
+    "reservation_canonical_key_present_count": 0,
+    "ticket_canonical_key_present_count": 0,
+    "weather_context_present_count": 0,
+    "missing_canonical_key_count": 0,
+    "event_required_field_gap_count": 0,
+    "tracked_source_gap_count": 0,
+    "missing_event_model_count": 3,
+    "source_backlog_candidate_count": 4,
+    "daily_review_item_count": 9
+  }
+}
