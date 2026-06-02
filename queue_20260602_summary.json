@@ -1,0 +1,97 @@
+{
+  "date": "2026-06-02",
+  "category": "queue",
+  "article_count": 180,
+  "source_count": 23,
+  "matched_count": 179,
+  "top_entities": [
+    {
+      "name": "QueueGeneral",
+      "count": 2613
+    },
+    {
+      "name": "Location",
+      "count": 257
+    },
+    {
+      "name": "Attraction",
+      "count": 136
+    },
+    {
+      "name": "RealTimeData",
+      "count": 102
+    },
+    {
+      "name": "WaitTime",
+      "count": 89
+    },
+    {
+      "name": "Status",
+      "count": 59
+    },
+    {
+      "name": "VisitorTips",
+      "count": 15
+    }
+  ],
+  "sources": {
+    "Six Flags Magic Mountain": 1,
+    "Busch Gardens Tampa": 1,
+    "Disney California Adventure": 1,
+    "SeaWorld Orlando": 1,
+    "Disneyland": 1,
+    "Disney Hollywood Studios": 1,
+    "Animal Kingdom": 1,
+    "Disney Magic Kingdom": 1,
+    "Epcot": 1,
+    "Reddit r/KoreaTravel": 43,
+    "Blooloop": 19,
+    "Attractions Magazine": 32,
+    "Inside the Magic": 20,
+    "Park World Magazine": 7,
+    "Islands of Adventure": 1,
+    "Universal Studios Orlando": 1,
+    "Universal Studios Hollywood": 1,
+    "Theme Park Tribune": 5,
+    "Theme Park Insider": 9,
+    "WDWMAGIC News": 30,
+    "Coaster Nation": 1,
+    "Theme Park Crazy": 1,
+    "네이버 롯데월드 블로그": 1
+  },
+  "generated_at": "2026-06-02T21:40:22.773808+09:00",
+  "quality_summary": {
+    "total_sources": 39,
+    "enabled_sources": 25,
+    "tracked_sources": 12,
+    "fresh_sources": 12,
+    "stale_sources": 0,
+    "missing_sources": 0,
+    "missing_event_sources": 0,
+    "unknown_event_date_sources": 0,
+    "not_tracked_sources": 13,
+    "skipped_disabled_sources": 14,
+    "collection_error_count": 0,
+    "wait_time_snapshot_events": 337,
+    "reservation_slot_events": 0,
+    "ticket_price_events": 0,
+    "weather_context_events": 0,
+    "queue_signal_event_count": 337,
+    "wait_time_observation_count": 337,
+    "open_attraction_count": 105,
+    "closed_attraction_count": 232,
+    "zero_wait_count": 299,
+    "high_wait_review_count": 1,
+    "target_canonical_key_present_count": 337,
+    "attraction_canonical_key_present_count": 337,
+    "reservation_canonical_key_present_count": 0,
+    "ticket_canonical_key_present_count": 0,
+    "weather_context_present_count": 0,
+    "missing_canonical_key_count": 0,
+    "event_required_field_gap_count": 0,
+    "tracked_source_gap_count": 0,
+    "missing_event_model_count": 3,
+    "source_backlog_candidate_count": 4,
+    "daily_review_item_count": 8
+  }
+}
