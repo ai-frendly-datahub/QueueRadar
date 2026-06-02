@@ -1,13 +1,13 @@
 {
   "category": "queue",
-  "generated_at": "2026-06-01T14:59:43.864890+00:00",
+  "generated_at": "2026-06-02T12:40:23.747791+00:00",
   "scope_note": "대기/예약 레이더 quality report is generated from repo-local category data_quality metadata and recent stored articles. Operational backlog sources remain separate until dedicated source-level fields are collected.",
   "summary": {
     "total_sources": 39,
     "enabled_sources": 25,
     "tracked_sources": 12,
-    "fresh_sources": 11,
-    "stale_sources": 1,
+    "fresh_sources": 9,
+    "stale_sources": 3,
     "missing_sources": 0,
     "missing_event_sources": 0,
     "unknown_event_date_sources": 0,
@@ -20,8 +20,8 @@
     "weather_context_events": 0,
     "queue_signal_event_count": 12,
     "wait_time_observation_count": 12,
-    "open_attraction_count": 10,
-    "closed_attraction_count": 2,
+    "open_attraction_count": 9,
+    "closed_attraction_count": 3,
     "zero_wait_count": 9,
     "high_wait_review_count": 0,
     "target_canonical_key_present_count": 12,
@@ -31,10 +31,10 @@
     "weather_context_present_count": 0,
     "missing_canonical_key_count": 0,
     "event_required_field_gap_count": 0,
-    "tracked_source_gap_count": 1,
+    "tracked_source_gap_count": 3,
     "missing_event_model_count": 3,
     "source_backlog_candidate_count": 4,
-    "daily_review_item_count": 8
+    "daily_review_item_count": 10
   },
   "sources": [
     {
@@ -54,7 +54,7 @@
       "status": "fresh",
       "article_count": 1,
       "event_count": 1,
-      "latest_event_at": "2026-06-01T14:55:21+00:00",
+      "latest_event_at": "2026-06-02T12:35:41+00:00",
       "age_days": 0.0,
       "latest_title": "Walt Disney's Carousel of Progress - 5 minutes wait (Disney Magic Kingdom)",
       "latest_url": "https://queue-times.com/en-US/parks/6/queue_times",
@@ -85,7 +85,7 @@
       "status": "fresh",
       "article_count": 1,
       "event_count": 1,
-      "latest_event_at": "2026-06-01T14:55:13+00:00",
+      "latest_event_at": "2026-06-02T12:35:29+00:00",
       "age_days": 0.0,
       "latest_title": "Stave Church Gallery - No wait (Epcot)",
       "latest_url": "https://queue-times.com/en-US/parks/5/queue_times",
@@ -116,7 +116,7 @@
       "status": "fresh",
       "article_count": 1,
       "event_count": 1,
-      "latest_event_at": "2026-06-01T14:55:22+00:00",
+      "latest_event_at": "2026-06-02T12:35:41+00:00",
       "age_days": 0.0,
       "latest_title": "Rock 'n' Roller Coaster Starring Aerosmith Single Rider - No wait (Disney Hollywood Studios)",
       "latest_url": "https://queue-times.com/en-US/parks/7/queue_times",
@@ -147,9 +147,9 @@
       "status": "fresh",
       "article_count": 1,
       "event_count": 1,
-      "latest_event_at": "2026-06-01T14:55:36+00:00",
+      "latest_event_at": "2026-06-02T12:35:41+00:00",
       "age_days": 0.0,
-      "latest_title": "Bluey's Wild World at Conservation Station - No wait (Animal Kingdom)",
+      "latest_title": "Bluey's Wild World at Conservation Station - 5 minutes wait (Animal Kingdom)",
       "latest_url": "https://queue-times.com/en-US/parks/8/queue_times",
       "latest_required_field_proxy": {
         "facility_id": true,
@@ -178,7 +178,7 @@
       "status": "fresh",
       "article_count": 1,
       "event_count": 1,
-      "latest_event_at": "2026-06-01T14:55:36+00:00",
+      "latest_event_at": "2026-06-02T12:35:49+00:00",
       "age_days": 0.0,
       "latest_title": "Autopia - Closed (Disneyland)",
       "latest_url": "https://queue-times.com/en-US/parks/16/queue_times",
@@ -209,7 +209,7 @@
       "status": "fresh",
       "article_count": 1,
       "event_count": 1,
-      "latest_event_at": "2026-06-01T14:55:36+00:00",
+      "latest_event_at": "2026-06-02T12:35:51+00:00",
       "age_days": 0.0,
       "latest_title": "The Bakery Tour - No wait (Disney California Adventure)",
       "latest_url": "https://queue-times.com/en-US/parks/17/queue_times",
@@ -240,8 +240,8 @@
       "status": "stale",
       "article_count": 1,
       "event_count": 1,
-      "latest_event_at": "2026-05-31T01:51:25+00:00",
-      "age_days": 1.55,
+      "latest_event_at": "2026-06-02T01:11:23+00:00",
+      "age_days": 0.48,
       "latest_title": "Harry Potter and the Escape from Gringotts™ Single Rider - No wait (Universal Studios Orlando)",
       "latest_url": "https://queue-times.com/en-US/parks/65/queue_times",
       "latest_required_field_proxy": {
@@ -268,11 +268,11 @@
       "required_before_enable": [],
       "event_model": "wait_time_snapshot",
       "freshness_sla_days": 0.041666666666666664,
-      "status": "fresh",
+      "status": "stale",
       "article_count": 1,
       "event_count": 1,
-      "latest_event_at": "2026-06-01T14:56:18+00:00",
-      "age_days": 0.0,
+      "latest_event_at": "2026-06-02T02:01:22+00:00",
+      "age_days": 0.44,
       "latest_title": "Doctor Doom's Fearfall® Single Rider - No wait (Islands of Adventure)",
       "latest_url": "https://queue-times.com/en-US/parks/64/queue_times",
       "latest_required_field_proxy": {
@@ -299,11 +299,11 @@
       "required_before_enable": [],
       "event_model": "wait_time_snapshot",
       "freshness_sla_days": 0.041666666666666664,
-      "status": "fresh",
+      "status": "stale",
       "article_count": 1,
       "event_count": 1,
       "latest_event_at": "2026-06-01T14:51:40+00:00",
-      "age_days": 0.01,
+      "age_days": 0.91,
       "latest_title": "Power-Up Band™ Key Challenges - 30 minutes wait (Universal Studios Hollywood)",
       "latest_url": "https://queue-times.com/en-US/parks/66/queue_times",
       "latest_required_field_proxy": {
@@ -333,9 +333,9 @@
       "status": "fresh",
       "article_count": 1,
       "event_count": 1,
-      "latest_event_at": "2026-06-01T14:56:36+00:00",
+      "latest_event_at": "2026-06-02T12:36:50+00:00",
       "age_days": 0.0,
-      "latest_title": "Tigris - 5 minutes wait (Busch Gardens Tampa)",
+      "latest_title": "Tigris - Closed (Busch Gardens Tampa)",
       "latest_url": "https://queue-times.com/en-US/parks/24/queue_times",
       "latest_required_field_proxy": {
         "facility_id": true,
@@ -364,7 +364,7 @@
       "status": "fresh",
       "article_count": 1,
       "event_count": 1,
-      "latest_event_at": "2026-06-01T14:55:37+00:00",
+      "latest_event_at": "2026-06-02T12:35:49+00:00",
       "age_days": 0.0,
       "latest_title": "Infinity Falls® - No wait (SeaWorld Orlando)",
       "latest_url": "https://queue-times.com/en-US/parks/21/queue_times",
@@ -395,7 +395,7 @@
       "status": "fresh",
       "article_count": 1,
       "event_count": 1,
-      "latest_event_at": "2026-06-01T14:54:35+00:00",
+      "latest_event_at": "2026-06-02T12:39:43+00:00",
       "age_days": 0.0,
       "latest_title": "Yosemite Sam's Flight School - Closed (Six Flags Magic Mountain)",
       "latest_url": "https://queue-times.com/en-US/parks/32/queue_times",
@@ -424,7 +424,7 @@
       "event_model": "editorial_coverage",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 18,
+      "article_count": 17,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -450,7 +450,7 @@
       "event_model": "editorial_coverage",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 72,
+      "article_count": 67,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -476,7 +476,7 @@
       "event_model": "editorial_coverage",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 66,
+      "article_count": 65,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -502,7 +502,7 @@
       "event_model": "editorial_coverage",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 58,
+      "article_count": 52,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -528,7 +528,7 @@
       "event_model": "editorial_coverage",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 47,
+      "article_count": 35,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -814,7 +814,7 @@
       "event_model": "editorial_coverage",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 2,
+      "article_count": 7,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -840,7 +840,7 @@
       "event_model": "editorial_coverage",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 0,
+      "article_count": 1,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -866,7 +866,7 @@
       "event_model": "editorial_coverage",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 10,
+      "article_count": 12,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -1100,7 +1100,7 @@
       "event_model": "editorial_coverage",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 104,
+      "article_count": 109,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -1114,6 +1114,75 @@
   ],
   "events": [
     {
+      "source": "Six Flags Magic Mountain",
+      "source_type": "api",
+      "trust_tier": "T3_professional",
+      "content_type": "news",
+      "collection_tier": "C1_rss",
+      "producer_role": "",
+      "event_model": "wait_time_snapshot",
+      "title": "Yosemite Sam's Flight School - Closed (Six Flags Magic Mountain)",
+      "url": "https://queue-times.com/en-US/parks/32/queue_times",
+      "source_url": "https://queue-times.com/en-US/parks/32/queue_times",
+      "event_at": "2026-06-02T12:39:43+00:00",
+      "matched_entities": {
+        "WaitTime": [
+          "wait time",
+          "wait",
+          "queue",
+          "current wait"
+        ],
+        "Attraction": [
+          "attraction"
+        ],
+        "Status": [
+          "closed",
+          "status"
+        ],
+        "Location": [
+          "six flags"
+        ],
+        "RealTimeData": [
+          "real-time",
+          "current",
+          "last updated",
+          "minutes",
+          "queue data",
+          "queue-times"
+        ],
+        "QueueGeneral": [
+          "queue",
+          "wait",
+          "attraction",
+          "time"
+        ]
+      },
+      "facility_id": "32",
+      "facility_name": "Six Flags Magic Mountain",
+      "attraction_id": "",
+      "attraction_name": "Yosemite Sam's Flight School",
+      "service_id": "",
+      "timezone": "",
+      "wait_minutes": 0,
+      "availability_status": "Closed",
+      "ticket_type": "",
+      "price": null,
+      "currency": "",
+      "weather_metric": "",
+      "metric_value": null,
+      "canonical_key": "queue_target:32:ride:yosemite-sam-s-flight-school",
+      "canonical_key_status": "name_proxy",
+      "event_key": "wait_time_snapshot:20e2473161c5:20260602T123943Z",
+      "queue_target_key": "queue_target:32:ride:yosemite-sam-s-flight-school",
+      "required_field_proxy": {
+        "facility_id": true,
+        "attraction_id": true,
+        "wait_minutes": true,
+        "source_url": true
+      },
+      "required_field_gaps": []
+    },
+    {
       "source": "Busch Gardens Tampa",
       "source_type": "api",
       "trust_tier": "T3_professional",
@@ -1121,23 +1190,22 @@
       "collection_tier": "C1_rss",
       "producer_role": "",
       "event_model": "wait_time_snapshot",
-      "title": "Tigris - 5 minutes wait (Busch Gardens Tampa)",
+      "title": "Tigris - Closed (Busch Gardens Tampa)",
       "url": "https://queue-times.com/en-US/parks/24/queue_times",
       "source_url": "https://queue-times.com/en-US/parks/24/queue_times",
-      "event_at": "2026-06-01T14:56:36+00:00",
+      "event_at": "2026-06-02T12:36:50+00:00",
       "matched_entities": {
         "WaitTime": [
           "wait time",
           "wait",
           "queue",
-          "minutes wait",
           "current wait"
         ],
         "Attraction": [
           "attraction"
         ],
         "Status": [
-          "open",
+          "closed",
           "status"
         ],
         "Location": [
@@ -1164,285 +1232,6 @@
       "attraction_name": "Tigris",
       "service_id": "",
       "timezone": "",
-      "wait_minutes": 5,
-      "availability_status": "Open",
-      "ticket_type": "",
-      "price": null,
-      "currency": "",
-      "weather_metric": "",
-      "metric_value": null,
-      "canonical_key": "queue_target:24:ride:tigris",
-      "canonical_key_status": "name_proxy",
-      "event_key": "wait_time_snapshot:ddd46fdfe082:20260601T145636Z",
-      "queue_target_key": "queue_target:24:ride:tigris",
-      "required_field_proxy": {
-        "facility_id": true,
-        "attraction_id": true,
-        "wait_minutes": true,
-        "source_url": true
-      },
-      "required_field_gaps": []
-    },
-    {
-      "source": "Islands of Adventure",
-      "source_type": "api",
-      "trust_tier": "T3_professional",
-      "content_type": "news",
-      "collection_tier": "C1_rss",
-      "producer_role": "",
-      "event_model": "wait_time_snapshot",
-      "title": "Doctor Doom's Fearfall® Single Rider - No wait (Islands of Adventure)",
-      "url": "https://queue-times.com/en-US/parks/64/queue_times",
-      "source_url": "https://queue-times.com/en-US/parks/64/queue_times",
-      "event_at": "2026-06-01T14:56:18+00:00",
-      "matched_entities": {
-        "WaitTime": [
-          "wait time",
-          "wait",
-          "queue",
-          "no wait",
-          "current wait"
-        ],
-        "Attraction": [
-          "attraction"
-        ],
-        "Status": [
-          "open",
-          "status"
-        ],
-        "Location": [
-          "islands of adventure"
-        ],
-        "RealTimeData": [
-          "real-time",
-          "current",
-          "last updated",
-          "minutes",
-          "queue data",
-          "queue-times"
-        ],
-        "QueueGeneral": [
-          "queue",
-          "wait",
-          "attraction",
-          "time"
-        ]
-      },
-      "facility_id": "64",
-      "facility_name": "Islands of Adventure",
-      "attraction_id": "",
-      "attraction_name": "Doctor Doom's Fearfall® Single Rider",
-      "service_id": "",
-      "timezone": "",
-      "wait_minutes": 0,
-      "availability_status": "Open",
-      "ticket_type": "",
-      "price": null,
-      "currency": "",
-      "weather_metric": "",
-      "metric_value": null,
-      "canonical_key": "queue_target:64:ride:doctor-doom-s-fearfall-single-rider",
-      "canonical_key_status": "name_proxy",
-      "event_key": "wait_time_snapshot:0be2ddc70707:20260601T145618Z",
-      "queue_target_key": "queue_target:64:ride:doctor-doom-s-fearfall-single-rider",
-      "required_field_proxy": {
-        "facility_id": true,
-        "attraction_id": true,
-        "wait_minutes": true,
-        "source_url": true
-      },
-      "required_field_gaps": []
-    },
-    {
-      "source": "SeaWorld Orlando",
-      "source_type": "api",
-      "trust_tier": "T3_professional",
-      "content_type": "news",
-      "collection_tier": "C1_rss",
-      "producer_role": "",
-      "event_model": "wait_time_snapshot",
-      "title": "Infinity Falls® - No wait (SeaWorld Orlando)",
-      "url": "https://queue-times.com/en-US/parks/21/queue_times",
-      "source_url": "https://queue-times.com/en-US/parks/21/queue_times",
-      "event_at": "2026-06-01T14:55:37+00:00",
-      "matched_entities": {
-        "WaitTime": [
-          "wait time",
-          "wait",
-          "queue",
-          "no wait",
-          "current wait"
-        ],
-        "Attraction": [
-          "attraction"
-        ],
-        "Status": [
-          "open",
-          "status"
-        ],
-        "Location": [
-          "seaworld"
-        ],
-        "RealTimeData": [
-          "real-time",
-          "current",
-          "last updated",
-          "minutes",
-          "queue data",
-          "queue-times"
-        ],
-        "QueueGeneral": [
-          "queue",
-          "wait",
-          "attraction",
-          "time"
-        ]
-      },
-      "facility_id": "21",
-      "facility_name": "SeaWorld Orlando",
-      "attraction_id": "",
-      "attraction_name": "Infinity Falls®",
-      "service_id": "",
-      "timezone": "",
-      "wait_minutes": 0,
-      "availability_status": "Open",
-      "ticket_type": "",
-      "price": null,
-      "currency": "",
-      "weather_metric": "",
-      "metric_value": null,
-      "canonical_key": "queue_target:21:ride:infinity-falls",
-      "canonical_key_status": "name_proxy",
-      "event_key": "wait_time_snapshot:05cbd1cced0e:20260601T145537Z",
-      "queue_target_key": "queue_target:21:ride:infinity-falls",
-      "required_field_proxy": {
-        "facility_id": true,
-        "attraction_id": true,
-        "wait_minutes": true,
-        "source_url": true
-      },
-      "required_field_gaps": []
-    },
-    {
-      "source": "Animal Kingdom",
-      "source_type": "api",
-      "trust_tier": "T3_professional",
-      "content_type": "news",
-      "collection_tier": "C1_rss",
-      "producer_role": "",
-      "event_model": "wait_time_snapshot",
-      "title": "Bluey's Wild World at Conservation Station - No wait (Animal Kingdom)",
-      "url": "https://queue-times.com/en-US/parks/8/queue_times",
-      "source_url": "https://queue-times.com/en-US/parks/8/queue_times",
-      "event_at": "2026-06-01T14:55:36+00:00",
-      "matched_entities": {
-        "WaitTime": [
-          "wait time",
-          "wait",
-          "queue",
-          "no wait",
-          "current wait"
-        ],
-        "Attraction": [
-          "attraction"
-        ],
-        "Status": [
-          "open",
-          "status"
-        ],
-        "Location": [
-          "animal kingdom"
-        ],
-        "RealTimeData": [
-          "real-time",
-          "current",
-          "last updated",
-          "minutes",
-          "queue data",
-          "queue-times"
-        ],
-        "QueueGeneral": [
-          "queue",
-          "wait",
-          "attraction",
-          "time"
-        ]
-      },
-      "facility_id": "8",
-      "facility_name": "Animal Kingdom",
-      "attraction_id": "",
-      "attraction_name": "Bluey's Wild World at Conservation Station",
-      "service_id": "",
-      "timezone": "",
-      "wait_minutes": 0,
-      "availability_status": "Open",
-      "ticket_type": "",
-      "price": null,
-      "currency": "",
-      "weather_metric": "",
-      "metric_value": null,
-      "canonical_key": "queue_target:8:ride:bluey-s-wild-world-at-conservation-station",
-      "canonical_key_status": "name_proxy",
-      "event_key": "wait_time_snapshot:1c5cc620516e:20260601T145536Z",
-      "queue_target_key": "queue_target:8:ride:bluey-s-wild-world-at-conservation-station",
-      "required_field_proxy": {
-        "facility_id": true,
-        "attraction_id": true,
-        "wait_minutes": true,
-        "source_url": true
-      },
-      "required_field_gaps": []
-    },
-    {
-      "source": "Disneyland",
-      "source_type": "api",
-      "trust_tier": "T3_professional",
-      "content_type": "news",
-      "collection_tier": "C1_rss",
-      "producer_role": "",
-      "event_model": "wait_time_snapshot",
-      "title": "Autopia - Closed (Disneyland)",
-      "url": "https://queue-times.com/en-US/parks/16/queue_times",
-      "source_url": "https://queue-times.com/en-US/parks/16/queue_times",
-      "event_at": "2026-06-01T14:55:36+00:00",
-      "matched_entities": {
-        "WaitTime": [
-          "wait time",
-          "wait",
-          "queue",
-          "current wait"
-        ],
-        "Attraction": [
-          "attraction"
-        ],
-        "Status": [
-          "closed",
-          "status"
-        ],
-        "Location": [
-          "disneyland"
-        ],
-        "RealTimeData": [
-          "real-time",
-          "current",
-          "last updated",
-          "minutes",
-          "queue data",
-          "queue-times"
-        ],
-        "QueueGeneral": [
-          "queue",
-          "wait",
-          "attraction",
-          "time"
-        ]
-      },
-      "facility_id": "16",
-      "facility_name": "Disneyland",
-      "attraction_id": "",
-      "attraction_name": "Autopia",
-      "service_id": "",
-      "timezone": "",
       "wait_minutes": 0,
       "availability_status": "Closed",
       "ticket_type": "",
@@ -1450,10 +1239,10 @@
       "currency": "",
       "weather_metric": "",
       "metric_value": null,
-      "canonical_key": "queue_target:16:ride:autopia",
+      "canonical_key": "queue_target:24:ride:tigris",
       "canonical_key_status": "name_proxy",
-      "event_key": "wait_time_snapshot:4900311dc811:20260601T145536Z",
-      "queue_target_key": "queue_target:16:ride:autopia",
+      "event_key": "wait_time_snapshot:ddd46fdfe082:20260602T123650Z",
+      "queue_target_key": "queue_target:24:ride:tigris",
       "required_field_proxy": {
         "facility_id": true,
         "attraction_id": true,
@@ -1473,7 +1262,7 @@
       "title": "The Bakery Tour - No wait (Disney California Adventure)",
       "url": "https://queue-times.com/en-US/parks/17/queue_times",
       "source_url": "https://queue-times.com/en-US/parks/17/queue_times",
-      "event_at": "2026-06-01T14:55:36+00:00",
+      "event_at": "2026-06-02T12:35:51+00:00",
       "matched_entities": {
         "WaitTime": [
           "wait time",
@@ -1525,8 +1314,217 @@
       "metric_value": null,
       "canonical_key": "queue_target:17:ride:the-bakery-tour",
       "canonical_key_status": "name_proxy",
-      "event_key": "wait_time_snapshot:0e4aa7610937:20260601T145536Z",
+      "event_key": "wait_time_snapshot:0e4aa7610937:20260602T123551Z",
       "queue_target_key": "queue_target:17:ride:the-bakery-tour",
+      "required_field_proxy": {
+        "facility_id": true,
+        "attraction_id": true,
+        "wait_minutes": true,
+        "source_url": true
+      },
+      "required_field_gaps": []
+    },
+    {
+      "source": "SeaWorld Orlando",
+      "source_type": "api",
+      "trust_tier": "T3_professional",
+      "content_type": "news",
+      "collection_tier": "C1_rss",
+      "producer_role": "",
+      "event_model": "wait_time_snapshot",
+      "title": "Infinity Falls® - No wait (SeaWorld Orlando)",
+      "url": "https://queue-times.com/en-US/parks/21/queue_times",
+      "source_url": "https://queue-times.com/en-US/parks/21/queue_times",
+      "event_at": "2026-06-02T12:35:49+00:00",
+      "matched_entities": {
+        "WaitTime": [
+          "wait time",
+          "wait",
+          "queue",
+          "no wait",
+          "current wait"
+        ],
+        "Attraction": [
+          "attraction"
+        ],
+        "Status": [
+          "open",
+          "status"
+        ],
+        "Location": [
+          "seaworld"
+        ],
+        "RealTimeData": [
+          "real-time",
+          "current",
+          "last updated",
+          "minutes",
+          "queue data",
+          "queue-times"
+        ],
+        "QueueGeneral": [
+          "queue",
+          "wait",
+          "attraction",
+          "time"
+        ]
+      },
+      "facility_id": "21",
+      "facility_name": "SeaWorld Orlando",
+      "attraction_id": "",
+      "attraction_name": "Infinity Falls®",
+      "service_id": "",
+      "timezone": "",
+      "wait_minutes": 0,
+      "availability_status": "Open",
+      "ticket_type": "",
+      "price": null,
+      "currency": "",
+      "weather_metric": "",
+      "metric_value": null,
+      "canonical_key": "queue_target:21:ride:infinity-falls",
+      "canonical_key_status": "name_proxy",
+      "event_key": "wait_time_snapshot:05cbd1cced0e:20260602T123549Z",
+      "queue_target_key": "queue_target:21:ride:infinity-falls",
+      "required_field_proxy": {
+        "facility_id": true,
+        "attraction_id": true,
+        "wait_minutes": true,
+        "source_url": true
+      },
+      "required_field_gaps": []
+    },
+    {
+      "source": "Disneyland",
+      "source_type": "api",
+      "trust_tier": "T3_professional",
+      "content_type": "news",
+      "collection_tier": "C1_rss",
+      "producer_role": "",
+      "event_model": "wait_time_snapshot",
+      "title": "Autopia - Closed (Disneyland)",
+      "url": "https://queue-times.com/en-US/parks/16/queue_times",
+      "source_url": "https://queue-times.com/en-US/parks/16/queue_times",
+      "event_at": "2026-06-02T12:35:49+00:00",
+      "matched_entities": {
+        "WaitTime": [
+          "wait time",
+          "wait",
+          "queue",
+          "current wait"
+        ],
+        "Attraction": [
+          "attraction"
+        ],
+        "Status": [
+          "closed",
+          "status"
+        ],
+        "Location": [
+          "disneyland"
+        ],
+        "RealTimeData": [
+          "real-time",
+          "current",
+          "last updated",
+          "minutes",
+          "queue data",
+          "queue-times"
+        ],
+        "QueueGeneral": [
+          "queue",
+          "wait",
+          "attraction",
+          "time"
+        ]
+      },
+      "facility_id": "16",
+      "facility_name": "Disneyland",
+      "attraction_id": "",
+      "attraction_name": "Autopia",
+      "service_id": "",
+      "timezone": "",
+      "wait_minutes": 0,
+      "availability_status": "Closed",
+      "ticket_type": "",
+      "price": null,
+      "currency": "",
+      "weather_metric": "",
+      "metric_value": null,
+      "canonical_key": "queue_target:16:ride:autopia",
+      "canonical_key_status": "name_proxy",
+      "event_key": "wait_time_snapshot:4900311dc811:20260602T123549Z",
+      "queue_target_key": "queue_target:16:ride:autopia",
+      "required_field_proxy": {
+        "facility_id": true,
+        "attraction_id": true,
+        "wait_minutes": true,
+        "source_url": true
+      },
+      "required_field_gaps": []
+    },
+    {
+      "source": "Animal Kingdom",
+      "source_type": "api",
+      "trust_tier": "T3_professional",
+      "content_type": "news",
+      "collection_tier": "C1_rss",
+      "producer_role": "",
+      "event_model": "wait_time_snapshot",
+      "title": "Bluey's Wild World at Conservation Station - 5 minutes wait (Animal Kingdom)",
+      "url": "https://queue-times.com/en-US/parks/8/queue_times",
+      "source_url": "https://queue-times.com/en-US/parks/8/queue_times",
+      "event_at": "2026-06-02T12:35:41+00:00",
+      "matched_entities": {
+        "WaitTime": [
+          "wait time",
+          "wait",
+          "queue",
+          "minutes wait",
+          "current wait"
+        ],
+        "Attraction": [
+          "attraction"
+        ],
+        "Status": [
+          "open",
+          "status"
+        ],
+        "Location": [
+          "animal kingdom"
+        ],
+        "RealTimeData": [
+          "real-time",
+          "current",
+          "last updated",
+          "minutes",
+          "queue data",
+          "queue-times"
+        ],
+        "QueueGeneral": [
+          "queue",
+          "wait",
+          "attraction",
+          "time"
+        ]
+      },
+      "facility_id": "8",
+      "facility_name": "Animal Kingdom",
+      "attraction_id": "",
+      "attraction_name": "Bluey's Wild World at Conservation Station",
+      "service_id": "",
+      "timezone": "",
+      "wait_minutes": 5,
+      "availability_status": "Open",
+      "ticket_type": "",
+      "price": null,
+      "currency": "",
+      "weather_metric": "",
+      "metric_value": null,
+      "canonical_key": "queue_target:8:ride:bluey-s-wild-world-at-conservation-station",
+      "canonical_key_status": "name_proxy",
+      "event_key": "wait_time_snapshot:1c5cc620516e:20260602T123541Z",
+      "queue_target_key": "queue_target:8:ride:bluey-s-wild-world-at-conservation-station",
       "required_field_proxy": {
         "facility_id": true,
         "attraction_id": true,
@@ -1546,7 +1544,7 @@
       "title": "Rock 'n' Roller Coaster Starring Aerosmith Single Rider - No wait (Disney Hollywood Studios)",
       "url": "https://queue-times.com/en-US/parks/7/queue_times",
       "source_url": "https://queue-times.com/en-US/parks/7/queue_times",
-      "event_at": "2026-06-01T14:55:22+00:00",
+      "event_at": "2026-06-02T12:35:41+00:00",
       "matched_entities": {
         "WaitTime": [
           "wait time",
@@ -1600,7 +1598,7 @@
       "metric_value": null,
       "canonical_key": "queue_target:7:ride:rock-n-roller-coaster-starring-aerosmith-single-rider",
       "canonical_key_status": "name_proxy",
-      "event_key": "wait_time_snapshot:8acb13313205:20260601T145522Z",
+      "event_key": "wait_time_snapshot:8acb13313205:20260602T123541Z",
       "queue_target_key": "queue_target:7:ride:rock-n-roller-coaster-starring-aerosmith-single-rider",
       "required_field_proxy": {
         "facility_id": true,
@@ -1621,7 +1619,7 @@
       "title": "Walt Disney's Carousel of Progress - 5 minutes wait (Disney Magic Kingdom)",
       "url": "https://queue-times.com/en-US/parks/6/queue_times",
       "source_url": "https://queue-times.com/en-US/parks/6/queue_times",
-      "event_at": "2026-06-01T14:55:21+00:00",
+      "event_at": "2026-06-02T12:35:41+00:00",
       "matched_entities": {
         "WaitTime": [
           "wait time",
@@ -1672,7 +1670,7 @@
       "metric_value": null,
       "canonical_key": "queue_target:6:ride:walt-disney-s-carousel-of-progress",
       "canonical_key_status": "name_proxy",
-      "event_key": "wait_time_snapshot:0fdde8fea4dd:20260601T145521Z",
+      "event_key": "wait_time_snapshot:0fdde8fea4dd:20260602T123541Z",
       "queue_target_key": "queue_target:6:ride:walt-disney-s-carousel-of-progress",
       "required_field_proxy": {
         "facility_id": true,
@@ -1693,7 +1691,7 @@
       "title": "Stave Church Gallery - No wait (Epcot)",
       "url": "https://queue-times.com/en-US/parks/5/queue_times",
       "source_url": "https://queue-times.com/en-US/parks/5/queue_times",
-      "event_at": "2026-06-01T14:55:13+00:00",
+      "event_at": "2026-06-02T12:35:29+00:00",
       "matched_entities": {
         "WaitTime": [
           "wait time",
@@ -1742,7 +1740,7 @@
       "metric_value": null,
       "canonical_key": "queue_target:5:ride:stave-church-gallery",
       "canonical_key_status": "name_proxy",
-      "event_key": "wait_time_snapshot:92207baa52e6:20260601T145513Z",
+      "event_key": "wait_time_snapshot:92207baa52e6:20260602T123529Z",
       "queue_target_key": "queue_target:5:ride:stave-church-gallery",
       "required_field_proxy": {
         "facility_id": true,
@@ -1753,33 +1751,34 @@
       "required_field_gaps": []
     },
     {
-      "source": "Six Flags Magic Mountain",
+      "source": "Islands of Adventure",
       "source_type": "api",
       "trust_tier": "T3_professional",
       "content_type": "news",
       "collection_tier": "C1_rss",
       "producer_role": "",
       "event_model": "wait_time_snapshot",
-      "title": "Yosemite Sam's Flight School - Closed (Six Flags Magic Mountain)",
-      "url": "https://queue-times.com/en-US/parks/32/queue_times",
-      "source_url": "https://queue-times.com/en-US/parks/32/queue_times",
-      "event_at": "2026-06-01T14:54:35+00:00",
+      "title": "Doctor Doom's Fearfall® Single Rider - No wait (Islands of Adventure)",
+      "url": "https://queue-times.com/en-US/parks/64/queue_times",
+      "source_url": "https://queue-times.com/en-US/parks/64/queue_times",
+      "event_at": "2026-06-02T02:01:22+00:00",
       "matched_entities": {
         "WaitTime": [
           "wait time",
           "wait",
           "queue",
+          "no wait",
           "current wait"
         ],
         "Attraction": [
           "attraction"
         ],
         "Status": [
-          "closed",
+          "open",
           "status"
         ],
         "Location": [
-          "six flags"
+          "islands of adventure"
         ],
         "RealTimeData": [
           "real-time",
@@ -1796,23 +1795,95 @@
           "time"
         ]
       },
-      "facility_id": "32",
-      "facility_name": "Six Flags Magic Mountain",
+      "facility_id": "64",
+      "facility_name": "Islands of Adventure",
       "attraction_id": "",
-      "attraction_name": "Yosemite Sam's Flight School",
+      "attraction_name": "Doctor Doom's Fearfall® Single Rider",
       "service_id": "",
       "timezone": "",
       "wait_minutes": 0,
-      "availability_status": "Closed",
+      "availability_status": "Open",
       "ticket_type": "",
       "price": null,
       "currency": "",
       "weather_metric": "",
       "metric_value": null,
-      "canonical_key": "queue_target:32:ride:yosemite-sam-s-flight-school",
+      "canonical_key": "queue_target:64:ride:doctor-doom-s-fearfall-single-rider",
       "canonical_key_status": "name_proxy",
-      "event_key": "wait_time_snapshot:20e2473161c5:20260601T145435Z",
-      "queue_target_key": "queue_target:32:ride:yosemite-sam-s-flight-school",
+      "event_key": "wait_time_snapshot:0be2ddc70707:20260602T020122Z",
+      "queue_target_key": "queue_target:64:ride:doctor-doom-s-fearfall-single-rider",
+      "required_field_proxy": {
+        "facility_id": true,
+        "attraction_id": true,
+        "wait_minutes": true,
+        "source_url": true
+      },
+      "required_field_gaps": []
+    },
+    {
+      "source": "Universal Studios Orlando",
+      "source_type": "api",
+      "trust_tier": "T3_professional",
+      "content_type": "news",
+      "collection_tier": "C1_rss",
+      "producer_role": "",
+      "event_model": "wait_time_snapshot",
+      "title": "Harry Potter and the Escape from Gringotts™ Single Rider - No wait (Universal Studios Orlando)",
+      "url": "https://queue-times.com/en-US/parks/65/queue_times",
+      "source_url": "https://queue-times.com/en-US/parks/65/queue_times",
+      "event_at": "2026-06-02T01:11:23+00:00",
+      "matched_entities": {
+        "WaitTime": [
+          "wait time",
+          "wait",
+          "queue",
+          "no wait",
+          "current wait"
+        ],
+        "Attraction": [
+          "attraction"
+        ],
+        "Status": [
+          "open",
+          "status"
+        ],
+        "Location": [
+          "universal"
+        ],
+        "RealTimeData": [
+          "real-time",
+          "current",
+          "last updated",
+          "minutes",
+          "queue data",
+          "queue-times"
+        ],
+        "QueueGeneral": [
+          "queue",
+          "wait",
+          "attraction",
+          "universal",
+          "the",
+          "time"
+        ]
+      },
+      "facility_id": "65",
+      "facility_name": "Universal Studios Orlando",
+      "attraction_id": "",
+      "attraction_name": "Harry Potter and the Escape from Gringotts™ Single Rider",
+      "service_id": "",
+      "timezone": "",
+      "wait_minutes": 0,
+      "availability_status": "Open",
+      "ticket_type": "",
+      "price": null,
+      "currency": "",
+      "weather_metric": "",
+      "metric_value": null,
+      "canonical_key": "queue_target:65:ride:harry-potter-and-the-escape-from-gringotts-single-rider",
+      "canonical_key_status": "name_proxy",
+      "event_key": "wait_time_snapshot:95810f45a792:20260602T011123Z",
+      "queue_target_key": "queue_target:65:ride:harry-potter-and-the-escape-from-gringotts-single-rider",
       "required_field_proxy": {
         "facility_id": true,
         "attraction_id": true,
@@ -1892,78 +1963,6 @@
         "source_url": true
       },
       "required_field_gaps": []
-    },
-    {
-      "source": "Universal Studios Orlando",
-      "source_type": "api",
-      "trust_tier": "T3_professional",
-      "content_type": "news",
-      "collection_tier": "C1_rss",
-      "producer_role": "",
-      "event_model": "wait_time_snapshot",
-      "title": "Harry Potter and the Escape from Gringotts™ Single Rider - No wait (Universal Studios Orlando)",
-      "url": "https://queue-times.com/en-US/parks/65/queue_times",
-      "source_url": "https://queue-times.com/en-US/parks/65/queue_times",
-      "event_at": "2026-05-31T01:51:25+00:00",
-      "matched_entities": {
-        "WaitTime": [
-          "wait time",
-          "wait",
-          "queue",
-          "no wait",
-          "current wait"
-        ],
-        "Attraction": [
-          "attraction"
-        ],
-        "Status": [
-          "open",
-          "status"
-        ],
-        "Location": [
-          "universal"
-        ],
-        "RealTimeData": [
-          "real-time",
-          "current",
-          "last updated",
-          "minutes",
-          "queue data",
-          "queue-times"
-        ],
-        "QueueGeneral": [
-          "queue",
-          "wait",
-          "attraction",
-          "universal",
-          "the",
-          "time"
-        ]
-      },
-      "facility_id": "65",
-      "facility_name": "Universal Studios Orlando",
-      "attraction_id": "",
-      "attraction_name": "Harry Potter and the Escape from Gringotts™ Single Rider",
-      "service_id": "",
-      "timezone": "",
-      "wait_minutes": 0,
-      "availability_status": "Open",
-      "ticket_type": "",
-      "price": null,
-      "currency": "",
-      "weather_metric": "",
-      "metric_value": null,
-      "canonical_key": "queue_target:65:ride:harry-potter-and-the-escape-from-gringotts-single-rider",
-      "canonical_key_status": "name_proxy",
-      "event_key": "wait_time_snapshot:95810f45a792:20260531T015125Z",
-      "queue_target_key": "queue_target:65:ride:harry-potter-and-the-escape-from-gringotts-single-rider",
-      "required_field_proxy": {
-        "facility_id": true,
-        "attraction_id": true,
-        "wait_minutes": true,
-        "source_url": true
-      },
-      "required_field_gaps": []
     }
   ],
   "daily_review_items": [
@@ -1971,8 +1970,22 @@
       "reason": "source_stale",
       "source": "Universal Studios Orlando",
       "event_model": "wait_time_snapshot",
-      "age_days": 1.55,
+      "age_days": 0.48,
       "latest_title": "Harry Potter and the Escape from Gringotts™ Single Rider - No wait (Universal Studios Orlando)"
+    },
+    {
+      "reason": "source_stale",
+      "source": "Islands of Adventure",
+      "event_model": "wait_time_snapshot",
+      "age_days": 0.44,
+      "latest_title": "Doctor Doom's Fearfall® Single Rider - No wait (Islands of Adventure)"
+    },
+    {
+      "reason": "source_stale",
+      "source": "Universal Studios Hollywood",
+      "event_model": "wait_time_snapshot",
+      "age_days": 0.91,
+      "latest_title": "Power-Up Band™ Key Challenges - 30 minutes wait (Universal Studios Hollywood)"
     },
     {
       "reason": "missing_event_model",
