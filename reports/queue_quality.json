@@ -1,6 +1,6 @@
 {
   "category": "queue",
-  "generated_at": "2026-07-06T12:44:34.654623+00:00",
+  "generated_at": "2026-07-07T11:47:00.317888+00:00",
   "scope_note": "대기/예약 레이더 quality report is generated from repo-local category data_quality metadata and recent stored articles. Operational backlog sources remain separate until dedicated source-level fields are collected.",
   "summary": {
     "total_sources": 39,
@@ -54,7 +54,7 @@
       "status": "fresh",
       "article_count": 1,
       "event_count": 1,
-      "latest_event_at": "2026-07-06T12:40:28+00:00",
+      "latest_event_at": "2026-07-07T11:45:24+00:00",
       "age_days": 0.0,
       "latest_title": "Walt Disney's Carousel of Progress - Closed (Disney Magic Kingdom)",
       "latest_url": "https://queue-times.com/en-US/parks/6/queue_times",
@@ -85,7 +85,7 @@
       "status": "fresh",
       "article_count": 1,
       "event_count": 1,
-      "latest_event_at": "2026-07-06T12:40:25+00:00",
+      "latest_event_at": "2026-07-07T11:45:16+00:00",
       "age_days": 0.0,
       "latest_title": "Remy's Ratatouille Adventure Single Rider - Closed (Epcot)",
       "latest_url": "https://queue-times.com/en-US/parks/5/queue_times",
@@ -116,7 +116,7 @@
       "status": "fresh",
       "article_count": 1,
       "event_count": 1,
-      "latest_event_at": "2026-07-06T12:40:29+00:00",
+      "latest_event_at": "2026-07-07T11:45:24+00:00",
       "age_days": 0.0,
       "latest_title": "Disney Jr. Mickey Mouse Clubhouse Live! - No wait (Disney Hollywood Studios)",
       "latest_url": "https://queue-times.com/en-US/parks/7/queue_times",
@@ -147,7 +147,7 @@
       "status": "fresh",
       "article_count": 1,
       "event_count": 1,
-      "latest_event_at": "2026-07-06T12:40:35+00:00",
+      "latest_event_at": "2026-07-07T11:45:31+00:00",
       "age_days": 0.0,
       "latest_title": "Wilderness Explorers - Closed (Animal Kingdom)",
       "latest_url": "https://queue-times.com/en-US/parks/8/queue_times",
@@ -178,7 +178,7 @@
       "status": "fresh",
       "article_count": 1,
       "event_count": 1,
-      "latest_event_at": "2026-07-06T12:40:38+00:00",
+      "latest_event_at": "2026-07-07T11:45:37+00:00",
       "age_days": 0.0,
       "latest_title": "Autopia - Closed (Disneyland)",
       "latest_url": "https://queue-times.com/en-US/parks/16/queue_times",
@@ -210,7 +210,7 @@
       "article_count": 1,
       "event_count": 1,
       "latest_event_at": "2026-07-01T04:55:55+00:00",
-      "age_days": 5.33,
+      "age_days": 6.29,
       "latest_title": "Soarin' Over California - 15 minutes wait (Disney California Adventure)",
       "latest_url": "https://queue-times.com/en-US/parks/17/queue_times",
       "latest_required_field_proxy": {
@@ -240,7 +240,7 @@
       "status": "fresh",
       "article_count": 1,
       "event_count": 1,
-      "latest_event_at": "2026-07-06T12:41:28+00:00",
+      "latest_event_at": "2026-07-07T11:41:25+00:00",
       "age_days": 0.0,
       "latest_title": "The Simpsons Ride™ - Closed (Universal Studios Orlando)",
       "latest_url": "https://queue-times.com/en-US/parks/65/queue_times",
@@ -272,7 +272,7 @@
       "article_count": 1,
       "event_count": 1,
       "latest_event_at": "2026-07-05T01:01:30+00:00",
-      "age_days": 1.49,
+      "age_days": 2.45,
       "latest_title": "Hagrid's Magical Creatures Motorbike Adventure™ Single Rider - No wait (Islands of Adventure)",
       "latest_url": "https://queue-times.com/en-US/parks/64/queue_times",
       "latest_required_field_proxy": {
@@ -302,7 +302,7 @@
       "status": "fresh",
       "article_count": 1,
       "event_count": 1,
-      "latest_event_at": "2026-07-06T12:41:39+00:00",
+      "latest_event_at": "2026-07-07T11:41:39+00:00",
       "age_days": 0.0,
       "latest_title": "Studio Tour - Closed (Universal Studios Hollywood)",
       "latest_url": "https://queue-times.com/en-US/parks/66/queue_times",
@@ -333,7 +333,7 @@
       "status": "fresh",
       "article_count": 1,
       "event_count": 1,
-      "latest_event_at": "2026-07-06T12:41:41+00:00",
+      "latest_event_at": "2026-07-07T11:41:34+00:00",
       "age_days": 0.0,
       "latest_title": "Tigris - Closed (Busch Gardens Tampa)",
       "latest_url": "https://queue-times.com/en-US/parks/24/queue_times",
@@ -364,7 +364,7 @@
       "status": "fresh",
       "article_count": 1,
       "event_count": 1,
-      "latest_event_at": "2026-07-06T12:40:40+00:00",
+      "latest_event_at": "2026-07-07T11:45:40+00:00",
       "age_days": 0.0,
       "latest_title": "Infinity Falls® - No wait (SeaWorld Orlando)",
       "latest_url": "https://queue-times.com/en-US/parks/21/queue_times",
@@ -395,7 +395,7 @@
       "status": "fresh",
       "article_count": 1,
       "event_count": 1,
-      "latest_event_at": "2026-07-06T12:40:00+00:00",
+      "latest_event_at": "2026-07-07T11:44:54+00:00",
       "age_days": 0.0,
       "latest_title": "X2 - Closed (Six Flags Magic Mountain)",
       "latest_url": "https://queue-times.com/en-US/parks/32/queue_times",
@@ -424,7 +424,7 @@
       "event_model": "editorial_coverage",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 18,
+      "article_count": 19,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -450,7 +450,7 @@
       "event_model": "editorial_coverage",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 72,
+      "article_count": 73,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -476,7 +476,7 @@
       "event_model": "editorial_coverage",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 58,
+      "article_count": 56,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -502,7 +502,7 @@
       "event_model": "editorial_coverage",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 60,
+      "article_count": 70,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -528,7 +528,7 @@
       "event_model": "editorial_coverage",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 27,
+      "article_count": 32,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -814,7 +814,7 @@
       "event_model": "editorial_coverage",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 6,
+      "article_count": 5,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -866,7 +866,7 @@
       "event_model": "editorial_coverage",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 10,
+      "article_count": 8,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -1048,7 +1048,7 @@
       "event_model": "editorial_coverage",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 2,
+      "article_count": 3,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -1100,7 +1100,7 @@
       "event_model": "editorial_coverage",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 103,
+      "article_count": 123,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -1114,218 +1114,6 @@
   ],
   "events": [
     {
-      "source": "Busch Gardens Tampa",
-      "source_type": "api",
-      "trust_tier": "T3_professional",
-      "content_type": "news",
-      "collection_tier": "C1_rss",
-      "producer_role": "",
-      "event_model": "wait_time_snapshot",
-      "title": "Tigris - Closed (Busch Gardens Tampa)",
-      "url": "https://queue-times.com/en-US/parks/24/queue_times",
-      "source_url": "https://queue-times.com/en-US/parks/24/queue_times",
-      "event_at": "2026-07-06T12:41:41+00:00",
-      "matched_entities": {
-        "WaitTime": [
-          "wait time",
-          "wait",
-          "queue",
-          "current wait"
-        ],
-        "Attraction": [
-          "attraction"
-        ],
-        "Status": [
-          "closed",
-          "status"
-        ],
-        "Location": [
-          "busch gardens"
-        ],
-        "RealTimeData": [
-          "real-time",
-          "current",
-          "last updated",
-          "minutes",
-          "queue data",
-          "queue-times"
-        ],
-        "QueueGeneral": [
-          "queue",
-          "wait",
-          "attraction",
-          "time"
-        ]
-      },
-      "facility_id": "24",
-      "facility_name": "Busch Gardens Tampa",
-      "attraction_id": "",
-      "attraction_name": "Tigris",
-      "service_id": "",
-      "timezone": "",
-      "wait_minutes": 0,
-      "availability_status": "Closed",
-      "ticket_type": "",
-      "price": null,
-      "currency": "",
-      "weather_metric": "",
-      "metric_value": null,
-      "canonical_key": "queue_target:24:ride:tigris",
-      "canonical_key_status": "name_proxy",
-      "event_key": "wait_time_snapshot:ddd46fdfe082:20260706T124141Z",
-      "queue_target_key": "queue_target:24:ride:tigris",
-      "required_field_proxy": {
-        "facility_id": true,
-        "attraction_id": true,
-        "wait_minutes": true,
-        "source_url": true
-      },
-      "required_field_gaps": []
-    },
-    {
-      "source": "Universal Studios Hollywood",
-      "source_type": "api",
-      "trust_tier": "T3_professional",
-      "content_type": "news",
-      "collection_tier": "C1_rss",
-      "producer_role": "",
-      "event_model": "wait_time_snapshot",
-      "title": "Studio Tour - Closed (Universal Studios Hollywood)",
-      "url": "https://queue-times.com/en-US/parks/66/queue_times",
-      "source_url": "https://queue-times.com/en-US/parks/66/queue_times",
-      "event_at": "2026-07-06T12:41:39+00:00",
-      "matched_entities": {
-        "WaitTime": [
-          "wait time",
-          "wait",
-          "queue",
-          "current wait"
-        ],
-        "Attraction": [
-          "attraction"
-        ],
-        "Status": [
-          "closed",
-          "status"
-        ],
-        "Location": [
-          "universal"
-        ],
-        "RealTimeData": [
-          "real-time",
-          "current",
-          "last updated",
-          "minutes",
-          "queue data",
-          "queue-times"
-        ],
-        "QueueGeneral": [
-          "queue",
-          "wait",
-          "attraction",
-          "universal",
-          "time"
-        ]
-      },
-      "facility_id": "66",
-      "facility_name": "Universal Studios Hollywood",
-      "attraction_id": "",
-      "attraction_name": "Studio Tour",
-      "service_id": "",
-      "timezone": "",
-      "wait_minutes": 0,
-      "availability_status": "Closed",
-      "ticket_type": "",
-      "price": null,
-      "currency": "",
-      "weather_metric": "",
-      "metric_value": null,
-      "canonical_key": "queue_target:66:ride:studio-tour",
-      "canonical_key_status": "name_proxy",
-      "event_key": "wait_time_snapshot:5a070470acf7:20260706T124139Z",
-      "queue_target_key": "queue_target:66:ride:studio-tour",
-      "required_field_proxy": {
-        "facility_id": true,
-        "attraction_id": true,
-        "wait_minutes": true,
-        "source_url": true
-      },
-      "required_field_gaps": []
-    },
-    {
-      "source": "Universal Studios Orlando",
-      "source_type": "api",
-      "trust_tier": "T3_professional",
-      "content_type": "news",
-      "collection_tier": "C1_rss",
-      "producer_role": "",
-      "event_model": "wait_time_snapshot",
-      "title": "The Simpsons Ride™ - Closed (Universal Studios Orlando)",
-      "url": "https://queue-times.com/en-US/parks/65/queue_times",
-      "source_url": "https://queue-times.com/en-US/parks/65/queue_times",
-      "event_at": "2026-07-06T12:41:28+00:00",
-      "matched_entities": {
-        "WaitTime": [
-          "wait time",
-          "wait",
-          "queue",
-          "current wait"
-        ],
-        "Attraction": [
-          "attraction",
-          "ride"
-        ],
-        "Status": [
-          "closed",
-          "status"
-        ],
-        "Location": [
-          "universal"
-        ],
-        "RealTimeData": [
-          "real-time",
-          "current",
-          "last updated",
-          "minutes",
-          "queue data",
-          "queue-times"
-        ],
-        "QueueGeneral": [
-          "queue",
-          "wait",
-          "ride",
-          "attraction",
-          "universal",
-          "the",
-          "time"
-        ]
-      },
-      "facility_id": "65",
-      "facility_name": "Universal Studios Orlando",
-      "attraction_id": "",
-      "attraction_name": "The Simpsons Ride™",
-      "service_id": "",
-      "timezone": "",
-      "wait_minutes": 0,
-      "availability_status": "Closed",
-      "ticket_type": "",
-      "price": null,
-      "currency": "",
-      "weather_metric": "",
-      "metric_value": null,
-      "canonical_key": "queue_target:65:ride:the-simpsons-ride",
-      "canonical_key_status": "name_proxy",
-      "event_key": "wait_time_snapshot:3cc49e1960fc:20260706T124128Z",
-      "queue_target_key": "queue_target:65:ride:the-simpsons-ride",
-      "required_field_proxy": {
-        "facility_id": true,
-        "attraction_id": true,
-        "wait_minutes": true,
-        "source_url": true
-      },
-      "required_field_gaps": []
-    },
-    {
       "source": "SeaWorld Orlando",
       "source_type": "api",
       "trust_tier": "T3_professional",
@@ -1336,7 +1124,7 @@
       "title": "Infinity Falls® - No wait (SeaWorld Orlando)",
       "url": "https://queue-times.com/en-US/parks/21/queue_times",
       "source_url": "https://queue-times.com/en-US/parks/21/queue_times",
-      "event_at": "2026-07-06T12:40:40+00:00",
+      "event_at": "2026-07-07T11:45:40+00:00",
       "matched_entities": {
         "WaitTime": [
           "wait time",
@@ -1385,7 +1173,7 @@
       "metric_value": null,
       "canonical_key": "queue_target:21:ride:infinity-falls",
       "canonical_key_status": "name_proxy",
-      "event_key": "wait_time_snapshot:05cbd1cced0e:20260706T124040Z",
+      "event_key": "wait_time_snapshot:05cbd1cced0e:20260707T114540Z",
       "queue_target_key": "queue_target:21:ride:infinity-falls",
       "required_field_proxy": {
         "facility_id": true,
@@ -1406,7 +1194,7 @@
       "title": "Autopia - Closed (Disneyland)",
       "url": "https://queue-times.com/en-US/parks/16/queue_times",
       "source_url": "https://queue-times.com/en-US/parks/16/queue_times",
-      "event_at": "2026-07-06T12:40:38+00:00",
+      "event_at": "2026-07-07T11:45:37+00:00",
       "matched_entities": {
         "WaitTime": [
           "wait time",
@@ -1454,7 +1242,7 @@
       "metric_value": null,
       "canonical_key": "queue_target:16:ride:autopia",
       "canonical_key_status": "name_proxy",
-      "event_key": "wait_time_snapshot:4900311dc811:20260706T124038Z",
+      "event_key": "wait_time_snapshot:4900311dc811:20260707T114537Z",
       "queue_target_key": "queue_target:16:ride:autopia",
       "required_field_proxy": {
         "facility_id": true,
@@ -1475,7 +1263,7 @@
       "title": "Wilderness Explorers - Closed (Animal Kingdom)",
       "url": "https://queue-times.com/en-US/parks/8/queue_times",
       "source_url": "https://queue-times.com/en-US/parks/8/queue_times",
-      "event_at": "2026-07-06T12:40:35+00:00",
+      "event_at": "2026-07-07T11:45:31+00:00",
       "matched_entities": {
         "WaitTime": [
           "wait time",
@@ -1524,8 +1312,79 @@
       "metric_value": null,
       "canonical_key": "queue_target:8:ride:wilderness-explorers",
       "canonical_key_status": "name_proxy",
-      "event_key": "wait_time_snapshot:e4d7b18f2425:20260706T124035Z",
+      "event_key": "wait_time_snapshot:e4d7b18f2425:20260707T114531Z",
       "queue_target_key": "queue_target:8:ride:wilderness-explorers",
+      "required_field_proxy": {
+        "facility_id": true,
+        "attraction_id": true,
+        "wait_minutes": true,
+        "source_url": true
+      },
+      "required_field_gaps": []
+    },
+    {
+      "source": "Disney Magic Kingdom",
+      "source_type": "api",
+      "trust_tier": "T3_professional",
+      "content_type": "news",
+      "collection_tier": "C1_rss",
+      "producer_role": "",
+      "event_model": "wait_time_snapshot",
+      "title": "Walt Disney's Carousel of Progress - Closed (Disney Magic Kingdom)",
+      "url": "https://queue-times.com/en-US/parks/6/queue_times",
+      "source_url": "https://queue-times.com/en-US/parks/6/queue_times",
+      "event_at": "2026-07-07T11:45:24+00:00",
+      "matched_entities": {
+        "WaitTime": [
+          "wait time",
+          "wait",
+          "queue",
+          "current wait"
+        ],
+        "Attraction": [
+          "attraction"
+        ],
+        "Status": [
+          "closed",
+          "status"
+        ],
+        "Location": [
+          "disney",
+          "magic kingdom"
+        ],
+        "RealTimeData": [
+          "real-time",
+          "current",
+          "last updated",
+          "minutes",
+          "queue data",
+          "queue-times"
+        ],
+        "QueueGeneral": [
+          "queue",
+          "wait",
+          "attraction",
+          "disney",
+          "time"
+        ]
+      },
+      "facility_id": "6",
+      "facility_name": "Disney Magic Kingdom",
+      "attraction_id": "",
+      "attraction_name": "Walt Disney's Carousel of Progress",
+      "service_id": "",
+      "timezone": "",
+      "wait_minutes": 0,
+      "availability_status": "Closed",
+      "ticket_type": "",
+      "price": null,
+      "currency": "",
+      "weather_metric": "",
+      "metric_value": null,
+      "canonical_key": "queue_target:6:ride:walt-disney-s-carousel-of-progress",
+      "canonical_key_status": "name_proxy",
+      "event_key": "wait_time_snapshot:0fdde8fea4dd:20260707T114524Z",
+      "queue_target_key": "queue_target:6:ride:walt-disney-s-carousel-of-progress",
       "required_field_proxy": {
         "facility_id": true,
         "attraction_id": true,
@@ -1545,7 +1404,7 @@
       "title": "Disney Jr. Mickey Mouse Clubhouse Live! - No wait (Disney Hollywood Studios)",
       "url": "https://queue-times.com/en-US/parks/7/queue_times",
       "source_url": "https://queue-times.com/en-US/parks/7/queue_times",
-      "event_at": "2026-07-06T12:40:29+00:00",
+      "event_at": "2026-07-07T11:45:24+00:00",
       "matched_entities": {
         "WaitTime": [
           "wait time",
@@ -1597,79 +1456,8 @@
       "metric_value": null,
       "canonical_key": "queue_target:7:ride:disney-jr.-mickey-mouse-clubhouse-live",
       "canonical_key_status": "name_proxy",
-      "event_key": "wait_time_snapshot:7d1c8daaa664:20260706T124029Z",
+      "event_key": "wait_time_snapshot:7d1c8daaa664:20260707T114524Z",
       "queue_target_key": "queue_target:7:ride:disney-jr.-mickey-mouse-clubhouse-live",
-      "required_field_proxy": {
-        "facility_id": true,
-        "attraction_id": true,
-        "wait_minutes": true,
-        "source_url": true
-      },
-      "required_field_gaps": []
-    },
-    {
-      "source": "Disney Magic Kingdom",
-      "source_type": "api",
-      "trust_tier": "T3_professional",
-      "content_type": "news",
-      "collection_tier": "C1_rss",
-      "producer_role": "",
-      "event_model": "wait_time_snapshot",
-      "title": "Walt Disney's Carousel of Progress - Closed (Disney Magic Kingdom)",
-      "url": "https://queue-times.com/en-US/parks/6/queue_times",
-      "source_url": "https://queue-times.com/en-US/parks/6/queue_times",
-      "event_at": "2026-07-06T12:40:28+00:00",
-      "matched_entities": {
-        "WaitTime": [
-          "wait time",
-          "wait",
-          "queue",
-          "current wait"
-        ],
-        "Attraction": [
-          "attraction"
-        ],
-        "Status": [
-          "closed",
-          "status"
-        ],
-        "Location": [
-          "disney",
-          "magic kingdom"
-        ],
-        "RealTimeData": [
-          "real-time",
-          "current",
-          "last updated",
-          "minutes",
-          "queue data",
-          "queue-times"
-        ],
-        "QueueGeneral": [
-          "queue",
-          "wait",
-          "attraction",
-          "disney",
-          "time"
-        ]
-      },
-      "facility_id": "6",
-      "facility_name": "Disney Magic Kingdom",
-      "attraction_id": "",
-      "attraction_name": "Walt Disney's Carousel of Progress",
-      "service_id": "",
-      "timezone": "",
-      "wait_minutes": 0,
-      "availability_status": "Closed",
-      "ticket_type": "",
-      "price": null,
-      "currency": "",
-      "weather_metric": "",
-      "metric_value": null,
-      "canonical_key": "queue_target:6:ride:walt-disney-s-carousel-of-progress",
-      "canonical_key_status": "name_proxy",
-      "event_key": "wait_time_snapshot:0fdde8fea4dd:20260706T124028Z",
-      "queue_target_key": "queue_target:6:ride:walt-disney-s-carousel-of-progress",
       "required_field_proxy": {
         "facility_id": true,
         "attraction_id": true,
@@ -1689,7 +1477,7 @@
       "title": "Remy's Ratatouille Adventure Single Rider - Closed (Epcot)",
       "url": "https://queue-times.com/en-US/parks/5/queue_times",
       "source_url": "https://queue-times.com/en-US/parks/5/queue_times",
-      "event_at": "2026-07-06T12:40:25+00:00",
+      "event_at": "2026-07-07T11:45:16+00:00",
       "matched_entities": {
         "WaitTime": [
           "wait time",
@@ -1737,7 +1525,7 @@
       "metric_value": null,
       "canonical_key": "queue_target:5:ride:remy-s-ratatouille-adventure-single-rider",
       "canonical_key_status": "name_proxy",
-      "event_key": "wait_time_snapshot:889ecbe32291:20260706T124025Z",
+      "event_key": "wait_time_snapshot:889ecbe32291:20260707T114516Z",
       "queue_target_key": "queue_target:5:ride:remy-s-ratatouille-adventure-single-rider",
       "required_field_proxy": {
         "facility_id": true,
@@ -1758,7 +1546,7 @@
       "title": "X2 - Closed (Six Flags Magic Mountain)",
       "url": "https://queue-times.com/en-US/parks/32/queue_times",
       "source_url": "https://queue-times.com/en-US/parks/32/queue_times",
-      "event_at": "2026-07-06T12:40:00+00:00",
+      "event_at": "2026-07-07T11:44:54+00:00",
       "matched_entities": {
         "WaitTime": [
           "wait time",
@@ -1806,8 +1594,220 @@
       "metric_value": null,
       "canonical_key": "queue_target:32:ride:x2",
       "canonical_key_status": "name_proxy",
-      "event_key": "wait_time_snapshot:c8713dd0b814:20260706T124000Z",
+      "event_key": "wait_time_snapshot:c8713dd0b814:20260707T114454Z",
       "queue_target_key": "queue_target:32:ride:x2",
+      "required_field_proxy": {
+        "facility_id": true,
+        "attraction_id": true,
+        "wait_minutes": true,
+        "source_url": true
+      },
+      "required_field_gaps": []
+    },
+    {
+      "source": "Universal Studios Hollywood",
+      "source_type": "api",
+      "trust_tier": "T3_professional",
+      "content_type": "news",
+      "collection_tier": "C1_rss",
+      "producer_role": "",
+      "event_model": "wait_time_snapshot",
+      "title": "Studio Tour - Closed (Universal Studios Hollywood)",
+      "url": "https://queue-times.com/en-US/parks/66/queue_times",
+      "source_url": "https://queue-times.com/en-US/parks/66/queue_times",
+      "event_at": "2026-07-07T11:41:39+00:00",
+      "matched_entities": {
+        "WaitTime": [
+          "wait time",
+          "wait",
+          "queue",
+          "current wait"
+        ],
+        "Attraction": [
+          "attraction"
+        ],
+        "Status": [
+          "closed",
+          "status"
+        ],
+        "Location": [
+          "universal"
+        ],
+        "RealTimeData": [
+          "real-time",
+          "current",
+          "last updated",
+          "minutes",
+          "queue data",
+          "queue-times"
+        ],
+        "QueueGeneral": [
+          "queue",
+          "wait",
+          "attraction",
+          "universal",
+          "time"
+        ]
+      },
+      "facility_id": "66",
+      "facility_name": "Universal Studios Hollywood",
+      "attraction_id": "",
+      "attraction_name": "Studio Tour",
+      "service_id": "",
+      "timezone": "",
+      "wait_minutes": 0,
+      "availability_status": "Closed",
+      "ticket_type": "",
+      "price": null,
+      "currency": "",
+      "weather_metric": "",
+      "metric_value": null,
+      "canonical_key": "queue_target:66:ride:studio-tour",
+      "canonical_key_status": "name_proxy",
+      "event_key": "wait_time_snapshot:5a070470acf7:20260707T114139Z",
+      "queue_target_key": "queue_target:66:ride:studio-tour",
+      "required_field_proxy": {
+        "facility_id": true,
+        "attraction_id": true,
+        "wait_minutes": true,
+        "source_url": true
+      },
+      "required_field_gaps": []
+    },
+    {
+      "source": "Busch Gardens Tampa",
+      "source_type": "api",
+      "trust_tier": "T3_professional",
+      "content_type": "news",
+      "collection_tier": "C1_rss",
+      "producer_role": "",
+      "event_model": "wait_time_snapshot",
+      "title": "Tigris - Closed (Busch Gardens Tampa)",
+      "url": "https://queue-times.com/en-US/parks/24/queue_times",
+      "source_url": "https://queue-times.com/en-US/parks/24/queue_times",
+      "event_at": "2026-07-07T11:41:34+00:00",
+      "matched_entities": {
+        "WaitTime": [
+          "wait time",
+          "wait",
+          "queue",
+          "current wait"
+        ],
+        "Attraction": [
+          "attraction"
+        ],
+        "Status": [
+          "closed",
+          "status"
+        ],
+        "Location": [
+          "busch gardens"
+        ],
+        "RealTimeData": [
+          "real-time",
+          "current",
+          "last updated",
+          "minutes",
+          "queue data",
+          "queue-times"
+        ],
+        "QueueGeneral": [
+          "queue",
+          "wait",
+          "attraction",
+          "time"
+        ]
+      },
+      "facility_id": "24",
+      "facility_name": "Busch Gardens Tampa",
+      "attraction_id": "",
+      "attraction_name": "Tigris",
+      "service_id": "",
+      "timezone": "",
+      "wait_minutes": 0,
+      "availability_status": "Closed",
+      "ticket_type": "",
+      "price": null,
+      "currency": "",
+      "weather_metric": "",
+      "metric_value": null,
+      "canonical_key": "queue_target:24:ride:tigris",
+      "canonical_key_status": "name_proxy",
+      "event_key": "wait_time_snapshot:ddd46fdfe082:20260707T114134Z",
+      "queue_target_key": "queue_target:24:ride:tigris",
+      "required_field_proxy": {
+        "facility_id": true,
+        "attraction_id": true,
+        "wait_minutes": true,
+        "source_url": true
+      },
+      "required_field_gaps": []
+    },
+    {
+      "source": "Universal Studios Orlando",
+      "source_type": "api",
+      "trust_tier": "T3_professional",
+      "content_type": "news",
+      "collection_tier": "C1_rss",
+      "producer_role": "",
+      "event_model": "wait_time_snapshot",
+      "title": "The Simpsons Ride™ - Closed (Universal Studios Orlando)",
+      "url": "https://queue-times.com/en-US/parks/65/queue_times",
+      "source_url": "https://queue-times.com/en-US/parks/65/queue_times",
+      "event_at": "2026-07-07T11:41:25+00:00",
+      "matched_entities": {
+        "WaitTime": [
+          "wait time",
+          "wait",
+          "queue",
+          "current wait"
+        ],
+        "Attraction": [
+          "attraction",
+          "ride"
+        ],
+        "Status": [
+          "closed",
+          "status"
+        ],
+        "Location": [
+          "universal"
+        ],
+        "RealTimeData": [
+          "real-time",
+          "current",
+          "last updated",
+          "minutes",
+          "queue data",
+          "queue-times"
+        ],
+        "QueueGeneral": [
+          "queue",
+          "wait",
+          "ride",
+          "attraction",
+          "universal",
+          "the",
+          "time"
+        ]
+      },
+      "facility_id": "65",
+      "facility_name": "Universal Studios Orlando",
+      "attraction_id": "",
+      "attraction_name": "The Simpsons Ride™",
+      "service_id": "",
+      "timezone": "",
+      "wait_minutes": 0,
+      "availability_status": "Closed",
+      "ticket_type": "",
+      "price": null,
+      "currency": "",
+      "weather_metric": "",
+      "metric_value": null,
+      "canonical_key": "queue_target:65:ride:the-simpsons-ride",
+      "canonical_key_status": "name_proxy",
+      "event_key": "wait_time_snapshot:3cc49e1960fc:20260707T114125Z",
+      "queue_target_key": "queue_target:65:ride:the-simpsons-ride",
       "required_field_proxy": {
         "facility_id": true,
         "attraction_id": true,
@@ -1965,14 +1965,14 @@
       "reason": "source_stale",
       "source": "Disney California Adventure",
       "event_model": "wait_time_snapshot",
-      "age_days": 5.33,
+      "age_days": 6.29,
       "latest_title": "Soarin' Over California - 15 minutes wait (Disney California Adventure)"
     },
     {
       "reason": "source_stale",
       "source": "Islands of Adventure",
       "event_model": "wait_time_snapshot",
-      "age_days": 1.49,
+      "age_days": 2.45,
       "latest_title": "Hagrid's Magical Creatures Motorbike Adventure™ Single Rider - No wait (Islands of Adventure)"
     },
     {
