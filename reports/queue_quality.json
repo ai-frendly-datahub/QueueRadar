@@ -1,6 +1,6 @@
 {
   "category": "queue",
-  "generated_at": "2026-08-09T09:38:09.037348+00:00",
+  "generated_at": "2026-08-10T10:14:41.535068+00:00",
   "scope_note": "대기/예약 레이더 quality report is generated from repo-local category data_quality metadata and recent stored articles. Operational backlog sources remain separate until dedicated source-level fields are collected.",
   "summary": {
     "total_sources": 39,
@@ -54,7 +54,7 @@
       "status": "fresh",
       "article_count": 1,
       "event_count": 1,
-      "latest_event_at": "2026-08-09T09:35:21+00:00",
+      "latest_event_at": "2026-08-10T10:10:27+00:00",
       "age_days": 0.0,
       "latest_title": "Meet Festive Disney Pals at Mickey’s Not-So-Scary Halloween Party - Closed (Disney Magic Kingdom)",
       "latest_url": "https://queue-times.com/en-US/parks/6/queue_times",
@@ -85,7 +85,7 @@
       "status": "fresh",
       "article_count": 1,
       "event_count": 1,
-      "latest_event_at": "2026-08-09T09:35:19+00:00",
+      "latest_event_at": "2026-08-10T10:10:25+00:00",
       "age_days": 0.0,
       "latest_title": "Remy's Ratatouille Adventure Single Rider - Closed (Epcot)",
       "latest_url": "https://queue-times.com/en-US/parks/5/queue_times",
@@ -116,7 +116,7 @@
       "status": "fresh",
       "article_count": 1,
       "event_count": 1,
-      "latest_event_at": "2026-08-09T09:35:26+00:00",
+      "latest_event_at": "2026-08-10T10:10:28+00:00",
       "age_days": 0.0,
       "latest_title": "Slinky Dog Dash - Closed (Disney Hollywood Studios)",
       "latest_url": "https://queue-times.com/en-US/parks/7/queue_times",
@@ -147,8 +147,8 @@
       "status": "fresh",
       "article_count": 1,
       "event_count": 1,
-      "latest_event_at": "2026-08-09T09:30:36+00:00",
-      "age_days": 0.01,
+      "latest_event_at": "2026-08-10T10:10:35+00:00",
+      "age_days": 0.0,
       "latest_title": "Wilderness Explorers - Closed (Animal Kingdom)",
       "latest_url": "https://queue-times.com/en-US/parks/8/queue_times",
       "latest_required_field_proxy": {
@@ -178,7 +178,7 @@
       "status": "fresh",
       "article_count": 1,
       "event_count": 1,
-      "latest_event_at": "2026-08-09T09:35:36+00:00",
+      "latest_event_at": "2026-08-10T10:10:49+00:00",
       "age_days": 0.0,
       "latest_title": "Autopia - Closed (Disneyland)",
       "latest_url": "https://queue-times.com/en-US/parks/16/queue_times",
@@ -209,8 +209,8 @@
       "status": "fresh",
       "article_count": 1,
       "event_count": 1,
-      "latest_event_at": "2026-08-09T09:30:47+00:00",
-      "age_days": 0.01,
+      "latest_event_at": "2026-08-10T10:10:49+00:00",
+      "age_days": 0.0,
       "latest_title": "Toy Story Midway Mania! - Closed (Disney California Adventure)",
       "latest_url": "https://queue-times.com/en-US/parks/17/queue_times",
       "latest_required_field_proxy": {
@@ -240,7 +240,7 @@
       "status": "fresh",
       "article_count": 1,
       "event_count": 1,
-      "latest_event_at": "2026-08-09T09:31:35+00:00",
+      "latest_event_at": "2026-08-10T10:11:30+00:00",
       "age_days": 0.0,
       "latest_title": "The Simpsons Ride™ - Closed (Universal Studios Orlando)",
       "latest_url": "https://queue-times.com/en-US/parks/65/queue_times",
@@ -271,7 +271,7 @@
       "status": "fresh",
       "article_count": 1,
       "event_count": 1,
-      "latest_event_at": "2026-08-09T09:31:28+00:00",
+      "latest_event_at": "2026-08-10T10:11:30+00:00",
       "age_days": 0.0,
       "latest_title": "Popeye & Bluto's Bilge-Rat Barges® - Closed (Islands of Adventure)",
       "latest_url": "https://queue-times.com/en-US/parks/64/queue_times",
@@ -302,7 +302,7 @@
       "status": "fresh",
       "article_count": 1,
       "event_count": 1,
-      "latest_event_at": "2026-08-09T09:31:41+00:00",
+      "latest_event_at": "2026-08-10T10:11:42+00:00",
       "age_days": 0.0,
       "latest_title": "Bowser Jr. Challenge - Closed (Universal Studios Hollywood)",
       "latest_url": "https://queue-times.com/en-US/parks/66/queue_times",
@@ -333,7 +333,7 @@
       "status": "fresh",
       "article_count": 1,
       "event_count": 1,
-      "latest_event_at": "2026-08-09T09:31:42+00:00",
+      "latest_event_at": "2026-08-10T10:11:43+00:00",
       "age_days": 0.0,
       "latest_title": "SheiKra - Closed (Busch Gardens Tampa)",
       "latest_url": "https://queue-times.com/en-US/parks/24/queue_times",
@@ -364,7 +364,7 @@
       "status": "fresh",
       "article_count": 1,
       "event_count": 1,
-      "latest_event_at": "2026-08-09T09:35:36+00:00",
+      "latest_event_at": "2026-08-10T10:10:50+00:00",
       "age_days": 0.0,
       "latest_title": "Infinity Falls® - No wait (SeaWorld Orlando)",
       "latest_url": "https://queue-times.com/en-US/parks/21/queue_times",
@@ -395,7 +395,7 @@
       "status": "fresh",
       "article_count": 1,
       "event_count": 1,
-      "latest_event_at": "2026-08-09T09:35:48+00:00",
+      "latest_event_at": "2026-08-10T10:10:49+00:00",
       "age_days": 0.0,
       "latest_title": "X2 - Closed (Six Flags Magic Mountain)",
       "latest_url": "https://queue-times.com/en-US/parks/32/queue_times",
@@ -424,7 +424,7 @@
       "event_model": "editorial_coverage",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 18,
+      "article_count": 20,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -450,7 +450,7 @@
       "event_model": "editorial_coverage",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 84,
+      "article_count": 79,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -502,7 +502,7 @@
       "event_model": "editorial_coverage",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 90,
+      "article_count": 100,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -528,7 +528,7 @@
       "event_model": "editorial_coverage",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 28,
+      "article_count": 29,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -866,7 +866,7 @@
       "event_model": "editorial_coverage",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 20,
+      "article_count": 17,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -1100,7 +1100,7 @@
       "event_model": "editorial_coverage",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 150,
+      "article_count": 172,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -1114,426 +1114,6 @@
   ],
   "events": [
     {
-      "source": "Six Flags Magic Mountain",
-      "source_type": "api",
-      "trust_tier": "T3_professional",
-      "content_type": "news",
-      "collection_tier": "C1_rss",
-      "producer_role": "",
-      "event_model": "wait_time_snapshot",
-      "title": "X2 - Closed (Six Flags Magic Mountain)",
-      "url": "https://queue-times.com/en-US/parks/32/queue_times",
-      "source_url": "https://queue-times.com/en-US/parks/32/queue_times",
-      "event_at": "2026-08-09T09:35:48+00:00",
-      "matched_entities": {
-        "WaitTime": [
-          "wait time",
-          "wait",
-          "queue",
-          "current wait"
-        ],
-        "Attraction": [
-          "attraction"
-        ],
-        "Status": [
-          "closed",
-          "status"
-        ],
-        "Location": [
-          "six flags"
-        ],
-        "RealTimeData": [
-          "real-time",
-          "current",
-          "last updated",
-          "minutes",
-          "queue data",
-          "queue-times"
-        ],
-        "QueueGeneral": [
-          "queue",
-          "wait",
-          "attraction",
-          "time"
-        ]
-      },
-      "facility_id": "32",
-      "facility_name": "Six Flags Magic Mountain",
-      "attraction_id": "",
-      "attraction_name": "X2",
-      "service_id": "",
-      "timezone": "",
-      "wait_minutes": 0,
-      "availability_status": "Closed",
-      "ticket_type": "",
-      "price": null,
-      "currency": "",
-      "weather_metric": "",
-      "metric_value": null,
-      "canonical_key": "queue_target:32:ride:x2",
-      "canonical_key_status": "name_proxy",
-      "event_key": "wait_time_snapshot:c8713dd0b814:20260809T093548Z",
-      "queue_target_key": "queue_target:32:ride:x2",
-      "required_field_proxy": {
-        "facility_id": true,
-        "attraction_id": true,
-        "wait_minutes": true,
-        "source_url": true
-      },
-      "required_field_gaps": []
-    },
-    {
-      "source": "Disneyland",
-      "source_type": "api",
-      "trust_tier": "T3_professional",
-      "content_type": "news",
-      "collection_tier": "C1_rss",
-      "producer_role": "",
-      "event_model": "wait_time_snapshot",
-      "title": "Autopia - Closed (Disneyland)",
-      "url": "https://queue-times.com/en-US/parks/16/queue_times",
-      "source_url": "https://queue-times.com/en-US/parks/16/queue_times",
-      "event_at": "2026-08-09T09:35:36+00:00",
-      "matched_entities": {
-        "WaitTime": [
-          "wait time",
-          "wait",
-          "queue",
-          "current wait"
-        ],
-        "Attraction": [
-          "attraction"
-        ],
-        "Status": [
-          "closed",
-          "status"
-        ],
-        "Location": [
-          "disneyland"
-        ],
-        "RealTimeData": [
-          "real-time",
-          "current",
-          "last updated",
-          "minutes",
-          "queue data",
-          "queue-times"
-        ],
-        "QueueGeneral": [
-          "queue",
-          "wait",
-          "attraction",
-          "time"
-        ]
-      },
-      "facility_id": "16",
-      "facility_name": "Disneyland",
-      "attraction_id": "",
-      "attraction_name": "Autopia",
-      "service_id": "",
-      "timezone": "",
-      "wait_minutes": 0,
-      "availability_status": "Closed",
-      "ticket_type": "",
-      "price": null,
-      "currency": "",
-      "weather_metric": "",
-      "metric_value": null,
-      "canonical_key": "queue_target:16:ride:autopia",
-      "canonical_key_status": "name_proxy",
-      "event_key": "wait_time_snapshot:4900311dc811:20260809T093536Z",
-      "queue_target_key": "queue_target:16:ride:autopia",
-      "required_field_proxy": {
-        "facility_id": true,
-        "attraction_id": true,
-        "wait_minutes": true,
-        "source_url": true
-      },
-      "required_field_gaps": []
-    },
-    {
-      "source": "SeaWorld Orlando",
-      "source_type": "api",
-      "trust_tier": "T3_professional",
-      "content_type": "news",
-      "collection_tier": "C1_rss",
-      "producer_role": "",
-      "event_model": "wait_time_snapshot",
-      "title": "Infinity Falls® - No wait (SeaWorld Orlando)",
-      "url": "https://queue-times.com/en-US/parks/21/queue_times",
-      "source_url": "https://queue-times.com/en-US/parks/21/queue_times",
-      "event_at": "2026-08-09T09:35:36+00:00",
-      "matched_entities": {
-        "WaitTime": [
-          "wait time",
-          "wait",
-          "queue",
-          "no wait",
-          "current wait"
-        ],
-        "Attraction": [
-          "attraction"
-        ],
-        "Status": [
-          "open",
-          "status"
-        ],
-        "Location": [
-          "seaworld"
-        ],
-        "RealTimeData": [
-          "real-time",
-          "current",
-          "last updated",
-          "minutes",
-          "queue data",
-          "queue-times"
-        ],
-        "QueueGeneral": [
-          "queue",
-          "wait",
-          "attraction",
-          "time"
-        ]
-      },
-      "facility_id": "21",
-      "facility_name": "SeaWorld Orlando",
-      "attraction_id": "",
-      "attraction_name": "Infinity Falls®",
-      "service_id": "",
-      "timezone": "",
-      "wait_minutes": 0,
-      "availability_status": "Open",
-      "ticket_type": "",
-      "price": null,
-      "currency": "",
-      "weather_metric": "",
-      "metric_value": null,
-      "canonical_key": "queue_target:21:ride:infinity-falls",
-      "canonical_key_status": "name_proxy",
-      "event_key": "wait_time_snapshot:05cbd1cced0e:20260809T093536Z",
-      "queue_target_key": "queue_target:21:ride:infinity-falls",
-      "required_field_proxy": {
-        "facility_id": true,
-        "attraction_id": true,
-        "wait_minutes": true,
-        "source_url": true
-      },
-      "required_field_gaps": []
-    },
-    {
-      "source": "Disney Hollywood Studios",
-      "source_type": "api",
-      "trust_tier": "T3_professional",
-      "content_type": "news",
-      "collection_tier": "C1_rss",
-      "producer_role": "",
-      "event_model": "wait_time_snapshot",
-      "title": "Slinky Dog Dash - Closed (Disney Hollywood Studios)",
-      "url": "https://queue-times.com/en-US/parks/7/queue_times",
-      "source_url": "https://queue-times.com/en-US/parks/7/queue_times",
-      "event_at": "2026-08-09T09:35:26+00:00",
-      "matched_entities": {
-        "WaitTime": [
-          "wait time",
-          "wait",
-          "queue",
-          "current wait"
-        ],
-        "Attraction": [
-          "attraction"
-        ],
-        "Status": [
-          "closed",
-          "status"
-        ],
-        "Location": [
-          "disney",
-          "hollywood studios"
-        ],
-        "RealTimeData": [
-          "real-time",
-          "current",
-          "last updated",
-          "minutes",
-          "queue data",
-          "queue-times"
-        ],
-        "QueueGeneral": [
-          "queue",
-          "wait",
-          "attraction",
-          "disney",
-          "story",
-          "time"
-        ]
-      },
-      "facility_id": "7",
-      "facility_name": "Disney Hollywood Studios",
-      "attraction_id": "",
-      "attraction_name": "Slinky Dog Dash",
-      "service_id": "",
-      "timezone": "",
-      "wait_minutes": 0,
-      "availability_status": "Closed",
-      "ticket_type": "",
-      "price": null,
-      "currency": "",
-      "weather_metric": "",
-      "metric_value": null,
-      "canonical_key": "queue_target:7:ride:slinky-dog-dash",
-      "canonical_key_status": "name_proxy",
-      "event_key": "wait_time_snapshot:f00123b3e806:20260809T093526Z",
-      "queue_target_key": "queue_target:7:ride:slinky-dog-dash",
-      "required_field_proxy": {
-        "facility_id": true,
-        "attraction_id": true,
-        "wait_minutes": true,
-        "source_url": true
-      },
-      "required_field_gaps": []
-    },
-    {
-      "source": "Disney Magic Kingdom",
-      "source_type": "api",
-      "trust_tier": "T3_professional",
-      "content_type": "news",
-      "collection_tier": "C1_rss",
-      "producer_role": "",
-      "event_model": "wait_time_snapshot",
-      "title": "Meet Festive Disney Pals at Mickey’s Not-So-Scary Halloween Party - Closed (Disney Magic Kingdom)",
-      "url": "https://queue-times.com/en-US/parks/6/queue_times",
-      "source_url": "https://queue-times.com/en-US/parks/6/queue_times",
-      "event_at": "2026-08-09T09:35:21+00:00",
-      "matched_entities": {
-        "WaitTime": [
-          "wait time",
-          "wait",
-          "queue",
-          "current wait"
-        ],
-        "Attraction": [
-          "attraction"
-        ],
-        "Status": [
-          "closed",
-          "status"
-        ],
-        "Location": [
-          "disney",
-          "magic kingdom"
-        ],
-        "RealTimeData": [
-          "real-time",
-          "current",
-          "last updated",
-          "minutes",
-          "queue data",
-          "queue-times"
-        ],
-        "QueueGeneral": [
-          "queue",
-          "wait",
-          "attraction",
-          "disney",
-          "time"
-        ]
-      },
-      "facility_id": "6",
-      "facility_name": "Disney Magic Kingdom",
-      "attraction_id": "",
-      "attraction_name": "Meet Festive Disney Pals at Mickey’s Not-So-Scary Halloween Party",
-      "service_id": "",
-      "timezone": "",
-      "wait_minutes": 0,
-      "availability_status": "Closed",
-      "ticket_type": "",
-      "price": null,
-      "currency": "",
-      "weather_metric": "",
-      "metric_value": null,
-      "canonical_key": "queue_target:6:ride:meet-festive-disney-pals-at-mickey-s-not-so-scary-halloween-party",
-      "canonical_key_status": "name_proxy",
-      "event_key": "wait_time_snapshot:0a9f3bd6b356:20260809T093521Z",
-      "queue_target_key": "queue_target:6:ride:meet-festive-disney-pals-at-mickey-s-not-so-scary-halloween-party",
-      "required_field_proxy": {
-        "facility_id": true,
-        "attraction_id": true,
-        "wait_minutes": true,
-        "source_url": true
-      },
-      "required_field_gaps": []
-    },
-    {
-      "source": "Epcot",
-      "source_type": "api",
-      "trust_tier": "T3_professional",
-      "content_type": "news",
-      "collection_tier": "C1_rss",
-      "producer_role": "",
-      "event_model": "wait_time_snapshot",
-      "title": "Remy's Ratatouille Adventure Single Rider - Closed (Epcot)",
-      "url": "https://queue-times.com/en-US/parks/5/queue_times",
-      "source_url": "https://queue-times.com/en-US/parks/5/queue_times",
-      "event_at": "2026-08-09T09:35:19+00:00",
-      "matched_entities": {
-        "WaitTime": [
-          "wait time",
-          "wait",
-          "queue",
-          "current wait"
-        ],
-        "Attraction": [
-          "attraction"
-        ],
-        "Status": [
-          "closed",
-          "status"
-        ],
-        "Location": [
-          "epcot"
-        ],
-        "RealTimeData": [
-          "real-time",
-          "current",
-          "last updated",
-          "minutes",
-          "queue data",
-          "queue-times"
-        ],
-        "QueueGeneral": [
-          "queue",
-          "wait",
-          "attraction",
-          "time"
-        ]
-      },
-      "facility_id": "5",
-      "facility_name": "Epcot",
-      "attraction_id": "",
-      "attraction_name": "Remy's Ratatouille Adventure Single Rider",
-      "service_id": "",
-      "timezone": "",
-      "wait_minutes": 0,
-      "availability_status": "Closed",
-      "ticket_type": "",
-      "price": null,
-      "currency": "",
-      "weather_metric": "",
-      "metric_value": null,
-      "canonical_key": "queue_target:5:ride:remy-s-ratatouille-adventure-single-rider",
-      "canonical_key_status": "name_proxy",
-      "event_key": "wait_time_snapshot:889ecbe32291:20260809T093519Z",
-      "queue_target_key": "queue_target:5:ride:remy-s-ratatouille-adventure-single-rider",
-      "required_field_proxy": {
-        "facility_id": true,
-        "attraction_id": true,
-        "wait_minutes": true,
-        "source_url": true
-      },
-      "required_field_gaps": []
-    },
-    {
       "source": "Busch Gardens Tampa",
       "source_type": "api",
       "trust_tier": "T3_professional",
@@ -1544,7 +1124,7 @@
       "title": "SheiKra - Closed (Busch Gardens Tampa)",
       "url": "https://queue-times.com/en-US/parks/24/queue_times",
       "source_url": "https://queue-times.com/en-US/parks/24/queue_times",
-      "event_at": "2026-08-09T09:31:42+00:00",
+      "event_at": "2026-08-10T10:11:43+00:00",
       "matched_entities": {
         "WaitTime": [
           "wait time",
@@ -1592,7 +1172,7 @@
       "metric_value": null,
       "canonical_key": "queue_target:24:ride:sheikra",
       "canonical_key_status": "name_proxy",
-      "event_key": "wait_time_snapshot:d9aaaa7db329:20260809T093142Z",
+      "event_key": "wait_time_snapshot:d9aaaa7db329:20260810T101143Z",
       "queue_target_key": "queue_target:24:ride:sheikra",
       "required_field_proxy": {
         "facility_id": true,
@@ -1613,7 +1193,7 @@
       "title": "Bowser Jr. Challenge - Closed (Universal Studios Hollywood)",
       "url": "https://queue-times.com/en-US/parks/66/queue_times",
       "source_url": "https://queue-times.com/en-US/parks/66/queue_times",
-      "event_at": "2026-08-09T09:31:41+00:00",
+      "event_at": "2026-08-10T10:11:42+00:00",
       "matched_entities": {
         "WaitTime": [
           "wait time",
@@ -1662,8 +1242,77 @@
       "metric_value": null,
       "canonical_key": "queue_target:66:ride:bowser-jr.-challenge",
       "canonical_key_status": "name_proxy",
-      "event_key": "wait_time_snapshot:395b126e727e:20260809T093141Z",
+      "event_key": "wait_time_snapshot:395b126e727e:20260810T101142Z",
       "queue_target_key": "queue_target:66:ride:bowser-jr.-challenge",
+      "required_field_proxy": {
+        "facility_id": true,
+        "attraction_id": true,
+        "wait_minutes": true,
+        "source_url": true
+      },
+      "required_field_gaps": []
+    },
+    {
+      "source": "Islands of Adventure",
+      "source_type": "api",
+      "trust_tier": "T3_professional",
+      "content_type": "news",
+      "collection_tier": "C1_rss",
+      "producer_role": "",
+      "event_model": "wait_time_snapshot",
+      "title": "Popeye & Bluto's Bilge-Rat Barges® - Closed (Islands of Adventure)",
+      "url": "https://queue-times.com/en-US/parks/64/queue_times",
+      "source_url": "https://queue-times.com/en-US/parks/64/queue_times",
+      "event_at": "2026-08-10T10:11:30+00:00",
+      "matched_entities": {
+        "WaitTime": [
+          "wait time",
+          "wait",
+          "queue",
+          "current wait"
+        ],
+        "Attraction": [
+          "attraction"
+        ],
+        "Status": [
+          "closed",
+          "status"
+        ],
+        "Location": [
+          "islands of adventure"
+        ],
+        "RealTimeData": [
+          "real-time",
+          "current",
+          "last updated",
+          "minutes",
+          "queue data",
+          "queue-times"
+        ],
+        "QueueGeneral": [
+          "queue",
+          "wait",
+          "attraction",
+          "time"
+        ]
+      },
+      "facility_id": "64",
+      "facility_name": "Islands of Adventure",
+      "attraction_id": "",
+      "attraction_name": "Popeye & Bluto's Bilge-Rat Barges®",
+      "service_id": "",
+      "timezone": "",
+      "wait_minutes": 0,
+      "availability_status": "Closed",
+      "ticket_type": "",
+      "price": null,
+      "currency": "",
+      "weather_metric": "",
+      "metric_value": null,
+      "canonical_key": "queue_target:64:ride:popeye-bluto-s-bilge-rat-barges",
+      "canonical_key_status": "name_proxy",
+      "event_key": "wait_time_snapshot:4bffbafc1714:20260810T101130Z",
+      "queue_target_key": "queue_target:64:ride:popeye-bluto-s-bilge-rat-barges",
       "required_field_proxy": {
         "facility_id": true,
         "attraction_id": true,
@@ -1683,7 +1332,7 @@
       "title": "The Simpsons Ride™ - Closed (Universal Studios Orlando)",
       "url": "https://queue-times.com/en-US/parks/65/queue_times",
       "source_url": "https://queue-times.com/en-US/parks/65/queue_times",
-      "event_at": "2026-08-09T09:31:35+00:00",
+      "event_at": "2026-08-10T10:11:30+00:00",
       "matched_entities": {
         "WaitTime": [
           "wait time",
@@ -1735,7 +1384,7 @@
       "metric_value": null,
       "canonical_key": "queue_target:65:ride:the-simpsons-ride",
       "canonical_key_status": "name_proxy",
-      "event_key": "wait_time_snapshot:3cc49e1960fc:20260809T093135Z",
+      "event_key": "wait_time_snapshot:3cc49e1960fc:20260810T101130Z",
       "queue_target_key": "queue_target:65:ride:the-simpsons-ride",
       "required_field_proxy": {
         "facility_id": true,
@@ -1746,33 +1395,34 @@
       "required_field_gaps": []
     },
     {
-      "source": "Islands of Adventure",
+      "source": "SeaWorld Orlando",
       "source_type": "api",
       "trust_tier": "T3_professional",
       "content_type": "news",
       "collection_tier": "C1_rss",
       "producer_role": "",
       "event_model": "wait_time_snapshot",
-      "title": "Popeye & Bluto's Bilge-Rat Barges® - Closed (Islands of Adventure)",
-      "url": "https://queue-times.com/en-US/parks/64/queue_times",
-      "source_url": "https://queue-times.com/en-US/parks/64/queue_times",
-      "event_at": "2026-08-09T09:31:28+00:00",
+      "title": "Infinity Falls® - No wait (SeaWorld Orlando)",
+      "url": "https://queue-times.com/en-US/parks/21/queue_times",
+      "source_url": "https://queue-times.com/en-US/parks/21/queue_times",
+      "event_at": "2026-08-10T10:10:50+00:00",
       "matched_entities": {
         "WaitTime": [
           "wait time",
           "wait",
           "queue",
+          "no wait",
           "current wait"
         ],
         "Attraction": [
           "attraction"
         ],
         "Status": [
-          "closed",
+          "open",
           "status"
         ],
         "Location": [
-          "islands of adventure"
+          "seaworld"
         ],
         "RealTimeData": [
           "real-time",
@@ -1789,23 +1439,23 @@
           "time"
         ]
       },
-      "facility_id": "64",
-      "facility_name": "Islands of Adventure",
+      "facility_id": "21",
+      "facility_name": "SeaWorld Orlando",
       "attraction_id": "",
-      "attraction_name": "Popeye & Bluto's Bilge-Rat Barges®",
+      "attraction_name": "Infinity Falls®",
       "service_id": "",
       "timezone": "",
       "wait_minutes": 0,
-      "availability_status": "Closed",
+      "availability_status": "Open",
       "ticket_type": "",
       "price": null,
       "currency": "",
       "weather_metric": "",
       "metric_value": null,
-      "canonical_key": "queue_target:64:ride:popeye-bluto-s-bilge-rat-barges",
+      "canonical_key": "queue_target:21:ride:infinity-falls",
       "canonical_key_status": "name_proxy",
-      "event_key": "wait_time_snapshot:4bffbafc1714:20260809T093128Z",
-      "queue_target_key": "queue_target:64:ride:popeye-bluto-s-bilge-rat-barges",
+      "event_key": "wait_time_snapshot:05cbd1cced0e:20260810T101050Z",
+      "queue_target_key": "queue_target:21:ride:infinity-falls",
       "required_field_proxy": {
         "facility_id": true,
         "attraction_id": true,
@@ -1825,7 +1475,7 @@
       "title": "Toy Story Midway Mania! - Closed (Disney California Adventure)",
       "url": "https://queue-times.com/en-US/parks/17/queue_times",
       "source_url": "https://queue-times.com/en-US/parks/17/queue_times",
-      "event_at": "2026-08-09T09:30:47+00:00",
+      "event_at": "2026-08-10T10:10:49+00:00",
       "matched_entities": {
         "WaitTime": [
           "wait time",
@@ -1876,8 +1526,146 @@
       "metric_value": null,
       "canonical_key": "queue_target:17:ride:toy-story-midway-mania",
       "canonical_key_status": "name_proxy",
-      "event_key": "wait_time_snapshot:3619cbebd325:20260809T093047Z",
+      "event_key": "wait_time_snapshot:3619cbebd325:20260810T101049Z",
       "queue_target_key": "queue_target:17:ride:toy-story-midway-mania",
+      "required_field_proxy": {
+        "facility_id": true,
+        "attraction_id": true,
+        "wait_minutes": true,
+        "source_url": true
+      },
+      "required_field_gaps": []
+    },
+    {
+      "source": "Disneyland",
+      "source_type": "api",
+      "trust_tier": "T3_professional",
+      "content_type": "news",
+      "collection_tier": "C1_rss",
+      "producer_role": "",
+      "event_model": "wait_time_snapshot",
+      "title": "Autopia - Closed (Disneyland)",
+      "url": "https://queue-times.com/en-US/parks/16/queue_times",
+      "source_url": "https://queue-times.com/en-US/parks/16/queue_times",
+      "event_at": "2026-08-10T10:10:49+00:00",
+      "matched_entities": {
+        "WaitTime": [
+          "wait time",
+          "wait",
+          "queue",
+          "current wait"
+        ],
+        "Attraction": [
+          "attraction"
+        ],
+        "Status": [
+          "closed",
+          "status"
+        ],
+        "Location": [
+          "disneyland"
+        ],
+        "RealTimeData": [
+          "real-time",
+          "current",
+          "last updated",
+          "minutes",
+          "queue data",
+          "queue-times"
+        ],
+        "QueueGeneral": [
+          "queue",
+          "wait",
+          "attraction",
+          "time"
+        ]
+      },
+      "facility_id": "16",
+      "facility_name": "Disneyland",
+      "attraction_id": "",
+      "attraction_name": "Autopia",
+      "service_id": "",
+      "timezone": "",
+      "wait_minutes": 0,
+      "availability_status": "Closed",
+      "ticket_type": "",
+      "price": null,
+      "currency": "",
+      "weather_metric": "",
+      "metric_value": null,
+      "canonical_key": "queue_target:16:ride:autopia",
+      "canonical_key_status": "name_proxy",
+      "event_key": "wait_time_snapshot:4900311dc811:20260810T101049Z",
+      "queue_target_key": "queue_target:16:ride:autopia",
+      "required_field_proxy": {
+        "facility_id": true,
+        "attraction_id": true,
+        "wait_minutes": true,
+        "source_url": true
+      },
+      "required_field_gaps": []
+    },
+    {
+      "source": "Six Flags Magic Mountain",
+      "source_type": "api",
+      "trust_tier": "T3_professional",
+      "content_type": "news",
+      "collection_tier": "C1_rss",
+      "producer_role": "",
+      "event_model": "wait_time_snapshot",
+      "title": "X2 - Closed (Six Flags Magic Mountain)",
+      "url": "https://queue-times.com/en-US/parks/32/queue_times",
+      "source_url": "https://queue-times.com/en-US/parks/32/queue_times",
+      "event_at": "2026-08-10T10:10:49+00:00",
+      "matched_entities": {
+        "WaitTime": [
+          "wait time",
+          "wait",
+          "queue",
+          "current wait"
+        ],
+        "Attraction": [
+          "attraction"
+        ],
+        "Status": [
+          "closed",
+          "status"
+        ],
+        "Location": [
+          "six flags"
+        ],
+        "RealTimeData": [
+          "real-time",
+          "current",
+          "last updated",
+          "minutes",
+          "queue data",
+          "queue-times"
+        ],
+        "QueueGeneral": [
+          "queue",
+          "wait",
+          "attraction",
+          "time"
+        ]
+      },
+      "facility_id": "32",
+      "facility_name": "Six Flags Magic Mountain",
+      "attraction_id": "",
+      "attraction_name": "X2",
+      "service_id": "",
+      "timezone": "",
+      "wait_minutes": 0,
+      "availability_status": "Closed",
+      "ticket_type": "",
+      "price": null,
+      "currency": "",
+      "weather_metric": "",
+      "metric_value": null,
+      "canonical_key": "queue_target:32:ride:x2",
+      "canonical_key_status": "name_proxy",
+      "event_key": "wait_time_snapshot:c8713dd0b814:20260810T101049Z",
+      "queue_target_key": "queue_target:32:ride:x2",
       "required_field_proxy": {
         "facility_id": true,
         "attraction_id": true,
@@ -1897,7 +1685,7 @@
       "title": "Wilderness Explorers - Closed (Animal Kingdom)",
       "url": "https://queue-times.com/en-US/parks/8/queue_times",
       "source_url": "https://queue-times.com/en-US/parks/8/queue_times",
-      "event_at": "2026-08-09T09:30:36+00:00",
+      "event_at": "2026-08-10T10:10:35+00:00",
       "matched_entities": {
         "WaitTime": [
           "wait time",
@@ -1946,8 +1734,220 @@
       "metric_value": null,
       "canonical_key": "queue_target:8:ride:wilderness-explorers",
       "canonical_key_status": "name_proxy",
-      "event_key": "wait_time_snapshot:e4d7b18f2425:20260809T093036Z",
+      "event_key": "wait_time_snapshot:e4d7b18f2425:20260810T101035Z",
       "queue_target_key": "queue_target:8:ride:wilderness-explorers",
+      "required_field_proxy": {
+        "facility_id": true,
+        "attraction_id": true,
+        "wait_minutes": true,
+        "source_url": true
+      },
+      "required_field_gaps": []
+    },
+    {
+      "source": "Disney Hollywood Studios",
+      "source_type": "api",
+      "trust_tier": "T3_professional",
+      "content_type": "news",
+      "collection_tier": "C1_rss",
+      "producer_role": "",
+      "event_model": "wait_time_snapshot",
+      "title": "Slinky Dog Dash - Closed (Disney Hollywood Studios)",
+      "url": "https://queue-times.com/en-US/parks/7/queue_times",
+      "source_url": "https://queue-times.com/en-US/parks/7/queue_times",
+      "event_at": "2026-08-10T10:10:28+00:00",
+      "matched_entities": {
+        "WaitTime": [
+          "wait time",
+          "wait",
+          "queue",
+          "current wait"
+        ],
+        "Attraction": [
+          "attraction"
+        ],
+        "Status": [
+          "closed",
+          "status"
+        ],
+        "Location": [
+          "disney",
+          "hollywood studios"
+        ],
+        "RealTimeData": [
+          "real-time",
+          "current",
+          "last updated",
+          "minutes",
+          "queue data",
+          "queue-times"
+        ],
+        "QueueGeneral": [
+          "queue",
+          "wait",
+          "attraction",
+          "disney",
+          "story",
+          "time"
+        ]
+      },
+      "facility_id": "7",
+      "facility_name": "Disney Hollywood Studios",
+      "attraction_id": "",
+      "attraction_name": "Slinky Dog Dash",
+      "service_id": "",
+      "timezone": "",
+      "wait_minutes": 0,
+      "availability_status": "Closed",
+      "ticket_type": "",
+      "price": null,
+      "currency": "",
+      "weather_metric": "",
+      "metric_value": null,
+      "canonical_key": "queue_target:7:ride:slinky-dog-dash",
+      "canonical_key_status": "name_proxy",
+      "event_key": "wait_time_snapshot:f00123b3e806:20260810T101028Z",
+      "queue_target_key": "queue_target:7:ride:slinky-dog-dash",
+      "required_field_proxy": {
+        "facility_id": true,
+        "attraction_id": true,
+        "wait_minutes": true,
+        "source_url": true
+      },
+      "required_field_gaps": []
+    },
+    {
+      "source": "Disney Magic Kingdom",
+      "source_type": "api",
+      "trust_tier": "T3_professional",
+      "content_type": "news",
+      "collection_tier": "C1_rss",
+      "producer_role": "",
+      "event_model": "wait_time_snapshot",
+      "title": "Meet Festive Disney Pals at Mickey’s Not-So-Scary Halloween Party - Closed (Disney Magic Kingdom)",
+      "url": "https://queue-times.com/en-US/parks/6/queue_times",
+      "source_url": "https://queue-times.com/en-US/parks/6/queue_times",
+      "event_at": "2026-08-10T10:10:27+00:00",
+      "matched_entities": {
+        "WaitTime": [
+          "wait time",
+          "wait",
+          "queue",
+          "current wait"
+        ],
+        "Attraction": [
+          "attraction"
+        ],
+        "Status": [
+          "closed",
+          "status"
+        ],
+        "Location": [
+          "disney",
+          "magic kingdom"
+        ],
+        "RealTimeData": [
+          "real-time",
+          "current",
+          "last updated",
+          "minutes",
+          "queue data",
+          "queue-times"
+        ],
+        "QueueGeneral": [
+          "queue",
+          "wait",
+          "attraction",
+          "disney",
+          "time"
+        ]
+      },
+      "facility_id": "6",
+      "facility_name": "Disney Magic Kingdom",
+      "attraction_id": "",
+      "attraction_name": "Meet Festive Disney Pals at Mickey’s Not-So-Scary Halloween Party",
+      "service_id": "",
+      "timezone": "",
+      "wait_minutes": 0,
+      "availability_status": "Closed",
+      "ticket_type": "",
+      "price": null,
+      "currency": "",
+      "weather_metric": "",
+      "metric_value": null,
+      "canonical_key": "queue_target:6:ride:meet-festive-disney-pals-at-mickey-s-not-so-scary-halloween-party",
+      "canonical_key_status": "name_proxy",
+      "event_key": "wait_time_snapshot:0a9f3bd6b356:20260810T101027Z",
+      "queue_target_key": "queue_target:6:ride:meet-festive-disney-pals-at-mickey-s-not-so-scary-halloween-party",
+      "required_field_proxy": {
+        "facility_id": true,
+        "attraction_id": true,
+        "wait_minutes": true,
+        "source_url": true
+      },
+      "required_field_gaps": []
+    },
+    {
+      "source": "Epcot",
+      "source_type": "api",
+      "trust_tier": "T3_professional",
+      "content_type": "news",
+      "collection_tier": "C1_rss",
+      "producer_role": "",
+      "event_model": "wait_time_snapshot",
+      "title": "Remy's Ratatouille Adventure Single Rider - Closed (Epcot)",
+      "url": "https://queue-times.com/en-US/parks/5/queue_times",
+      "source_url": "https://queue-times.com/en-US/parks/5/queue_times",
+      "event_at": "2026-08-10T10:10:25+00:00",
+      "matched_entities": {
+        "WaitTime": [
+          "wait time",
+          "wait",
+          "queue",
+          "current wait"
+        ],
+        "Attraction": [
+          "attraction"
+        ],
+        "Status": [
+          "closed",
+          "status"
+        ],
+        "Location": [
+          "epcot"
+        ],
+        "RealTimeData": [
+          "real-time",
+          "current",
+          "last updated",
+          "minutes",
+          "queue data",
+          "queue-times"
+        ],
+        "QueueGeneral": [
+          "queue",
+          "wait",
+          "attraction",
+          "time"
+        ]
+      },
+      "facility_id": "5",
+      "facility_name": "Epcot",
+      "attraction_id": "",
+      "attraction_name": "Remy's Ratatouille Adventure Single Rider",
+      "service_id": "",
+      "timezone": "",
+      "wait_minutes": 0,
+      "availability_status": "Closed",
+      "ticket_type": "",
+      "price": null,
+      "currency": "",
+      "weather_metric": "",
+      "metric_value": null,
+      "canonical_key": "queue_target:5:ride:remy-s-ratatouille-adventure-single-rider",
+      "canonical_key_status": "name_proxy",
+      "event_key": "wait_time_snapshot:889ecbe32291:20260810T101025Z",
+      "queue_target_key": "queue_target:5:ride:remy-s-ratatouille-adventure-single-rider",
       "required_field_proxy": {
         "facility_id": true,
         "attraction_id": true,
