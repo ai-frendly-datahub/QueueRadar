@@ -1,64 +1,64 @@
 {
   "date": "2026-09-22",
   "category": "queue",
-  "article_count": 200,
+  "article_count": 156,
   "source_count": 22,
-  "matched_count": 200,
+  "matched_count": 156,
   "top_entities": [
     {
       "name": "QueueGeneral",
-      "count": 3294
+      "count": 2280
     },
     {
       "name": "Location",
-      "count": 247
-    },
-    {
-      "name": "Attraction",
-      "count": 119
+      "count": 216
     },
     {
       "name": "RealTimeData",
-      "count": 103
+      "count": 100
+    },
+    {
+      "name": "Attraction",
+      "count": 96
     },
     {
       "name": "WaitTime",
-      "count": 95
+      "count": 80
     },
     {
       "name": "Status",
-      "count": 66
+      "count": 48
     },
     {
       "name": "VisitorTips",
-      "count": 20
+      "count": 11
     }
   ],
   "sources": {
     "Universal Studios Hollywood": 1,
     "Busch Gardens Tampa": 1,
-    "Islands of Adventure": 1,
     "Universal Studios Orlando": 1,
-    "SeaWorld Orlando": 1,
+    "Islands of Adventure": 1,
     "Disney California Adventure": 1,
-    "Disneyland": 1,
     "Six Flags Magic Mountain": 1,
-    "Animal Kingdom": 1,
+    "Disneyland": 1,
+    "SeaWorld Orlando": 1,
     "Disney Hollywood Studios": 1,
+    "Animal Kingdom": 1,
     "Disney Magic Kingdom": 1,
     "Epcot": 1,
-    "Reddit r/KoreaTravel": 58,
+    "Inside the Magic": 19,
     "WDWMAGIC News": 33,
-    "Park World Magazine": 10,
-    "Inside the Magic": 28,
-    "Blooloop": 21,
     "Attractions Magazine": 23,
-    "Theme Park Insider": 11,
+    "Blooloop": 13,
+    "Reddit r/KoreaTravel": 36,
+    "Theme Park Insider": 8,
+    "Park World Magazine": 8,
     "Theme Park Tribune": 2,
     "Theme Park Crazy": 1,
     "네이버 롯데월드 블로그": 1
   },
-  "generated_at": "2026-09-22T00:39:18.700256+09:00",
+  "generated_at": "2026-09-22T22:54:38.173056+09:00",
   "quality_summary": {
     "total_sources": 39,
     "enabled_sources": 25,
@@ -77,10 +77,10 @@
     "weather_context_events": 0,
     "queue_signal_event_count": 362,
     "wait_time_observation_count": 362,
-    "open_attraction_count": 228,
-    "closed_attraction_count": 134,
-    "zero_wait_count": 199,
-    "high_wait_review_count": 15,
+    "open_attraction_count": 144,
+    "closed_attraction_count": 218,
+    "zero_wait_count": 269,
+    "high_wait_review_count": 5,
     "target_canonical_key_present_count": 362,
     "attraction_canonical_key_present_count": 362,
     "reservation_canonical_key_present_count": 0,
@@ -91,6 +91,6 @@
     "tracked_source_gap_count": 0,
     "missing_event_model_count": 3,
     "source_backlog_candidate_count": 4,
-    "daily_review_item_count": 22
+    "daily_review_item_count": 12
   }
 }
