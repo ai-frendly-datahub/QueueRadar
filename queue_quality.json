@@ -1,6 +1,6 @@
 {
   "category": "queue",
-  "generated_at": "2026-09-23T14:06:05.380539+00:00",
+  "generated_at": "2026-09-24T14:01:14.714025+00:00",
   "scope_note": "대기/예약 레이더 quality report is generated from repo-local category data_quality metadata and recent stored articles. Operational backlog sources remain separate until dedicated source-level fields are collected.",
   "summary": {
     "total_sources": 39,
@@ -20,10 +20,10 @@
     "weather_context_events": 0,
     "queue_signal_event_count": 12,
     "wait_time_observation_count": 12,
-    "open_attraction_count": 6,
-    "closed_attraction_count": 6,
-    "zero_wait_count": 10,
-    "high_wait_review_count": 0,
+    "open_attraction_count": 5,
+    "closed_attraction_count": 7,
+    "zero_wait_count": 11,
+    "high_wait_review_count": 1,
     "target_canonical_key_present_count": 12,
     "attraction_canonical_key_present_count": 0,
     "reservation_canonical_key_present_count": 0,
@@ -34,7 +34,7 @@
     "tracked_source_gap_count": 0,
     "missing_event_model_count": 3,
     "source_backlog_candidate_count": 4,
-    "daily_review_item_count": 7
+    "daily_review_item_count": 8
   },
   "sources": [
     {
@@ -54,7 +54,7 @@
       "status": "fresh",
       "article_count": 1,
       "event_count": 1,
-      "latest_event_at": "2026-09-23T14:00:32+00:00",
+      "latest_event_at": "2026-09-24T14:00:34+00:00",
       "age_days": 0.0,
       "latest_title": "Meet Mickey Mouse and Minnie Mouse at Mickey's Not-So-Scary Halloween Party - Closed (Disney Magic Kingdom)",
       "latest_url": "https://queue-times.com/en-US/parks/6/queue_times",
@@ -85,7 +85,7 @@
       "status": "fresh",
       "article_count": 1,
       "event_count": 1,
-      "latest_event_at": "2026-09-23T14:00:21+00:00",
+      "latest_event_at": "2026-09-24T14:00:32+00:00",
       "age_days": 0.0,
       "latest_title": "Remy's Ratatouille Adventure Single Rider - No wait (Epcot)",
       "latest_url": "https://queue-times.com/en-US/parks/5/queue_times",
@@ -116,9 +116,9 @@
       "status": "fresh",
       "article_count": 1,
       "event_count": 1,
-      "latest_event_at": "2026-09-23T14:00:33+00:00",
+      "latest_event_at": "2026-09-24T13:55:29+00:00",
       "age_days": 0.0,
-      "latest_title": "Slinky Dog Dash - 45 minutes wait (Disney Hollywood Studios)",
+      "latest_title": "Slinky Dog Dash - 70 minutes wait (Disney Hollywood Studios)",
       "latest_url": "https://queue-times.com/en-US/parks/7/queue_times",
       "latest_required_field_proxy": {
         "facility_id": true,
@@ -147,7 +147,7 @@
       "status": "fresh",
       "article_count": 1,
       "event_count": 1,
-      "latest_event_at": "2026-09-23T14:00:33+00:00",
+      "latest_event_at": "2026-09-24T13:55:43+00:00",
       "age_days": 0.0,
       "latest_title": "Wilderness Explorers - No wait (Animal Kingdom)",
       "latest_url": "https://queue-times.com/en-US/parks/8/queue_times",
@@ -178,7 +178,7 @@
       "status": "fresh",
       "article_count": 1,
       "event_count": 1,
-      "latest_event_at": "2026-09-23T14:00:45+00:00",
+      "latest_event_at": "2026-09-24T13:55:43+00:00",
       "age_days": 0.0,
       "latest_title": "Buzz Lightyear Astro Blasters - Closed (Disneyland)",
       "latest_url": "https://queue-times.com/en-US/parks/16/queue_times",
@@ -209,7 +209,7 @@
       "status": "fresh",
       "article_count": 1,
       "event_count": 1,
-      "latest_event_at": "2026-09-23T14:00:45+00:00",
+      "latest_event_at": "2026-09-24T13:55:43+00:00",
       "age_days": 0.0,
       "latest_title": "Villains Grove at Oogie Boogie Bash - Closed (Disney California Adventure)",
       "latest_url": "https://queue-times.com/en-US/parks/17/queue_times",
@@ -240,7 +240,7 @@
       "status": "fresh",
       "article_count": 1,
       "event_count": 1,
-      "latest_event_at": "2026-09-23T14:01:35+00:00",
+      "latest_event_at": "2026-09-24T13:56:36+00:00",
       "age_days": 0.0,
       "latest_title": "Stranger Things 5 - Closed (Universal Studios Orlando)",
       "latest_url": "https://queue-times.com/en-US/parks/65/queue_times",
@@ -271,9 +271,9 @@
       "status": "fresh",
       "article_count": 1,
       "event_count": 1,
-      "latest_event_at": "2026-09-23T14:01:34+00:00",
+      "latest_event_at": "2026-09-24T13:56:24+00:00",
       "age_days": 0.0,
-      "latest_title": "Popeye & Bluto's Bilge-Rat Barges® - 5 minutes wait (Islands of Adventure)",
+      "latest_title": "Popeye & Bluto's Bilge-Rat Barges® - Closed (Islands of Adventure)",
       "latest_url": "https://queue-times.com/en-US/parks/64/queue_times",
       "latest_required_field_proxy": {
         "facility_id": true,
@@ -302,7 +302,7 @@
       "status": "fresh",
       "article_count": 1,
       "event_count": 1,
-      "latest_event_at": "2026-09-23T14:01:41+00:00",
+      "latest_event_at": "2026-09-24T13:56:36+00:00",
       "age_days": 0.0,
       "latest_title": "Terror Tram starring Art the Clown - Closed (Universal Studios Hollywood)",
       "latest_url": "https://queue-times.com/en-US/parks/66/queue_times",
@@ -333,7 +333,7 @@
       "status": "fresh",
       "article_count": 1,
       "event_count": 1,
-      "latest_event_at": "2026-09-23T14:01:42+00:00",
+      "latest_event_at": "2026-09-24T13:56:36+00:00",
       "age_days": 0.0,
       "latest_title": "Tigris - No wait (Busch Gardens Tampa)",
       "latest_url": "https://queue-times.com/en-US/parks/24/queue_times",
@@ -364,7 +364,7 @@
       "status": "fresh",
       "article_count": 1,
       "event_count": 1,
-      "latest_event_at": "2026-09-23T14:00:46+00:00",
+      "latest_event_at": "2026-09-24T14:00:46+00:00",
       "age_days": 0.0,
       "latest_title": "Infinity Falls® - No wait (SeaWorld Orlando)",
       "latest_url": "https://queue-times.com/en-US/parks/21/queue_times",
@@ -395,7 +395,7 @@
       "status": "fresh",
       "article_count": 1,
       "event_count": 1,
-      "latest_event_at": "2026-09-23T14:00:32+00:00",
+      "latest_event_at": "2026-09-24T14:00:35+00:00",
       "age_days": 0.0,
       "latest_title": "Vault: 666 Unlocked - Closed (Six Flags Magic Mountain)",
       "latest_url": "https://queue-times.com/en-US/parks/32/queue_times",
@@ -424,7 +424,7 @@
       "event_model": "editorial_coverage",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 18,
+      "article_count": 16,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -450,7 +450,7 @@
       "event_model": "editorial_coverage",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 59,
+      "article_count": 57,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -476,7 +476,7 @@
       "event_model": "editorial_coverage",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 43,
+      "article_count": 47,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -502,7 +502,7 @@
       "event_model": "editorial_coverage",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 75,
+      "article_count": 63,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -528,7 +528,7 @@
       "event_model": "editorial_coverage",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 32,
+      "article_count": 25,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -814,7 +814,7 @@
       "event_model": "editorial_coverage",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 3,
+      "article_count": 4,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -1100,7 +1100,7 @@
       "event_model": "editorial_coverage",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 157,
+      "article_count": 135,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -1114,287 +1114,6 @@
   ],
   "events": [
     {
-      "source": "Busch Gardens Tampa",
-      "source_type": "api",
-      "trust_tier": "T3_professional",
-      "content_type": "news",
-      "collection_tier": "C1_rss",
-      "producer_role": "",
-      "event_model": "wait_time_snapshot",
-      "title": "Tigris - No wait (Busch Gardens Tampa)",
-      "url": "https://queue-times.com/en-US/parks/24/queue_times",
-      "source_url": "https://queue-times.com/en-US/parks/24/queue_times",
-      "event_at": "2026-09-23T14:01:42+00:00",
-      "matched_entities": {
-        "WaitTime": [
-          "wait time",
-          "wait",
-          "queue",
-          "no wait",
-          "current wait"
-        ],
-        "Attraction": [
-          "attraction"
-        ],
-        "Status": [
-          "open",
-          "status"
-        ],
-        "Location": [
-          "busch gardens"
-        ],
-        "RealTimeData": [
-          "real-time",
-          "current",
-          "last updated",
-          "minutes",
-          "queue data",
-          "queue-times"
-        ],
-        "QueueGeneral": [
-          "queue",
-          "wait",
-          "attraction",
-          "time"
-        ]
-      },
-      "facility_id": "24",
-      "facility_name": "Busch Gardens Tampa",
-      "attraction_id": "",
-      "attraction_name": "Tigris",
-      "service_id": "",
-      "timezone": "",
-      "wait_minutes": 0,
-      "availability_status": "Open",
-      "ticket_type": "",
-      "price": null,
-      "currency": "",
-      "weather_metric": "",
-      "metric_value": null,
-      "canonical_key": "queue_target:24:ride:tigris",
-      "canonical_key_status": "name_proxy",
-      "event_key": "wait_time_snapshot:ddd46fdfe082:20260923T140142Z",
-      "queue_target_key": "queue_target:24:ride:tigris",
-      "required_field_proxy": {
-        "facility_id": true,
-        "attraction_id": true,
-        "wait_minutes": true,
-        "source_url": true
-      },
-      "required_field_gaps": []
-    },
-    {
-      "source": "Universal Studios Hollywood",
-      "source_type": "api",
-      "trust_tier": "T3_professional",
-      "content_type": "news",
-      "collection_tier": "C1_rss",
-      "producer_role": "",
-      "event_model": "wait_time_snapshot",
-      "title": "Terror Tram starring Art the Clown - Closed (Universal Studios Hollywood)",
-      "url": "https://queue-times.com/en-US/parks/66/queue_times",
-      "source_url": "https://queue-times.com/en-US/parks/66/queue_times",
-      "event_at": "2026-09-23T14:01:41+00:00",
-      "matched_entities": {
-        "WaitTime": [
-          "wait time",
-          "wait",
-          "queue",
-          "current wait"
-        ],
-        "Attraction": [
-          "attraction"
-        ],
-        "Status": [
-          "closed",
-          "status"
-        ],
-        "Location": [
-          "universal"
-        ],
-        "RealTimeData": [
-          "real-time",
-          "current",
-          "last updated",
-          "minutes",
-          "queue data",
-          "queue-times"
-        ],
-        "QueueGeneral": [
-          "queue",
-          "wait",
-          "attraction",
-          "universal",
-          "the",
-          "time"
-        ]
-      },
-      "facility_id": "66",
-      "facility_name": "Universal Studios Hollywood",
-      "attraction_id": "",
-      "attraction_name": "Terror Tram starring Art the Clown",
-      "service_id": "",
-      "timezone": "",
-      "wait_minutes": 0,
-      "availability_status": "Closed",
-      "ticket_type": "",
-      "price": null,
-      "currency": "",
-      "weather_metric": "",
-      "metric_value": null,
-      "canonical_key": "queue_target:66:ride:terror-tram-starring-art-the-clown",
-      "canonical_key_status": "name_proxy",
-      "event_key": "wait_time_snapshot:2a818412213e:20260923T140141Z",
-      "queue_target_key": "queue_target:66:ride:terror-tram-starring-art-the-clown",
-      "required_field_proxy": {
-        "facility_id": true,
-        "attraction_id": true,
-        "wait_minutes": true,
-        "source_url": true
-      },
-      "required_field_gaps": []
-    },
-    {
-      "source": "Universal Studios Orlando",
-      "source_type": "api",
-      "trust_tier": "T3_professional",
-      "content_type": "news",
-      "collection_tier": "C1_rss",
-      "producer_role": "",
-      "event_model": "wait_time_snapshot",
-      "title": "Stranger Things 5 - Closed (Universal Studios Orlando)",
-      "url": "https://queue-times.com/en-US/parks/65/queue_times",
-      "source_url": "https://queue-times.com/en-US/parks/65/queue_times",
-      "event_at": "2026-09-23T14:01:35+00:00",
-      "matched_entities": {
-        "WaitTime": [
-          "wait time",
-          "wait",
-          "queue",
-          "current wait"
-        ],
-        "Attraction": [
-          "attraction"
-        ],
-        "Status": [
-          "closed",
-          "status"
-        ],
-        "Location": [
-          "universal"
-        ],
-        "RealTimeData": [
-          "real-time",
-          "current",
-          "last updated",
-          "minutes",
-          "queue data",
-          "queue-times"
-        ],
-        "QueueGeneral": [
-          "queue",
-          "wait",
-          "attraction",
-          "universal",
-          "time"
-        ]
-      },
-      "facility_id": "65",
-      "facility_name": "Universal Studios Orlando",
-      "attraction_id": "",
-      "attraction_name": "Stranger Things 5",
-      "service_id": "",
-      "timezone": "",
-      "wait_minutes": 0,
-      "availability_status": "Closed",
-      "ticket_type": "",
-      "price": null,
-      "currency": "",
-      "weather_metric": "",
-      "metric_value": null,
-      "canonical_key": "queue_target:65:ride:stranger-things-5",
-      "canonical_key_status": "name_proxy",
-      "event_key": "wait_time_snapshot:43eb73e0a8e0:20260923T140135Z",
-      "queue_target_key": "queue_target:65:ride:stranger-things-5",
-      "required_field_proxy": {
-        "facility_id": true,
-        "attraction_id": true,
-        "wait_minutes": true,
-        "source_url": true
-      },
-      "required_field_gaps": []
-    },
-    {
-      "source": "Islands of Adventure",
-      "source_type": "api",
-      "trust_tier": "T3_professional",
-      "content_type": "news",
-      "collection_tier": "C1_rss",
-      "producer_role": "",
-      "event_model": "wait_time_snapshot",
-      "title": "Popeye & Bluto's Bilge-Rat Barges® - 5 minutes wait (Islands of Adventure)",
-      "url": "https://queue-times.com/en-US/parks/64/queue_times",
-      "source_url": "https://queue-times.com/en-US/parks/64/queue_times",
-      "event_at": "2026-09-23T14:01:34+00:00",
-      "matched_entities": {
-        "WaitTime": [
-          "wait time",
-          "wait",
-          "queue",
-          "minutes wait",
-          "current wait"
-        ],
-        "Attraction": [
-          "attraction"
-        ],
-        "Status": [
-          "open",
-          "status"
-        ],
-        "Location": [
-          "islands of adventure"
-        ],
-        "RealTimeData": [
-          "real-time",
-          "current",
-          "last updated",
-          "minutes",
-          "queue data",
-          "queue-times"
-        ],
-        "QueueGeneral": [
-          "queue",
-          "wait",
-          "attraction",
-          "time"
-        ]
-      },
-      "facility_id": "64",
-      "facility_name": "Islands of Adventure",
-      "attraction_id": "",
-      "attraction_name": "Popeye & Bluto's Bilge-Rat Barges®",
-      "service_id": "",
-      "timezone": "",
-      "wait_minutes": 5,
-      "availability_status": "Open",
-      "ticket_type": "",
-      "price": null,
-      "currency": "",
-      "weather_metric": "",
-      "metric_value": null,
-      "canonical_key": "queue_target:64:ride:popeye-bluto-s-bilge-rat-barges",
-      "canonical_key_status": "name_proxy",
-      "event_key": "wait_time_snapshot:4bffbafc1714:20260923T140134Z",
-      "queue_target_key": "queue_target:64:ride:popeye-bluto-s-bilge-rat-barges",
-      "required_field_proxy": {
-        "facility_id": true,
-        "attraction_id": true,
-        "wait_minutes": true,
-        "source_url": true
-      },
-      "required_field_gaps": []
-    },
-    {
       "source": "SeaWorld Orlando",
       "source_type": "api",
       "trust_tier": "T3_professional",
@@ -1405,7 +1124,7 @@
       "title": "Infinity Falls® - No wait (SeaWorld Orlando)",
       "url": "https://queue-times.com/en-US/parks/21/queue_times",
       "source_url": "https://queue-times.com/en-US/parks/21/queue_times",
-      "event_at": "2026-09-23T14:00:46+00:00",
+      "event_at": "2026-09-24T14:00:46+00:00",
       "matched_entities": {
         "WaitTime": [
           "wait time",
@@ -1454,7 +1173,7 @@
       "metric_value": null,
       "canonical_key": "queue_target:21:ride:infinity-falls",
       "canonical_key_status": "name_proxy",
-      "event_key": "wait_time_snapshot:05cbd1cced0e:20260923T140046Z",
+      "event_key": "wait_time_snapshot:05cbd1cced0e:20260924T140046Z",
       "queue_target_key": "queue_target:21:ride:infinity-falls",
       "required_field_proxy": {
         "facility_id": true,
@@ -1465,17 +1184,17 @@
       "required_field_gaps": []
     },
     {
-      "source": "Disney California Adventure",
+      "source": "Six Flags Magic Mountain",
       "source_type": "api",
       "trust_tier": "T3_professional",
       "content_type": "news",
       "collection_tier": "C1_rss",
       "producer_role": "",
       "event_model": "wait_time_snapshot",
-      "title": "Villains Grove at Oogie Boogie Bash - Closed (Disney California Adventure)",
-      "url": "https://queue-times.com/en-US/parks/17/queue_times",
-      "source_url": "https://queue-times.com/en-US/parks/17/queue_times",
-      "event_at": "2026-09-23T14:00:45+00:00",
+      "title": "Vault: 666 Unlocked - Closed (Six Flags Magic Mountain)",
+      "url": "https://queue-times.com/en-US/parks/32/queue_times",
+      "source_url": "https://queue-times.com/en-US/parks/32/queue_times",
+      "event_at": "2026-09-24T14:00:35+00:00",
       "matched_entities": {
         "WaitTime": [
           "wait time",
@@ -1491,8 +1210,7 @@
           "status"
         ],
         "Location": [
-          "disney",
-          "california adventure"
+          "six flags"
         ],
         "RealTimeData": [
           "real-time",
@@ -1506,14 +1224,13 @@
           "queue",
           "wait",
           "attraction",
-          "disney",
           "time"
         ]
       },
-      "facility_id": "17",
-      "facility_name": "Disney California Adventure",
+      "facility_id": "32",
+      "facility_name": "Six Flags Magic Mountain",
       "attraction_id": "",
-      "attraction_name": "Villains Grove at Oogie Boogie Bash",
+      "attraction_name": "Vault: 666 Unlocked",
       "service_id": "",
       "timezone": "",
       "wait_minutes": 0,
@@ -1523,223 +1240,10 @@
       "currency": "",
       "weather_metric": "",
       "metric_value": null,
-      "canonical_key": "queue_target:17:ride:villains-grove-at-oogie-boogie-bash",
+      "canonical_key": "queue_target:32:ride:vault-666-unlocked",
       "canonical_key_status": "name_proxy",
-      "event_key": "wait_time_snapshot:054a2690699a:20260923T140045Z",
-      "queue_target_key": "queue_target:17:ride:villains-grove-at-oogie-boogie-bash",
-      "required_field_proxy": {
-        "facility_id": true,
-        "attraction_id": true,
-        "wait_minutes": true,
-        "source_url": true
-      },
-      "required_field_gaps": []
-    },
-    {
-      "source": "Disneyland",
-      "source_type": "api",
-      "trust_tier": "T3_professional",
-      "content_type": "news",
-      "collection_tier": "C1_rss",
-      "producer_role": "",
-      "event_model": "wait_time_snapshot",
-      "title": "Buzz Lightyear Astro Blasters - Closed (Disneyland)",
-      "url": "https://queue-times.com/en-US/parks/16/queue_times",
-      "source_url": "https://queue-times.com/en-US/parks/16/queue_times",
-      "event_at": "2026-09-23T14:00:45+00:00",
-      "matched_entities": {
-        "WaitTime": [
-          "wait time",
-          "wait",
-          "queue",
-          "current wait"
-        ],
-        "Attraction": [
-          "attraction"
-        ],
-        "Status": [
-          "closed",
-          "status"
-        ],
-        "Location": [
-          "disneyland"
-        ],
-        "RealTimeData": [
-          "real-time",
-          "current",
-          "last updated",
-          "minutes",
-          "queue data",
-          "queue-times"
-        ],
-        "QueueGeneral": [
-          "queue",
-          "wait",
-          "attraction",
-          "time"
-        ]
-      },
-      "facility_id": "16",
-      "facility_name": "Disneyland",
-      "attraction_id": "",
-      "attraction_name": "Buzz Lightyear Astro Blasters",
-      "service_id": "",
-      "timezone": "",
-      "wait_minutes": 0,
-      "availability_status": "Closed",
-      "ticket_type": "",
-      "price": null,
-      "currency": "",
-      "weather_metric": "",
-      "metric_value": null,
-      "canonical_key": "queue_target:16:ride:buzz-lightyear-astro-blasters",
-      "canonical_key_status": "name_proxy",
-      "event_key": "wait_time_snapshot:61c949c01d57:20260923T140045Z",
-      "queue_target_key": "queue_target:16:ride:buzz-lightyear-astro-blasters",
-      "required_field_proxy": {
-        "facility_id": true,
-        "attraction_id": true,
-        "wait_minutes": true,
-        "source_url": true
-      },
-      "required_field_gaps": []
-    },
-    {
-      "source": "Animal Kingdom",
-      "source_type": "api",
-      "trust_tier": "T3_professional",
-      "content_type": "news",
-      "collection_tier": "C1_rss",
-      "producer_role": "",
-      "event_model": "wait_time_snapshot",
-      "title": "Wilderness Explorers - No wait (Animal Kingdom)",
-      "url": "https://queue-times.com/en-US/parks/8/queue_times",
-      "source_url": "https://queue-times.com/en-US/parks/8/queue_times",
-      "event_at": "2026-09-23T14:00:33+00:00",
-      "matched_entities": {
-        "WaitTime": [
-          "wait time",
-          "wait",
-          "queue",
-          "no wait",
-          "current wait"
-        ],
-        "Attraction": [
-          "attraction"
-        ],
-        "Status": [
-          "open",
-          "status"
-        ],
-        "Location": [
-          "animal kingdom"
-        ],
-        "RealTimeData": [
-          "real-time",
-          "current",
-          "last updated",
-          "minutes",
-          "queue data",
-          "queue-times"
-        ],
-        "QueueGeneral": [
-          "queue",
-          "wait",
-          "attraction",
-          "the",
-          "time"
-        ]
-      },
-      "facility_id": "8",
-      "facility_name": "Animal Kingdom",
-      "attraction_id": "",
-      "attraction_name": "Wilderness Explorers",
-      "service_id": "",
-      "timezone": "",
-      "wait_minutes": 0,
-      "availability_status": "Open",
-      "ticket_type": "",
-      "price": null,
-      "currency": "",
-      "weather_metric": "",
-      "metric_value": null,
-      "canonical_key": "queue_target:8:ride:wilderness-explorers",
-      "canonical_key_status": "name_proxy",
-      "event_key": "wait_time_snapshot:e4d7b18f2425:20260923T140033Z",
-      "queue_target_key": "queue_target:8:ride:wilderness-explorers",
-      "required_field_proxy": {
-        "facility_id": true,
-        "attraction_id": true,
-        "wait_minutes": true,
-        "source_url": true
-      },
-      "required_field_gaps": []
-    },
-    {
-      "source": "Disney Hollywood Studios",
-      "source_type": "api",
-      "trust_tier": "T3_professional",
-      "content_type": "news",
-      "collection_tier": "C1_rss",
-      "producer_role": "",
-      "event_model": "wait_time_snapshot",
-      "title": "Slinky Dog Dash - 45 minutes wait (Disney Hollywood Studios)",
-      "url": "https://queue-times.com/en-US/parks/7/queue_times",
-      "source_url": "https://queue-times.com/en-US/parks/7/queue_times",
-      "event_at": "2026-09-23T14:00:33+00:00",
-      "matched_entities": {
-        "WaitTime": [
-          "wait time",
-          "wait",
-          "queue",
-          "minutes wait",
-          "current wait"
-        ],
-        "Attraction": [
-          "attraction"
-        ],
-        "Status": [
-          "open",
-          "status"
-        ],
-        "Location": [
-          "disney",
-          "hollywood studios"
-        ],
-        "RealTimeData": [
-          "real-time",
-          "current",
-          "last updated",
-          "minutes",
-          "queue data",
-          "queue-times"
-        ],
-        "QueueGeneral": [
-          "queue",
-          "wait",
-          "attraction",
-          "disney",
-          "story",
-          "time"
-        ]
-      },
-      "facility_id": "7",
-      "facility_name": "Disney Hollywood Studios",
-      "attraction_id": "",
-      "attraction_name": "Slinky Dog Dash",
-      "service_id": "",
-      "timezone": "",
-      "wait_minutes": 45,
-      "availability_status": "Open",
-      "ticket_type": "",
-      "price": null,
-      "currency": "",
-      "weather_metric": "",
-      "metric_value": null,
-      "canonical_key": "queue_target:7:ride:slinky-dog-dash",
-      "canonical_key_status": "name_proxy",
-      "event_key": "wait_time_snapshot:f00123b3e806:20260923T140033Z",
-      "queue_target_key": "queue_target:7:ride:slinky-dog-dash",
+      "event_key": "wait_time_snapshot:76c59650599d:20260924T140035Z",
+      "queue_target_key": "queue_target:32:ride:vault-666-unlocked",
       "required_field_proxy": {
         "facility_id": true,
         "attraction_id": true,
@@ -1759,7 +1263,7 @@
       "title": "Meet Mickey Mouse and Minnie Mouse at Mickey's Not-So-Scary Halloween Party - Closed (Disney Magic Kingdom)",
       "url": "https://queue-times.com/en-US/parks/6/queue_times",
       "source_url": "https://queue-times.com/en-US/parks/6/queue_times",
-      "event_at": "2026-09-23T14:00:32+00:00",
+      "event_at": "2026-09-24T14:00:34+00:00",
       "matched_entities": {
         "WaitTime": [
           "wait time",
@@ -1810,77 +1314,8 @@
       "metric_value": null,
       "canonical_key": "queue_target:6:ride:meet-mickey-mouse-and-minnie-mouse-at-mickey-s-not-so-scary-halloween-party",
       "canonical_key_status": "name_proxy",
-      "event_key": "wait_time_snapshot:7ba1b3453086:20260923T140032Z",
+      "event_key": "wait_time_snapshot:7ba1b3453086:20260924T140034Z",
       "queue_target_key": "queue_target:6:ride:meet-mickey-mouse-and-minnie-mouse-at-mickey-s-not-so-scary-halloween-party",
-      "required_field_proxy": {
-        "facility_id": true,
-        "attraction_id": true,
-        "wait_minutes": true,
-        "source_url": true
-      },
-      "required_field_gaps": []
-    },
-    {
-      "source": "Six Flags Magic Mountain",
-      "source_type": "api",
-      "trust_tier": "T3_professional",
-      "content_type": "news",
-      "collection_tier": "C1_rss",
-      "producer_role": "",
-      "event_model": "wait_time_snapshot",
-      "title": "Vault: 666 Unlocked - Closed (Six Flags Magic Mountain)",
-      "url": "https://queue-times.com/en-US/parks/32/queue_times",
-      "source_url": "https://queue-times.com/en-US/parks/32/queue_times",
-      "event_at": "2026-09-23T14:00:32+00:00",
-      "matched_entities": {
-        "WaitTime": [
-          "wait time",
-          "wait",
-          "queue",
-          "current wait"
-        ],
-        "Attraction": [
-          "attraction"
-        ],
-        "Status": [
-          "closed",
-          "status"
-        ],
-        "Location": [
-          "six flags"
-        ],
-        "RealTimeData": [
-          "real-time",
-          "current",
-          "last updated",
-          "minutes",
-          "queue data",
-          "queue-times"
-        ],
-        "QueueGeneral": [
-          "queue",
-          "wait",
-          "attraction",
-          "time"
-        ]
-      },
-      "facility_id": "32",
-      "facility_name": "Six Flags Magic Mountain",
-      "attraction_id": "",
-      "attraction_name": "Vault: 666 Unlocked",
-      "service_id": "",
-      "timezone": "",
-      "wait_minutes": 0,
-      "availability_status": "Closed",
-      "ticket_type": "",
-      "price": null,
-      "currency": "",
-      "weather_metric": "",
-      "metric_value": null,
-      "canonical_key": "queue_target:32:ride:vault-666-unlocked",
-      "canonical_key_status": "name_proxy",
-      "event_key": "wait_time_snapshot:76c59650599d:20260923T140032Z",
-      "queue_target_key": "queue_target:32:ride:vault-666-unlocked",
       "required_field_proxy": {
         "facility_id": true,
         "attraction_id": true,
@@ -1900,7 +1335,7 @@
       "title": "Remy's Ratatouille Adventure Single Rider - No wait (Epcot)",
       "url": "https://queue-times.com/en-US/parks/5/queue_times",
       "source_url": "https://queue-times.com/en-US/parks/5/queue_times",
-      "event_at": "2026-09-23T14:00:21+00:00",
+      "event_at": "2026-09-24T14:00:32+00:00",
       "matched_entities": {
         "WaitTime": [
           "wait time",
@@ -1949,8 +1384,572 @@
       "metric_value": null,
       "canonical_key": "queue_target:5:ride:remy-s-ratatouille-adventure-single-rider",
       "canonical_key_status": "name_proxy",
-      "event_key": "wait_time_snapshot:889ecbe32291:20260923T140021Z",
+      "event_key": "wait_time_snapshot:889ecbe32291:20260924T140032Z",
       "queue_target_key": "queue_target:5:ride:remy-s-ratatouille-adventure-single-rider",
+      "required_field_proxy": {
+        "facility_id": true,
+        "attraction_id": true,
+        "wait_minutes": true,
+        "source_url": true
+      },
+      "required_field_gaps": []
+    },
+    {
+      "source": "Universal Studios Hollywood",
+      "source_type": "api",
+      "trust_tier": "T3_professional",
+      "content_type": "news",
+      "collection_tier": "C1_rss",
+      "producer_role": "",
+      "event_model": "wait_time_snapshot",
+      "title": "Terror Tram starring Art the Clown - Closed (Universal Studios Hollywood)",
+      "url": "https://queue-times.com/en-US/parks/66/queue_times",
+      "source_url": "https://queue-times.com/en-US/parks/66/queue_times",
+      "event_at": "2026-09-24T13:56:36+00:00",
+      "matched_entities": {
+        "WaitTime": [
+          "wait time",
+          "wait",
+          "queue",
+          "current wait"
+        ],
+        "Attraction": [
+          "attraction"
+        ],
+        "Status": [
+          "closed",
+          "status"
+        ],
+        "Location": [
+          "universal"
+        ],
+        "RealTimeData": [
+          "real-time",
+          "current",
+          "last updated",
+          "minutes",
+          "queue data",
+          "queue-times"
+        ],
+        "QueueGeneral": [
+          "queue",
+          "wait",
+          "attraction",
+          "universal",
+          "the",
+          "time"
+        ]
+      },
+      "facility_id": "66",
+      "facility_name": "Universal Studios Hollywood",
+      "attraction_id": "",
+      "attraction_name": "Terror Tram starring Art the Clown",
+      "service_id": "",
+      "timezone": "",
+      "wait_minutes": 0,
+      "availability_status": "Closed",
+      "ticket_type": "",
+      "price": null,
+      "currency": "",
+      "weather_metric": "",
+      "metric_value": null,
+      "canonical_key": "queue_target:66:ride:terror-tram-starring-art-the-clown",
+      "canonical_key_status": "name_proxy",
+      "event_key": "wait_time_snapshot:2a818412213e:20260924T135636Z",
+      "queue_target_key": "queue_target:66:ride:terror-tram-starring-art-the-clown",
+      "required_field_proxy": {
+        "facility_id": true,
+        "attraction_id": true,
+        "wait_minutes": true,
+        "source_url": true
+      },
+      "required_field_gaps": []
+    },
+    {
+      "source": "Busch Gardens Tampa",
+      "source_type": "api",
+      "trust_tier": "T3_professional",
+      "content_type": "news",
+      "collection_tier": "C1_rss",
+      "producer_role": "",
+      "event_model": "wait_time_snapshot",
+      "title": "Tigris - No wait (Busch Gardens Tampa)",
+      "url": "https://queue-times.com/en-US/parks/24/queue_times",
+      "source_url": "https://queue-times.com/en-US/parks/24/queue_times",
+      "event_at": "2026-09-24T13:56:36+00:00",
+      "matched_entities": {
+        "WaitTime": [
+          "wait time",
+          "wait",
+          "queue",
+          "no wait",
+          "current wait"
+        ],
+        "Attraction": [
+          "attraction"
+        ],
+        "Status": [
+          "open",
+          "status"
+        ],
+        "Location": [
+          "busch gardens"
+        ],
+        "RealTimeData": [
+          "real-time",
+          "current",
+          "last updated",
+          "minutes",
+          "queue data",
+          "queue-times"
+        ],
+        "QueueGeneral": [
+          "queue",
+          "wait",
+          "attraction",
+          "time"
+        ]
+      },
+      "facility_id": "24",
+      "facility_name": "Busch Gardens Tampa",
+      "attraction_id": "",
+      "attraction_name": "Tigris",
+      "service_id": "",
+      "timezone": "",
+      "wait_minutes": 0,
+      "availability_status": "Open",
+      "ticket_type": "",
+      "price": null,
+      "currency": "",
+      "weather_metric": "",
+      "metric_value": null,
+      "canonical_key": "queue_target:24:ride:tigris",
+      "canonical_key_status": "name_proxy",
+      "event_key": "wait_time_snapshot:ddd46fdfe082:20260924T135636Z",
+      "queue_target_key": "queue_target:24:ride:tigris",
+      "required_field_proxy": {
+        "facility_id": true,
+        "attraction_id": true,
+        "wait_minutes": true,
+        "source_url": true
+      },
+      "required_field_gaps": []
+    },
+    {
+      "source": "Universal Studios Orlando",
+      "source_type": "api",
+      "trust_tier": "T3_professional",
+      "content_type": "news",
+      "collection_tier": "C1_rss",
+      "producer_role": "",
+      "event_model": "wait_time_snapshot",
+      "title": "Stranger Things 5 - Closed (Universal Studios Orlando)",
+      "url": "https://queue-times.com/en-US/parks/65/queue_times",
+      "source_url": "https://queue-times.com/en-US/parks/65/queue_times",
+      "event_at": "2026-09-24T13:56:36+00:00",
+      "matched_entities": {
+        "WaitTime": [
+          "wait time",
+          "wait",
+          "queue",
+          "current wait"
+        ],
+        "Attraction": [
+          "attraction"
+        ],
+        "Status": [
+          "closed",
+          "status"
+        ],
+        "Location": [
+          "universal"
+        ],
+        "RealTimeData": [
+          "real-time",
+          "current",
+          "last updated",
+          "minutes",
+          "queue data",
+          "queue-times"
+        ],
+        "QueueGeneral": [
+          "queue",
+          "wait",
+          "attraction",
+          "universal",
+          "time"
+        ]
+      },
+      "facility_id": "65",
+      "facility_name": "Universal Studios Orlando",
+      "attraction_id": "",
+      "attraction_name": "Stranger Things 5",
+      "service_id": "",
+      "timezone": "",
+      "wait_minutes": 0,
+      "availability_status": "Closed",
+      "ticket_type": "",
+      "price": null,
+      "currency": "",
+      "weather_metric": "",
+      "metric_value": null,
+      "canonical_key": "queue_target:65:ride:stranger-things-5",
+      "canonical_key_status": "name_proxy",
+      "event_key": "wait_time_snapshot:43eb73e0a8e0:20260924T135636Z",
+      "queue_target_key": "queue_target:65:ride:stranger-things-5",
+      "required_field_proxy": {
+        "facility_id": true,
+        "attraction_id": true,
+        "wait_minutes": true,
+        "source_url": true
+      },
+      "required_field_gaps": []
+    },
+    {
+      "source": "Islands of Adventure",
+      "source_type": "api",
+      "trust_tier": "T3_professional",
+      "content_type": "news",
+      "collection_tier": "C1_rss",
+      "producer_role": "",
+      "event_model": "wait_time_snapshot",
+      "title": "Popeye & Bluto's Bilge-Rat Barges® - Closed (Islands of Adventure)",
+      "url": "https://queue-times.com/en-US/parks/64/queue_times",
+      "source_url": "https://queue-times.com/en-US/parks/64/queue_times",
+      "event_at": "2026-09-24T13:56:24+00:00",
+      "matched_entities": {
+        "WaitTime": [
+          "wait time",
+          "wait",
+          "queue",
+          "current wait"
+        ],
+        "Attraction": [
+          "attraction"
+        ],
+        "Status": [
+          "closed",
+          "status"
+        ],
+        "Location": [
+          "islands of adventure"
+        ],
+        "RealTimeData": [
+          "real-time",
+          "current",
+          "last updated",
+          "minutes",
+          "queue data",
+          "queue-times"
+        ],
+        "QueueGeneral": [
+          "queue",
+          "wait",
+          "attraction",
+          "time"
+        ]
+      },
+      "facility_id": "64",
+      "facility_name": "Islands of Adventure",
+      "attraction_id": "",
+      "attraction_name": "Popeye & Bluto's Bilge-Rat Barges®",
+      "service_id": "",
+      "timezone": "",
+      "wait_minutes": 0,
+      "availability_status": "Closed",
+      "ticket_type": "",
+      "price": null,
+      "currency": "",
+      "weather_metric": "",
+      "metric_value": null,
+      "canonical_key": "queue_target:64:ride:popeye-bluto-s-bilge-rat-barges",
+      "canonical_key_status": "name_proxy",
+      "event_key": "wait_time_snapshot:4bffbafc1714:20260924T135624Z",
+      "queue_target_key": "queue_target:64:ride:popeye-bluto-s-bilge-rat-barges",
+      "required_field_proxy": {
+        "facility_id": true,
+        "attraction_id": true,
+        "wait_minutes": true,
+        "source_url": true
+      },
+      "required_field_gaps": []
+    },
+    {
+      "source": "Disneyland",
+      "source_type": "api",
+      "trust_tier": "T3_professional",
+      "content_type": "news",
+      "collection_tier": "C1_rss",
+      "producer_role": "",
+      "event_model": "wait_time_snapshot",
+      "title": "Buzz Lightyear Astro Blasters - Closed (Disneyland)",
+      "url": "https://queue-times.com/en-US/parks/16/queue_times",
+      "source_url": "https://queue-times.com/en-US/parks/16/queue_times",
+      "event_at": "2026-09-24T13:55:43+00:00",
+      "matched_entities": {
+        "WaitTime": [
+          "wait time",
+          "wait",
+          "queue",
+          "current wait"
+        ],
+        "Attraction": [
+          "attraction"
+        ],
+        "Status": [
+          "closed",
+          "status"
+        ],
+        "Location": [
+          "disneyland"
+        ],
+        "RealTimeData": [
+          "real-time",
+          "current",
+          "last updated",
+          "minutes",
+          "queue data",
+          "queue-times"
+        ],
+        "QueueGeneral": [
+          "queue",
+          "wait",
+          "attraction",
+          "time"
+        ]
+      },
+      "facility_id": "16",
+      "facility_name": "Disneyland",
+      "attraction_id": "",
+      "attraction_name": "Buzz Lightyear Astro Blasters",
+      "service_id": "",
+      "timezone": "",
+      "wait_minutes": 0,
+      "availability_status": "Closed",
+      "ticket_type": "",
+      "price": null,
+      "currency": "",
+      "weather_metric": "",
+      "metric_value": null,
+      "canonical_key": "queue_target:16:ride:buzz-lightyear-astro-blasters",
+      "canonical_key_status": "name_proxy",
+      "event_key": "wait_time_snapshot:61c949c01d57:20260924T135543Z",
+      "queue_target_key": "queue_target:16:ride:buzz-lightyear-astro-blasters",
+      "required_field_proxy": {
+        "facility_id": true,
+        "attraction_id": true,
+        "wait_minutes": true,
+        "source_url": true
+      },
+      "required_field_gaps": []
+    },
+    {
+      "source": "Animal Kingdom",
+      "source_type": "api",
+      "trust_tier": "T3_professional",
+      "content_type": "news",
+      "collection_tier": "C1_rss",
+      "producer_role": "",
+      "event_model": "wait_time_snapshot",
+      "title": "Wilderness Explorers - No wait (Animal Kingdom)",
+      "url": "https://queue-times.com/en-US/parks/8/queue_times",
+      "source_url": "https://queue-times.com/en-US/parks/8/queue_times",
+      "event_at": "2026-09-24T13:55:43+00:00",
+      "matched_entities": {
+        "WaitTime": [
+          "wait time",
+          "wait",
+          "queue",
+          "no wait",
+          "current wait"
+        ],
+        "Attraction": [
+          "attraction"
+        ],
+        "Status": [
+          "open",
+          "status"
+        ],
+        "Location": [
+          "animal kingdom"
+        ],
+        "RealTimeData": [
+          "real-time",
+          "current",
+          "last updated",
+          "minutes",
+          "queue data",
+          "queue-times"
+        ],
+        "QueueGeneral": [
+          "queue",
+          "wait",
+          "attraction",
+          "the",
+          "time"
+        ]
+      },
+      "facility_id": "8",
+      "facility_name": "Animal Kingdom",
+      "attraction_id": "",
+      "attraction_name": "Wilderness Explorers",
+      "service_id": "",
+      "timezone": "",
+      "wait_minutes": 0,
+      "availability_status": "Open",
+      "ticket_type": "",
+      "price": null,
+      "currency": "",
+      "weather_metric": "",
+      "metric_value": null,
+      "canonical_key": "queue_target:8:ride:wilderness-explorers",
+      "canonical_key_status": "name_proxy",
+      "event_key": "wait_time_snapshot:e4d7b18f2425:20260924T135543Z",
+      "queue_target_key": "queue_target:8:ride:wilderness-explorers",
+      "required_field_proxy": {
+        "facility_id": true,
+        "attraction_id": true,
+        "wait_minutes": true,
+        "source_url": true
+      },
+      "required_field_gaps": []
+    },
+    {
+      "source": "Disney California Adventure",
+      "source_type": "api",
+      "trust_tier": "T3_professional",
+      "content_type": "news",
+      "collection_tier": "C1_rss",
+      "producer_role": "",
+      "event_model": "wait_time_snapshot",
+      "title": "Villains Grove at Oogie Boogie Bash - Closed (Disney California Adventure)",
+      "url": "https://queue-times.com/en-US/parks/17/queue_times",
+      "source_url": "https://queue-times.com/en-US/parks/17/queue_times",
+      "event_at": "2026-09-24T13:55:43+00:00",
+      "matched_entities": {
+        "WaitTime": [
+          "wait time",
+          "wait",
+          "queue",
+          "current wait"
+        ],
+        "Attraction": [
+          "attraction"
+        ],
+        "Status": [
+          "closed",
+          "status"
+        ],
+        "Location": [
+          "disney",
+          "california adventure"
+        ],
+        "RealTimeData": [
+          "real-time",
+          "current",
+          "last updated",
+          "minutes",
+          "queue data",
+          "queue-times"
+        ],
+        "QueueGeneral": [
+          "queue",
+          "wait",
+          "attraction",
+          "disney",
+          "time"
+        ]
+      },
+      "facility_id": "17",
+      "facility_name": "Disney California Adventure",
+      "attraction_id": "",
+      "attraction_name": "Villains Grove at Oogie Boogie Bash",
+      "service_id": "",
+      "timezone": "",
+      "wait_minutes": 0,
+      "availability_status": "Closed",
+      "ticket_type": "",
+      "price": null,
+      "currency": "",
+      "weather_metric": "",
+      "metric_value": null,
+      "canonical_key": "queue_target:17:ride:villains-grove-at-oogie-boogie-bash",
+      "canonical_key_status": "name_proxy",
+      "event_key": "wait_time_snapshot:054a2690699a:20260924T135543Z",
+      "queue_target_key": "queue_target:17:ride:villains-grove-at-oogie-boogie-bash",
+      "required_field_proxy": {
+        "facility_id": true,
+        "attraction_id": true,
+        "wait_minutes": true,
+        "source_url": true
+      },
+      "required_field_gaps": []
+    },
+    {
+      "source": "Disney Hollywood Studios",
+      "source_type": "api",
+      "trust_tier": "T3_professional",
+      "content_type": "news",
+      "collection_tier": "C1_rss",
+      "producer_role": "",
+      "event_model": "wait_time_snapshot",
+      "title": "Slinky Dog Dash - 70 minutes wait (Disney Hollywood Studios)",
+      "url": "https://queue-times.com/en-US/parks/7/queue_times",
+      "source_url": "https://queue-times.com/en-US/parks/7/queue_times",
+      "event_at": "2026-09-24T13:55:29+00:00",
+      "matched_entities": {
+        "WaitTime": [
+          "wait time",
+          "wait",
+          "queue",
+          "minutes wait",
+          "current wait"
+        ],
+        "Attraction": [
+          "attraction"
+        ],
+        "Status": [
+          "open",
+          "status"
+        ],
+        "Location": [
+          "disney",
+          "hollywood studios"
+        ],
+        "RealTimeData": [
+          "real-time",
+          "current",
+          "last updated",
+          "minutes",
+          "queue data",
+          "queue-times"
+        ],
+        "QueueGeneral": [
+          "queue",
+          "wait",
+          "attraction",
+          "disney",
+          "story",
+          "time"
+        ]
+      },
+      "facility_id": "7",
+      "facility_name": "Disney Hollywood Studios",
+      "attraction_id": "",
+      "attraction_name": "Slinky Dog Dash",
+      "service_id": "",
+      "timezone": "",
+      "wait_minutes": 70,
+      "availability_status": "Open",
+      "ticket_type": "",
+      "price": null,
+      "currency": "",
+      "weather_metric": "",
+      "metric_value": null,
+      "canonical_key": "queue_target:7:ride:slinky-dog-dash",
+      "canonical_key_status": "name_proxy",
+      "event_key": "wait_time_snapshot:f00123b3e806:20260924T135529Z",
+      "queue_target_key": "queue_target:7:ride:slinky-dog-dash",
       "required_field_proxy": {
         "facility_id": true,
         "attraction_id": true,
@@ -1961,6 +1960,14 @@
     }
   ],
   "daily_review_items": [
+    {
+      "reason": "high_wait_review",
+      "event_model": "wait_time_snapshot",
+      "source": "Disney Hollywood Studios",
+      "title": "Slinky Dog Dash - 70 minutes wait (Disney Hollywood Studios)",
+      "canonical_key": "queue_target:7:ride:slinky-dog-dash",
+      "wait_minutes": 70
+    },
     {
       "reason": "missing_event_model",
       "event_model": "reservation_slot"
