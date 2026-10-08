@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-08",
+  "date": "2026-10-09",
   "category": "queue",
   "article_count": 200,
   "source_count": 21,
@@ -7,57 +7,57 @@
   "top_entities": [
     {
       "name": "QueueGeneral",
-      "count": 3077
+      "count": 3080
     },
     {
       "name": "Location",
-      "count": 232
+      "count": 236
     },
     {
       "name": "Attraction",
-      "count": 120
+      "count": 137
     },
     {
       "name": "RealTimeData",
-      "count": 94
+      "count": 99
     },
     {
       "name": "WaitTime",
-      "count": 76
+      "count": 85
     },
     {
       "name": "Status",
-      "count": 53
+      "count": 57
     },
     {
       "name": "VisitorTips",
-      "count": 14
+      "count": 17
     }
   ],
   "sources": {
-    "Disney California Adventure": 1,
-    "SeaWorld Orlando": 1,
-    "Animal Kingdom": 1,
-    "Disney Hollywood Studios": 1,
-    "Epcot": 1,
-    "Universal Studios Hollywood": 1,
     "Busch Gardens Tampa": 1,
+    "Universal Studios Hollywood": 1,
     "Universal Studios Orlando": 1,
     "Islands of Adventure": 1,
-    "Disneyland": 1,
+    "Disney California Adventure": 1,
+    "SeaWorld Orlando": 1,
     "Six Flags Magic Mountain": 1,
+    "Disneyland": 1,
+    "Animal Kingdom": 1,
+    "Disney Hollywood Studios": 1,
     "Disney Magic Kingdom": 1,
-    "Inside the Magic": 40,
-    "Reddit r/KoreaTravel": 79,
-    "Park World Magazine": 4,
-    "Attractions Magazine": 13,
-    "WDWMAGIC News": 28,
-    "Blooloop": 16,
-    "네이버 롯데월드 블로그": 1,
+    "Epcot": 1,
+    "Inside the Magic": 35,
+    "Reddit r/KoreaTravel": 66,
+    "WDWMAGIC News": 35,
+    "Attractions Magazine": 18,
+    "Blooloop": 21,
     "Theme Park Insider": 6,
-    "Theme Park Tribune": 1
+    "Park World Magazine": 4,
+    "Theme Park Tribune": 2,
+    "네이버 롯데월드 블로그": 1
   },
-  "generated_at": "2026-10-08T01:06:08.294408+09:00",
+  "generated_at": "2026-10-09T01:07:38.002468+09:00",
   "quality_summary": {
     "total_sources": 39,
     "enabled_sources": 25,
@@ -70,18 +70,18 @@
     "not_tracked_sources": 13,
     "skipped_disabled_sources": 14,
     "collection_error_count": 0,
-    "wait_time_snapshot_events": 374,
+    "wait_time_snapshot_events": 375,
     "reservation_slot_events": 0,
     "ticket_price_events": 0,
     "weather_context_events": 0,
-    "queue_signal_event_count": 374,
-    "wait_time_observation_count": 374,
-    "open_attraction_count": 224,
-    "closed_attraction_count": 150,
-    "zero_wait_count": 215,
-    "high_wait_review_count": 4,
-    "target_canonical_key_present_count": 374,
-    "attraction_canonical_key_present_count": 374,
+    "queue_signal_event_count": 375,
+    "wait_time_observation_count": 375,
+    "open_attraction_count": 236,
+    "closed_attraction_count": 139,
+    "zero_wait_count": 206,
+    "high_wait_review_count": 9,
+    "target_canonical_key_present_count": 375,
+    "attraction_canonical_key_present_count": 375,
     "reservation_canonical_key_present_count": 0,
     "ticket_canonical_key_present_count": 0,
     "weather_context_present_count": 0,
@@ -90,6 +90,6 @@
     "tracked_source_gap_count": 0,
     "missing_event_model_count": 3,
     "source_backlog_candidate_count": 4,
-    "daily_review_item_count": 11
+    "daily_review_item_count": 16
   }
 }

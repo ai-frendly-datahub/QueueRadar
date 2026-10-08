@@ -1,6 +1,6 @@
 {
   "category": "queue",
-  "generated_at": "2026-10-07T16:06:09.139376+00:00",
+  "generated_at": "2026-10-08T16:07:38.880447+00:00",
   "scope_note": "대기/예약 레이더 quality report is generated from repo-local category data_quality metadata and recent stored articles. Operational backlog sources remain separate until dedicated source-level fields are collected.",
   "summary": {
     "total_sources": 39,
@@ -20,9 +20,9 @@
     "weather_context_events": 0,
     "queue_signal_event_count": 12,
     "wait_time_observation_count": 12,
-    "open_attraction_count": 6,
-    "closed_attraction_count": 6,
-    "zero_wait_count": 9,
+    "open_attraction_count": 4,
+    "closed_attraction_count": 8,
+    "zero_wait_count": 10,
     "high_wait_review_count": 0,
     "target_canonical_key_present_count": 12,
     "attraction_canonical_key_present_count": 0,
@@ -54,7 +54,7 @@
       "status": "fresh",
       "article_count": 1,
       "event_count": 1,
-      "latest_event_at": "2026-10-07T16:00:32+00:00",
+      "latest_event_at": "2026-10-08T16:05:26+00:00",
       "age_days": 0.0,
       "latest_title": "Trick-or-Treat Locations at Mickey's Not-So-Scary Halloween Party - No wait (Disney Magic Kingdom)",
       "latest_url": "https://queue-times.com/en-US/parks/6/queue_times",
@@ -85,9 +85,9 @@
       "status": "fresh",
       "article_count": 1,
       "event_count": 1,
-      "latest_event_at": "2026-10-07T16:05:20+00:00",
+      "latest_event_at": "2026-10-08T16:05:25+00:00",
       "age_days": 0.0,
-      "latest_title": "Remy's Ratatouille Adventure Single Rider - No wait (Epcot)",
+      "latest_title": "Living with the Land – Glimmering Greenhouses - Closed (Epcot)",
       "latest_url": "https://queue-times.com/en-US/parks/5/queue_times",
       "latest_required_field_proxy": {
         "facility_id": true,
@@ -95,7 +95,7 @@
         "wait_minutes": true,
         "source_url": true
       },
-      "latest_canonical_key": "queue_target:5:ride:remy-s-ratatouille-adventure-single-rider",
+      "latest_canonical_key": "queue_target:5:ride:living-with-the-land-glimmering-greenhouses",
       "latest_required_field_gaps": [],
       "errors": []
     },
@@ -116,9 +116,9 @@
       "status": "fresh",
       "article_count": 1,
       "event_count": 1,
-      "latest_event_at": "2026-10-07T16:05:29+00:00",
+      "latest_event_at": "2026-10-08T16:05:26+00:00",
       "age_days": 0.0,
-      "latest_title": "Slinky Dog Dash - 45 minutes wait (Disney Hollywood Studios)",
+      "latest_title": "Slinky Dog Dash - Closed (Disney Hollywood Studios)",
       "latest_url": "https://queue-times.com/en-US/parks/7/queue_times",
       "latest_required_field_proxy": {
         "facility_id": true,
@@ -147,7 +147,7 @@
       "status": "fresh",
       "article_count": 1,
       "event_count": 1,
-      "latest_event_at": "2026-10-07T16:05:30+00:00",
+      "latest_event_at": "2026-10-08T16:05:36+00:00",
       "age_days": 0.0,
       "latest_title": "Wilderness Explorers - No wait (Animal Kingdom)",
       "latest_url": "https://queue-times.com/en-US/parks/8/queue_times",
@@ -178,7 +178,7 @@
       "status": "fresh",
       "article_count": 1,
       "event_count": 1,
-      "latest_event_at": "2026-10-07T16:00:44+00:00",
+      "latest_event_at": "2026-10-08T16:05:36+00:00",
       "age_days": 0.0,
       "latest_title": "Buzz Lightyear Astro Blasters - 5 minutes wait (Disneyland)",
       "latest_url": "https://queue-times.com/en-US/parks/16/queue_times",
@@ -209,7 +209,7 @@
       "status": "fresh",
       "article_count": 1,
       "event_count": 1,
-      "latest_event_at": "2026-10-07T16:05:43+00:00",
+      "latest_event_at": "2026-10-08T16:05:46+00:00",
       "age_days": 0.0,
       "latest_title": "Villains Grove at Oogie Boogie Bash - Closed (Disney California Adventure)",
       "latest_url": "https://queue-times.com/en-US/parks/17/queue_times",
@@ -240,7 +240,7 @@
       "status": "fresh",
       "article_count": 1,
       "event_count": 1,
-      "latest_event_at": "2026-10-07T16:01:34+00:00",
+      "latest_event_at": "2026-10-08T16:06:27+00:00",
       "age_days": 0.0,
       "latest_title": "Stranger Things 5 - Closed (Universal Studios Orlando)",
       "latest_url": "https://queue-times.com/en-US/parks/65/queue_times",
@@ -271,7 +271,7 @@
       "status": "fresh",
       "article_count": 1,
       "event_count": 1,
-      "latest_event_at": "2026-10-07T16:01:26+00:00",
+      "latest_event_at": "2026-10-08T16:06:26+00:00",
       "age_days": 0.0,
       "latest_title": "Popeye & Bluto's Bilge-Rat Barges® - 5 minutes wait (Islands of Adventure)",
       "latest_url": "https://queue-times.com/en-US/parks/64/queue_times",
@@ -302,7 +302,7 @@
       "status": "fresh",
       "article_count": 1,
       "event_count": 1,
-      "latest_event_at": "2026-10-07T16:01:45+00:00",
+      "latest_event_at": "2026-10-08T16:06:44+00:00",
       "age_days": 0.0,
       "latest_title": "Terror Tram starring Art the Clown - Closed (Universal Studios Hollywood)",
       "latest_url": "https://queue-times.com/en-US/parks/66/queue_times",
@@ -333,7 +333,7 @@
       "status": "fresh",
       "article_count": 1,
       "event_count": 1,
-      "latest_event_at": "2026-10-07T16:01:35+00:00",
+      "latest_event_at": "2026-10-08T16:06:45+00:00",
       "age_days": 0.0,
       "latest_title": "Raven's Mill: Lambs To The Slaughter - Closed (Busch Gardens Tampa)",
       "latest_url": "https://queue-times.com/en-US/parks/24/queue_times",
@@ -364,7 +364,7 @@
       "status": "fresh",
       "article_count": 1,
       "event_count": 1,
-      "latest_event_at": "2026-10-07T16:05:37+00:00",
+      "latest_event_at": "2026-10-08T16:05:37+00:00",
       "age_days": 0.0,
       "latest_title": "RETURNING! The Rave Yard - Closed (SeaWorld Orlando)",
       "latest_url": "https://queue-times.com/en-US/parks/21/queue_times",
@@ -395,7 +395,7 @@
       "status": "fresh",
       "article_count": 1,
       "event_count": 1,
-      "latest_event_at": "2026-10-07T16:00:33+00:00",
+      "latest_event_at": "2026-10-08T16:05:36+00:00",
       "age_days": 0.0,
       "latest_title": "Wolves' Blood - Closed (Six Flags Magic Mountain)",
       "latest_url": "https://queue-times.com/en-US/parks/32/queue_times",
@@ -450,7 +450,7 @@
       "event_model": "editorial_coverage",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 75,
+      "article_count": 77,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -476,7 +476,7 @@
       "event_model": "editorial_coverage",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 48,
+      "article_count": 50,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -528,7 +528,7 @@
       "event_model": "editorial_coverage",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 30,
+      "article_count": 35,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -814,7 +814,7 @@
       "event_model": "editorial_coverage",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 3,
+      "article_count": 4,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -1100,7 +1100,7 @@
       "event_model": "editorial_coverage",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 141,
+      "article_count": 142,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -1114,17 +1114,17 @@
   ],
   "events": [
     {
-      "source": "Disney California Adventure",
+      "source": "Busch Gardens Tampa",
       "source_type": "api",
       "trust_tier": "T3_professional",
       "content_type": "news",
       "collection_tier": "C1_rss",
       "producer_role": "",
       "event_model": "wait_time_snapshot",
-      "title": "Villains Grove at Oogie Boogie Bash - Closed (Disney California Adventure)",
-      "url": "https://queue-times.com/en-US/parks/17/queue_times",
-      "source_url": "https://queue-times.com/en-US/parks/17/queue_times",
-      "event_at": "2026-10-07T16:05:43+00:00",
+      "title": "Raven's Mill: Lambs To The Slaughter - Closed (Busch Gardens Tampa)",
+      "url": "https://queue-times.com/en-US/parks/24/queue_times",
+      "source_url": "https://queue-times.com/en-US/parks/24/queue_times",
+      "event_at": "2026-10-08T16:06:45+00:00",
       "matched_entities": {
         "WaitTime": [
           "wait time",
@@ -1140,78 +1140,7 @@
           "status"
         ],
         "Location": [
-          "disney",
-          "california adventure"
-        ],
-        "RealTimeData": [
-          "real-time",
-          "current",
-          "last updated",
-          "minutes",
-          "queue data",
-          "queue-times"
-        ],
-        "QueueGeneral": [
-          "queue",
-          "wait",
-          "attraction",
-          "disney",
-          "time"
-        ]
-      },
-      "facility_id": "17",
-      "facility_name": "Disney California Adventure",
-      "attraction_id": "",
-      "attraction_name": "Villains Grove at Oogie Boogie Bash",
-      "service_id": "",
-      "timezone": "",
-      "wait_minutes": 0,
-      "availability_status": "Closed",
-      "ticket_type": "",
-      "price": null,
-      "currency": "",
-      "weather_metric": "",
-      "metric_value": null,
-      "canonical_key": "queue_target:17:ride:villains-grove-at-oogie-boogie-bash",
-      "canonical_key_status": "name_proxy",
-      "event_key": "wait_time_snapshot:054a2690699a:20261007T160543Z",
-      "queue_target_key": "queue_target:17:ride:villains-grove-at-oogie-boogie-bash",
-      "required_field_proxy": {
-        "facility_id": true,
-        "attraction_id": true,
-        "wait_minutes": true,
-        "source_url": true
-      },
-      "required_field_gaps": []
-    },
-    {
-      "source": "SeaWorld Orlando",
-      "source_type": "api",
-      "trust_tier": "T3_professional",
-      "content_type": "news",
-      "collection_tier": "C1_rss",
-      "producer_role": "",
-      "event_model": "wait_time_snapshot",
-      "title": "RETURNING! The Rave Yard - Closed (SeaWorld Orlando)",
-      "url": "https://queue-times.com/en-US/parks/21/queue_times",
-      "source_url": "https://queue-times.com/en-US/parks/21/queue_times",
-      "event_at": "2026-10-07T16:05:37+00:00",
-      "matched_entities": {
-        "WaitTime": [
-          "wait time",
-          "wait",
-          "queue",
-          "current wait"
-        ],
-        "Attraction": [
-          "attraction"
-        ],
-        "Status": [
-          "closed",
-          "status"
-        ],
-        "Location": [
-          "seaworld"
+          "busch gardens"
         ],
         "RealTimeData": [
           "real-time",
@@ -1229,10 +1158,10 @@
           "time"
         ]
       },
-      "facility_id": "21",
-      "facility_name": "SeaWorld Orlando",
+      "facility_id": "24",
+      "facility_name": "Busch Gardens Tampa",
       "attraction_id": "",
-      "attraction_name": "RETURNING! The Rave Yard",
+      "attraction_name": "Raven's Mill: Lambs To The Slaughter",
       "service_id": "",
       "timezone": "",
       "wait_minutes": 0,
@@ -1242,224 +1171,10 @@
       "currency": "",
       "weather_metric": "",
       "metric_value": null,
-      "canonical_key": "queue_target:21:ride:returning-the-rave-yard",
+      "canonical_key": "queue_target:24:ride:raven-s-mill-lambs-to-the-slaughter",
       "canonical_key_status": "name_proxy",
-      "event_key": "wait_time_snapshot:08c76da844fe:20261007T160537Z",
-      "queue_target_key": "queue_target:21:ride:returning-the-rave-yard",
-      "required_field_proxy": {
-        "facility_id": true,
-        "attraction_id": true,
-        "wait_minutes": true,
-        "source_url": true
-      },
-      "required_field_gaps": []
-    },
-    {
-      "source": "Animal Kingdom",
-      "source_type": "api",
-      "trust_tier": "T3_professional",
-      "content_type": "news",
-      "collection_tier": "C1_rss",
-      "producer_role": "",
-      "event_model": "wait_time_snapshot",
-      "title": "Wilderness Explorers - No wait (Animal Kingdom)",
-      "url": "https://queue-times.com/en-US/parks/8/queue_times",
-      "source_url": "https://queue-times.com/en-US/parks/8/queue_times",
-      "event_at": "2026-10-07T16:05:30+00:00",
-      "matched_entities": {
-        "WaitTime": [
-          "wait time",
-          "wait",
-          "queue",
-          "no wait",
-          "current wait"
-        ],
-        "Attraction": [
-          "attraction"
-        ],
-        "Status": [
-          "open",
-          "status"
-        ],
-        "Location": [
-          "animal kingdom"
-        ],
-        "RealTimeData": [
-          "real-time",
-          "current",
-          "last updated",
-          "minutes",
-          "queue data",
-          "queue-times"
-        ],
-        "QueueGeneral": [
-          "queue",
-          "wait",
-          "attraction",
-          "the",
-          "time"
-        ]
-      },
-      "facility_id": "8",
-      "facility_name": "Animal Kingdom",
-      "attraction_id": "",
-      "attraction_name": "Wilderness Explorers",
-      "service_id": "",
-      "timezone": "",
-      "wait_minutes": 0,
-      "availability_status": "Open",
-      "ticket_type": "",
-      "price": null,
-      "currency": "",
-      "weather_metric": "",
-      "metric_value": null,
-      "canonical_key": "queue_target:8:ride:wilderness-explorers",
-      "canonical_key_status": "name_proxy",
-      "event_key": "wait_time_snapshot:e4d7b18f2425:20261007T160530Z",
-      "queue_target_key": "queue_target:8:ride:wilderness-explorers",
-      "required_field_proxy": {
-        "facility_id": true,
-        "attraction_id": true,
-        "wait_minutes": true,
-        "source_url": true
-      },
-      "required_field_gaps": []
-    },
-    {
-      "source": "Disney Hollywood Studios",
-      "source_type": "api",
-      "trust_tier": "T3_professional",
-      "content_type": "news",
-      "collection_tier": "C1_rss",
-      "producer_role": "",
-      "event_model": "wait_time_snapshot",
-      "title": "Slinky Dog Dash - 45 minutes wait (Disney Hollywood Studios)",
-      "url": "https://queue-times.com/en-US/parks/7/queue_times",
-      "source_url": "https://queue-times.com/en-US/parks/7/queue_times",
-      "event_at": "2026-10-07T16:05:29+00:00",
-      "matched_entities": {
-        "WaitTime": [
-          "wait time",
-          "wait",
-          "queue",
-          "minutes wait",
-          "current wait"
-        ],
-        "Attraction": [
-          "attraction"
-        ],
-        "Status": [
-          "open",
-          "status"
-        ],
-        "Location": [
-          "disney",
-          "hollywood studios"
-        ],
-        "RealTimeData": [
-          "real-time",
-          "current",
-          "last updated",
-          "minutes",
-          "queue data",
-          "queue-times"
-        ],
-        "QueueGeneral": [
-          "queue",
-          "wait",
-          "attraction",
-          "disney",
-          "story",
-          "time"
-        ]
-      },
-      "facility_id": "7",
-      "facility_name": "Disney Hollywood Studios",
-      "attraction_id": "",
-      "attraction_name": "Slinky Dog Dash",
-      "service_id": "",
-      "timezone": "",
-      "wait_minutes": 45,
-      "availability_status": "Open",
-      "ticket_type": "",
-      "price": null,
-      "currency": "",
-      "weather_metric": "",
-      "metric_value": null,
-      "canonical_key": "queue_target:7:ride:slinky-dog-dash",
-      "canonical_key_status": "name_proxy",
-      "event_key": "wait_time_snapshot:f00123b3e806:20261007T160529Z",
-      "queue_target_key": "queue_target:7:ride:slinky-dog-dash",
-      "required_field_proxy": {
-        "facility_id": true,
-        "attraction_id": true,
-        "wait_minutes": true,
-        "source_url": true
-      },
-      "required_field_gaps": []
-    },
-    {
-      "source": "Epcot",
-      "source_type": "api",
-      "trust_tier": "T3_professional",
-      "content_type": "news",
-      "collection_tier": "C1_rss",
-      "producer_role": "",
-      "event_model": "wait_time_snapshot",
-      "title": "Remy's Ratatouille Adventure Single Rider - No wait (Epcot)",
-      "url": "https://queue-times.com/en-US/parks/5/queue_times",
-      "source_url": "https://queue-times.com/en-US/parks/5/queue_times",
-      "event_at": "2026-10-07T16:05:20+00:00",
-      "matched_entities": {
-        "WaitTime": [
-          "wait time",
-          "wait",
-          "queue",
-          "no wait",
-          "current wait"
-        ],
-        "Attraction": [
-          "attraction"
-        ],
-        "Status": [
-          "open",
-          "status"
-        ],
-        "Location": [
-          "epcot"
-        ],
-        "RealTimeData": [
-          "real-time",
-          "current",
-          "last updated",
-          "minutes",
-          "queue data",
-          "queue-times"
-        ],
-        "QueueGeneral": [
-          "queue",
-          "wait",
-          "attraction",
-          "time"
-        ]
-      },
-      "facility_id": "5",
-      "facility_name": "Epcot",
-      "attraction_id": "",
-      "attraction_name": "Remy's Ratatouille Adventure Single Rider",
-      "service_id": "",
-      "timezone": "",
-      "wait_minutes": 0,
-      "availability_status": "Open",
-      "ticket_type": "",
-      "price": null,
-      "currency": "",
-      "weather_metric": "",
-      "metric_value": null,
-      "canonical_key": "queue_target:5:ride:remy-s-ratatouille-adventure-single-rider",
-      "canonical_key_status": "name_proxy",
-      "event_key": "wait_time_snapshot:889ecbe32291:20261007T160520Z",
-      "queue_target_key": "queue_target:5:ride:remy-s-ratatouille-adventure-single-rider",
+      "event_key": "wait_time_snapshot:7dce2399cb6b:20261008T160645Z",
+      "queue_target_key": "queue_target:24:ride:raven-s-mill-lambs-to-the-slaughter",
       "required_field_proxy": {
         "facility_id": true,
         "attraction_id": true,
@@ -1479,7 +1194,7 @@
       "title": "Terror Tram starring Art the Clown - Closed (Universal Studios Hollywood)",
       "url": "https://queue-times.com/en-US/parks/66/queue_times",
       "source_url": "https://queue-times.com/en-US/parks/66/queue_times",
-      "event_at": "2026-10-07T16:01:45+00:00",
+      "event_at": "2026-10-08T16:06:44+00:00",
       "matched_entities": {
         "WaitTime": [
           "wait time",
@@ -1529,78 +1244,8 @@
       "metric_value": null,
       "canonical_key": "queue_target:66:ride:terror-tram-starring-art-the-clown",
       "canonical_key_status": "name_proxy",
-      "event_key": "wait_time_snapshot:2a818412213e:20261007T160145Z",
+      "event_key": "wait_time_snapshot:2a818412213e:20261008T160644Z",
       "queue_target_key": "queue_target:66:ride:terror-tram-starring-art-the-clown",
-      "required_field_proxy": {
-        "facility_id": true,
-        "attraction_id": true,
-        "wait_minutes": true,
-        "source_url": true
-      },
-      "required_field_gaps": []
-    },
-    {
-      "source": "Busch Gardens Tampa",
-      "source_type": "api",
-      "trust_tier": "T3_professional",
-      "content_type": "news",
-      "collection_tier": "C1_rss",
-      "producer_role": "",
-      "event_model": "wait_time_snapshot",
-      "title": "Raven's Mill: Lambs To The Slaughter - Closed (Busch Gardens Tampa)",
-      "url": "https://queue-times.com/en-US/parks/24/queue_times",
-      "source_url": "https://queue-times.com/en-US/parks/24/queue_times",
-      "event_at": "2026-10-07T16:01:35+00:00",
-      "matched_entities": {
-        "WaitTime": [
-          "wait time",
-          "wait",
-          "queue",
-          "current wait"
-        ],
-        "Attraction": [
-          "attraction"
-        ],
-        "Status": [
-          "closed",
-          "status"
-        ],
-        "Location": [
-          "busch gardens"
-        ],
-        "RealTimeData": [
-          "real-time",
-          "current",
-          "last updated",
-          "minutes",
-          "queue data",
-          "queue-times"
-        ],
-        "QueueGeneral": [
-          "queue",
-          "wait",
-          "attraction",
-          "the",
-          "time"
-        ]
-      },
-      "facility_id": "24",
-      "facility_name": "Busch Gardens Tampa",
-      "attraction_id": "",
-      "attraction_name": "Raven's Mill: Lambs To The Slaughter",
-      "service_id": "",
-      "timezone": "",
-      "wait_minutes": 0,
-      "availability_status": "Closed",
-      "ticket_type": "",
-      "price": null,
-      "currency": "",
-      "weather_metric": "",
-      "metric_value": null,
-      "canonical_key": "queue_target:24:ride:raven-s-mill-lambs-to-the-slaughter",
-      "canonical_key_status": "name_proxy",
-      "event_key": "wait_time_snapshot:7dce2399cb6b:20261007T160135Z",
-      "queue_target_key": "queue_target:24:ride:raven-s-mill-lambs-to-the-slaughter",
       "required_field_proxy": {
         "facility_id": true,
         "attraction_id": true,
@@ -1620,7 +1265,7 @@
       "title": "Stranger Things 5 - Closed (Universal Studios Orlando)",
       "url": "https://queue-times.com/en-US/parks/65/queue_times",
       "source_url": "https://queue-times.com/en-US/parks/65/queue_times",
-      "event_at": "2026-10-07T16:01:34+00:00",
+      "event_at": "2026-10-08T16:06:27+00:00",
       "matched_entities": {
         "WaitTime": [
           "wait time",
@@ -1669,7 +1314,7 @@
       "metric_value": null,
       "canonical_key": "queue_target:65:ride:stranger-things-5",
       "canonical_key_status": "name_proxy",
-      "event_key": "wait_time_snapshot:43eb73e0a8e0:20261007T160134Z",
+      "event_key": "wait_time_snapshot:43eb73e0a8e0:20261008T160627Z",
       "queue_target_key": "queue_target:65:ride:stranger-things-5",
       "required_field_proxy": {
         "facility_id": true,
@@ -1690,7 +1335,7 @@
       "title": "Popeye & Bluto's Bilge-Rat Barges® - 5 minutes wait (Islands of Adventure)",
       "url": "https://queue-times.com/en-US/parks/64/queue_times",
       "source_url": "https://queue-times.com/en-US/parks/64/queue_times",
-      "event_at": "2026-10-07T16:01:26+00:00",
+      "event_at": "2026-10-08T16:06:26+00:00",
       "matched_entities": {
         "WaitTime": [
           "wait time",
@@ -1739,8 +1384,289 @@
       "metric_value": null,
       "canonical_key": "queue_target:64:ride:popeye-bluto-s-bilge-rat-barges",
       "canonical_key_status": "name_proxy",
-      "event_key": "wait_time_snapshot:4bffbafc1714:20261007T160126Z",
+      "event_key": "wait_time_snapshot:4bffbafc1714:20261008T160626Z",
       "queue_target_key": "queue_target:64:ride:popeye-bluto-s-bilge-rat-barges",
+      "required_field_proxy": {
+        "facility_id": true,
+        "attraction_id": true,
+        "wait_minutes": true,
+        "source_url": true
+      },
+      "required_field_gaps": []
+    },
+    {
+      "source": "Disney California Adventure",
+      "source_type": "api",
+      "trust_tier": "T3_professional",
+      "content_type": "news",
+      "collection_tier": "C1_rss",
+      "producer_role": "",
+      "event_model": "wait_time_snapshot",
+      "title": "Villains Grove at Oogie Boogie Bash - Closed (Disney California Adventure)",
+      "url": "https://queue-times.com/en-US/parks/17/queue_times",
+      "source_url": "https://queue-times.com/en-US/parks/17/queue_times",
+      "event_at": "2026-10-08T16:05:46+00:00",
+      "matched_entities": {
+        "WaitTime": [
+          "wait time",
+          "wait",
+          "queue",
+          "current wait"
+        ],
+        "Attraction": [
+          "attraction"
+        ],
+        "Status": [
+          "closed",
+          "status"
+        ],
+        "Location": [
+          "disney",
+          "california adventure"
+        ],
+        "RealTimeData": [
+          "real-time",
+          "current",
+          "last updated",
+          "minutes",
+          "queue data",
+          "queue-times"
+        ],
+        "QueueGeneral": [
+          "queue",
+          "wait",
+          "attraction",
+          "disney",
+          "time"
+        ]
+      },
+      "facility_id": "17",
+      "facility_name": "Disney California Adventure",
+      "attraction_id": "",
+      "attraction_name": "Villains Grove at Oogie Boogie Bash",
+      "service_id": "",
+      "timezone": "",
+      "wait_minutes": 0,
+      "availability_status": "Closed",
+      "ticket_type": "",
+      "price": null,
+      "currency": "",
+      "weather_metric": "",
+      "metric_value": null,
+      "canonical_key": "queue_target:17:ride:villains-grove-at-oogie-boogie-bash",
+      "canonical_key_status": "name_proxy",
+      "event_key": "wait_time_snapshot:054a2690699a:20261008T160546Z",
+      "queue_target_key": "queue_target:17:ride:villains-grove-at-oogie-boogie-bash",
+      "required_field_proxy": {
+        "facility_id": true,
+        "attraction_id": true,
+        "wait_minutes": true,
+        "source_url": true
+      },
+      "required_field_gaps": []
+    },
+    {
+      "source": "SeaWorld Orlando",
+      "source_type": "api",
+      "trust_tier": "T3_professional",
+      "content_type": "news",
+      "collection_tier": "C1_rss",
+      "producer_role": "",
+      "event_model": "wait_time_snapshot",
+      "title": "RETURNING! The Rave Yard - Closed (SeaWorld Orlando)",
+      "url": "https://queue-times.com/en-US/parks/21/queue_times",
+      "source_url": "https://queue-times.com/en-US/parks/21/queue_times",
+      "event_at": "2026-10-08T16:05:37+00:00",
+      "matched_entities": {
+        "WaitTime": [
+          "wait time",
+          "wait",
+          "queue",
+          "current wait"
+        ],
+        "Attraction": [
+          "attraction"
+        ],
+        "Status": [
+          "closed",
+          "status"
+        ],
+        "Location": [
+          "seaworld"
+        ],
+        "RealTimeData": [
+          "real-time",
+          "current",
+          "last updated",
+          "minutes",
+          "queue data",
+          "queue-times"
+        ],
+        "QueueGeneral": [
+          "queue",
+          "wait",
+          "attraction",
+          "the",
+          "time"
+        ]
+      },
+      "facility_id": "21",
+      "facility_name": "SeaWorld Orlando",
+      "attraction_id": "",
+      "attraction_name": "RETURNING! The Rave Yard",
+      "service_id": "",
+      "timezone": "",
+      "wait_minutes": 0,
+      "availability_status": "Closed",
+      "ticket_type": "",
+      "price": null,
+      "currency": "",
+      "weather_metric": "",
+      "metric_value": null,
+      "canonical_key": "queue_target:21:ride:returning-the-rave-yard",
+      "canonical_key_status": "name_proxy",
+      "event_key": "wait_time_snapshot:08c76da844fe:20261008T160537Z",
+      "queue_target_key": "queue_target:21:ride:returning-the-rave-yard",
+      "required_field_proxy": {
+        "facility_id": true,
+        "attraction_id": true,
+        "wait_minutes": true,
+        "source_url": true
+      },
+      "required_field_gaps": []
+    },
+    {
+      "source": "Six Flags Magic Mountain",
+      "source_type": "api",
+      "trust_tier": "T3_professional",
+      "content_type": "news",
+      "collection_tier": "C1_rss",
+      "producer_role": "",
+      "event_model": "wait_time_snapshot",
+      "title": "Wolves' Blood - Closed (Six Flags Magic Mountain)",
+      "url": "https://queue-times.com/en-US/parks/32/queue_times",
+      "source_url": "https://queue-times.com/en-US/parks/32/queue_times",
+      "event_at": "2026-10-08T16:05:36+00:00",
+      "matched_entities": {
+        "WaitTime": [
+          "wait time",
+          "wait",
+          "queue",
+          "current wait"
+        ],
+        "Attraction": [
+          "attraction"
+        ],
+        "Status": [
+          "closed",
+          "status"
+        ],
+        "Location": [
+          "six flags"
+        ],
+        "RealTimeData": [
+          "real-time",
+          "current",
+          "last updated",
+          "minutes",
+          "queue data",
+          "queue-times"
+        ],
+        "QueueGeneral": [
+          "queue",
+          "wait",
+          "attraction",
+          "time"
+        ]
+      },
+      "facility_id": "32",
+      "facility_name": "Six Flags Magic Mountain",
+      "attraction_id": "",
+      "attraction_name": "Wolves' Blood",
+      "service_id": "",
+      "timezone": "",
+      "wait_minutes": 0,
+      "availability_status": "Closed",
+      "ticket_type": "",
+      "price": null,
+      "currency": "",
+      "weather_metric": "",
+      "metric_value": null,
+      "canonical_key": "queue_target:32:ride:wolves-blood",
+      "canonical_key_status": "name_proxy",
+      "event_key": "wait_time_snapshot:93cbe2d25ed4:20261008T160536Z",
+      "queue_target_key": "queue_target:32:ride:wolves-blood",
+      "required_field_proxy": {
+        "facility_id": true,
+        "attraction_id": true,
+        "wait_minutes": true,
+        "source_url": true
+      },
+      "required_field_gaps": []
+    },
+    {
+      "source": "Animal Kingdom",
+      "source_type": "api",
+      "trust_tier": "T3_professional",
+      "content_type": "news",
+      "collection_tier": "C1_rss",
+      "producer_role": "",
+      "event_model": "wait_time_snapshot",
+      "title": "Wilderness Explorers - No wait (Animal Kingdom)",
+      "url": "https://queue-times.com/en-US/parks/8/queue_times",
+      "source_url": "https://queue-times.com/en-US/parks/8/queue_times",
+      "event_at": "2026-10-08T16:05:36+00:00",
+      "matched_entities": {
+        "WaitTime": [
+          "wait time",
+          "wait",
+          "queue",
+          "no wait",
+          "current wait"
+        ],
+        "Attraction": [
+          "attraction"
+        ],
+        "Status": [
+          "open",
+          "status"
+        ],
+        "Location": [
+          "animal kingdom"
+        ],
+        "RealTimeData": [
+          "real-time",
+          "current",
+          "last updated",
+          "minutes",
+          "queue data",
+          "queue-times"
+        ],
+        "QueueGeneral": [
+          "queue",
+          "wait",
+          "attraction",
+          "the",
+          "time"
+        ]
+      },
+      "facility_id": "8",
+      "facility_name": "Animal Kingdom",
+      "attraction_id": "",
+      "attraction_name": "Wilderness Explorers",
+      "service_id": "",
+      "timezone": "",
+      "wait_minutes": 0,
+      "availability_status": "Open",
+      "ticket_type": "",
+      "price": null,
+      "currency": "",
+      "weather_metric": "",
+      "metric_value": null,
+      "canonical_key": "queue_target:8:ride:wilderness-explorers",
+      "canonical_key_status": "name_proxy",
+      "event_key": "wait_time_snapshot:e4d7b18f2425:20261008T160536Z",
+      "queue_target_key": "queue_target:8:ride:wilderness-explorers",
       "required_field_proxy": {
         "facility_id": true,
         "attraction_id": true,
@@ -1760,7 +1686,7 @@
       "title": "Buzz Lightyear Astro Blasters - 5 minutes wait (Disneyland)",
       "url": "https://queue-times.com/en-US/parks/16/queue_times",
       "source_url": "https://queue-times.com/en-US/parks/16/queue_times",
-      "event_at": "2026-10-07T16:00:44+00:00",
+      "event_at": "2026-10-08T16:05:36+00:00",
       "matched_entities": {
         "WaitTime": [
           "wait time",
@@ -1809,77 +1735,8 @@
       "metric_value": null,
       "canonical_key": "queue_target:16:ride:buzz-lightyear-astro-blasters",
       "canonical_key_status": "name_proxy",
-      "event_key": "wait_time_snapshot:61c949c01d57:20261007T160044Z",
+      "event_key": "wait_time_snapshot:61c949c01d57:20261008T160536Z",
       "queue_target_key": "queue_target:16:ride:buzz-lightyear-astro-blasters",
-      "required_field_proxy": {
-        "facility_id": true,
-        "attraction_id": true,
-        "wait_minutes": true,
-        "source_url": true
-      },
-      "required_field_gaps": []
-    },
-    {
-      "source": "Six Flags Magic Mountain",
-      "source_type": "api",
-      "trust_tier": "T3_professional",
-      "content_type": "news",
-      "collection_tier": "C1_rss",
-      "producer_role": "",
-      "event_model": "wait_time_snapshot",
-      "title": "Wolves' Blood - Closed (Six Flags Magic Mountain)",
-      "url": "https://queue-times.com/en-US/parks/32/queue_times",
-      "source_url": "https://queue-times.com/en-US/parks/32/queue_times",
-      "event_at": "2026-10-07T16:00:33+00:00",
-      "matched_entities": {
-        "WaitTime": [
-          "wait time",
-          "wait",
-          "queue",
-          "current wait"
-        ],
-        "Attraction": [
-          "attraction"
-        ],
-        "Status": [
-          "closed",
-          "status"
-        ],
-        "Location": [
-          "six flags"
-        ],
-        "RealTimeData": [
-          "real-time",
-          "current",
-          "last updated",
-          "minutes",
-          "queue data",
-          "queue-times"
-        ],
-        "QueueGeneral": [
-          "queue",
-          "wait",
-          "attraction",
-          "time"
-        ]
-      },
-      "facility_id": "32",
-      "facility_name": "Six Flags Magic Mountain",
-      "attraction_id": "",
-      "attraction_name": "Wolves' Blood",
-      "service_id": "",
-      "timezone": "",
-      "wait_minutes": 0,
-      "availability_status": "Closed",
-      "ticket_type": "",
-      "price": null,
-      "currency": "",
-      "weather_metric": "",
-      "metric_value": null,
-      "canonical_key": "queue_target:32:ride:wolves-blood",
-      "canonical_key_status": "name_proxy",
-      "event_key": "wait_time_snapshot:93cbe2d25ed4:20261007T160033Z",
-      "queue_target_key": "queue_target:32:ride:wolves-blood",
       "required_field_proxy": {
         "facility_id": true,
         "attraction_id": true,
@@ -1899,7 +1756,7 @@
       "title": "Trick-or-Treat Locations at Mickey's Not-So-Scary Halloween Party - No wait (Disney Magic Kingdom)",
       "url": "https://queue-times.com/en-US/parks/6/queue_times",
       "source_url": "https://queue-times.com/en-US/parks/6/queue_times",
-      "event_at": "2026-10-07T16:00:32+00:00",
+      "event_at": "2026-10-08T16:05:26+00:00",
       "matched_entities": {
         "WaitTime": [
           "wait time",
@@ -1951,8 +1808,150 @@
       "metric_value": null,
       "canonical_key": "queue_target:6:ride:trick-or-treat-locations-at-mickey-s-not-so-scary-halloween-party",
       "canonical_key_status": "name_proxy",
-      "event_key": "wait_time_snapshot:7604a5df2863:20261007T160032Z",
+      "event_key": "wait_time_snapshot:7604a5df2863:20261008T160526Z",
       "queue_target_key": "queue_target:6:ride:trick-or-treat-locations-at-mickey-s-not-so-scary-halloween-party",
+      "required_field_proxy": {
+        "facility_id": true,
+        "attraction_id": true,
+        "wait_minutes": true,
+        "source_url": true
+      },
+      "required_field_gaps": []
+    },
+    {
+      "source": "Disney Hollywood Studios",
+      "source_type": "api",
+      "trust_tier": "T3_professional",
+      "content_type": "news",
+      "collection_tier": "C1_rss",
+      "producer_role": "",
+      "event_model": "wait_time_snapshot",
+      "title": "Slinky Dog Dash - Closed (Disney Hollywood Studios)",
+      "url": "https://queue-times.com/en-US/parks/7/queue_times",
+      "source_url": "https://queue-times.com/en-US/parks/7/queue_times",
+      "event_at": "2026-10-08T16:05:26+00:00",
+      "matched_entities": {
+        "WaitTime": [
+          "wait time",
+          "wait",
+          "queue",
+          "current wait"
+        ],
+        "Attraction": [
+          "attraction"
+        ],
+        "Status": [
+          "closed",
+          "status"
+        ],
+        "Location": [
+          "disney",
+          "hollywood studios"
+        ],
+        "RealTimeData": [
+          "real-time",
+          "current",
+          "last updated",
+          "minutes",
+          "queue data",
+          "queue-times"
+        ],
+        "QueueGeneral": [
+          "queue",
+          "wait",
+          "attraction",
+          "disney",
+          "story",
+          "time"
+        ]
+      },
+      "facility_id": "7",
+      "facility_name": "Disney Hollywood Studios",
+      "attraction_id": "",
+      "attraction_name": "Slinky Dog Dash",
+      "service_id": "",
+      "timezone": "",
+      "wait_minutes": 0,
+      "availability_status": "Closed",
+      "ticket_type": "",
+      "price": null,
+      "currency": "",
+      "weather_metric": "",
+      "metric_value": null,
+      "canonical_key": "queue_target:7:ride:slinky-dog-dash",
+      "canonical_key_status": "name_proxy",
+      "event_key": "wait_time_snapshot:f00123b3e806:20261008T160526Z",
+      "queue_target_key": "queue_target:7:ride:slinky-dog-dash",
+      "required_field_proxy": {
+        "facility_id": true,
+        "attraction_id": true,
+        "wait_minutes": true,
+        "source_url": true
+      },
+      "required_field_gaps": []
+    },
+    {
+      "source": "Epcot",
+      "source_type": "api",
+      "trust_tier": "T3_professional",
+      "content_type": "news",
+      "collection_tier": "C1_rss",
+      "producer_role": "",
+      "event_model": "wait_time_snapshot",
+      "title": "Living with the Land – Glimmering Greenhouses - Closed (Epcot)",
+      "url": "https://queue-times.com/en-US/parks/5/queue_times",
+      "source_url": "https://queue-times.com/en-US/parks/5/queue_times",
+      "event_at": "2026-10-08T16:05:25+00:00",
+      "matched_entities": {
+        "WaitTime": [
+          "wait time",
+          "wait",
+          "queue",
+          "current wait"
+        ],
+        "Attraction": [
+          "attraction"
+        ],
+        "Status": [
+          "closed",
+          "status"
+        ],
+        "Location": [
+          "epcot"
+        ],
+        "RealTimeData": [
+          "real-time",
+          "current",
+          "last updated",
+          "minutes",
+          "queue data",
+          "queue-times"
+        ],
+        "QueueGeneral": [
+          "queue",
+          "wait",
+          "attraction",
+          "the",
+          "time"
+        ]
+      },
+      "facility_id": "5",
+      "facility_name": "Epcot",
+      "attraction_id": "",
+      "attraction_name": "Living with the Land – Glimmering Greenhouses",
+      "service_id": "",
+      "timezone": "",
+      "wait_minutes": 0,
+      "availability_status": "Closed",
+      "ticket_type": "",
+      "price": null,
+      "currency": "",
+      "weather_metric": "",
+      "metric_value": null,
+      "canonical_key": "queue_target:5:ride:living-with-the-land-glimmering-greenhouses",
+      "canonical_key_status": "name_proxy",
+      "event_key": "wait_time_snapshot:3440bf1ac770:20261008T160525Z",
+      "queue_target_key": "queue_target:5:ride:living-with-the-land-glimmering-greenhouses",
       "required_field_proxy": {
         "facility_id": true,
         "attraction_id": true,
