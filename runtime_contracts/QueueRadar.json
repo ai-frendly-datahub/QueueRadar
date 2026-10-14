@@ -1,0 +1,73 @@
+{
+  "repo": "QueueRadar",
+  "category": "queue",
+  "ontology_version": "0.1.0",
+  "event_model_mappings": {
+    "wait_time_snapshot": "queue.wait_time_snapshot",
+    "reservation_slot": "queue.reservation_slot",
+    "ticket_price": "queue.ticket_price",
+    "weather_context": "queue.weather_context",
+    "editorial_coverage": "queue.editorial_coverage"
+  },
+  "event_model_field_specs": {
+    "wait_time_snapshot": {
+      "required_fields": ["facility_id", "attraction_id", "wait_minutes", "source_url"],
+      "optional_fields": ["observed_at", "collected_at", "timezone", "is_open"],
+      "field_enums": {}
+    },
+    "reservation_slot": {
+      "required_fields": ["facility_id", "service_id", "availability_status"],
+      "optional_fields": ["slot_time", "observed_at", "collected_at"],
+      "field_enums": {}
+    },
+    "ticket_price": {
+      "required_fields": ["facility_id", "ticket_type", "price", "currency"],
+      "optional_fields": ["observed_at", "effective_date", "collected_at"],
+      "field_enums": {}
+    },
+    "weather_context": {
+      "required_fields": ["facility_id", "weather_metric", "metric_value"],
+      "optional_fields": ["forecast_time", "collected_at"],
+      "field_enums": {}
+    },
+    "editorial_coverage": {
+      "required_fields": ["source_name", "headline", "source_url"],
+      "optional_fields": ["published_at", "summary"],
+      "field_enums": {}
+    }
+  },
+  "entity_type_hints": [
+    "queue.wait_time",
+    "queue.attraction",
+    "queue.status",
+    "queue.location"
+  ],
+  "source_role_mappings": {
+    "Disney Magic Kingdom": "primary_evidence",
+    "Epcot": "primary_evidence",
+    "Disney Hollywood Studios": "primary_evidence",
+    "Animal Kingdom": "primary_evidence",
+    "Disneyland": "primary_evidence",
+    "Disney California Adventure": "primary_evidence",
+    "Universal Studios Orlando": "primary_evidence",
+    "Islands of Adventure": "primary_evidence",
+    "Universal Studios Hollywood": "primary_evidence",
+    "Busch Gardens Tampa": "primary_evidence",
+    "SeaWorld Orlando": "primary_evidence",
+    "Six Flags Magic Mountain": "primary_evidence",
+    "WDWMAGIC News": "context_only",
+    "BlogMickey": "context_only",
+    "InPark Magazine": "context_only",
+    "Reddit r/KoreaTravel": "community_signal",
+    "r/WaltDisneyWorld": "community_signal",
+    "r/Disneyland": "community_signal",
+    "r/UniversalOrlando": "community_signal",
+    "r/ThemeParkCrazy": "community_signal"
+  },
+  "evidence_policy_ids": [
+    "queue.live_wait_primary",
+    "queue.editorial_context_only",
+    "queue.community_signal_auxiliary_only",
+    "queue.traceable_url_required"
+  ]
+}

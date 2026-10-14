@@ -172,6 +172,16 @@ sources:
 - name: Inside the Magic
   type: rss
   url: https://insidethemagic.net/feed
+  enabled: false
+  notes: 'DISABLED 2026-10-14: HTTP 403 Cloudflare "Just a moment" challenge. TLS stays on.
+    No bypass. Replaced by the public BlogMickey RSS feed.'
+  config:
+    event_model: editorial_coverage
+- name: BlogMickey
+  type: rss
+  url: https://blogmickey.com/feed/
+  notes: 'Public RSS, no API key. Replaces Inside the Magic after the 2026-10-14
+    Cloudflare challenge. Probe returned application/rss+xml.'
   config:
     event_model: editorial_coverage
 - name: Blooloop
@@ -224,33 +234,48 @@ sources:
       - Wild Swing
       - Bluey
 - name: r/WaltDisneyWorld
-  type: reddit
-  url: https://www.reddit.com/r/WaltDisneyWorld/
-  enabled: false
+  type: rss
+  url: https://www.reddit.com/r/WaltDisneyWorld/.rss
+  enabled: true
+  notes: 'Public Atom feed, no API key. Previously disabled as type reddit.'
+  config:
+    event_model: editorial_coverage
 - name: r/Disneyland
-  type: reddit
-  url: https://www.reddit.com/r/Disneyland/
-  enabled: false
+  type: rss
+  url: https://www.reddit.com/r/Disneyland/.rss
+  enabled: true
+  notes: 'Public Atom feed, no API key. Previously disabled as type reddit.'
+  config:
+    event_model: editorial_coverage
 - name: r/UniversalOrlando
-  type: reddit
-  url: https://www.reddit.com/r/UniversalOrlando/
-  enabled: false
+  type: rss
+  url: https://www.reddit.com/r/UniversalOrlando/.rss
+  enabled: true
+  notes: 'Public Atom feed, no API key. Previously disabled as type reddit.'
+  config:
+    event_model: editorial_coverage
 - name: r/rollercoasters
-  type: reddit
-  url: https://www.reddit.com/r/rollercoasters/
+  type: rss
+  url: https://www.reddit.com/r/rollercoasters/.rss
   enabled: false
+  notes: 'DISABLED 2026-10-14: public .rss returned HTTP 429. Left off instead of retrying harder.'
 - name: r/ThemeParkCrazy
-  type: reddit
-  url: https://www.reddit.com/r/ThemeParkCrazy/
-  enabled: false
+  type: rss
+  url: https://www.reddit.com/r/ThemeParkCrazy/.rss
+  enabled: true
+  notes: 'Public Atom feed, no API key. Previously disabled as type reddit.'
+  config:
+    event_model: editorial_coverage
 - name: r/Sixflags
   type: reddit
   url: https://www.reddit.com/r/sixflags/
   enabled: false
+  notes: 'DISABLED: type reddit is not a keyless public feed client. Not switched until a stable .rss probe.'
 - name: r/korea
   type: reddit
   url: https://www.reddit.com/r/korea/
   enabled: false
+  notes: 'DISABLED: broad geography feed and type reddit is unsupported. r/KoreaTravel remains the public RSS.'
 - name: Defunctland
   type: rss
   url: https://www.youtube.com/feeds/videos.xml?channel_id=UCVo63lbKHjC04KqYhwSZ_Pg
@@ -267,6 +292,7 @@ sources:
   type: rss
   url: https://www.youtube.com/feeds/videos.xml?channel_id=UCuKwMVIj5H7pGrCb6qOb21g
   enabled: false
+  notes: 'DISABLED 2026-10-14: YouTube channel RSS returned HTTP 404. No replacement channel id verified.'
 - name: Theme Park Tribune
   type: rss
   url: https://www.themeparktribune.com/feed/
@@ -275,6 +301,16 @@ sources:
 - name: Coaster Nation
   type: rss
   url: https://www.coasternation.com/feed/
+  enabled: false
+  notes: 'DISABLED 2026-10-14: HTTP 403 Cloudflare "Just a moment" challenge. TLS stays on.
+    No bypass. Replaced by the public InPark Magazine RSS feed.'
+  config:
+    event_model: editorial_coverage
+- name: InPark Magazine
+  type: rss
+  url: https://www.inparkmagazine.com/feed/
+  notes: 'Public RSS, no API key. Replaces Coaster Nation after the 2026-10-14
+    Cloudflare challenge. Attractions-industry coverage.'
   config:
     event_model: editorial_coverage
 - name: Park World Magazine
@@ -340,11 +376,14 @@ sources:
 - name: 네이버 에버랜드 블로그
   type: rss
   url: https://rss.blog.naver.com/everland_blog.xml
+  enabled: false
   language: ko
   country: KR
   trust_tier: T1_official
   collection_tier: C1_rss
   content_type: news
+  notes: 'DISABLED 2026-10-14: public RSS returns an empty channel (title and items blank).
+    The official notice page is JavaScript-only and stays off. No key and no bypass.'
   config:
     event_model: editorial_coverage
 - name: 네이버 롯데월드 블로그
@@ -361,6 +400,8 @@ sources:
   type: rss
   url: https://www.yna.co.kr/rss/life.xml
   enabled: false
+  notes: 'DISABLED 2026-10-14: life.xml returns HTTP 404 HTML. culture.xml is a general
+    news feed, not a theme-park source, so it was not substituted.'
   language: ko
   country: KR
   trust_tier: T2_institutional
