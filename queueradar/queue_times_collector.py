@@ -16,7 +16,8 @@ from .models import Article, Source
 
 logger = structlog.get_logger(__name__)
 
-_API_TIMEOUT = int(os.environ.get("QUEUE_TIMES_API_TIMEOUT", "15"))
+_API_TIMEOUT = int(os.environ.get("QUEUE_TIMES_API_TIMEOUT", "45"))
+_USER_AGENT = "QueueRadar/0.1 (+https://github.com/ai-frendly-datahub/QueueRadar; public-rss)"
 _CACHE_DIR = Path(os.environ.get("QUEUE_TIMES_CACHE_DIR", "data/api_cache"))
 _CACHE_TTL_SECONDS = int(os.environ.get("QUEUE_TIMES_CACHE_TTL", "300"))
 
@@ -105,7 +106,12 @@ def collect_queue_times(
         return _parse_queue_data(cached_data, source=source, category=category, limit=limit)
 
     try:
-        response = client.get(source.url, timeout=effective_timeout)
+        response = client.get(
+            source.url,
+            timeout=effective_timeout,
+            headers={"User-Agent": _USER_AGENT, "Accept": "application/json"},
+            verify=True,
+        )
 
         if response.status_code == 429:
             retry_after = response.headers.get("Retry-After")

@@ -7,7 +7,7 @@ import duckdb
 from radar_core.exceptions import StorageError
 from radar_core.storage import RadarStorage as CoreRadarStorage
 
-from .date_storage import cleanup_date_directories, snapshot_database
+from .date_storage import _compact_database, cleanup_date_directories, snapshot_database
 
 
 class RadarStorage(CoreRadarStorage):
@@ -21,6 +21,7 @@ class RadarStorage(CoreRadarStorage):
         _ = self.conn.execute("CHECKPOINT")
         self.conn.close()
         try:
+            _compact_database(self.db_path)
             return snapshot_database(
                 self.db_path,
                 snapshot_date=snapshot_date,
@@ -38,9 +39,7 @@ class RadarStorage(CoreRadarStorage):
         today: date | None = None,
     ) -> int:
         snapshot_root = (
-            Path(snapshot_dir)
-            if snapshot_dir is not None
-            else self.db_path.parent / "daily"
+            Path(snapshot_dir) if snapshot_dir is not None else self.db_path.parent / "daily"
         )
         return cleanup_date_directories(
             snapshot_root,
