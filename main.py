@@ -8,6 +8,7 @@ from pathlib import Path
 from typing import cast
 
 from radar_core.config_loader import filter_sources
+from radar_core.dates import daily_partition_date
 from radar_core.ontology import annotate_articles_with_ontology
 
 from queueradar.analyzer import apply_entity_rules
@@ -38,7 +39,7 @@ def _summary_report_path(
         return existing[-1]
 
     generated_at = _parse_generated_at(quality_report)
-    stamp = generated_at.astimezone(UTC).strftime("%Y%m%d")
+    stamp = daily_partition_date(generated_at).strftime("%Y%m%d")
     return report_dir / f"{category_name}_{stamp}_summary.json"
 
 
