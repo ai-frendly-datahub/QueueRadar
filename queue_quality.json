@@ -1,6 +1,6 @@
 {
   "category": "queue",
-  "generated_at": "2026-10-31T15:00:25.512968+00:00",
+  "generated_at": "2026-11-01T15:44:17.667434+00:00",
   "scope_note": "대기/예약 레이더 quality report is generated from repo-local category data_quality metadata and recent stored articles. Operational backlog sources remain separate until dedicated source-level fields are collected.",
   "summary": {
     "total_sources": 41,
@@ -54,7 +54,7 @@
       "status": "fresh",
       "article_count": 1,
       "event_count": 1,
-      "latest_event_at": "2026-10-31T14:55:12+00:00",
+      "latest_event_at": "2026-11-01T15:40:19+00:00",
       "age_days": 0.0,
       "latest_title": "Trick-or-Treat Locations at Mickey's Not-So-Scary Halloween Party - No wait (Disney Magic Kingdom)",
       "latest_url": "https://queue-times.com/en-US/parks/6/queue_times",
@@ -85,7 +85,7 @@
       "status": "fresh",
       "article_count": 1,
       "event_count": 1,
-      "latest_event_at": "2026-10-31T14:55:11+00:00",
+      "latest_event_at": "2026-11-01T15:40:14+00:00",
       "age_days": 0.0,
       "latest_title": "Living with the Land – Glimmering Greenhouses - Closed (Epcot)",
       "latest_url": "https://queue-times.com/en-US/parks/5/queue_times",
@@ -116,7 +116,7 @@
       "status": "fresh",
       "article_count": 1,
       "event_count": 1,
-      "latest_event_at": "2026-10-31T14:55:17+00:00",
+      "latest_event_at": "2026-11-01T15:40:23+00:00",
       "age_days": 0.0,
       "latest_title": "Once Upon a Studio Theater - No wait (Disney Hollywood Studios)",
       "latest_url": "https://queue-times.com/en-US/parks/7/queue_times",
@@ -147,7 +147,7 @@
       "status": "fresh",
       "article_count": 1,
       "event_count": 1,
-      "latest_event_at": "2026-10-31T14:55:22+00:00",
+      "latest_event_at": "2026-11-01T15:40:28+00:00",
       "age_days": 0.0,
       "latest_title": "Wilderness Explorers - No wait (Animal Kingdom)",
       "latest_url": "https://queue-times.com/en-US/parks/8/queue_times",
@@ -178,7 +178,7 @@
       "status": "fresh",
       "article_count": 1,
       "event_count": 1,
-      "latest_event_at": "2026-10-31T14:55:29+00:00",
+      "latest_event_at": "2026-11-01T15:40:34+00:00",
       "age_days": 0.0,
       "latest_title": "Disneyland Monorail - Closed (Disneyland)",
       "latest_url": "https://queue-times.com/en-US/parks/16/queue_times",
@@ -209,7 +209,7 @@
       "status": "fresh",
       "article_count": 1,
       "event_count": 1,
-      "latest_event_at": "2026-10-31T14:55:33+00:00",
+      "latest_event_at": "2026-11-01T15:40:38+00:00",
       "age_days": 0.0,
       "latest_title": "Villains Grove at Oogie Boogie Bash - Closed (Disney California Adventure)",
       "latest_url": "https://queue-times.com/en-US/parks/17/queue_times",
@@ -240,7 +240,7 @@
       "status": "fresh",
       "article_count": 1,
       "event_count": 1,
-      "latest_event_at": "2026-10-31T14:56:23+00:00",
+      "latest_event_at": "2026-11-01T15:41:24+00:00",
       "age_days": 0.0,
       "latest_title": "Stranger Things 5 - Closed (Universal Studios Orlando)",
       "latest_url": "https://queue-times.com/en-US/parks/65/queue_times",
@@ -272,7 +272,7 @@
       "article_count": 1,
       "event_count": 1,
       "latest_event_at": "2026-10-30T01:11:14+00:00",
-      "age_days": 1.58,
+      "age_days": 2.61,
       "latest_title": "The Amazing Adventures of Spider-Man® Single Rider - No wait (Islands of Adventure)",
       "latest_url": "https://queue-times.com/en-US/parks/64/queue_times",
       "latest_required_field_proxy": {
@@ -302,7 +302,7 @@
       "status": "fresh",
       "article_count": 1,
       "event_count": 1,
-      "latest_event_at": "2026-10-31T14:56:27+00:00",
+      "latest_event_at": "2026-11-01T15:41:34+00:00",
       "age_days": 0.0,
       "latest_title": "Terror Tram starring Art the Clown - Closed (Universal Studios Hollywood)",
       "latest_url": "https://queue-times.com/en-US/parks/66/queue_times",
@@ -333,7 +333,7 @@
       "status": "fresh",
       "article_count": 1,
       "event_count": 1,
-      "latest_event_at": "2026-10-31T14:56:28+00:00",
+      "latest_event_at": "2026-11-01T15:41:35+00:00",
       "age_days": 0.0,
       "latest_title": "Raven's Mill: Lambs To The Slaughter - Closed (Busch Gardens Tampa)",
       "latest_url": "https://queue-times.com/en-US/parks/24/queue_times",
@@ -364,7 +364,7 @@
       "status": "fresh",
       "article_count": 1,
       "event_count": 1,
-      "latest_event_at": "2026-10-31T14:55:31+00:00",
+      "latest_event_at": "2026-11-01T15:40:35+00:00",
       "age_days": 0.0,
       "latest_title": "RETURNING! The Rave Yard - Closed (SeaWorld Orlando)",
       "latest_url": "https://queue-times.com/en-US/parks/21/queue_times",
@@ -395,7 +395,7 @@
       "status": "fresh",
       "article_count": 1,
       "event_count": 1,
-      "latest_event_at": "2026-10-31T14:55:29+00:00",
+      "latest_event_at": "2026-11-01T15:40:34+00:00",
       "age_days": 0.0,
       "latest_title": "City Under Siege - Closed (Six Flags Magic Mountain)",
       "latest_url": "https://queue-times.com/en-US/parks/32/queue_times",
@@ -450,7 +450,7 @@
       "event_model": "editorial_coverage",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 92,
+      "article_count": 89,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -580,7 +580,7 @@
       "event_model": "editorial_coverage",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 247,
+      "article_count": 246,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -606,7 +606,7 @@
       "event_model": "editorial_coverage",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 73,
+      "article_count": 71,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -632,7 +632,7 @@
       "event_model": "editorial_coverage",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 24,
+      "article_count": 23,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -892,7 +892,7 @@
       "event_model": "editorial_coverage",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 24,
+      "article_count": 23,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -1176,7 +1176,7 @@
       "title": "Raven's Mill: Lambs To The Slaughter - Closed (Busch Gardens Tampa)",
       "url": "https://queue-times.com/en-US/parks/24/queue_times",
       "source_url": "https://queue-times.com/en-US/parks/24/queue_times",
-      "event_at": "2026-10-31T14:56:28+00:00",
+      "event_at": "2026-11-01T15:41:35+00:00",
       "matched_entities": {
         "WaitTime": [
           "wait time",
@@ -1225,7 +1225,7 @@
       "metric_value": null,
       "canonical_key": "queue_target:24:ride:raven-s-mill-lambs-to-the-slaughter",
       "canonical_key_status": "name_proxy",
-      "event_key": "wait_time_snapshot:7dce2399cb6b:20261031T145628Z",
+      "event_key": "wait_time_snapshot:7dce2399cb6b:20261101T154135Z",
       "queue_target_key": "queue_target:24:ride:raven-s-mill-lambs-to-the-slaughter",
       "required_field_proxy": {
         "facility_id": true,
@@ -1246,7 +1246,7 @@
       "title": "Terror Tram starring Art the Clown - Closed (Universal Studios Hollywood)",
       "url": "https://queue-times.com/en-US/parks/66/queue_times",
       "source_url": "https://queue-times.com/en-US/parks/66/queue_times",
-      "event_at": "2026-10-31T14:56:27+00:00",
+      "event_at": "2026-11-01T15:41:34+00:00",
       "matched_entities": {
         "WaitTime": [
           "wait time",
@@ -1296,7 +1296,7 @@
       "metric_value": null,
       "canonical_key": "queue_target:66:ride:terror-tram-starring-art-the-clown",
       "canonical_key_status": "name_proxy",
-      "event_key": "wait_time_snapshot:2a818412213e:20261031T145627Z",
+      "event_key": "wait_time_snapshot:2a818412213e:20261101T154134Z",
       "queue_target_key": "queue_target:66:ride:terror-tram-starring-art-the-clown",
       "required_field_proxy": {
         "facility_id": true,
@@ -1317,7 +1317,7 @@
       "title": "Stranger Things 5 - Closed (Universal Studios Orlando)",
       "url": "https://queue-times.com/en-US/parks/65/queue_times",
       "source_url": "https://queue-times.com/en-US/parks/65/queue_times",
-      "event_at": "2026-10-31T14:56:23+00:00",
+      "event_at": "2026-11-01T15:41:24+00:00",
       "matched_entities": {
         "WaitTime": [
           "wait time",
@@ -1366,7 +1366,7 @@
       "metric_value": null,
       "canonical_key": "queue_target:65:ride:stranger-things-5",
       "canonical_key_status": "name_proxy",
-      "event_key": "wait_time_snapshot:43eb73e0a8e0:20261031T145623Z",
+      "event_key": "wait_time_snapshot:43eb73e0a8e0:20261101T154124Z",
       "queue_target_key": "queue_target:65:ride:stranger-things-5",
       "required_field_proxy": {
         "facility_id": true,
@@ -1387,7 +1387,7 @@
       "title": "Villains Grove at Oogie Boogie Bash - Closed (Disney California Adventure)",
       "url": "https://queue-times.com/en-US/parks/17/queue_times",
       "source_url": "https://queue-times.com/en-US/parks/17/queue_times",
-      "event_at": "2026-10-31T14:55:33+00:00",
+      "event_at": "2026-11-01T15:40:38+00:00",
       "matched_entities": {
         "WaitTime": [
           "wait time",
@@ -1437,7 +1437,7 @@
       "metric_value": null,
       "canonical_key": "queue_target:17:ride:villains-grove-at-oogie-boogie-bash",
       "canonical_key_status": "name_proxy",
-      "event_key": "wait_time_snapshot:054a2690699a:20261031T145533Z",
+      "event_key": "wait_time_snapshot:054a2690699a:20261101T154038Z",
       "queue_target_key": "queue_target:17:ride:villains-grove-at-oogie-boogie-bash",
       "required_field_proxy": {
         "facility_id": true,
@@ -1458,7 +1458,7 @@
       "title": "RETURNING! The Rave Yard - Closed (SeaWorld Orlando)",
       "url": "https://queue-times.com/en-US/parks/21/queue_times",
       "source_url": "https://queue-times.com/en-US/parks/21/queue_times",
-      "event_at": "2026-10-31T14:55:31+00:00",
+      "event_at": "2026-11-01T15:40:35+00:00",
       "matched_entities": {
         "WaitTime": [
           "wait time",
@@ -1507,77 +1507,8 @@
       "metric_value": null,
       "canonical_key": "queue_target:21:ride:returning-the-rave-yard",
       "canonical_key_status": "name_proxy",
-      "event_key": "wait_time_snapshot:08c76da844fe:20261031T145531Z",
+      "event_key": "wait_time_snapshot:08c76da844fe:20261101T154035Z",
       "queue_target_key": "queue_target:21:ride:returning-the-rave-yard",
-      "required_field_proxy": {
-        "facility_id": true,
-        "attraction_id": true,
-        "wait_minutes": true,
-        "source_url": true
-      },
-      "required_field_gaps": []
-    },
-    {
-      "source": "Disneyland",
-      "source_type": "api",
-      "trust_tier": "T3_professional",
-      "content_type": "news",
-      "collection_tier": "C1_rss",
-      "producer_role": "",
-      "event_model": "wait_time_snapshot",
-      "title": "Disneyland Monorail - Closed (Disneyland)",
-      "url": "https://queue-times.com/en-US/parks/16/queue_times",
-      "source_url": "https://queue-times.com/en-US/parks/16/queue_times",
-      "event_at": "2026-10-31T14:55:29+00:00",
-      "matched_entities": {
-        "WaitTime": [
-          "wait time",
-          "wait",
-          "queue",
-          "current wait"
-        ],
-        "Attraction": [
-          "attraction"
-        ],
-        "Status": [
-          "closed",
-          "status"
-        ],
-        "Location": [
-          "disneyland"
-        ],
-        "RealTimeData": [
-          "real-time",
-          "current",
-          "last updated",
-          "minutes",
-          "queue data",
-          "queue-times"
-        ],
-        "QueueGeneral": [
-          "queue",
-          "wait",
-          "attraction",
-          "time"
-        ]
-      },
-      "facility_id": "16",
-      "facility_name": "Disneyland",
-      "attraction_id": "",
-      "attraction_name": "Disneyland Monorail",
-      "service_id": "",
-      "timezone": "",
-      "wait_minutes": 0,
-      "availability_status": "Closed",
-      "ticket_type": "",
-      "price": null,
-      "currency": "",
-      "weather_metric": "",
-      "metric_value": null,
-      "canonical_key": "queue_target:16:ride:disneyland-monorail",
-      "canonical_key_status": "name_proxy",
-      "event_key": "wait_time_snapshot:f231eede0650:20261031T145529Z",
-      "queue_target_key": "queue_target:16:ride:disneyland-monorail",
       "required_field_proxy": {
         "facility_id": true,
         "attraction_id": true,
@@ -1597,7 +1528,7 @@
       "title": "City Under Siege - Closed (Six Flags Magic Mountain)",
       "url": "https://queue-times.com/en-US/parks/32/queue_times",
       "source_url": "https://queue-times.com/en-US/parks/32/queue_times",
-      "event_at": "2026-10-31T14:55:29+00:00",
+      "event_at": "2026-11-01T15:40:34+00:00",
       "matched_entities": {
         "WaitTime": [
           "wait time",
@@ -1646,8 +1577,77 @@
       "metric_value": null,
       "canonical_key": "queue_target:32:ride:city-under-siege",
       "canonical_key_status": "name_proxy",
-      "event_key": "wait_time_snapshot:66c29a98a08e:20261031T145529Z",
+      "event_key": "wait_time_snapshot:66c29a98a08e:20261101T154034Z",
       "queue_target_key": "queue_target:32:ride:city-under-siege",
+      "required_field_proxy": {
+        "facility_id": true,
+        "attraction_id": true,
+        "wait_minutes": true,
+        "source_url": true
+      },
+      "required_field_gaps": []
+    },
+    {
+      "source": "Disneyland",
+      "source_type": "api",
+      "trust_tier": "T3_professional",
+      "content_type": "news",
+      "collection_tier": "C1_rss",
+      "producer_role": "",
+      "event_model": "wait_time_snapshot",
+      "title": "Disneyland Monorail - Closed (Disneyland)",
+      "url": "https://queue-times.com/en-US/parks/16/queue_times",
+      "source_url": "https://queue-times.com/en-US/parks/16/queue_times",
+      "event_at": "2026-11-01T15:40:34+00:00",
+      "matched_entities": {
+        "WaitTime": [
+          "wait time",
+          "wait",
+          "queue",
+          "current wait"
+        ],
+        "Attraction": [
+          "attraction"
+        ],
+        "Status": [
+          "closed",
+          "status"
+        ],
+        "Location": [
+          "disneyland"
+        ],
+        "RealTimeData": [
+          "real-time",
+          "current",
+          "last updated",
+          "minutes",
+          "queue data",
+          "queue-times"
+        ],
+        "QueueGeneral": [
+          "queue",
+          "wait",
+          "attraction",
+          "time"
+        ]
+      },
+      "facility_id": "16",
+      "facility_name": "Disneyland",
+      "attraction_id": "",
+      "attraction_name": "Disneyland Monorail",
+      "service_id": "",
+      "timezone": "",
+      "wait_minutes": 0,
+      "availability_status": "Closed",
+      "ticket_type": "",
+      "price": null,
+      "currency": "",
+      "weather_metric": "",
+      "metric_value": null,
+      "canonical_key": "queue_target:16:ride:disneyland-monorail",
+      "canonical_key_status": "name_proxy",
+      "event_key": "wait_time_snapshot:f231eede0650:20261101T154034Z",
+      "queue_target_key": "queue_target:16:ride:disneyland-monorail",
       "required_field_proxy": {
         "facility_id": true,
         "attraction_id": true,
@@ -1667,7 +1667,7 @@
       "title": "Wilderness Explorers - No wait (Animal Kingdom)",
       "url": "https://queue-times.com/en-US/parks/8/queue_times",
       "source_url": "https://queue-times.com/en-US/parks/8/queue_times",
-      "event_at": "2026-10-31T14:55:22+00:00",
+      "event_at": "2026-11-01T15:40:28+00:00",
       "matched_entities": {
         "WaitTime": [
           "wait time",
@@ -1717,7 +1717,7 @@
       "metric_value": null,
       "canonical_key": "queue_target:8:ride:wilderness-explorers",
       "canonical_key_status": "name_proxy",
-      "event_key": "wait_time_snapshot:e4d7b18f2425:20261031T145522Z",
+      "event_key": "wait_time_snapshot:e4d7b18f2425:20261101T154028Z",
       "queue_target_key": "queue_target:8:ride:wilderness-explorers",
       "required_field_proxy": {
         "facility_id": true,
@@ -1738,7 +1738,7 @@
       "title": "Once Upon a Studio Theater - No wait (Disney Hollywood Studios)",
       "url": "https://queue-times.com/en-US/parks/7/queue_times",
       "source_url": "https://queue-times.com/en-US/parks/7/queue_times",
-      "event_at": "2026-10-31T14:55:17+00:00",
+      "event_at": "2026-11-01T15:40:23+00:00",
       "matched_entities": {
         "WaitTime": [
           "wait time",
@@ -1790,7 +1790,7 @@
       "metric_value": null,
       "canonical_key": "queue_target:7:ride:once-upon-a-studio-theater",
       "canonical_key_status": "name_proxy",
-      "event_key": "wait_time_snapshot:6b8c25ded2b9:20261031T145517Z",
+      "event_key": "wait_time_snapshot:6b8c25ded2b9:20261101T154023Z",
       "queue_target_key": "queue_target:7:ride:once-upon-a-studio-theater",
       "required_field_proxy": {
         "facility_id": true,
@@ -1811,7 +1811,7 @@
       "title": "Trick-or-Treat Locations at Mickey's Not-So-Scary Halloween Party - No wait (Disney Magic Kingdom)",
       "url": "https://queue-times.com/en-US/parks/6/queue_times",
       "source_url": "https://queue-times.com/en-US/parks/6/queue_times",
-      "event_at": "2026-10-31T14:55:12+00:00",
+      "event_at": "2026-11-01T15:40:19+00:00",
       "matched_entities": {
         "WaitTime": [
           "wait time",
@@ -1863,7 +1863,7 @@
       "metric_value": null,
       "canonical_key": "queue_target:6:ride:trick-or-treat-locations-at-mickey-s-not-so-scary-halloween-party",
       "canonical_key_status": "name_proxy",
-      "event_key": "wait_time_snapshot:7604a5df2863:20261031T145512Z",
+      "event_key": "wait_time_snapshot:7604a5df2863:20261101T154019Z",
       "queue_target_key": "queue_target:6:ride:trick-or-treat-locations-at-mickey-s-not-so-scary-halloween-party",
       "required_field_proxy": {
         "facility_id": true,
@@ -1884,7 +1884,7 @@
       "title": "Living with the Land – Glimmering Greenhouses - Closed (Epcot)",
       "url": "https://queue-times.com/en-US/parks/5/queue_times",
       "source_url": "https://queue-times.com/en-US/parks/5/queue_times",
-      "event_at": "2026-10-31T14:55:11+00:00",
+      "event_at": "2026-11-01T15:40:14+00:00",
       "matched_entities": {
         "WaitTime": [
           "wait time",
@@ -1933,7 +1933,7 @@
       "metric_value": null,
       "canonical_key": "queue_target:5:ride:living-with-the-land-glimmering-greenhouses",
       "canonical_key_status": "name_proxy",
-      "event_key": "wait_time_snapshot:3440bf1ac770:20261031T145511Z",
+      "event_key": "wait_time_snapshot:3440bf1ac770:20261101T154014Z",
       "queue_target_key": "queue_target:5:ride:living-with-the-land-glimmering-greenhouses",
       "required_field_proxy": {
         "facility_id": true,
@@ -2020,7 +2020,7 @@
       "reason": "source_stale",
       "source": "Islands of Adventure",
       "event_model": "wait_time_snapshot",
-      "age_days": 1.58,
+      "age_days": 2.61,
       "latest_title": "The Amazing Adventures of Spider-Man® Single Rider - No wait (Islands of Adventure)"
     },
     {
