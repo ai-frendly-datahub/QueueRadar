@@ -1,6 +1,6 @@
 {
   "category": "queue",
-  "generated_at": "2026-11-10T16:46:51.112824+00:00",
+  "generated_at": "2026-11-11T16:52:47.183640+00:00",
   "scope_note": "대기/예약 레이더 quality report is generated from repo-local category data_quality metadata and recent stored articles. Operational backlog sources remain separate until dedicated source-level fields are collected.",
   "summary": {
     "total_sources": 41,
@@ -54,9 +54,9 @@
       "status": "fresh",
       "article_count": 1,
       "event_count": 1,
-      "latest_event_at": "2026-11-10T16:45:16+00:00",
+      "latest_event_at": "2026-11-11T16:50:12+00:00",
       "age_days": 0.0,
-      "latest_title": "Jingle Cruise - 55 minutes wait (Disney Magic Kingdom)",
+      "latest_title": "Jingle Cruise - 40 minutes wait (Disney Magic Kingdom)",
       "latest_url": "https://queue-times.com/en-US/parks/6/queue_times",
       "latest_required_field_proxy": {
         "facility_id": true,
@@ -86,7 +86,7 @@
       "article_count": 1,
       "event_count": 1,
       "latest_event_at": "2026-11-09T12:05:15+00:00",
-      "age_days": 1.2,
+      "age_days": 2.2,
       "latest_title": "Living with the Land – Glimmering Greenhouses - Closed (Epcot)",
       "latest_url": "https://queue-times.com/en-US/parks/5/queue_times",
       "latest_required_field_proxy": {
@@ -116,7 +116,7 @@
       "status": "fresh",
       "article_count": 1,
       "event_count": 1,
-      "latest_event_at": "2026-11-10T16:45:22+00:00",
+      "latest_event_at": "2026-11-11T16:50:17+00:00",
       "age_days": 0.0,
       "latest_title": "Once Upon a Studio Theater - No wait (Disney Hollywood Studios)",
       "latest_url": "https://queue-times.com/en-US/parks/7/queue_times",
@@ -147,7 +147,7 @@
       "status": "fresh",
       "article_count": 1,
       "event_count": 1,
-      "latest_event_at": "2026-11-10T16:45:30+00:00",
+      "latest_event_at": "2026-11-11T16:50:23+00:00",
       "age_days": 0.0,
       "latest_title": "Wilderness Explorers - No wait (Animal Kingdom)",
       "latest_url": "https://queue-times.com/en-US/parks/8/queue_times",
@@ -178,7 +178,7 @@
       "status": "fresh",
       "article_count": 1,
       "event_count": 1,
-      "latest_event_at": "2026-11-10T16:45:36+00:00",
+      "latest_event_at": "2026-11-11T16:50:29+00:00",
       "age_days": 0.0,
       "latest_title": "Disneyland Monorail - 5 minutes wait (Disneyland)",
       "latest_url": "https://queue-times.com/en-US/parks/16/queue_times",
@@ -209,9 +209,9 @@
       "status": "fresh",
       "article_count": 1,
       "event_count": 1,
-      "latest_event_at": "2026-11-10T16:45:36+00:00",
+      "latest_event_at": "2026-11-11T16:50:35+00:00",
       "age_days": 0.0,
-      "latest_title": "Toy Story Midway Mania! - 30 minutes wait (Disney California Adventure)",
+      "latest_title": "Toy Story Midway Mania! - 35 minutes wait (Disney California Adventure)",
       "latest_url": "https://queue-times.com/en-US/parks/17/queue_times",
       "latest_required_field_proxy": {
         "facility_id": true,
@@ -241,7 +241,7 @@
       "article_count": 1,
       "event_count": 1,
       "latest_event_at": "2026-11-05T11:01:25+00:00",
-      "age_days": 5.24,
+      "age_days": 6.24,
       "latest_title": "Stranger Things 5 - Closed (Universal Studios Orlando)",
       "latest_url": "https://queue-times.com/en-US/parks/65/queue_times",
       "latest_required_field_proxy": {
@@ -272,7 +272,7 @@
       "article_count": 1,
       "event_count": 1,
       "latest_event_at": "2026-11-08T00:06:20+00:00",
-      "age_days": 2.69,
+      "age_days": 3.7,
       "latest_title": "The Amazing Adventures of Spider-Man® Single Rider - No wait (Islands of Adventure)",
       "latest_url": "https://queue-times.com/en-US/parks/64/queue_times",
       "latest_required_field_proxy": {
@@ -303,7 +303,7 @@
       "article_count": 1,
       "event_count": 1,
       "latest_event_at": "2026-11-06T03:21:32+00:00",
-      "age_days": 4.56,
+      "age_days": 5.56,
       "latest_title": "Terror Tram starring Art the Clown - Closed (Universal Studios Hollywood)",
       "latest_url": "https://queue-times.com/en-US/parks/66/queue_times",
       "latest_required_field_proxy": {
@@ -333,7 +333,7 @@
       "status": "fresh",
       "article_count": 1,
       "event_count": 1,
-      "latest_event_at": "2026-11-10T16:41:29+00:00",
+      "latest_event_at": "2026-11-11T16:51:28+00:00",
       "age_days": 0.0,
       "latest_title": "Tigris - 5 minutes wait (Busch Gardens Tampa)",
       "latest_url": "https://queue-times.com/en-US/parks/24/queue_times",
@@ -364,7 +364,7 @@
       "status": "fresh",
       "article_count": 1,
       "event_count": 1,
-      "latest_event_at": "2026-11-10T16:45:37+00:00",
+      "latest_event_at": "2026-11-11T16:50:30+00:00",
       "age_days": 0.0,
       "latest_title": "Infinity Falls® - Closed (SeaWorld Orlando)",
       "latest_url": "https://queue-times.com/en-US/parks/21/queue_times",
@@ -395,7 +395,7 @@
       "status": "fresh",
       "article_count": 1,
       "event_count": 1,
-      "latest_event_at": "2026-11-10T16:45:22+00:00",
+      "latest_event_at": "2026-11-11T16:50:29+00:00",
       "age_days": 0.0,
       "latest_title": "City Under Siege - Closed (Six Flags Magic Mountain)",
       "latest_url": "https://queue-times.com/en-US/parks/32/queue_times",
@@ -450,7 +450,7 @@
       "event_model": "editorial_coverage",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 105,
+      "article_count": 104,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -476,7 +476,7 @@
       "event_model": "editorial_coverage",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 52,
+      "article_count": 53,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -528,7 +528,7 @@
       "event_model": "editorial_coverage",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 102,
+      "article_count": 97,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -554,7 +554,7 @@
       "event_model": "editorial_coverage",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 63,
+      "article_count": 59,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -580,7 +580,7 @@
       "event_model": "editorial_coverage",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 234,
+      "article_count": 246,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -840,7 +840,7 @@
       "event_model": "editorial_coverage",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 7,
+      "article_count": 6,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -892,7 +892,7 @@
       "event_model": "editorial_coverage",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 21,
+      "article_count": 20,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -918,7 +918,7 @@
       "event_model": "editorial_coverage",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 16,
+      "article_count": 20,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -1100,7 +1100,7 @@
       "event_model": "editorial_coverage",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 3,
+      "article_count": 4,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -1166,6 +1166,149 @@
   ],
   "events": [
     {
+      "source": "Busch Gardens Tampa",
+      "source_type": "api",
+      "trust_tier": "T3_professional",
+      "content_type": "news",
+      "collection_tier": "C1_rss",
+      "producer_role": "",
+      "event_model": "wait_time_snapshot",
+      "title": "Tigris - 5 minutes wait (Busch Gardens Tampa)",
+      "url": "https://queue-times.com/en-US/parks/24/queue_times",
+      "source_url": "https://queue-times.com/en-US/parks/24/queue_times",
+      "event_at": "2026-11-11T16:51:28+00:00",
+      "matched_entities": {
+        "WaitTime": [
+          "wait time",
+          "wait",
+          "queue",
+          "minutes wait",
+          "current wait"
+        ],
+        "Attraction": [
+          "attraction"
+        ],
+        "Status": [
+          "open",
+          "status"
+        ],
+        "Location": [
+          "busch gardens"
+        ],
+        "RealTimeData": [
+          "real-time",
+          "current",
+          "last updated",
+          "minutes",
+          "queue data",
+          "queue-times"
+        ],
+        "QueueGeneral": [
+          "queue",
+          "wait",
+          "attraction",
+          "time"
+        ]
+      },
+      "facility_id": "24",
+      "facility_name": "Busch Gardens Tampa",
+      "attraction_id": "",
+      "attraction_name": "Tigris",
+      "service_id": "",
+      "timezone": "",
+      "wait_minutes": 5,
+      "availability_status": "Open",
+      "ticket_type": "",
+      "price": null,
+      "currency": "",
+      "weather_metric": "",
+      "metric_value": null,
+      "canonical_key": "queue_target:24:ride:tigris",
+      "canonical_key_status": "name_proxy",
+      "event_key": "wait_time_snapshot:ddd46fdfe082:20261111T165128Z",
+      "queue_target_key": "queue_target:24:ride:tigris",
+      "required_field_proxy": {
+        "facility_id": true,
+        "attraction_id": true,
+        "wait_minutes": true,
+        "source_url": true
+      },
+      "required_field_gaps": []
+    },
+    {
+      "source": "Disney California Adventure",
+      "source_type": "api",
+      "trust_tier": "T3_professional",
+      "content_type": "news",
+      "collection_tier": "C1_rss",
+      "producer_role": "",
+      "event_model": "wait_time_snapshot",
+      "title": "Toy Story Midway Mania! - 35 minutes wait (Disney California Adventure)",
+      "url": "https://queue-times.com/en-US/parks/17/queue_times",
+      "source_url": "https://queue-times.com/en-US/parks/17/queue_times",
+      "event_at": "2026-11-11T16:50:35+00:00",
+      "matched_entities": {
+        "WaitTime": [
+          "wait time",
+          "wait",
+          "queue",
+          "minutes wait",
+          "current wait"
+        ],
+        "Attraction": [
+          "attraction"
+        ],
+        "Status": [
+          "open",
+          "status"
+        ],
+        "Location": [
+          "disney",
+          "california adventure"
+        ],
+        "RealTimeData": [
+          "real-time",
+          "current",
+          "last updated",
+          "minutes",
+          "queue data",
+          "queue-times"
+        ],
+        "QueueGeneral": [
+          "queue",
+          "wait",
+          "attraction",
+          "disney",
+          "story",
+          "time"
+        ]
+      },
+      "facility_id": "17",
+      "facility_name": "Disney California Adventure",
+      "attraction_id": "",
+      "attraction_name": "Toy Story Midway Mania!",
+      "service_id": "",
+      "timezone": "",
+      "wait_minutes": 35,
+      "availability_status": "Open",
+      "ticket_type": "",
+      "price": null,
+      "currency": "",
+      "weather_metric": "",
+      "metric_value": null,
+      "canonical_key": "queue_target:17:ride:toy-story-midway-mania",
+      "canonical_key_status": "name_proxy",
+      "event_key": "wait_time_snapshot:3619cbebd325:20261111T165035Z",
+      "queue_target_key": "queue_target:17:ride:toy-story-midway-mania",
+      "required_field_proxy": {
+        "facility_id": true,
+        "attraction_id": true,
+        "wait_minutes": true,
+        "source_url": true
+      },
+      "required_field_gaps": []
+    },
+    {
       "source": "SeaWorld Orlando",
       "source_type": "api",
       "trust_tier": "T3_professional",
@@ -1176,7 +1319,7 @@
       "title": "Infinity Falls® - Closed (SeaWorld Orlando)",
       "url": "https://queue-times.com/en-US/parks/21/queue_times",
       "source_url": "https://queue-times.com/en-US/parks/21/queue_times",
-      "event_at": "2026-11-10T16:45:37+00:00",
+      "event_at": "2026-11-11T16:50:30+00:00",
       "matched_entities": {
         "WaitTime": [
           "wait time",
@@ -1224,7 +1367,7 @@
       "metric_value": null,
       "canonical_key": "queue_target:21:ride:infinity-falls",
       "canonical_key_status": "name_proxy",
-      "event_key": "wait_time_snapshot:05cbd1cced0e:20261110T164537Z",
+      "event_key": "wait_time_snapshot:05cbd1cced0e:20261111T165030Z",
       "queue_target_key": "queue_target:21:ride:infinity-falls",
       "required_field_proxy": {
         "facility_id": true,
@@ -1245,7 +1388,7 @@
       "title": "Disneyland Monorail - 5 minutes wait (Disneyland)",
       "url": "https://queue-times.com/en-US/parks/16/queue_times",
       "source_url": "https://queue-times.com/en-US/parks/16/queue_times",
-      "event_at": "2026-11-10T16:45:36+00:00",
+      "event_at": "2026-11-11T16:50:29+00:00",
       "matched_entities": {
         "WaitTime": [
           "wait time",
@@ -1294,7 +1437,7 @@
       "metric_value": null,
       "canonical_key": "queue_target:16:ride:disneyland-monorail",
       "canonical_key_status": "name_proxy",
-      "event_key": "wait_time_snapshot:f231eede0650:20261110T164536Z",
+      "event_key": "wait_time_snapshot:f231eede0650:20261111T165029Z",
       "queue_target_key": "queue_target:16:ride:disneyland-monorail",
       "required_field_proxy": {
         "facility_id": true,
@@ -1305,35 +1448,33 @@
       "required_field_gaps": []
     },
     {
-      "source": "Disney California Adventure",
+      "source": "Six Flags Magic Mountain",
       "source_type": "api",
       "trust_tier": "T3_professional",
       "content_type": "news",
       "collection_tier": "C1_rss",
       "producer_role": "",
       "event_model": "wait_time_snapshot",
-      "title": "Toy Story Midway Mania! - 30 minutes wait (Disney California Adventure)",
-      "url": "https://queue-times.com/en-US/parks/17/queue_times",
-      "source_url": "https://queue-times.com/en-US/parks/17/queue_times",
-      "event_at": "2026-11-10T16:45:36+00:00",
+      "title": "City Under Siege - Closed (Six Flags Magic Mountain)",
+      "url": "https://queue-times.com/en-US/parks/32/queue_times",
+      "source_url": "https://queue-times.com/en-US/parks/32/queue_times",
+      "event_at": "2026-11-11T16:50:29+00:00",
       "matched_entities": {
         "WaitTime": [
           "wait time",
           "wait",
           "queue",
-          "minutes wait",
           "current wait"
         ],
         "Attraction": [
           "attraction"
         ],
         "Status": [
-          "open",
+          "closed",
           "status"
         ],
         "Location": [
-          "disney",
-          "california adventure"
+          "six flags"
         ],
         "RealTimeData": [
           "real-time",
@@ -1347,28 +1488,27 @@
           "queue",
           "wait",
           "attraction",
-          "disney",
-          "story",
+          "under",
           "time"
         ]
       },
-      "facility_id": "17",
-      "facility_name": "Disney California Adventure",
+      "facility_id": "32",
+      "facility_name": "Six Flags Magic Mountain",
       "attraction_id": "",
-      "attraction_name": "Toy Story Midway Mania!",
+      "attraction_name": "City Under Siege",
       "service_id": "",
       "timezone": "",
-      "wait_minutes": 30,
-      "availability_status": "Open",
+      "wait_minutes": 0,
+      "availability_status": "Closed",
       "ticket_type": "",
       "price": null,
       "currency": "",
       "weather_metric": "",
       "metric_value": null,
-      "canonical_key": "queue_target:17:ride:toy-story-midway-mania",
+      "canonical_key": "queue_target:32:ride:city-under-siege",
       "canonical_key_status": "name_proxy",
-      "event_key": "wait_time_snapshot:3619cbebd325:20261110T164536Z",
-      "queue_target_key": "queue_target:17:ride:toy-story-midway-mania",
+      "event_key": "wait_time_snapshot:66c29a98a08e:20261111T165029Z",
+      "queue_target_key": "queue_target:32:ride:city-under-siege",
       "required_field_proxy": {
         "facility_id": true,
         "attraction_id": true,
@@ -1388,7 +1528,7 @@
       "title": "Wilderness Explorers - No wait (Animal Kingdom)",
       "url": "https://queue-times.com/en-US/parks/8/queue_times",
       "source_url": "https://queue-times.com/en-US/parks/8/queue_times",
-      "event_at": "2026-11-10T16:45:30+00:00",
+      "event_at": "2026-11-11T16:50:23+00:00",
       "matched_entities": {
         "WaitTime": [
           "wait time",
@@ -1438,7 +1578,7 @@
       "metric_value": null,
       "canonical_key": "queue_target:8:ride:wilderness-explorers",
       "canonical_key_status": "name_proxy",
-      "event_key": "wait_time_snapshot:e4d7b18f2425:20261110T164530Z",
+      "event_key": "wait_time_snapshot:e4d7b18f2425:20261111T165023Z",
       "queue_target_key": "queue_target:8:ride:wilderness-explorers",
       "required_field_proxy": {
         "facility_id": true,
@@ -1459,7 +1599,7 @@
       "title": "Once Upon a Studio Theater - No wait (Disney Hollywood Studios)",
       "url": "https://queue-times.com/en-US/parks/7/queue_times",
       "source_url": "https://queue-times.com/en-US/parks/7/queue_times",
-      "event_at": "2026-11-10T16:45:22+00:00",
+      "event_at": "2026-11-11T16:50:17+00:00",
       "matched_entities": {
         "WaitTime": [
           "wait time",
@@ -1511,78 +1651,8 @@
       "metric_value": null,
       "canonical_key": "queue_target:7:ride:once-upon-a-studio-theater",
       "canonical_key_status": "name_proxy",
-      "event_key": "wait_time_snapshot:6b8c25ded2b9:20261110T164522Z",
+      "event_key": "wait_time_snapshot:6b8c25ded2b9:20261111T165017Z",
       "queue_target_key": "queue_target:7:ride:once-upon-a-studio-theater",
-      "required_field_proxy": {
-        "facility_id": true,
-        "attraction_id": true,
-        "wait_minutes": true,
-        "source_url": true
-      },
-      "required_field_gaps": []
-    },
-    {
-      "source": "Six Flags Magic Mountain",
-      "source_type": "api",
-      "trust_tier": "T3_professional",
-      "content_type": "news",
-      "collection_tier": "C1_rss",
-      "producer_role": "",
-      "event_model": "wait_time_snapshot",
-      "title": "City Under Siege - Closed (Six Flags Magic Mountain)",
-      "url": "https://queue-times.com/en-US/parks/32/queue_times",
-      "source_url": "https://queue-times.com/en-US/parks/32/queue_times",
-      "event_at": "2026-11-10T16:45:22+00:00",
-      "matched_entities": {
-        "WaitTime": [
-          "wait time",
-          "wait",
-          "queue",
-          "current wait"
-        ],
-        "Attraction": [
-          "attraction"
-        ],
-        "Status": [
-          "closed",
-          "status"
-        ],
-        "Location": [
-          "six flags"
-        ],
-        "RealTimeData": [
-          "real-time",
-          "current",
-          "last updated",
-          "minutes",
-          "queue data",
-          "queue-times"
-        ],
-        "QueueGeneral": [
-          "queue",
-          "wait",
-          "attraction",
-          "under",
-          "time"
-        ]
-      },
-      "facility_id": "32",
-      "facility_name": "Six Flags Magic Mountain",
-      "attraction_id": "",
-      "attraction_name": "City Under Siege",
-      "service_id": "",
-      "timezone": "",
-      "wait_minutes": 0,
-      "availability_status": "Closed",
-      "ticket_type": "",
-      "price": null,
-      "currency": "",
-      "weather_metric": "",
-      "metric_value": null,
-      "canonical_key": "queue_target:32:ride:city-under-siege",
-      "canonical_key_status": "name_proxy",
-      "event_key": "wait_time_snapshot:66c29a98a08e:20261110T164522Z",
-      "queue_target_key": "queue_target:32:ride:city-under-siege",
       "required_field_proxy": {
         "facility_id": true,
         "attraction_id": true,
@@ -1599,10 +1669,10 @@
       "collection_tier": "C1_rss",
       "producer_role": "",
       "event_model": "wait_time_snapshot",
-      "title": "Jingle Cruise - 55 minutes wait (Disney Magic Kingdom)",
+      "title": "Jingle Cruise - 40 minutes wait (Disney Magic Kingdom)",
       "url": "https://queue-times.com/en-US/parks/6/queue_times",
       "source_url": "https://queue-times.com/en-US/parks/6/queue_times",
-      "event_at": "2026-11-10T16:45:16+00:00",
+      "event_at": "2026-11-11T16:50:12+00:00",
       "matched_entities": {
         "WaitTime": [
           "wait time",
@@ -1644,7 +1714,7 @@
       "attraction_name": "Jingle Cruise",
       "service_id": "",
       "timezone": "",
-      "wait_minutes": 55,
+      "wait_minutes": 40,
       "availability_status": "Open",
       "ticket_type": "",
       "price": null,
@@ -1653,78 +1723,8 @@
       "metric_value": null,
       "canonical_key": "queue_target:6:ride:jingle-cruise",
       "canonical_key_status": "name_proxy",
-      "event_key": "wait_time_snapshot:0e27bc3bd1d5:20261110T164516Z",
+      "event_key": "wait_time_snapshot:0e27bc3bd1d5:20261111T165012Z",
       "queue_target_key": "queue_target:6:ride:jingle-cruise",
-      "required_field_proxy": {
-        "facility_id": true,
-        "attraction_id": true,
-        "wait_minutes": true,
-        "source_url": true
-      },
-      "required_field_gaps": []
-    },
-    {
-      "source": "Busch Gardens Tampa",
-      "source_type": "api",
-      "trust_tier": "T3_professional",
-      "content_type": "news",
-      "collection_tier": "C1_rss",
-      "producer_role": "",
-      "event_model": "wait_time_snapshot",
-      "title": "Tigris - 5 minutes wait (Busch Gardens Tampa)",
-      "url": "https://queue-times.com/en-US/parks/24/queue_times",
-      "source_url": "https://queue-times.com/en-US/parks/24/queue_times",
-      "event_at": "2026-11-10T16:41:29+00:00",
-      "matched_entities": {
-        "WaitTime": [
-          "wait time",
-          "wait",
-          "queue",
-          "minutes wait",
-          "current wait"
-        ],
-        "Attraction": [
-          "attraction"
-        ],
-        "Status": [
-          "open",
-          "status"
-        ],
-        "Location": [
-          "busch gardens"
-        ],
-        "RealTimeData": [
-          "real-time",
-          "current",
-          "last updated",
-          "minutes",
-          "queue data",
-          "queue-times"
-        ],
-        "QueueGeneral": [
-          "queue",
-          "wait",
-          "attraction",
-          "time"
-        ]
-      },
-      "facility_id": "24",
-      "facility_name": "Busch Gardens Tampa",
-      "attraction_id": "",
-      "attraction_name": "Tigris",
-      "service_id": "",
-      "timezone": "",
-      "wait_minutes": 5,
-      "availability_status": "Open",
-      "ticket_type": "",
-      "price": null,
-      "currency": "",
-      "weather_metric": "",
-      "metric_value": null,
-      "canonical_key": "queue_target:24:ride:tigris",
-      "canonical_key_status": "name_proxy",
-      "event_key": "wait_time_snapshot:ddd46fdfe082:20261110T164129Z",
-      "queue_target_key": "queue_target:24:ride:tigris",
       "required_field_proxy": {
         "facility_id": true,
         "attraction_id": true,
@@ -2021,28 +2021,28 @@
       "reason": "source_stale",
       "source": "Epcot",
       "event_model": "wait_time_snapshot",
-      "age_days": 1.2,
+      "age_days": 2.2,
       "latest_title": "Living with the Land – Glimmering Greenhouses - Closed (Epcot)"
     },
     {
       "reason": "source_stale",
       "source": "Universal Studios Orlando",
       "event_model": "wait_time_snapshot",
-      "age_days": 5.24,
+      "age_days": 6.24,
       "latest_title": "Stranger Things 5 - Closed (Universal Studios Orlando)"
     },
     {
       "reason": "source_stale",
       "source": "Islands of Adventure",
       "event_model": "wait_time_snapshot",
-      "age_days": 2.69,
+      "age_days": 3.7,
       "latest_title": "The Amazing Adventures of Spider-Man® Single Rider - No wait (Islands of Adventure)"
     },
     {
       "reason": "source_stale",
       "source": "Universal Studios Hollywood",
       "event_model": "wait_time_snapshot",
-      "age_days": 4.56,
+      "age_days": 5.56,
       "latest_title": "Terror Tram starring Art the Clown - Closed (Universal Studios Hollywood)"
     },
     {
