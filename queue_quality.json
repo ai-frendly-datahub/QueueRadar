@@ -1,6 +1,6 @@
 {
   "category": "queue",
-  "generated_at": "2026-11-18T17:46:47.369911+00:00",
+  "generated_at": "2026-11-19T17:58:14.030097+00:00",
   "scope_note": "대기/예약 레이더 quality report is generated from repo-local category data_quality metadata and recent stored articles. Operational backlog sources remain separate until dedicated source-level fields are collected.",
   "summary": {
     "total_sources": 41,
@@ -20,8 +20,8 @@
     "weather_context_events": 0,
     "queue_signal_event_count": 12,
     "wait_time_observation_count": 12,
-    "open_attraction_count": 9,
-    "closed_attraction_count": 3,
+    "open_attraction_count": 8,
+    "closed_attraction_count": 4,
     "zero_wait_count": 8,
     "high_wait_review_count": 0,
     "target_canonical_key_present_count": 12,
@@ -54,9 +54,9 @@
       "status": "fresh",
       "article_count": 1,
       "event_count": 1,
-      "latest_event_at": "2026-11-18T17:45:24+00:00",
+      "latest_event_at": "2026-11-19T17:55:14+00:00",
       "age_days": 0.0,
-      "latest_title": "Jingle Cruise - 45 minutes wait (Disney Magic Kingdom)",
+      "latest_title": "Jingle Cruise - 35 minutes wait (Disney Magic Kingdom)",
       "latest_url": "https://queue-times.com/en-US/parks/6/queue_times",
       "latest_required_field_proxy": {
         "facility_id": true,
@@ -85,7 +85,7 @@
       "status": "fresh",
       "article_count": 1,
       "event_count": 1,
-      "latest_event_at": "2026-11-18T17:45:18+00:00",
+      "latest_event_at": "2026-11-19T17:55:12+00:00",
       "age_days": 0.0,
       "latest_title": "Remy's Ratatouille Adventure Single Rider - No wait (Epcot)",
       "latest_url": "https://queue-times.com/en-US/parks/5/queue_times",
@@ -116,7 +116,7 @@
       "status": "fresh",
       "article_count": 1,
       "event_count": 1,
-      "latest_event_at": "2026-11-18T17:45:24+00:00",
+      "latest_event_at": "2026-11-19T17:55:19+00:00",
       "age_days": 0.0,
       "latest_title": "Once Upon a Studio Theater - No wait (Disney Hollywood Studios)",
       "latest_url": "https://queue-times.com/en-US/parks/7/queue_times",
@@ -147,7 +147,7 @@
       "status": "fresh",
       "article_count": 1,
       "event_count": 1,
-      "latest_event_at": "2026-11-18T17:45:32+00:00",
+      "latest_event_at": "2026-11-19T17:55:25+00:00",
       "age_days": 0.0,
       "latest_title": "Wilderness Explorers - No wait (Animal Kingdom)",
       "latest_url": "https://queue-times.com/en-US/parks/8/queue_times",
@@ -178,9 +178,9 @@
       "status": "fresh",
       "article_count": 1,
       "event_count": 1,
-      "latest_event_at": "2026-11-18T17:45:38+00:00",
+      "latest_event_at": "2026-11-19T17:55:32+00:00",
       "age_days": 0.0,
-      "latest_title": "Buzz Lightyear Astro Blasters - 5 minutes wait (Disneyland)",
+      "latest_title": "Disneyland Monorail - 5 minutes wait (Disneyland)",
       "latest_url": "https://queue-times.com/en-US/parks/16/queue_times",
       "latest_required_field_proxy": {
         "facility_id": true,
@@ -188,7 +188,7 @@
         "wait_minutes": true,
         "source_url": true
       },
-      "latest_canonical_key": "queue_target:16:ride:buzz-lightyear-astro-blasters",
+      "latest_canonical_key": "queue_target:16:ride:disneyland-monorail",
       "latest_required_field_gaps": [],
       "errors": []
     },
@@ -209,9 +209,9 @@
       "status": "fresh",
       "article_count": 1,
       "event_count": 1,
-      "latest_event_at": "2026-11-18T17:45:42+00:00",
+      "latest_event_at": "2026-11-19T17:55:32+00:00",
       "age_days": 0.0,
-      "latest_title": "Mater's Jingle Jamboree - 20 minutes wait (Disney California Adventure)",
+      "latest_title": "Mater's Jingle Jamboree - 5 minutes wait (Disney California Adventure)",
       "latest_url": "https://queue-times.com/en-US/parks/17/queue_times",
       "latest_required_field_proxy": {
         "facility_id": true,
@@ -240,7 +240,7 @@
       "status": "fresh",
       "article_count": 1,
       "event_count": 1,
-      "latest_event_at": "2026-11-18T17:46:29+00:00",
+      "latest_event_at": "2026-11-19T17:56:19+00:00",
       "age_days": 0.0,
       "latest_title": "The Simpsons Ride™ - 15 minutes wait (Universal Studios Orlando)",
       "latest_url": "https://queue-times.com/en-US/parks/65/queue_times",
@@ -272,7 +272,7 @@
       "article_count": 1,
       "event_count": 1,
       "latest_event_at": "2026-11-15T05:31:15+00:00",
-      "age_days": 3.51,
+      "age_days": 4.52,
       "latest_title": "The Amazing Adventures of Spider-Man® Single Rider - No wait (Islands of Adventure)",
       "latest_url": "https://queue-times.com/en-US/parks/64/queue_times",
       "latest_required_field_proxy": {
@@ -302,7 +302,7 @@
       "status": "fresh",
       "article_count": 1,
       "event_count": 1,
-      "latest_event_at": "2026-11-18T17:41:27+00:00",
+      "latest_event_at": "2026-11-19T17:56:33+00:00",
       "age_days": 0.0,
       "latest_title": "Studio Tour - Closed (Universal Studios Hollywood)",
       "latest_url": "https://queue-times.com/en-US/parks/66/queue_times",
@@ -333,7 +333,7 @@
       "status": "fresh",
       "article_count": 1,
       "event_count": 1,
-      "latest_event_at": "2026-11-18T17:41:28+00:00",
+      "latest_event_at": "2026-11-19T17:56:35+00:00",
       "age_days": 0.0,
       "latest_title": "Holly Jolly™ Express - Closed (Busch Gardens Tampa)",
       "latest_url": "https://queue-times.com/en-US/parks/24/queue_times",
@@ -364,9 +364,9 @@
       "status": "fresh",
       "article_count": 1,
       "event_count": 1,
-      "latest_event_at": "2026-11-18T17:45:39+00:00",
+      "latest_event_at": "2026-11-19T17:55:33+00:00",
       "age_days": 0.0,
-      "latest_title": "Infinity Falls® - No wait (SeaWorld Orlando)",
+      "latest_title": "Infinity Falls® - Closed (SeaWorld Orlando)",
       "latest_url": "https://queue-times.com/en-US/parks/21/queue_times",
       "latest_required_field_proxy": {
         "facility_id": true,
@@ -395,7 +395,7 @@
       "status": "fresh",
       "article_count": 1,
       "event_count": 1,
-      "latest_event_at": "2026-11-18T17:45:24+00:00",
+      "latest_event_at": "2026-11-19T17:55:32+00:00",
       "age_days": 0.0,
       "latest_title": "City Under Siege - Closed (Six Flags Magic Mountain)",
       "latest_url": "https://queue-times.com/en-US/parks/32/queue_times",
@@ -424,7 +424,7 @@
       "event_model": "editorial_coverage",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 29,
+      "article_count": 30,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -450,7 +450,7 @@
       "event_model": "editorial_coverage",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 95,
+      "article_count": 98,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -476,7 +476,7 @@
       "event_model": "editorial_coverage",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 59,
+      "article_count": 58,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -554,7 +554,7 @@
       "event_model": "editorial_coverage",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 59,
+      "article_count": 70,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -580,7 +580,7 @@
       "event_model": "editorial_coverage",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 218,
+      "article_count": 199,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -892,7 +892,7 @@
       "event_model": "editorial_coverage",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 22,
+      "article_count": 27,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -918,7 +918,7 @@
       "event_model": "editorial_coverage",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 18,
+      "article_count": 14,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -1166,6 +1166,146 @@
   ],
   "events": [
     {
+      "source": "Busch Gardens Tampa",
+      "source_type": "api",
+      "trust_tier": "T3_professional",
+      "content_type": "news",
+      "collection_tier": "C1_rss",
+      "producer_role": "",
+      "event_model": "wait_time_snapshot",
+      "title": "Holly Jolly™ Express - Closed (Busch Gardens Tampa)",
+      "url": "https://queue-times.com/en-US/parks/24/queue_times",
+      "source_url": "https://queue-times.com/en-US/parks/24/queue_times",
+      "event_at": "2026-11-19T17:56:35+00:00",
+      "matched_entities": {
+        "WaitTime": [
+          "wait time",
+          "wait",
+          "queue",
+          "current wait",
+          "express"
+        ],
+        "Attraction": [
+          "attraction"
+        ],
+        "Status": [
+          "closed",
+          "status"
+        ],
+        "Location": [
+          "busch gardens"
+        ],
+        "RealTimeData": [
+          "real-time",
+          "current",
+          "last updated",
+          "minutes",
+          "queue data",
+          "queue-times"
+        ],
+        "QueueGeneral": [
+          "queue",
+          "wait",
+          "attraction",
+          "time"
+        ]
+      },
+      "facility_id": "24",
+      "facility_name": "Busch Gardens Tampa",
+      "attraction_id": "",
+      "attraction_name": "Holly Jolly™ Express",
+      "service_id": "",
+      "timezone": "",
+      "wait_minutes": 0,
+      "availability_status": "Closed",
+      "ticket_type": "",
+      "price": null,
+      "currency": "",
+      "weather_metric": "",
+      "metric_value": null,
+      "canonical_key": "queue_target:24:ride:holly-jolly-express",
+      "canonical_key_status": "name_proxy",
+      "event_key": "wait_time_snapshot:2fdb80bc426a:20261119T175635Z",
+      "queue_target_key": "queue_target:24:ride:holly-jolly-express",
+      "required_field_proxy": {
+        "facility_id": true,
+        "attraction_id": true,
+        "wait_minutes": true,
+        "source_url": true
+      },
+      "required_field_gaps": []
+    },
+    {
+      "source": "Universal Studios Hollywood",
+      "source_type": "api",
+      "trust_tier": "T3_professional",
+      "content_type": "news",
+      "collection_tier": "C1_rss",
+      "producer_role": "",
+      "event_model": "wait_time_snapshot",
+      "title": "Studio Tour - Closed (Universal Studios Hollywood)",
+      "url": "https://queue-times.com/en-US/parks/66/queue_times",
+      "source_url": "https://queue-times.com/en-US/parks/66/queue_times",
+      "event_at": "2026-11-19T17:56:33+00:00",
+      "matched_entities": {
+        "WaitTime": [
+          "wait time",
+          "wait",
+          "queue",
+          "current wait"
+        ],
+        "Attraction": [
+          "attraction"
+        ],
+        "Status": [
+          "closed",
+          "status"
+        ],
+        "Location": [
+          "universal"
+        ],
+        "RealTimeData": [
+          "real-time",
+          "current",
+          "last updated",
+          "minutes",
+          "queue data",
+          "queue-times"
+        ],
+        "QueueGeneral": [
+          "queue",
+          "wait",
+          "attraction",
+          "universal",
+          "time"
+        ]
+      },
+      "facility_id": "66",
+      "facility_name": "Universal Studios Hollywood",
+      "attraction_id": "",
+      "attraction_name": "Studio Tour",
+      "service_id": "",
+      "timezone": "",
+      "wait_minutes": 0,
+      "availability_status": "Closed",
+      "ticket_type": "",
+      "price": null,
+      "currency": "",
+      "weather_metric": "",
+      "metric_value": null,
+      "canonical_key": "queue_target:66:ride:studio-tour",
+      "canonical_key_status": "name_proxy",
+      "event_key": "wait_time_snapshot:5a070470acf7:20261119T175633Z",
+      "queue_target_key": "queue_target:66:ride:studio-tour",
+      "required_field_proxy": {
+        "facility_id": true,
+        "attraction_id": true,
+        "wait_minutes": true,
+        "source_url": true
+      },
+      "required_field_gaps": []
+    },
+    {
       "source": "Universal Studios Orlando",
       "source_type": "api",
       "trust_tier": "T3_professional",
@@ -1176,7 +1316,7 @@
       "title": "The Simpsons Ride™ - 15 minutes wait (Universal Studios Orlando)",
       "url": "https://queue-times.com/en-US/parks/65/queue_times",
       "source_url": "https://queue-times.com/en-US/parks/65/queue_times",
-      "event_at": "2026-11-18T17:46:29+00:00",
+      "event_at": "2026-11-19T17:56:19+00:00",
       "matched_entities": {
         "WaitTime": [
           "wait time",
@@ -1229,8 +1369,77 @@
       "metric_value": null,
       "canonical_key": "queue_target:65:ride:the-simpsons-ride",
       "canonical_key_status": "name_proxy",
-      "event_key": "wait_time_snapshot:3cc49e1960fc:20261118T174629Z",
+      "event_key": "wait_time_snapshot:3cc49e1960fc:20261119T175619Z",
       "queue_target_key": "queue_target:65:ride:the-simpsons-ride",
+      "required_field_proxy": {
+        "facility_id": true,
+        "attraction_id": true,
+        "wait_minutes": true,
+        "source_url": true
+      },
+      "required_field_gaps": []
+    },
+    {
+      "source": "SeaWorld Orlando",
+      "source_type": "api",
+      "trust_tier": "T3_professional",
+      "content_type": "news",
+      "collection_tier": "C1_rss",
+      "producer_role": "",
+      "event_model": "wait_time_snapshot",
+      "title": "Infinity Falls® - Closed (SeaWorld Orlando)",
+      "url": "https://queue-times.com/en-US/parks/21/queue_times",
+      "source_url": "https://queue-times.com/en-US/parks/21/queue_times",
+      "event_at": "2026-11-19T17:55:33+00:00",
+      "matched_entities": {
+        "WaitTime": [
+          "wait time",
+          "wait",
+          "queue",
+          "current wait"
+        ],
+        "Attraction": [
+          "attraction"
+        ],
+        "Status": [
+          "closed",
+          "status"
+        ],
+        "Location": [
+          "seaworld"
+        ],
+        "RealTimeData": [
+          "real-time",
+          "current",
+          "last updated",
+          "minutes",
+          "queue data",
+          "queue-times"
+        ],
+        "QueueGeneral": [
+          "queue",
+          "wait",
+          "attraction",
+          "time"
+        ]
+      },
+      "facility_id": "21",
+      "facility_name": "SeaWorld Orlando",
+      "attraction_id": "",
+      "attraction_name": "Infinity Falls®",
+      "service_id": "",
+      "timezone": "",
+      "wait_minutes": 0,
+      "availability_status": "Closed",
+      "ticket_type": "",
+      "price": null,
+      "currency": "",
+      "weather_metric": "",
+      "metric_value": null,
+      "canonical_key": "queue_target:21:ride:infinity-falls",
+      "canonical_key_status": "name_proxy",
+      "event_key": "wait_time_snapshot:05cbd1cced0e:20261119T175533Z",
+      "queue_target_key": "queue_target:21:ride:infinity-falls",
       "required_field_proxy": {
         "facility_id": true,
         "attraction_id": true,
@@ -1247,10 +1456,10 @@
       "collection_tier": "C1_rss",
       "producer_role": "",
       "event_model": "wait_time_snapshot",
-      "title": "Mater's Jingle Jamboree - 20 minutes wait (Disney California Adventure)",
+      "title": "Mater's Jingle Jamboree - 5 minutes wait (Disney California Adventure)",
       "url": "https://queue-times.com/en-US/parks/17/queue_times",
       "source_url": "https://queue-times.com/en-US/parks/17/queue_times",
-      "event_at": "2026-11-18T17:45:42+00:00",
+      "event_at": "2026-11-19T17:55:32+00:00",
       "matched_entities": {
         "WaitTime": [
           "wait time",
@@ -1292,7 +1501,7 @@
       "attraction_name": "Mater's Jingle Jamboree",
       "service_id": "",
       "timezone": "",
-      "wait_minutes": 20,
+      "wait_minutes": 5,
       "availability_status": "Open",
       "ticket_type": "",
       "price": null,
@@ -1301,78 +1510,8 @@
       "metric_value": null,
       "canonical_key": "queue_target:17:ride:mater-s-jingle-jamboree",
       "canonical_key_status": "name_proxy",
-      "event_key": "wait_time_snapshot:f7523c318038:20261118T174542Z",
+      "event_key": "wait_time_snapshot:f7523c318038:20261119T175532Z",
       "queue_target_key": "queue_target:17:ride:mater-s-jingle-jamboree",
-      "required_field_proxy": {
-        "facility_id": true,
-        "attraction_id": true,
-        "wait_minutes": true,
-        "source_url": true
-      },
-      "required_field_gaps": []
-    },
-    {
-      "source": "SeaWorld Orlando",
-      "source_type": "api",
-      "trust_tier": "T3_professional",
-      "content_type": "news",
-      "collection_tier": "C1_rss",
-      "producer_role": "",
-      "event_model": "wait_time_snapshot",
-      "title": "Infinity Falls® - No wait (SeaWorld Orlando)",
-      "url": "https://queue-times.com/en-US/parks/21/queue_times",
-      "source_url": "https://queue-times.com/en-US/parks/21/queue_times",
-      "event_at": "2026-11-18T17:45:39+00:00",
-      "matched_entities": {
-        "WaitTime": [
-          "wait time",
-          "wait",
-          "queue",
-          "no wait",
-          "current wait"
-        ],
-        "Attraction": [
-          "attraction"
-        ],
-        "Status": [
-          "open",
-          "status"
-        ],
-        "Location": [
-          "seaworld"
-        ],
-        "RealTimeData": [
-          "real-time",
-          "current",
-          "last updated",
-          "minutes",
-          "queue data",
-          "queue-times"
-        ],
-        "QueueGeneral": [
-          "queue",
-          "wait",
-          "attraction",
-          "time"
-        ]
-      },
-      "facility_id": "21",
-      "facility_name": "SeaWorld Orlando",
-      "attraction_id": "",
-      "attraction_name": "Infinity Falls®",
-      "service_id": "",
-      "timezone": "",
-      "wait_minutes": 0,
-      "availability_status": "Open",
-      "ticket_type": "",
-      "price": null,
-      "currency": "",
-      "weather_metric": "",
-      "metric_value": null,
-      "canonical_key": "queue_target:21:ride:infinity-falls",
-      "canonical_key_status": "name_proxy",
-      "event_key": "wait_time_snapshot:05cbd1cced0e:20261118T174539Z",
-      "queue_target_key": "queue_target:21:ride:infinity-falls",
       "required_field_proxy": {
         "facility_id": true,
         "attraction_id": true,
@@ -1389,10 +1528,10 @@
       "collection_tier": "C1_rss",
       "producer_role": "",
       "event_model": "wait_time_snapshot",
-      "title": "Buzz Lightyear Astro Blasters - 5 minutes wait (Disneyland)",
+      "title": "Disneyland Monorail - 5 minutes wait (Disneyland)",
       "url": "https://queue-times.com/en-US/parks/16/queue_times",
       "source_url": "https://queue-times.com/en-US/parks/16/queue_times",
-      "event_at": "2026-11-18T17:45:38+00:00",
+      "event_at": "2026-11-19T17:55:32+00:00",
       "matched_entities": {
         "WaitTime": [
           "wait time",
@@ -1429,7 +1568,7 @@
       "facility_id": "16",
       "facility_name": "Disneyland",
       "attraction_id": "",
-      "attraction_name": "Buzz Lightyear Astro Blasters",
+      "attraction_name": "Disneyland Monorail",
       "service_id": "",
       "timezone": "",
       "wait_minutes": 5,
@@ -1439,10 +1578,80 @@
       "currency": "",
       "weather_metric": "",
       "metric_value": null,
-      "canonical_key": "queue_target:16:ride:buzz-lightyear-astro-blasters",
+      "canonical_key": "queue_target:16:ride:disneyland-monorail",
       "canonical_key_status": "name_proxy",
-      "event_key": "wait_time_snapshot:61c949c01d57:20261118T174538Z",
-      "queue_target_key": "queue_target:16:ride:buzz-lightyear-astro-blasters",
+      "event_key": "wait_time_snapshot:f231eede0650:20261119T175532Z",
+      "queue_target_key": "queue_target:16:ride:disneyland-monorail",
+      "required_field_proxy": {
+        "facility_id": true,
+        "attraction_id": true,
+        "wait_minutes": true,
+        "source_url": true
+      },
+      "required_field_gaps": []
+    },
+    {
+      "source": "Six Flags Magic Mountain",
+      "source_type": "api",
+      "trust_tier": "T3_professional",
+      "content_type": "news",
+      "collection_tier": "C1_rss",
+      "producer_role": "",
+      "event_model": "wait_time_snapshot",
+      "title": "City Under Siege - Closed (Six Flags Magic Mountain)",
+      "url": "https://queue-times.com/en-US/parks/32/queue_times",
+      "source_url": "https://queue-times.com/en-US/parks/32/queue_times",
+      "event_at": "2026-11-19T17:55:32+00:00",
+      "matched_entities": {
+        "WaitTime": [
+          "wait time",
+          "wait",
+          "queue",
+          "current wait"
+        ],
+        "Attraction": [
+          "attraction"
+        ],
+        "Status": [
+          "closed",
+          "status"
+        ],
+        "Location": [
+          "six flags"
+        ],
+        "RealTimeData": [
+          "real-time",
+          "current",
+          "last updated",
+          "minutes",
+          "queue data",
+          "queue-times"
+        ],
+        "QueueGeneral": [
+          "queue",
+          "wait",
+          "attraction",
+          "under",
+          "time"
+        ]
+      },
+      "facility_id": "32",
+      "facility_name": "Six Flags Magic Mountain",
+      "attraction_id": "",
+      "attraction_name": "City Under Siege",
+      "service_id": "",
+      "timezone": "",
+      "wait_minutes": 0,
+      "availability_status": "Closed",
+      "ticket_type": "",
+      "price": null,
+      "currency": "",
+      "weather_metric": "",
+      "metric_value": null,
+      "canonical_key": "queue_target:32:ride:city-under-siege",
+      "canonical_key_status": "name_proxy",
+      "event_key": "wait_time_snapshot:66c29a98a08e:20261119T175532Z",
+      "queue_target_key": "queue_target:32:ride:city-under-siege",
       "required_field_proxy": {
         "facility_id": true,
         "attraction_id": true,
@@ -1462,7 +1671,7 @@
       "title": "Wilderness Explorers - No wait (Animal Kingdom)",
       "url": "https://queue-times.com/en-US/parks/8/queue_times",
       "source_url": "https://queue-times.com/en-US/parks/8/queue_times",
-      "event_at": "2026-11-18T17:45:32+00:00",
+      "event_at": "2026-11-19T17:55:25+00:00",
       "matched_entities": {
         "WaitTime": [
           "wait time",
@@ -1512,150 +1721,8 @@
       "metric_value": null,
       "canonical_key": "queue_target:8:ride:wilderness-explorers",
       "canonical_key_status": "name_proxy",
-      "event_key": "wait_time_snapshot:e4d7b18f2425:20261118T174532Z",
+      "event_key": "wait_time_snapshot:e4d7b18f2425:20261119T175525Z",
       "queue_target_key": "queue_target:8:ride:wilderness-explorers",
-      "required_field_proxy": {
-        "facility_id": true,
-        "attraction_id": true,
-        "wait_minutes": true,
-        "source_url": true
-      },
-      "required_field_gaps": []
-    },
-    {
-      "source": "Six Flags Magic Mountain",
-      "source_type": "api",
-      "trust_tier": "T3_professional",
-      "content_type": "news",
-      "collection_tier": "C1_rss",
-      "producer_role": "",
-      "event_model": "wait_time_snapshot",
-      "title": "City Under Siege - Closed (Six Flags Magic Mountain)",
-      "url": "https://queue-times.com/en-US/parks/32/queue_times",
-      "source_url": "https://queue-times.com/en-US/parks/32/queue_times",
-      "event_at": "2026-11-18T17:45:24+00:00",
-      "matched_entities": {
-        "WaitTime": [
-          "wait time",
-          "wait",
-          "queue",
-          "current wait"
-        ],
-        "Attraction": [
-          "attraction"
-        ],
-        "Status": [
-          "closed",
-          "status"
-        ],
-        "Location": [
-          "six flags"
-        ],
-        "RealTimeData": [
-          "real-time",
-          "current",
-          "last updated",
-          "minutes",
-          "queue data",
-          "queue-times"
-        ],
-        "QueueGeneral": [
-          "queue",
-          "wait",
-          "attraction",
-          "under",
-          "time"
-        ]
-      },
-      "facility_id": "32",
-      "facility_name": "Six Flags Magic Mountain",
-      "attraction_id": "",
-      "attraction_name": "City Under Siege",
-      "service_id": "",
-      "timezone": "",
-      "wait_minutes": 0,
-      "availability_status": "Closed",
-      "ticket_type": "",
-      "price": null,
-      "currency": "",
-      "weather_metric": "",
-      "metric_value": null,
-      "canonical_key": "queue_target:32:ride:city-under-siege",
-      "canonical_key_status": "name_proxy",
-      "event_key": "wait_time_snapshot:66c29a98a08e:20261118T174524Z",
-      "queue_target_key": "queue_target:32:ride:city-under-siege",
-      "required_field_proxy": {
-        "facility_id": true,
-        "attraction_id": true,
-        "wait_minutes": true,
-        "source_url": true
-      },
-      "required_field_gaps": []
-    },
-    {
-      "source": "Disney Magic Kingdom",
-      "source_type": "api",
-      "trust_tier": "T3_professional",
-      "content_type": "news",
-      "collection_tier": "C1_rss",
-      "producer_role": "",
-      "event_model": "wait_time_snapshot",
-      "title": "Jingle Cruise - 45 minutes wait (Disney Magic Kingdom)",
-      "url": "https://queue-times.com/en-US/parks/6/queue_times",
-      "source_url": "https://queue-times.com/en-US/parks/6/queue_times",
-      "event_at": "2026-11-18T17:45:24+00:00",
-      "matched_entities": {
-        "WaitTime": [
-          "wait time",
-          "wait",
-          "queue",
-          "minutes wait",
-          "current wait"
-        ],
-        "Attraction": [
-          "attraction"
-        ],
-        "Status": [
-          "open",
-          "status"
-        ],
-        "Location": [
-          "disney",
-          "magic kingdom"
-        ],
-        "RealTimeData": [
-          "real-time",
-          "current",
-          "last updated",
-          "minutes",
-          "queue data",
-          "queue-times"
-        ],
-        "QueueGeneral": [
-          "queue",
-          "wait",
-          "attraction",
-          "disney",
-          "time"
-        ]
-      },
-      "facility_id": "6",
-      "facility_name": "Disney Magic Kingdom",
-      "attraction_id": "",
-      "attraction_name": "Jingle Cruise",
-      "service_id": "",
-      "timezone": "",
-      "wait_minutes": 45,
-      "availability_status": "Open",
-      "ticket_type": "",
-      "price": null,
-      "currency": "",
-      "weather_metric": "",
-      "metric_value": null,
-      "canonical_key": "queue_target:6:ride:jingle-cruise",
-      "canonical_key_status": "name_proxy",
-      "event_key": "wait_time_snapshot:0e27bc3bd1d5:20261118T174524Z",
-      "queue_target_key": "queue_target:6:ride:jingle-cruise",
       "required_field_proxy": {
         "facility_id": true,
         "attraction_id": true,
@@ -1675,7 +1742,7 @@
       "title": "Once Upon a Studio Theater - No wait (Disney Hollywood Studios)",
       "url": "https://queue-times.com/en-US/parks/7/queue_times",
       "source_url": "https://queue-times.com/en-US/parks/7/queue_times",
-      "event_at": "2026-11-18T17:45:24+00:00",
+      "event_at": "2026-11-19T17:55:19+00:00",
       "matched_entities": {
         "WaitTime": [
           "wait time",
@@ -1727,8 +1794,80 @@
       "metric_value": null,
       "canonical_key": "queue_target:7:ride:once-upon-a-studio-theater",
       "canonical_key_status": "name_proxy",
-      "event_key": "wait_time_snapshot:6b8c25ded2b9:20261118T174524Z",
+      "event_key": "wait_time_snapshot:6b8c25ded2b9:20261119T175519Z",
       "queue_target_key": "queue_target:7:ride:once-upon-a-studio-theater",
+      "required_field_proxy": {
+        "facility_id": true,
+        "attraction_id": true,
+        "wait_minutes": true,
+        "source_url": true
+      },
+      "required_field_gaps": []
+    },
+    {
+      "source": "Disney Magic Kingdom",
+      "source_type": "api",
+      "trust_tier": "T3_professional",
+      "content_type": "news",
+      "collection_tier": "C1_rss",
+      "producer_role": "",
+      "event_model": "wait_time_snapshot",
+      "title": "Jingle Cruise - 35 minutes wait (Disney Magic Kingdom)",
+      "url": "https://queue-times.com/en-US/parks/6/queue_times",
+      "source_url": "https://queue-times.com/en-US/parks/6/queue_times",
+      "event_at": "2026-11-19T17:55:14+00:00",
+      "matched_entities": {
+        "WaitTime": [
+          "wait time",
+          "wait",
+          "queue",
+          "minutes wait",
+          "current wait"
+        ],
+        "Attraction": [
+          "attraction"
+        ],
+        "Status": [
+          "open",
+          "status"
+        ],
+        "Location": [
+          "disney",
+          "magic kingdom"
+        ],
+        "RealTimeData": [
+          "real-time",
+          "current",
+          "last updated",
+          "minutes",
+          "queue data",
+          "queue-times"
+        ],
+        "QueueGeneral": [
+          "queue",
+          "wait",
+          "attraction",
+          "disney",
+          "time"
+        ]
+      },
+      "facility_id": "6",
+      "facility_name": "Disney Magic Kingdom",
+      "attraction_id": "",
+      "attraction_name": "Jingle Cruise",
+      "service_id": "",
+      "timezone": "",
+      "wait_minutes": 35,
+      "availability_status": "Open",
+      "ticket_type": "",
+      "price": null,
+      "currency": "",
+      "weather_metric": "",
+      "metric_value": null,
+      "canonical_key": "queue_target:6:ride:jingle-cruise",
+      "canonical_key_status": "name_proxy",
+      "event_key": "wait_time_snapshot:0e27bc3bd1d5:20261119T175514Z",
+      "queue_target_key": "queue_target:6:ride:jingle-cruise",
       "required_field_proxy": {
         "facility_id": true,
         "attraction_id": true,
@@ -1748,7 +1887,7 @@
       "title": "Remy's Ratatouille Adventure Single Rider - No wait (Epcot)",
       "url": "https://queue-times.com/en-US/parks/5/queue_times",
       "source_url": "https://queue-times.com/en-US/parks/5/queue_times",
-      "event_at": "2026-11-18T17:45:18+00:00",
+      "event_at": "2026-11-19T17:55:12+00:00",
       "matched_entities": {
         "WaitTime": [
           "wait time",
@@ -1797,148 +1936,8 @@
       "metric_value": null,
       "canonical_key": "queue_target:5:ride:remy-s-ratatouille-adventure-single-rider",
       "canonical_key_status": "name_proxy",
-      "event_key": "wait_time_snapshot:889ecbe32291:20261118T174518Z",
+      "event_key": "wait_time_snapshot:889ecbe32291:20261119T175512Z",
       "queue_target_key": "queue_target:5:ride:remy-s-ratatouille-adventure-single-rider",
-      "required_field_proxy": {
-        "facility_id": true,
-        "attraction_id": true,
-        "wait_minutes": true,
-        "source_url": true
-      },
-      "required_field_gaps": []
-    },
-    {
-      "source": "Busch Gardens Tampa",
-      "source_type": "api",
-      "trust_tier": "T3_professional",
-      "content_type": "news",
-      "collection_tier": "C1_rss",
-      "producer_role": "",
-      "event_model": "wait_time_snapshot",
-      "title": "Holly Jolly™ Express - Closed (Busch Gardens Tampa)",
-      "url": "https://queue-times.com/en-US/parks/24/queue_times",
-      "source_url": "https://queue-times.com/en-US/parks/24/queue_times",
-      "event_at": "2026-11-18T17:41:28+00:00",
-      "matched_entities": {
-        "WaitTime": [
-          "wait time",
-          "wait",
-          "queue",
-          "current wait",
-          "express"
-        ],
-        "Attraction": [
-          "attraction"
-        ],
-        "Status": [
-          "closed",
-          "status"
-        ],
-        "Location": [
-          "busch gardens"
-        ],
-        "RealTimeData": [
-          "real-time",
-          "current",
-          "last updated",
-          "minutes",
-          "queue data",
-          "queue-times"
-        ],
-        "QueueGeneral": [
-          "queue",
-          "wait",
-          "attraction",
-          "time"
-        ]
-      },
-      "facility_id": "24",
-      "facility_name": "Busch Gardens Tampa",
-      "attraction_id": "",
-      "attraction_name": "Holly Jolly™ Express",
-      "service_id": "",
-      "timezone": "",
-      "wait_minutes": 0,
-      "availability_status": "Closed",
-      "ticket_type": "",
-      "price": null,
-      "currency": "",
-      "weather_metric": "",
-      "metric_value": null,
-      "canonical_key": "queue_target:24:ride:holly-jolly-express",
-      "canonical_key_status": "name_proxy",
-      "event_key": "wait_time_snapshot:2fdb80bc426a:20261118T174128Z",
-      "queue_target_key": "queue_target:24:ride:holly-jolly-express",
-      "required_field_proxy": {
-        "facility_id": true,
-        "attraction_id": true,
-        "wait_minutes": true,
-        "source_url": true
-      },
-      "required_field_gaps": []
-    },
-    {
-      "source": "Universal Studios Hollywood",
-      "source_type": "api",
-      "trust_tier": "T3_professional",
-      "content_type": "news",
-      "collection_tier": "C1_rss",
-      "producer_role": "",
-      "event_model": "wait_time_snapshot",
-      "title": "Studio Tour - Closed (Universal Studios Hollywood)",
-      "url": "https://queue-times.com/en-US/parks/66/queue_times",
-      "source_url": "https://queue-times.com/en-US/parks/66/queue_times",
-      "event_at": "2026-11-18T17:41:27+00:00",
-      "matched_entities": {
-        "WaitTime": [
-          "wait time",
-          "wait",
-          "queue",
-          "current wait"
-        ],
-        "Attraction": [
-          "attraction"
-        ],
-        "Status": [
-          "closed",
-          "status"
-        ],
-        "Location": [
-          "universal"
-        ],
-        "RealTimeData": [
-          "real-time",
-          "current",
-          "last updated",
-          "minutes",
-          "queue data",
-          "queue-times"
-        ],
-        "QueueGeneral": [
-          "queue",
-          "wait",
-          "attraction",
-          "universal",
-          "time"
-        ]
-      },
-      "facility_id": "66",
-      "facility_name": "Universal Studios Hollywood",
-      "attraction_id": "",
-      "attraction_name": "Studio Tour",
-      "service_id": "",
-      "timezone": "",
-      "wait_minutes": 0,
-      "availability_status": "Closed",
-      "ticket_type": "",
-      "price": null,
-      "currency": "",
-      "weather_metric": "",
-      "metric_value": null,
-      "canonical_key": "queue_target:66:ride:studio-tour",
-      "canonical_key_status": "name_proxy",
-      "event_key": "wait_time_snapshot:5a070470acf7:20261118T174127Z",
-      "queue_target_key": "queue_target:66:ride:studio-tour",
       "required_field_proxy": {
         "facility_id": true,
         "attraction_id": true,
@@ -2024,7 +2023,7 @@
       "reason": "source_stale",
       "source": "Islands of Adventure",
       "event_model": "wait_time_snapshot",
-      "age_days": 3.51,
+      "age_days": 4.52,
       "latest_title": "The Amazing Adventures of Spider-Man® Single Rider - No wait (Islands of Adventure)"
     },
     {
