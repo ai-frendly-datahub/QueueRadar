@@ -1,6 +1,6 @@
 {
   "category": "queue",
-  "generated_at": "2026-11-27T18:41:40.717465+00:00",
+  "generated_at": "2026-11-28T17:21:55.840930+00:00",
   "scope_note": "대기/예약 레이더 quality report is generated from repo-local category data_quality metadata and recent stored articles. Operational backlog sources remain separate until dedicated source-level fields are collected.",
   "summary": {
     "total_sources": 41,
@@ -54,7 +54,7 @@
       "status": "fresh",
       "article_count": 1,
       "event_count": 1,
-      "latest_event_at": "2026-11-27T18:40:12+00:00",
+      "latest_event_at": "2026-11-28T17:20:19+00:00",
       "age_days": 0.0,
       "latest_title": "Jingle Cruise - 45 minutes wait (Disney Magic Kingdom)",
       "latest_url": "https://queue-times.com/en-US/parks/6/queue_times",
@@ -85,9 +85,9 @@
       "status": "fresh",
       "article_count": 1,
       "event_count": 1,
-      "latest_event_at": "2026-11-27T18:40:12+00:00",
+      "latest_event_at": "2026-11-28T17:20:18+00:00",
       "age_days": 0.0,
-      "latest_title": "Living with the Land - 15 minutes wait (Epcot)",
+      "latest_title": "Living with the Land – Glimmering Greenhouses - 15 minutes wait (Epcot)",
       "latest_url": "https://queue-times.com/en-US/parks/5/queue_times",
       "latest_required_field_proxy": {
         "facility_id": true,
@@ -95,7 +95,7 @@
         "wait_minutes": true,
         "source_url": true
       },
-      "latest_canonical_key": "queue_target:5:ride:living-with-the-land",
+      "latest_canonical_key": "queue_target:5:ride:living-with-the-land-glimmering-greenhouses",
       "latest_required_field_gaps": [],
       "errors": []
     },
@@ -116,7 +116,7 @@
       "status": "fresh",
       "article_count": 1,
       "event_count": 1,
-      "latest_event_at": "2026-11-27T18:40:19+00:00",
+      "latest_event_at": "2026-11-28T17:20:30+00:00",
       "age_days": 0.0,
       "latest_title": "Once Upon a Studio Theater - No wait (Disney Hollywood Studios)",
       "latest_url": "https://queue-times.com/en-US/parks/7/queue_times",
@@ -147,7 +147,7 @@
       "status": "fresh",
       "article_count": 1,
       "event_count": 1,
-      "latest_event_at": "2026-11-27T18:40:28+00:00",
+      "latest_event_at": "2026-11-28T17:20:30+00:00",
       "age_days": 0.0,
       "latest_title": "Wilderness Explorers - No wait (Animal Kingdom)",
       "latest_url": "https://queue-times.com/en-US/parks/8/queue_times",
@@ -178,9 +178,9 @@
       "status": "fresh",
       "article_count": 1,
       "event_count": 1,
-      "latest_event_at": "2026-11-27T18:40:28+00:00",
+      "latest_event_at": "2026-11-28T17:20:30+00:00",
       "age_days": 0.0,
-      "latest_title": "Disneyland Monorail - 5 minutes wait (Disneyland)",
+      "latest_title": "Disneyland Monorail - 15 minutes wait (Disneyland)",
       "latest_url": "https://queue-times.com/en-US/parks/16/queue_times",
       "latest_required_field_proxy": {
         "facility_id": true,
@@ -209,9 +209,9 @@
       "status": "fresh",
       "article_count": 1,
       "event_count": 1,
-      "latest_event_at": "2026-11-27T18:40:42+00:00",
+      "latest_event_at": "2026-11-28T17:20:37+00:00",
       "age_days": 0.0,
-      "latest_title": "Mater's Jingle Jamboree - 35 minutes wait (Disney California Adventure)",
+      "latest_title": "Mater's Jingle Jamboree - 5 minutes wait (Disney California Adventure)",
       "latest_url": "https://queue-times.com/en-US/parks/17/queue_times",
       "latest_required_field_proxy": {
         "facility_id": true,
@@ -240,9 +240,9 @@
       "status": "fresh",
       "article_count": 1,
       "event_count": 1,
-      "latest_event_at": "2026-11-27T18:36:34+00:00",
+      "latest_event_at": "2026-11-28T17:21:25+00:00",
       "age_days": 0.0,
-      "latest_title": "The Simpsons Ride™ - 35 minutes wait (Universal Studios Orlando)",
+      "latest_title": "The Simpsons Ride™ - 15 minutes wait (Universal Studios Orlando)",
       "latest_url": "https://queue-times.com/en-US/parks/65/queue_times",
       "latest_required_field_proxy": {
         "facility_id": true,
@@ -272,7 +272,7 @@
       "article_count": 1,
       "event_count": 1,
       "latest_event_at": "2026-11-23T01:01:27+00:00",
-      "age_days": 4.74,
+      "age_days": 5.68,
       "latest_title": "The Amazing Adventures of Spider-Man® Single Rider - No wait (Islands of Adventure)",
       "latest_url": "https://queue-times.com/en-US/parks/64/queue_times",
       "latest_required_field_proxy": {
@@ -302,7 +302,7 @@
       "status": "fresh",
       "article_count": 1,
       "event_count": 1,
-      "latest_event_at": "2026-11-27T18:36:34+00:00",
+      "latest_event_at": "2026-11-28T17:16:36+00:00",
       "age_days": 0.0,
       "latest_title": "Studio Tour - No wait (Universal Studios Hollywood)",
       "latest_url": "https://queue-times.com/en-US/parks/66/queue_times",
@@ -333,7 +333,7 @@
       "status": "fresh",
       "article_count": 1,
       "event_count": 1,
-      "latest_event_at": "2026-11-27T18:36:35+00:00",
+      "latest_event_at": "2026-11-28T17:16:37+00:00",
       "age_days": 0.0,
       "latest_title": "Holly Jolly™ Express - Closed (Busch Gardens Tampa)",
       "latest_url": "https://queue-times.com/en-US/parks/24/queue_times",
@@ -364,7 +364,7 @@
       "status": "fresh",
       "article_count": 1,
       "event_count": 1,
-      "latest_event_at": "2026-11-27T18:40:29+00:00",
+      "latest_event_at": "2026-11-28T17:20:31+00:00",
       "age_days": 0.0,
       "latest_title": "Infinity Falls® - Closed (SeaWorld Orlando)",
       "latest_url": "https://queue-times.com/en-US/parks/21/queue_times",
@@ -395,7 +395,7 @@
       "status": "fresh",
       "article_count": 1,
       "event_count": 1,
-      "latest_event_at": "2026-11-27T18:40:28+00:00",
+      "latest_event_at": "2026-11-28T17:20:30+00:00",
       "age_days": 0.0,
       "latest_title": "City Under Siege - Closed (Six Flags Magic Mountain)",
       "latest_url": "https://queue-times.com/en-US/parks/32/queue_times",
@@ -424,7 +424,7 @@
       "event_model": "editorial_coverage",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 28,
+      "article_count": 27,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -450,7 +450,7 @@
       "event_model": "editorial_coverage",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 87,
+      "article_count": 86,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -476,7 +476,7 @@
       "event_model": "editorial_coverage",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 51,
+      "article_count": 52,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -528,7 +528,7 @@
       "event_model": "editorial_coverage",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 107,
+      "article_count": 106,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -580,7 +580,7 @@
       "event_model": "editorial_coverage",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 50,
+      "article_count": 37,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -788,7 +788,7 @@
       "event_model": "",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 3,
+      "article_count": 2,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -1166,6 +1166,80 @@
   ],
   "events": [
     {
+      "source": "Universal Studios Orlando",
+      "source_type": "api",
+      "trust_tier": "T3_professional",
+      "content_type": "news",
+      "collection_tier": "C1_rss",
+      "producer_role": "",
+      "event_model": "wait_time_snapshot",
+      "title": "The Simpsons Ride™ - 15 minutes wait (Universal Studios Orlando)",
+      "url": "https://queue-times.com/en-US/parks/65/queue_times",
+      "source_url": "https://queue-times.com/en-US/parks/65/queue_times",
+      "event_at": "2026-11-28T17:21:25+00:00",
+      "matched_entities": {
+        "WaitTime": [
+          "wait time",
+          "wait",
+          "queue",
+          "minutes wait",
+          "current wait"
+        ],
+        "Attraction": [
+          "attraction",
+          "ride"
+        ],
+        "Status": [
+          "open",
+          "status"
+        ],
+        "Location": [
+          "universal"
+        ],
+        "RealTimeData": [
+          "real-time",
+          "current",
+          "last updated",
+          "minutes",
+          "queue data",
+          "queue-times"
+        ],
+        "QueueGeneral": [
+          "queue",
+          "wait",
+          "ride",
+          "attraction",
+          "universal",
+          "the",
+          "time"
+        ]
+      },
+      "facility_id": "65",
+      "facility_name": "Universal Studios Orlando",
+      "attraction_id": "",
+      "attraction_name": "The Simpsons Ride™",
+      "service_id": "",
+      "timezone": "",
+      "wait_minutes": 15,
+      "availability_status": "Open",
+      "ticket_type": "",
+      "price": null,
+      "currency": "",
+      "weather_metric": "",
+      "metric_value": null,
+      "canonical_key": "queue_target:65:ride:the-simpsons-ride",
+      "canonical_key_status": "name_proxy",
+      "event_key": "wait_time_snapshot:3cc49e1960fc:20261128T172125Z",
+      "queue_target_key": "queue_target:65:ride:the-simpsons-ride",
+      "required_field_proxy": {
+        "facility_id": true,
+        "attraction_id": true,
+        "wait_minutes": true,
+        "source_url": true
+      },
+      "required_field_gaps": []
+    },
+    {
       "source": "Disney California Adventure",
       "source_type": "api",
       "trust_tier": "T3_professional",
@@ -1173,10 +1247,10 @@
       "collection_tier": "C1_rss",
       "producer_role": "",
       "event_model": "wait_time_snapshot",
-      "title": "Mater's Jingle Jamboree - 35 minutes wait (Disney California Adventure)",
+      "title": "Mater's Jingle Jamboree - 5 minutes wait (Disney California Adventure)",
       "url": "https://queue-times.com/en-US/parks/17/queue_times",
       "source_url": "https://queue-times.com/en-US/parks/17/queue_times",
-      "event_at": "2026-11-27T18:40:42+00:00",
+      "event_at": "2026-11-28T17:20:37+00:00",
       "matched_entities": {
         "WaitTime": [
           "wait time",
@@ -1218,7 +1292,7 @@
       "attraction_name": "Mater's Jingle Jamboree",
       "service_id": "",
       "timezone": "",
-      "wait_minutes": 35,
+      "wait_minutes": 5,
       "availability_status": "Open",
       "ticket_type": "",
       "price": null,
@@ -1227,7 +1301,7 @@
       "metric_value": null,
       "canonical_key": "queue_target:17:ride:mater-s-jingle-jamboree",
       "canonical_key_status": "name_proxy",
-      "event_key": "wait_time_snapshot:f7523c318038:20261127T184042Z",
+      "event_key": "wait_time_snapshot:f7523c318038:20261128T172037Z",
       "queue_target_key": "queue_target:17:ride:mater-s-jingle-jamboree",
       "required_field_proxy": {
         "facility_id": true,
@@ -1248,7 +1322,7 @@
       "title": "Infinity Falls® - Closed (SeaWorld Orlando)",
       "url": "https://queue-times.com/en-US/parks/21/queue_times",
       "source_url": "https://queue-times.com/en-US/parks/21/queue_times",
-      "event_at": "2026-11-27T18:40:29+00:00",
+      "event_at": "2026-11-28T17:20:31+00:00",
       "matched_entities": {
         "WaitTime": [
           "wait time",
@@ -1296,8 +1370,78 @@
       "metric_value": null,
       "canonical_key": "queue_target:21:ride:infinity-falls",
       "canonical_key_status": "name_proxy",
-      "event_key": "wait_time_snapshot:05cbd1cced0e:20261127T184029Z",
+      "event_key": "wait_time_snapshot:05cbd1cced0e:20261128T172031Z",
       "queue_target_key": "queue_target:21:ride:infinity-falls",
+      "required_field_proxy": {
+        "facility_id": true,
+        "attraction_id": true,
+        "wait_minutes": true,
+        "source_url": true
+      },
+      "required_field_gaps": []
+    },
+    {
+      "source": "Disneyland",
+      "source_type": "api",
+      "trust_tier": "T3_professional",
+      "content_type": "news",
+      "collection_tier": "C1_rss",
+      "producer_role": "",
+      "event_model": "wait_time_snapshot",
+      "title": "Disneyland Monorail - 15 minutes wait (Disneyland)",
+      "url": "https://queue-times.com/en-US/parks/16/queue_times",
+      "source_url": "https://queue-times.com/en-US/parks/16/queue_times",
+      "event_at": "2026-11-28T17:20:30+00:00",
+      "matched_entities": {
+        "WaitTime": [
+          "wait time",
+          "wait",
+          "queue",
+          "minutes wait",
+          "current wait"
+        ],
+        "Attraction": [
+          "attraction"
+        ],
+        "Status": [
+          "open",
+          "status"
+        ],
+        "Location": [
+          "disneyland"
+        ],
+        "RealTimeData": [
+          "real-time",
+          "current",
+          "last updated",
+          "minutes",
+          "queue data",
+          "queue-times"
+        ],
+        "QueueGeneral": [
+          "queue",
+          "wait",
+          "attraction",
+          "time"
+        ]
+      },
+      "facility_id": "16",
+      "facility_name": "Disneyland",
+      "attraction_id": "",
+      "attraction_name": "Disneyland Monorail",
+      "service_id": "",
+      "timezone": "",
+      "wait_minutes": 15,
+      "availability_status": "Open",
+      "ticket_type": "",
+      "price": null,
+      "currency": "",
+      "weather_metric": "",
+      "metric_value": null,
+      "canonical_key": "queue_target:16:ride:disneyland-monorail",
+      "canonical_key_status": "name_proxy",
+      "event_key": "wait_time_snapshot:f231eede0650:20261128T172030Z",
+      "queue_target_key": "queue_target:16:ride:disneyland-monorail",
       "required_field_proxy": {
         "facility_id": true,
         "attraction_id": true,
@@ -1317,7 +1461,7 @@
       "title": "City Under Siege - Closed (Six Flags Magic Mountain)",
       "url": "https://queue-times.com/en-US/parks/32/queue_times",
       "source_url": "https://queue-times.com/en-US/parks/32/queue_times",
-      "event_at": "2026-11-27T18:40:28+00:00",
+      "event_at": "2026-11-28T17:20:30+00:00",
       "matched_entities": {
         "WaitTime": [
           "wait time",
@@ -1366,7 +1510,7 @@
       "metric_value": null,
       "canonical_key": "queue_target:32:ride:city-under-siege",
       "canonical_key_status": "name_proxy",
-      "event_key": "wait_time_snapshot:66c29a98a08e:20261127T184028Z",
+      "event_key": "wait_time_snapshot:66c29a98a08e:20261128T172030Z",
       "queue_target_key": "queue_target:32:ride:city-under-siege",
       "required_field_proxy": {
         "facility_id": true,
@@ -1387,7 +1531,7 @@
       "title": "Wilderness Explorers - No wait (Animal Kingdom)",
       "url": "https://queue-times.com/en-US/parks/8/queue_times",
       "source_url": "https://queue-times.com/en-US/parks/8/queue_times",
-      "event_at": "2026-11-27T18:40:28+00:00",
+      "event_at": "2026-11-28T17:20:30+00:00",
       "matched_entities": {
         "WaitTime": [
           "wait time",
@@ -1437,78 +1581,8 @@
       "metric_value": null,
       "canonical_key": "queue_target:8:ride:wilderness-explorers",
       "canonical_key_status": "name_proxy",
-      "event_key": "wait_time_snapshot:e4d7b18f2425:20261127T184028Z",
+      "event_key": "wait_time_snapshot:e4d7b18f2425:20261128T172030Z",
       "queue_target_key": "queue_target:8:ride:wilderness-explorers",
-      "required_field_proxy": {
-        "facility_id": true,
-        "attraction_id": true,
-        "wait_minutes": true,
-        "source_url": true
-      },
-      "required_field_gaps": []
-    },
-    {
-      "source": "Disneyland",
-      "source_type": "api",
-      "trust_tier": "T3_professional",
-      "content_type": "news",
-      "collection_tier": "C1_rss",
-      "producer_role": "",
-      "event_model": "wait_time_snapshot",
-      "title": "Disneyland Monorail - 5 minutes wait (Disneyland)",
-      "url": "https://queue-times.com/en-US/parks/16/queue_times",
-      "source_url": "https://queue-times.com/en-US/parks/16/queue_times",
-      "event_at": "2026-11-27T18:40:28+00:00",
-      "matched_entities": {
-        "WaitTime": [
-          "wait time",
-          "wait",
-          "queue",
-          "minutes wait",
-          "current wait"
-        ],
-        "Attraction": [
-          "attraction"
-        ],
-        "Status": [
-          "open",
-          "status"
-        ],
-        "Location": [
-          "disneyland"
-        ],
-        "RealTimeData": [
-          "real-time",
-          "current",
-          "last updated",
-          "minutes",
-          "queue data",
-          "queue-times"
-        ],
-        "QueueGeneral": [
-          "queue",
-          "wait",
-          "attraction",
-          "time"
-        ]
-      },
-      "facility_id": "16",
-      "facility_name": "Disneyland",
-      "attraction_id": "",
-      "attraction_name": "Disneyland Monorail",
-      "service_id": "",
-      "timezone": "",
-      "wait_minutes": 5,
-      "availability_status": "Open",
-      "ticket_type": "",
-      "price": null,
-      "currency": "",
-      "weather_metric": "",
-      "metric_value": null,
-      "canonical_key": "queue_target:16:ride:disneyland-monorail",
-      "canonical_key_status": "name_proxy",
-      "event_key": "wait_time_snapshot:f231eede0650:20261127T184028Z",
-      "queue_target_key": "queue_target:16:ride:disneyland-monorail",
       "required_field_proxy": {
         "facility_id": true,
         "attraction_id": true,
@@ -1528,7 +1602,7 @@
       "title": "Once Upon a Studio Theater - No wait (Disney Hollywood Studios)",
       "url": "https://queue-times.com/en-US/parks/7/queue_times",
       "source_url": "https://queue-times.com/en-US/parks/7/queue_times",
-      "event_at": "2026-11-27T18:40:19+00:00",
+      "event_at": "2026-11-28T17:20:30+00:00",
       "matched_entities": {
         "WaitTime": [
           "wait time",
@@ -1580,7 +1654,7 @@
       "metric_value": null,
       "canonical_key": "queue_target:7:ride:once-upon-a-studio-theater",
       "canonical_key_status": "name_proxy",
-      "event_key": "wait_time_snapshot:6b8c25ded2b9:20261127T184019Z",
+      "event_key": "wait_time_snapshot:6b8c25ded2b9:20261128T172030Z",
       "queue_target_key": "queue_target:7:ride:once-upon-a-studio-theater",
       "required_field_proxy": {
         "facility_id": true,
@@ -1601,7 +1675,7 @@
       "title": "Jingle Cruise - 45 minutes wait (Disney Magic Kingdom)",
       "url": "https://queue-times.com/en-US/parks/6/queue_times",
       "source_url": "https://queue-times.com/en-US/parks/6/queue_times",
-      "event_at": "2026-11-27T18:40:12+00:00",
+      "event_at": "2026-11-28T17:20:19+00:00",
       "matched_entities": {
         "WaitTime": [
           "wait time",
@@ -1652,7 +1726,7 @@
       "metric_value": null,
       "canonical_key": "queue_target:6:ride:jingle-cruise",
       "canonical_key_status": "name_proxy",
-      "event_key": "wait_time_snapshot:0e27bc3bd1d5:20261127T184012Z",
+      "event_key": "wait_time_snapshot:0e27bc3bd1d5:20261128T172019Z",
       "queue_target_key": "queue_target:6:ride:jingle-cruise",
       "required_field_proxy": {
         "facility_id": true,
@@ -1670,10 +1744,10 @@
       "collection_tier": "C1_rss",
       "producer_role": "",
       "event_model": "wait_time_snapshot",
-      "title": "Living with the Land - 15 minutes wait (Epcot)",
+      "title": "Living with the Land – Glimmering Greenhouses - 15 minutes wait (Epcot)",
       "url": "https://queue-times.com/en-US/parks/5/queue_times",
       "source_url": "https://queue-times.com/en-US/parks/5/queue_times",
-      "event_at": "2026-11-27T18:40:12+00:00",
+      "event_at": "2026-11-28T17:20:18+00:00",
       "matched_entities": {
         "WaitTime": [
           "wait time",
@@ -1711,7 +1785,7 @@
       "facility_id": "5",
       "facility_name": "Epcot",
       "attraction_id": "",
-      "attraction_name": "Living with the Land",
+      "attraction_name": "Living with the Land – Glimmering Greenhouses",
       "service_id": "",
       "timezone": "",
       "wait_minutes": 15,
@@ -1721,10 +1795,10 @@
       "currency": "",
       "weather_metric": "",
       "metric_value": null,
-      "canonical_key": "queue_target:5:ride:living-with-the-land",
+      "canonical_key": "queue_target:5:ride:living-with-the-land-glimmering-greenhouses",
       "canonical_key_status": "name_proxy",
-      "event_key": "wait_time_snapshot:40bf4994677e:20261127T184012Z",
-      "queue_target_key": "queue_target:5:ride:living-with-the-land",
+      "event_key": "wait_time_snapshot:3440bf1ac770:20261128T172018Z",
+      "queue_target_key": "queue_target:5:ride:living-with-the-land-glimmering-greenhouses",
       "required_field_proxy": {
         "facility_id": true,
         "attraction_id": true,
@@ -1744,7 +1818,7 @@
       "title": "Holly Jolly™ Express - Closed (Busch Gardens Tampa)",
       "url": "https://queue-times.com/en-US/parks/24/queue_times",
       "source_url": "https://queue-times.com/en-US/parks/24/queue_times",
-      "event_at": "2026-11-27T18:36:35+00:00",
+      "event_at": "2026-11-28T17:16:37+00:00",
       "matched_entities": {
         "WaitTime": [
           "wait time",
@@ -1793,7 +1867,7 @@
       "metric_value": null,
       "canonical_key": "queue_target:24:ride:holly-jolly-express",
       "canonical_key_status": "name_proxy",
-      "event_key": "wait_time_snapshot:2fdb80bc426a:20261127T183635Z",
+      "event_key": "wait_time_snapshot:2fdb80bc426a:20261128T171637Z",
       "queue_target_key": "queue_target:24:ride:holly-jolly-express",
       "required_field_proxy": {
         "facility_id": true,
@@ -1814,7 +1888,7 @@
       "title": "Studio Tour - No wait (Universal Studios Hollywood)",
       "url": "https://queue-times.com/en-US/parks/66/queue_times",
       "source_url": "https://queue-times.com/en-US/parks/66/queue_times",
-      "event_at": "2026-11-27T18:36:34+00:00",
+      "event_at": "2026-11-28T17:16:36+00:00",
       "matched_entities": {
         "WaitTime": [
           "wait time",
@@ -1864,82 +1938,8 @@
       "metric_value": null,
       "canonical_key": "queue_target:66:ride:studio-tour",
       "canonical_key_status": "name_proxy",
-      "event_key": "wait_time_snapshot:5a070470acf7:20261127T183634Z",
+      "event_key": "wait_time_snapshot:5a070470acf7:20261128T171636Z",
       "queue_target_key": "queue_target:66:ride:studio-tour",
-      "required_field_proxy": {
-        "facility_id": true,
-        "attraction_id": true,
-        "wait_minutes": true,
-        "source_url": true
-      },
-      "required_field_gaps": []
-    },
-    {
-      "source": "Universal Studios Orlando",
-      "source_type": "api",
-      "trust_tier": "T3_professional",
-      "content_type": "news",
-      "collection_tier": "C1_rss",
-      "producer_role": "",
-      "event_model": "wait_time_snapshot",
-      "title": "The Simpsons Ride™ - 35 minutes wait (Universal Studios Orlando)",
-      "url": "https://queue-times.com/en-US/parks/65/queue_times",
-      "source_url": "https://queue-times.com/en-US/parks/65/queue_times",
-      "event_at": "2026-11-27T18:36:34+00:00",
-      "matched_entities": {
-        "WaitTime": [
-          "wait time",
-          "wait",
-          "queue",
-          "minutes wait",
-          "current wait"
-        ],
-        "Attraction": [
-          "attraction",
-          "ride"
-        ],
-        "Status": [
-          "open",
-          "status"
-        ],
-        "Location": [
-          "universal"
-        ],
-        "RealTimeData": [
-          "real-time",
-          "current",
-          "last updated",
-          "minutes",
-          "queue data",
-          "queue-times"
-        ],
-        "QueueGeneral": [
-          "queue",
-          "wait",
-          "ride",
-          "attraction",
-          "universal",
-          "the",
-          "time"
-        ]
-      },
-      "facility_id": "65",
-      "facility_name": "Universal Studios Orlando",
-      "attraction_id": "",
-      "attraction_name": "The Simpsons Ride™",
-      "service_id": "",
-      "timezone": "",
-      "wait_minutes": 35,
-      "availability_status": "Open",
-      "ticket_type": "",
-      "price": null,
-      "currency": "",
-      "weather_metric": "",
-      "metric_value": null,
-      "canonical_key": "queue_target:65:ride:the-simpsons-ride",
-      "canonical_key_status": "name_proxy",
-      "event_key": "wait_time_snapshot:3cc49e1960fc:20261127T183634Z",
-      "queue_target_key": "queue_target:65:ride:the-simpsons-ride",
       "required_field_proxy": {
         "facility_id": true,
         "attraction_id": true,
@@ -2025,7 +2025,7 @@
       "reason": "source_stale",
       "source": "Islands of Adventure",
       "event_model": "wait_time_snapshot",
-      "age_days": 4.74,
+      "age_days": 5.68,
       "latest_title": "The Amazing Adventures of Spider-Man® Single Rider - No wait (Islands of Adventure)"
     },
     {
